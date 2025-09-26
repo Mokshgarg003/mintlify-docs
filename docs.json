@@ -16,7 +16,7 @@
         "groups": [
           {
             "group": "Getting Started",
-            "expanded": false,
+            "expanded": true,
             "pages": [
               {
                 "group": "Welcome to Figr",
@@ -133,10 +133,10 @@
           {
             "group": "Security & Legal",
             "pages": [
-              "security/terms",
+              "legal/terms",
               "legal/privacy",
-              "security/data-protection", 
-              "legal/Enterprise"
+              "legal/data-protection", 
+              "legal/enterprise"
             ]
           }
         ]
