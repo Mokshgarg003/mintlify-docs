@@ -11,81 +11,163 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Docs",
+        "icon": "book",
         "groups": [
           {
-            "group": "Get started",
+            "group": "Getting Started",
+            "expanded": true,
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              {
+                "group": "Welcome to Figr",
+                "pages": [
+                  "getting-started/welcome/what-makes-figr-different",
+                  "getting-started/welcome/product-aware-designing",
+                  "getting-started/welcome/who-should-use-figr"
+                ]
+              },
+              {
+                "group": "Account Setup",
+                "pages": [
+                  "getting-started/setup/creating-your-account",
+                  "getting-started/setup/project-setup",
+                  "getting-started/setup/team-invitations"
+                ]
+              },
+              {
+                "group": "Quick Win Tutorial",
+                "pages": [
+                  "getting-started/tutorial/first-design-5-minutes",
+                  "getting-started/tutorial/prd-to-designing"
+                ]
+              }
             ]
           },
           {
-            "group": "Customize",
+            "group": "Designing with Figr",
+            "expanded": true,
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
-            ]
-          },
-          {
-            "group": "Writing content",
-            "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
-            ]
-          },
-          {
-            "group": "AI tools",
-            "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              {
+                "group": "Memory System",
+                "pages": [
+                  "designing/memory/how-global-memory-works",
+                  "designing/memory/assets-retention"
+                ]
+              },
+              {
+                "group": "Input Methods",
+                "pages": [
+                  "designing/input/screenshots-images",
+                  "designing/input/csv-excel-import",
+                  "designing/input/pdf-processing",
+                  "designing/input/links-and-notes",
+                  "designing/input/screen-sharing"
+                ]
+              },
+              {
+                "group": "Canvas",
+                "pages": [
+                  "designing/canvas/infinite-workspace",
+                  "designing/canvas/organizing-iterations",
+                  "designing/canvas/comparing-designs",
+                  "designing/canvas/zooming-overview"
+                ]
+              },
+              {
+                "group": "Ideation Tools",
+                "pages": [
+                  "designing/ideation/process-user-data",
+                  "designing/ideation/benchmark-competitors",
+                  "designing/ideation/draft-prds",
+                  "designing/ideation/pre-design-exploration"
+                ]
+              },
+              {
+                "group": "Interface Generation",
+                "pages": [
+                  "designing/interface/building-on-existing",
+                  "designing/interface/creating-new-ui",
+                  "designing/interface/product-context"
+                ]
+              },
+              {
+                "group": "Design System Integration",
+                "pages": [
+                  "designing/design-system/setting-tokens",
+                  "designing/design-system/automatic-matching"
+                ]
+              },
+              {
+                "group": "Precise Edits",
+                "pages": [
+                  "designing/edits/click-to-refine",
+                  "designing/edits/micro-improvements",
+                  "designing/edits/element-control"
+                ]
+              },
+              {
+                "group": "Export Options",
+                "pages": [
+                  "designing/export/one-click-figma",
+                  "designing/export/high-res-images",
+                  "designing/export/ship-ready-designs"
+                ]
+              },
+              {
+                "group": "Collaboration",
+                "pages": [
+                  "designing/collaboration/share-links",
+                  "designing/collaboration/permissions",
+                  "designing/collaboration/co-editing-live"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
+        "tab": "FAQs",
+        "icon": "question",
         "groups": [
           {
-            "group": "API documentation",
+            "group": "FAQs",
             "pages": [
-              "api-reference/introduction"
+              "faqs"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Changelog",
+        "icon": "clock",
+        "groups": [
           {
-            "group": "Endpoint examples",
+            "group": "Changelog",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "changelog"
             ]
           }
         ]
       }
     ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Community",
-          "href": "https://mintlify.com/community",
-          "icon": "slack"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+  "global": {
+    "anchors": [
+      {
+        "anchor": "Documentation",
+        "href": "https://figr.design/docs",
+        "icon": "clock"
+      },
+      {
+        "anchor": "Community",
+        "href": "https://figr.design/community",
+        "icon": "clock"
+      },
+      {
+        "anchor": "Blog",
+        "href": "https://figr.design/blog",
+        "icon": "clock"
+      }
+    ]
     }
   },
   "logo": {
@@ -96,32 +178,39 @@
     "links": [
       {
         "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "href": "mailto:support@figr.design"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://app.figr.design"
     }
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/figrdesign",
+      "github": "https://github.com/figrdesign",
+      "linkedin": "https://linkedin.com/company/figrdesign"
+    }
+  },
+  "seo": {
+    "indexing": "all",
+    "metatags": {
+      "og:type": "website",
+      "og:site_name": "Figr AI Docs"
     }
   }
 }
