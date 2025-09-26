@@ -174,9 +174,9 @@
         "icon": "book"
       },
       {
-        "anchor": "Community",
-        "href": "https://figr.design/community",
-        "icon": "clock"
+        "anchor": "Talk to Us",
+        "href": "https://figr.design/contact",
+        "icon": "comments"
       },
       {
         "anchor": "Blog",
