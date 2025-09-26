@@ -170,8 +170,8 @@
     "anchors": [
       {
         "anchor": "Documentation",
-        "href": "https://figr.design/docs",
-        "icon": "clock"
+        "href": "https://docs.figr.design/",
+        "icon": "book"
       },
       {
         "anchor": "Community",
@@ -181,7 +181,7 @@
       {
         "anchor": "Blog",
         "href": "https://figr.design/blog",
-        "icon": "clock"
+        "icon": "books"
       }
     ]
     }
