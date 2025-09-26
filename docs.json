@@ -191,12 +191,6 @@
     "dark": "/logo/dark.svg"
   },
   "navbar": {
-    "links": [
-      {
-        "label": "Support",
-        "href": "mailto:support@figr.design"
-      }
-    ],
     "primary": {
       "type": "button",
       "label": "Design with Figr AI ↗",
