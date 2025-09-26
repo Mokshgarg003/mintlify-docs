@@ -1,5 +1,396 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Team Invitations"
+description: "Add team members to your Figr project and set up collaborative workflows."
+icon: "user-group"
 ---
 
+# Team Invitations
+
+Figr becomes more powerful when your entire product team can contribute. Here's how to invite colleagues and set up effective collaboration workflows.
+
+<info>
+  **Team memory:** When team members contribute product knowledge, Figr learns faster and creates better designs for everyone.
+</info>
+
+## Inviting Team Members
+
+<Steps>
+  <Step title="Access Team Settings">
+    From your project dashboard:
+
+    - Click **"Team"** in the sidebar
+    - Select **"Invite Members"**
+    - Or use the **"+ Invite"** button in the top bar
+
+    <Frame>
+      ![Team invitation button location in Figr interface](/images/team-invite-button.png)
+    </Frame>
+  </Step>
+  <Step title="Add Email Addresses">
+    **Invite methods:**
+
+    <Tabs>
+      <Tab title="Individual Invites">
+        ```
+        Enter email addresses one by one:
+        john@company.com
+        sarah@company.com
+        mike@company.com
+        ```
+
+        **Best for:** Small teams, specific role assignments
+      </Tab>
+      <Tab title="Bulk Import">
+        ```
+        Paste multiple emails (comma or line separated):
+        john@company.com, sarah@company.com, mike@company.com
+        
+        Or upload CSV file with columns:
+        Email, Name, Role
+        ```
+
+        **Best for:** Large teams, department-wide access
+      </Tab>
+      <Tab title="Domain-Based">
+        ```
+        Allow anyone with your company domain:
+        @company.com
+        
+        Auto-approve: Yes/No
+        Default role: Viewer/Editor/Admin
+        ```
+
+        **Best for:** Open collaboration, growing teams
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Assign Roles">
+    Choose appropriate permissions for each team member:
+
+    <CardGroup cols={3}>
+      <Card title="Viewer" icon="eye">
+        **Can:**
+
+        - View all designs
+        - Leave comments
+        - Export standard formats
+
+        **Cannot:**
+
+        - Create or edit designs
+        - Change project settings
+        - Invite other users
+
+        **Perfect for:** Stakeholders, executives, external reviewers
+      </Card>
+      <Card title="Editor" icon="pencil">
+        **Can:**
+
+        - Create and edit designs
+        - Upload assets and context
+        - Collaborate in real-time
+        - Access AI design features
+
+        **Cannot:**
+
+        - Change project settings
+        - Manage team members
+        - Delete projects
+
+        **Perfect for:** Designers, PMs, engineers
+      </Card>
+      <Card title="Admin" icon="shield">
+        **Can:**
+
+        - Full editor permissions
+        - Manage team members
+        - Configure project settings
+        - Access billing and usage
+
+        **Perfect for:** Project leads, design managers
+      </Card>
+    </CardGroup>
+  </Step>
+  <Step title="Customize Invitation">
+    **Personal message (optional):**
+
+    ```
+    Hi team! I've set up our product design workspace in Figr. 
+    This will help us create designs that match our existing 
+    product and maintain consistency across features.
+    
+    Looking forward to collaborating!
+    ```
+
+    **Include:**
+
+    - Context about why you're using Figr
+    - What they should focus on initially
+    - Any setup steps they should complete
+  </Step>
+</Steps>
+
+## Role-Based Workflows
+
+<Tabs>
+  <Tab title="Design Team">
+    **Typical setup:**
+
+    - **Lead Designer:** Admin (manages design system, reviews)
+    - **Product Designers:** Editor (creates features, components)
+    - **Design Interns:** Viewer → Editor after training
+
+    **Collaboration pattern:**
+
+    1. Lead uploads/maintains design system
+    2. Designers create features using established patterns
+    3. Peer review through comments and suggestions
+    4. Lead approves final designs for development
+  </Tab>
+  <Tab title="Product Team">
+    **Typical setup:**
+
+    - **Product Manager:** Editor (creates specs, wireframes)
+    - **Designers:** Editor (refines and polishes)
+    - **Engineers:** Viewer/Editor (reviews feasibility)
+
+    **Collaboration pattern:**
+
+    1. PM creates initial concept/wireframes
+    2. Designer refines visual design
+    3. Engineer validates technical feasibility
+    4. Iterate based on feedback
+  </Tab>
+  <Tab title="Cross-Functional">
+    **Typical setup:**
+
+    - **Project Lead:** Admin
+    - **Contributors:** Editor (design, product, engineering)
+    - **Stakeholders:** Viewer (leadership, marketing, sales)
+
+    **Collaboration pattern:**
+
+    1. Contributors work together on designs
+    2. Regular design reviews with stakeholders
+    3. Comments and feedback collection
+    4. Iterate until consensus
+  </Tab>
+</Tabs>
+
+## Onboarding New Team Members
+
+When someone joins your Figr project:
+
+<Steps>
+  <Step title="Account Setup">
+    **New member receives:**
+
+    - Email invitation with project link
+    - Instructions to create Figr account
+    - Welcome message with project context
+
+    **They need to:**
+
+    - Click invitation link
+    - Create account or sign in
+    - Complete basic profile setup
+  </Step>
+  <Step title="Project Orientation">
+    **Share this checklist with new members:**
+
+    <tip>
+      **New Team Member Checklist:**
+
+      ✅ Review project overview and product context\
+      ✅ Explore existing designs and patterns\
+      ✅ Understand team workflows and processes\
+      ✅ Ask questions in project comments\
+      ✅ Create a simple test design to learn the interface
+    </tip>
+  </Step>
+  <Step title="Role-Specific Training">
+    <AccordionGroup>
+      <Accordion title="For Designers">
+        **Focus areas:**
+
+        - How Figr learns from existing designs
+        - Using product context for AI assistance
+        - Maintaining design system consistency
+        - Advanced editing and refinement tools
+
+        **Suggested first task:** "Redesign our settings page using Figr"
+      </Accordion>
+      <Accordion title="For Product Managers">
+        **Focus areas:**
+
+        - Creating wireframes and user flows
+        - Using real data and constraints
+        - Collaborative spec creation
+        - Stakeholder presentation features
+
+        **Suggested first task:** "Create a new feature concept"
+      </Accordion>
+      <Accordion title="For Engineers">
+        **Focus areas:**
+
+        - Technical feasibility validation
+        - Component mapping and code export
+        - Implementation-ready specifications
+        - Integration with development workflow
+
+        **Suggested first task:** "Review a design for implementation complexity"
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Managing Team Access
+
+<Tabs>
+  <Tab title="Active Members">
+    **Team management dashboard:**
+
+    <Frame>
+      ![Team management interface showing member list with roles and actions](/images/team-management.png)
+    </Frame>
+    **Available actions:**
+
+    - Change member roles
+    - Resend invitations
+    - Suspend/reactivate access
+    - Remove team members
+    - View activity history
+  </Tab>
+  <Tab title="Pending Invitations">
+    **Track invitation status:**
+
+    ```
+    sarah@company.com - Invited 2 days ago - Pending
+    mike@company.com - Invited 1 week ago - Expired (Resend?)
+    alex@company.com - Invited yesterday - Pending
+    ```
+
+    **Management options:**
+
+    - Resend expired invitations
+    - Cancel pending invitations
+    - Change role before acceptance
+    - Add personal message to reminder
+  </Tab>
+  <Tab title="Access Logs">
+    **Monitor team activity:**
+
+    - Who accessed which projects
+    - Recent design changes and authors
+    - Comment and collaboration activity
+    - File uploads and system changes
+
+    **Use cases:**
+
+    - Security auditing
+    - Understanding team engagement
+    - Identifying training needs
+  </Tab>
+</Tabs>
+
+## Collaboration Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Clear Communication" icon="comments">
+    **Establish norms:**
+
+    - Use @mentions for urgent feedback
+    - Tag designs with status (Draft/Review/Final)
+    - Regular check-ins on shared projects
+    - Clear naming conventions for designs
+  </Card>
+  <Card title="Knowledge Sharing" icon="share">
+    **Build team memory:**
+
+    - Document design decisions
+    - Share user research insights
+    - Upload relevant product context
+    - Cross-train on different aspects
+  </Card>
+</CardGroup>
+
+### Effective Comment Workflows
+
+<Steps>
+  <Step title="Structured Feedback">
+    **Use consistent comment formats:**
+
+    ```
+    🔴 Critical: Blocks implementation
+    🟡 Suggestion: Nice to have improvement  
+    🟢 Approval: Ready to implement
+    ❓ Question: Need clarification
+    ```
+  </Step>
+  <Step title="Actionable Comments">
+    **Good comment examples:**
+
+    ✅ "Move CTA above fold - our analytics show 40% drop in conversion below 600px"\
+    ✅ "Use \$color-primary-600 instead of this blue to match design system"\
+    ✅ "Consider loading state - this API call takes 3-5 seconds"
+
+    **Avoid vague feedback:**
+    ❌ "This doesn't look right"\
+    ❌ "Make it better"\
+    ❌ "I don't like this color"
+  </Step>
+  <Step title="Resolution Process">
+    **Comment lifecycle:**
+
+    1. Feedback provided with clear action
+    2. Designer implements or responds with questions
+    3. Reviewer marks as resolved or continues discussion
+    4. Final approval before implementation
+  </Step>
+</Steps>
+
+## External Collaboration
+
+<info>
+  **Working with external stakeholders?** Figr supports secure sharing with clients, contractors, and partners.
+</info>
+
+<Tabs>
+  <Tab title="Client Access">
+    **For external reviewers:**
+
+    - Create time-limited viewer access
+    - Share specific designs, not entire project
+    - Watermark exports if needed
+    - Track external user activity
+
+    **Setup:**
+
+    ```
+    Email: client@external.com
+    Role: Viewer (time-limited)
+    Access: Specific designs only
+    Expires: 30 days
+    ```
+  </Tab>
+  <Tab title="Contractor Integration">
+    **For external design help:**
+
+    - Temporary editor access with restricted settings
+    - Access to relevant design system assets
+    - Clear project scope and guidelines
+    - Activity monitoring and backup reviews
+  </Tab>
+</Tabs>
+
+---
+
+<success>
+  **Team setup complete!** Your collaborative workspace is ready. Time to create your first design together.
+</success>
+
+<Card title="Start Your First Design" icon="play">
+  Now that your team is set up, experience Figr's product-aware design capabilities.
+
+  [First Design Tutorial →](/getting-started/tutorial/first-design-5-minutes)
+</Card>
