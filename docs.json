@@ -16,7 +16,7 @@
         "groups": [
           {
             "group": "Getting Started",
-            "expanded": true,
+            "expanded": false,
             "pages": [
               {
                 "group": "Welcome to Figr",
