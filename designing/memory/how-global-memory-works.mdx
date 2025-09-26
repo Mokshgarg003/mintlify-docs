@@ -2,36 +2,38 @@
 title: "How Global Memory Works"
 description: "Understand Figr's persistent memory system that learns and remembers your product context across all projects and sessions."
 icon: "brain"
+sidebarTitle: "How Global Memory Works"
 ---
 
 # How Global Memory Works
 
 Figr's memory system is what makes product-aware design possible. Unlike other AI tools that forget everything between sessions, Figr builds a permanent understanding of your product, team, and users.
 
-<Callout type="success">
-**The game changer:** Upload your design system once, explain your constraints once, show your product once. Figr remembers forever and applies this knowledge to every new design.
-</Callout>
+<success>
+  **The game changer:** Upload your design system once, explain your constraints once, show your product once. Figr remembers forever and applies this knowledge to every new design.
+</success>
 
 ## What Makes Figr's Memory Different
 
 <CardGroup cols={2}>
   <Card title="Traditional AI Tools" icon="refresh">
     **Session-based memory:**
+
     - Forgets everything when you close the tool
     - Requires re-explaining context every time
     - Can't build on previous design decisions
     - Generic outputs that ignore your product reality
-    
+
     **Result:** Constant repetition and generic designs
   </Card>
-  
   <Card title="Figr's Global Memory" icon="database">
     **Persistent product understanding:**
+
     - Remembers context permanently across sessions
     - Builds cumulative knowledge over time
     - References past decisions and learnings
     - Creates increasingly accurate designs
-    
+
     **Result:** Designs that improve and feel more native over time
   </Card>
 </CardGroup>
@@ -41,7 +43,7 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
 <Tabs>
   <Tab title="Product Knowledge Layer">
     **What Figr permanently stores about your product:**
-    
+
     <AccordionGroup>
       <Accordion title="Design System Knowledge">
         ```json
@@ -67,7 +69,6 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
         }
         ```
       </Accordion>
-      
       <Accordion title="User Context">
         ```json
         {
@@ -89,7 +90,6 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
         }
         ```
       </Accordion>
-      
       <Accordion title="Technical Constraints">
         ```json
         {
@@ -106,25 +106,23 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
       </Accordion>
     </AccordionGroup>
   </Tab>
-  
   <Tab title="Experience Layer">
     **What Figr learns from your product usage:**
-    
+
     <Frame>
-      <img src="/images/memory-experience-layer.png" alt="Diagram showing how Figr learns from user interactions and builds experience" />
+      ![Diagram showing how Figr learns from user interactions and builds experience](/images/memory-experience-layer.png)
     </Frame>
-    
     **Continuous learning sources:**
+
     - Screen sharing sessions that show actual user behavior
     - Design feedback and iteration patterns
-    - A/B test results and performance data  
+    - A/B test results and performance data
     - User research findings and usability studies
     - Analytics data about feature usage and conversion
   </Tab>
-  
   <Tab title="Decision Layer">
     **How Figr remembers design reasoning:**
-    
+
     ```
     Design Decision: "Use inline validation for forms"
     Reasoning: "User research shows 23% better completion rates"
@@ -134,8 +132,9 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
     Future Application: Figr automatically suggests inline 
     validation for new forms based on this proven success.
     ```
-    
+
     **Pattern recognition:**
+
     - What design solutions work for your specific users
     - Which interaction patterns reduce friction
     - How different user types prefer different approaches
@@ -148,37 +147,38 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
 <Steps>
   <Step title="Initial Setup">
     **Day 1: Foundation building**
-    
+
     When you first set up Figr:
+
     - Upload design system assets
     - Share your screen to show product
     - Provide user research and context
     - Define technical and business constraints
-    
+
     **Memory strength:** 60% - Good foundation
   </Step>
-  
   <Step title="Early Usage">
     **Weeks 1-2: Pattern recognition**
-    
+
     As you create designs and provide feedback:
+
     - Figr learns your design preferences
     - Understands which suggestions you accept/reject
     - Builds patterns from your specific use cases
     - Refines understanding of your user needs
-    
+
     **Memory strength:** 80% - Strong context awareness
   </Step>
-  
   <Step title="Deep Integration">
     **Month 1+: Institutional knowledge**
-    
+
     With continued use and team collaboration:
+
     - Comprehensive understanding of your product ecosystem
     - Nuanced grasp of edge cases and exceptions
     - Predictive insights about user needs
     - Anticipation of design requirements
-    
+
     **Memory strength:** 95% - Near-human product understanding
   </Step>
 </Steps>
@@ -188,37 +188,38 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
 <AccordionGroup>
   <Accordion title="SaaS Dashboard Design">
     **Memory Context:**
+
     - Product: B2B analytics platform
     - Users: Marketing managers (non-technical)
     - Key insight: Users need quick scanning, not deep analysis
-    
+
     **Month 1 Design:** Standard dashboard with detailed charts
     **Month 6 Design:** Scannable cards with key metrics highlighted, drill-down on demand
-    
+
     **Why the difference:** Figr learned that users prefer overview → detail pattern from usage analytics and user feedback
   </Accordion>
-  
   <Accordion title="E-commerce Mobile Flow">
     **Memory Context:**
+
     - Product: Fashion e-commerce app
     - Users: Mobile-first, visual browsers
     - Key insight: Purchase decisions driven by social proof
-    
+
     **Initial Design:** Product page with standard description
     **Evolved Design:** Social proof prominent (reviews, photos), purchase path streamlined
-    
+
     **Learning source:** User session recordings showing how customers actually browse and buy
   </Accordion>
-  
   <Accordion title="Enterprise Admin Panel">
     **Memory Context:**
+
     - Product: HR management system
     - Users: HR administrators (expert users)
     - Key insight: Efficiency over simplicity
-    
+
     **Early Design:** Simplified interface with guided workflows
     **Mature Design:** Information-dense layout with keyboard shortcuts and bulk actions
-    
+
     **Memory evolution:** Learned that expert users value speed over hand-holding
   </Accordion>
 </AccordionGroup>
@@ -228,22 +229,21 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
 <Tabs>
   <Tab title="Memory Dashboard">
     **View and manage what Figr knows:**
-    
+
     <Frame>
-      <img src="/images/memory-dashboard.png" alt="Figr memory dashboard showing stored knowledge categories and strength indicators" />
+      ![Figr memory dashboard showing stored knowledge categories and strength indicators](/images/memory-dashboard.png)
     </Frame>
-    
     **Memory categories:**
+
     - **Design System** (95% complete)
-    - **User Research** (78% complete)  
+    - **User Research** (78% complete)
     - **Product Context** (89% complete)
     - **Technical Constraints** (67% complete)
     - **Brand Guidelines** (92% complete)
   </Tab>
-  
   <Tab title="Adding Context">
     **Continuously improve memory:**
-    
+
     <CardGroup cols={2}>
       <Card title="Upload New Assets" icon="upload">
         - Updated design tokens
@@ -251,7 +251,6 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
         - Fresh analytics data
         - Additional product screenshots
       </Card>
-      
       <Card title="Provide Feedback" icon="message-square">
         - Correct design suggestions
         - Explain design decisions
@@ -260,39 +259,40 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
       </Card>
     </CardGroup>
   </Tab>
-  
   <Tab title="Memory Sharing">
     **Team memory synchronization:**
-    
+
     When team members contribute:
+
     - Individual knowledge becomes shared understanding
     - Different perspectives enrich product context
     - Collective wisdom improves design quality
     - Onboarding new team members preserves knowledge
-    
-    <Callout type="tip">
-    **Pro tip:** Encourage all team members to add their unique insights. A PM's user understanding + designer's interaction expertise + engineer's technical knowledge = comprehensive product memory.
-    </Callout>
+
+    <tip>
+      **Pro tip:** Encourage all team members to add their unique insights. A PM's user understanding + designer's interaction expertise + engineer's technical knowledge = comprehensive product memory.
+    </tip>
   </Tab>
 </Tabs>
 
 ## Memory Security & Privacy
 
-<Callout type="info">
-**Your data, your control:** Figr's memory system is designed with enterprise-grade security and complete data ownership.
-</Callout>
+<info>
+  **Your data, your control:** Figr's memory system is designed with enterprise-grade security and complete data ownership.
+</info>
 
 <AccordionGroup>
   <Accordion title="Data Ownership">
     **You own all memory data:**
+
     - Export complete memory snapshot anytime
-    - Delete specific memory components  
+    - Delete specific memory components
     - Transfer memory between accounts
     - Maintain control over sensitive information
   </Accordion>
-  
   <Accordion title="Privacy Controls">
     **Granular privacy settings:**
+
     ```
     Memory Component: Design System
     Sharing: Team only
@@ -304,9 +304,9 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
     Sharing: Full team access
     ```
   </Accordion>
-  
   <Accordion title="Enterprise Features">
     **For organizations with strict requirements:**
+
     - On-premise memory storage
     - Custom retention policies
     - Audit logs for memory access
@@ -319,24 +319,27 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
 <CardGroup cols={2}>
   <Card title="Memory Seems Incomplete" icon="alert-triangle">
     **Symptoms:**
+
     - Designs don't match your product style
     - Missing key constraints or requirements
     - Generic outputs despite uploaded context
-    
+
     **Solutions:**
+
     - Check memory dashboard completeness
     - Upload additional reference materials
     - Provide more detailed product walkthroughs
     - Use feedback system to correct misunderstandings
   </Card>
-  
   <Card title="Conflicting Information" icon="x-circle">
     **Symptoms:**
+
     - Inconsistent design suggestions
     - Figr seems confused about requirements
     - Mixing patterns from different contexts
-    
+
     **Solutions:**
+
     - Review uploaded materials for conflicts
     - Clarify which guidelines take priority
     - Update outdated context information
@@ -346,12 +349,12 @@ Figr's memory system is what makes product-aware design possible. Unlike other A
 
 ---
 
-<Callout type="success">
-**Memory mastery unlocked:** You now understand how Figr builds and maintains deep product knowledge that improves every design.
-</Callout>
+<success>
+  **Memory mastery unlocked:** You now understand how Figr builds and maintains deep product knowledge that improves every design.
+</success>
 
 <Card title="Learn About Memory Persistence" icon="save">
   Discover how your assets and context are retained and managed across projects and time.
-  
+
   [Assets & Retention →](/designing/memory/assets-retention)
 </Card>

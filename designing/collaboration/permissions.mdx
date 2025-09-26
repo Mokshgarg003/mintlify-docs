@@ -2,27 +2,28 @@
 title: "Permissions"
 description: "Configure detailed permission systems for team roles, project access, and collaborative workflows in Figr."
 icon: "shield"
+sidebarTitle: "Permissions"
 ---
 
 # Permissions Management
 
 Set up comprehensive permission systems that align with your team structure and project requirements. Control who can access, edit, and share designs while maintaining security and workflow efficiency.
 
-<Callout type="shield">
-**Security by design:** Granular permissions that scale from small teams to enterprise organizations, ensuring the right people have the right access at the right time.
-</Callout>
+<shield>
+  **Security by design:** Granular permissions that scale from small teams to enterprise organizations, ensuring the right people have the right access at the right time.
+</shield>
 
 ## Permission Hierarchy
 
 <Steps>
   <Step title="Organization Level">
     **Top-level access control:**
-    
+
     <Frame>
-      <img src="/images/permission-hierarchy.png" alt="Diagram showing permission hierarchy from organization to individual project level" />
+      ![Diagram showing permission hierarchy from organization to individual project level](/images/permission-hierarchy.png)
     </Frame>
-    
     **Organization permissions:**
+
     ```yaml
     Owner permissions:
     - Full organization control
@@ -46,10 +47,9 @@ Set up comprehensive permission systems that align with your team structure and 
     - Limited administrative tasks
     ```
   </Step>
-  
   <Step title="Team Level">
     **Department and group access control:**
-    
+
     <Tabs>
       <Tab title="Design Team">
         ```yaml
@@ -84,7 +84,6 @@ Set up comprehensive permission systems that align with your team structure and 
         - Mentorship program access
         ```
       </Tab>
-      
       <Tab title="Product Team">
         ```yaml
         Product team integration:
@@ -111,7 +110,6 @@ Set up comprehensive permission systems that align with your team structure and 
         - Compliance verification
         ```
       </Tab>
-      
       <Tab title="Engineering Team">
         ```yaml
         Development team access:
@@ -140,10 +138,9 @@ Set up comprehensive permission systems that align with your team structure and 
       </Tab>
     </Tabs>
   </Step>
-  
   <Step title="Project Level">
     **Granular project access control:**
-    
+
     <AccordionGroup>
       <Accordion title="Project Roles">
         ```yaml
@@ -192,7 +189,6 @@ Set up comprehensive permission systems that align with your team structure and 
         - Progress monitoring
         ```
       </Accordion>
-      
       <Accordion title="Content Permissions">
         ```yaml
         Content-specific access:
@@ -235,19 +231,20 @@ Set up comprehensive permission systems that align with your team structure and 
 <Tabs>
   <Tab title="Conditional Permissions">
     **Context-aware access control:**
-    
+
     <CardGroup cols={2}>
       <Card title="Time-Based Access" icon="clock">
         **Temporal permission control:**
+
         - Business hours restrictions
         - Project phase limitations
         - Deadline-driven access
         - Seasonal adjustments
         - Emergency override protocols
       </Card>
-      
       <Card title="Location-Based Access" icon="map-pin">
         **Geographic permission control:**
+
         - Office network requirements
         - Regional access restrictions
         - Remote work policies
@@ -255,8 +252,8 @@ Set up comprehensive permission systems that align with your team structure and 
         - Compliance zone enforcement
       </Card>
     </CardGroup>
-    
     **Conditional access examples:**
+
     ```yaml
     Project phase access:
     Discovery phase: Broad team access
@@ -273,15 +270,14 @@ Set up comprehensive permission systems that align with your team structure and 
     Legal review: Compliance team access
     ```
   </Tab>
-  
   <Tab title="Dynamic Permissions">
     **Automated permission adjustments:**
-    
+
     <Frame>
-      <img src="/images/dynamic-permissions.png" alt="Interface showing dynamic permission rules and automated adjustments" />
+      ![Interface showing dynamic permission rules and automated adjustments](/images/dynamic-permissions.png)
     </Frame>
-    
     **Automation triggers:**
+
     ```yaml
     Project lifecycle automation:
     - Automatic role assignments
@@ -305,10 +301,9 @@ Set up comprehensive permission systems that align with your team structure and 
     - External tool synchronization
     ```
   </Tab>
-  
   <Tab title="Permission Templates">
     **Standardized permission sets:**
-    
+
     <AccordionGroup>
       <Accordion title="Role-Based Templates">
         ```yaml
@@ -336,7 +331,6 @@ Set up comprehensive permission systems that align with your team structure and 
         - Time-bounded access
         ```
       </Accordion>
-      
       <Accordion title="Project Type Templates">
         ```yaml
         Project-specific permission sets:
@@ -372,7 +366,7 @@ Set up comprehensive permission systems that align with your team structure and 
 <Steps>
   <Step title="User Onboarding">
     **Streamlined permission assignment:**
-    
+
     <Tabs>
       <Tab title="Automated Assignment">
         ```yaml
@@ -393,7 +387,6 @@ Set up comprehensive permission systems that align with your team structure and 
         - Training requirement integration
         ```
       </Tab>
-      
       <Tab title="Manual Verification">
         ```yaml
         Human oversight process:
@@ -415,22 +408,22 @@ Set up comprehensive permission systems that align with your team structure and 
       </Tab>
     </Tabs>
   </Step>
-  
   <Step title="Permission Reviews">
     **Regular access auditing:**
-    
+
     <CardGroup cols={2}>
       <Card title="Automated Reviews" icon="robot">
         **Systematic permission auditing:**
+
         - Quarterly access reviews
         - Unused permission detection
         - Over-privileged user identification
         - Compliance violation flagging
         - Risk assessment automation
       </Card>
-      
       <Card title="Manual Reviews" icon="eye">
         **Human-driven validation:**
+
         - Manager-led team reviews
         - Project-based access audits
         - Security team assessments
@@ -439,10 +432,9 @@ Set up comprehensive permission systems that align with your team structure and 
       </Card>
     </CardGroup>
   </Step>
-  
   <Step title="Permission Changes">
     **Managed access modifications:**
-    
+
     <AccordionGroup>
       <Accordion title="Elevation Requests">
         ```yaml
@@ -463,7 +455,6 @@ Set up comprehensive permission systems that align with your team structure and 
         - Implementation scheduling
         ```
       </Accordion>
-      
       <Accordion title="Access Revocation">
         ```yaml
         Permission removal triggers:
@@ -492,12 +483,12 @@ Set up comprehensive permission systems that align with your team structure and 
 <Tabs>
   <Tab title="Enterprise Security">
     **Advanced security features:**
-    
+
     <Frame>
-      <img src="/images/enterprise-security.png" alt="Enterprise security dashboard showing access controls, audit logs, and compliance metrics" />
+      ![Enterprise security dashboard showing access controls, audit logs, and compliance metrics](/images/enterprise-security.png)
     </Frame>
-    
     **Security measures:**
+
     ```yaml
     Access control:
     - Multi-factor authentication
@@ -521,10 +512,9 @@ Set up comprehensive permission systems that align with your team structure and 
     - Retention policy enforcement
     ```
   </Tab>
-  
   <Tab title="Compliance Frameworks">
     **Industry standard compliance:**
-    
+
     <AccordionGroup>
       <Accordion title="SOC 2 Compliance">
         ```yaml
@@ -543,7 +533,6 @@ Set up comprehensive permission systems that align with your team structure and 
         - Risk assessment frameworks
         ```
       </Accordion>
-      
       <Accordion title="GDPR Compliance">
         ```yaml
         GDPR requirement fulfillment:
@@ -561,7 +550,6 @@ Set up comprehensive permission systems that align with your team structure and 
         - Security of processing measures
         ```
       </Accordion>
-      
       <Accordion title="Industry-Specific">
         ```yaml
         Sector compliance:
@@ -597,17 +585,16 @@ Set up comprehensive permission systems that align with your team structure and 
 <CardGroup cols={2}>
   <Card title="Usage Analytics" icon="chart-bar">
     **Permission utilization insights:**
-    
+
     - Access frequency patterns
     - Permission utilization rates
     - User activity correlations
     - Resource usage optimization
     - Cost-benefit analysis
   </Card>
-  
   <Card title="Security Metrics" icon="shield-check">
     **Security posture monitoring:**
-    
+
     - Permission violation tracking
     - Access anomaly detection
     - Compliance score monitoring
@@ -621,7 +608,7 @@ Set up comprehensive permission systems that align with your team structure and 
 <Steps>
   <Step title="Principle of Least Privilege">
     **Minimal necessary access:**
-    
+
     ```
     ✅ Grant minimum required permissions
     ✅ Regular permission reviews and cleanup
@@ -630,10 +617,9 @@ Set up comprehensive permission systems that align with your team structure and 
     ✅ Clear documentation of permission rationale
     ```
   </Step>
-  
   <Step title="Permission Governance">
     **Systematic permission management:**
-    
+
     ```
     ✅ Clear permission policies and procedures
     ✅ Regular training on permission best practices
@@ -642,10 +628,9 @@ Set up comprehensive permission systems that align with your team structure and 
     ✅ Documentation of permission decisions
     ```
   </Step>
-  
   <Step title="User Experience Balance">
     **Security without friction:**
-    
+
     ```
     ✅ Intuitive permission request processes
     ✅ Clear communication of access limitations
@@ -660,6 +645,6 @@ Set up comprehensive permission systems that align with your team structure and 
 
 <Card title="Enable Real-Time Collaboration" icon="users-cog">
   Learn how to set up live co-editing and real-time collaboration features for seamless teamwork.
-  
+
   [Co-Editing Live →](/designing/collaboration/co-editing-live)
 </Card>

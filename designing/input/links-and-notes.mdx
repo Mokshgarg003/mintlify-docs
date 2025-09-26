@@ -2,22 +2,23 @@
 title: "Links & Notes"
 description: "Add contextual links and notes to provide Figr with comprehensive product understanding and design guidance."
 icon: "link"
+sidebarTitle: "Links & Notes"
 ---
 
 # Links & Notes
 
 Enhance Figr's product understanding with contextual links and detailed notes. Share references, document decisions, and provide ongoing guidance that shapes every design.
 
-<Callout type="info">
-**Contextual intelligence:** Links and notes create a rich knowledge base that Figr references when making design decisions, ensuring consistency and context-awareness.
-</Callout>
+<info>
+  **Contextual intelligence:** Links and notes create a rich knowledge base that Figr references when making design decisions, ensuring consistency and context-awareness.
+</info>
 
 ## Types of Contextual Information
 
 <Tabs>
   <Tab title="Reference Links">
     **External resources that inform design:**
-    
+
     <CardGroup cols={2}>
       <Card title="Product References" icon="external-link">
         - Live product URLs (staging/production)
@@ -26,7 +27,6 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
         - Design inspiration sources
         - Documentation sites
       </Card>
-      
       <Card title="Research Resources" icon="search">
         - User testing videos
         - Analytics dashboards
@@ -36,10 +36,9 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
       </Card>
     </CardGroup>
   </Tab>
-  
   <Tab title="Design Notes">
     **Contextual guidance and decisions:**
-    
+
     ```
     Decision Notes:
     "We use blue for primary actions because user testing 
@@ -54,10 +53,9 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
     based on eye-tracking studies"
     ```
   </Tab>
-  
   <Tab title="Team Knowledge">
     **Institutional memory and learnings:**
-    
+
     - Design rationale and reasoning
     - A/B test results and insights
     - User feedback themes
@@ -71,7 +69,7 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
 <Steps>
   <Step title="Link Categories">
     **Organize references by purpose:**
-    
+
     <AccordionGroup>
       <Accordion title="Product Context">
         ```
@@ -81,7 +79,6 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
         🔗 Component library: https://storybook.yourproduct.com
         ```
       </Accordion>
-      
       <Accordion title="Research & Analytics">
         ```
         📊 Google Analytics: dashboard.google.com/analytics
@@ -90,7 +87,6 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
         📈 Mixpanel dashboard: mixpanel.com/project/insights
         ```
       </Accordion>
-      
       <Accordion title="Inspiration & Benchmarks">
         ```
         🎨 Design inspiration: dribbble.com/shots/saved
@@ -101,15 +97,14 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
       </Accordion>
     </AccordionGroup>
   </Step>
-  
   <Step title="Contextual Notes">
     **Add detailed context and reasoning:**
-    
+
     <Frame>
-      <img src="/images/contextual-notes.png" alt="Interface for adding contextual notes with rich text formatting" />
+      ![Interface for adding contextual notes with rich text formatting](/images/contextual-notes.png)
     </Frame>
-    
     **Note types:**
+
     ```
     📝 Design Decisions: Why certain choices were made
     ⚠️ Constraints: Technical or business limitations
@@ -118,10 +113,9 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
     🔄 Iterations: What was tried and why it changed
     ```
   </Step>
-  
   <Step title="Smart Tagging">
     **Automatic context organization:**
-    
+
     ```yaml
     Auto-tags based on content:
     - #accessibility (WCAG, screen readers)
@@ -139,24 +133,23 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
 <CardGroup cols={2}>
   <Card title="Effective Notes" icon="pencil">
     **Write notes that inform future designs:**
-    
+
     ✅ **Specific and actionable**
     "Users expect save button top-right in admin interfaces"
-    
+
     ✅ **Include reasoning**
     "Single-column mobile layout because 68% of users are one-handed"
-    
+
     ✅ **Reference data**
     "Blue CTAs convert 15% better than green (A/B test July 2024)"
   </Card>
-  
   <Card title="Context Hierarchy" icon="list">
     **Organize information by importance:**
-    
+
     🔴 **Critical constraints** (must follow)
     🟡 **Strong preferences** (should follow)
     🟢 **Nice to have** (consider when possible)
-    
+
     **Example:**
     🔴 "WCAG AA compliance required for government contract"
     🟡 "Users prefer minimal form fields"
@@ -169,7 +162,7 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
 <Tabs>
   <Tab title="Automatic Analysis">
     **Figr analyzes linked content:**
-    
+
     ```
     When you add: https://competitor.com/dashboard
     
@@ -185,10 +178,9 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
     with collapsible sections - consider for enterprise users"
     ```
   </Tab>
-  
   <Tab title="Content Monitoring">
     **Track changes in referenced content:**
-    
+
     <CardGroup cols={2}>
       <Card title="Update Notifications" icon="bell">
         - Competitor feature changes
@@ -196,7 +188,6 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
         - Documentation changes
         - Research report updates
       </Card>
-      
       <Card title="Relevance Scoring" icon="star">
         - High relevance: Direct feature comparisons
         - Medium relevance: Similar user flows
@@ -205,10 +196,9 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
       </Card>
     </CardGroup>
   </Tab>
-  
   <Tab title="Smart Suggestions">
     **Figr suggests relevant links:**
-    
+
     ```
     When designing checkout flow:
     "Consider reviewing the Stripe checkout pattern you bookmarked"
@@ -227,7 +217,7 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
 <Steps>
   <Step title="Team Contributions">
     **Everyone adds their expertise:**
-    
+
     ```yaml
     Product Manager notes:
     - Business requirements and constraints
@@ -245,24 +235,22 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
     - Implementation complexity
     ```
   </Step>
-  
   <Step title="Note Threading">
     **Connected conversations:**
-    
+
     <Frame>
-      <img src="/images/note-threading.png" alt="Interface showing threaded notes and discussions around design decisions" />
+      ![Interface showing threaded notes and discussions around design decisions](/images/note-threading.png)
     </Frame>
-    
     **Discussion flow:**
+
     - Initial note with context
     - Team member responses and questions
     - Resolution and final decision
     - Reference in future designs
   </Step>
-  
   <Step title="Knowledge Building">
     **Cumulative team intelligence:**
-    
+
     ```
     Month 1: Basic product context
     Month 3: Pattern recognition and preferences
@@ -277,6 +265,7 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
 <AccordionGroup>
   <Accordion title="Smart Linking">
     **Automatic relationship detection:**
+
     ```
     When you mention "mobile navigation" in notes,
     Figr suggests relevant:
@@ -286,9 +275,9 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
     - Accessibility mobile standards
     ```
   </Accordion>
-  
   <Accordion title="Note Analytics">
     **Understand knowledge usage:**
+
     ```
     Most referenced notes:
     1. Mobile interaction guidelines
@@ -300,9 +289,9 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
     Suggests mobile-first design approach
     ```
   </Accordion>
-  
   <Accordion title="Export & Sharing">
     **Transform notes into documentation:**
+
     ```
     Export options:
     ✅ Design decision log (PDF)
@@ -315,13 +304,14 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
 
 ## Integration with Design Process
 
-<Callout type="success">
-**Contextual design:** Notes and links become active participants in the design process, not just static documentation.
-</Callout>
+<success>
+  **Contextual design:** Notes and links become active participants in the design process, not just static documentation.
+</success>
 
 <Tabs>
   <Tab title="Design Generation">
     **Notes influence AI suggestions:**
+
     ```
     Note: "Enterprise users need bulk actions"
     Design output: Tables include checkboxes and bulk operation toolbar
@@ -330,9 +320,9 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
     Design output: Thumb-friendly navigation with clear touch targets
     ```
   </Tab>
-  
   <Tab title="Validation">
     **Automatic compliance checking:**
+
     ```
     Constraint note: "Buttons must be minimum 44px for accessibility"
     Figr check: ✅ All buttons meet minimum size requirement
@@ -341,9 +331,9 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
     Figr check: ✅ Colors match brand palette
     ```
   </Tab>
-  
   <Tab title="Iteration">
     **Context-aware improvements:**
+
     ```
     Previous note: "Users confused by icon-only navigation"
     Design suggestion: Add text labels to navigation icons
@@ -358,6 +348,6 @@ Enhance Figr's product understanding with contextual links and detailed notes. S
 
 <Card title="Explore Screen Sharing" icon="screen-share">
   Learn how to share your screen with Figr for the deepest product understanding possible.
-  
+
   [Screen Sharing →](/designing/input/screen-sharing)
 </Card>

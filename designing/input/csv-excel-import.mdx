@@ -1,37 +1,39 @@
 ---
-title: "CSV & Excel Import"
+title: "CSV Import"
 description: "Import structured data to create realistic, data-driven designs with actual content and user scenarios."
 icon: "table"
+'og:image': "CSV Import"
 ---
 
 # CSV & Excel Import
 
 Real data creates real designs. Import your actual spreadsheets, user data, and analytics to help Figr understand your content structure and create designs with realistic, representative data.
 
-<Callout type="tip">
-**Data-driven design:** Designs created with real data look more convincing, reveal layout challenges early, and help stakeholders envision the final product accurately.
-</Callout>
+<tip>
+  **Data-driven design:** Designs created with real data look more convincing, reveal layout challenges early, and help stakeholders envision the final product accurately.
+</tip>
 
 ## Why Real Data Matters
 
 <CardGroup cols={2}>
   <Card title="Before: Lorem Ipsum Design" icon="file-text">
     **Generic placeholder content leads to:**
+
     - Unrealistic layout assumptions
     - Missing edge cases (long names, empty states)
     - Stakeholder disconnect from reality
     - Implementation surprises
-    
+
     **Example:** "John Doe" fits nicely, but "Alexander von Habsburg-Lothringen III" breaks your layout
   </Card>
-  
   <Card title="After: Real Data Design" icon="database">
     **Actual content reveals:**
+
     - True space requirements
     - Edge cases and data variations
-    - Realistic user scenarios  
+    - Realistic user scenarios
     - Implementation requirements
-    
+
     **Example:** Real customer names show you need truncation patterns and tooltip expansions
   </Card>
 </CardGroup>
@@ -41,7 +43,7 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
 <Tabs>
   <Tab title="Spreadsheet Files">
     **Direct file uploads:**
-    
+
     ```
     ✅ CSV files (.csv)
     ✅ Excel files (.xlsx, .xls)
@@ -49,20 +51,20 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
     ✅ TSV files (.tsv)
     ✅ Apple Numbers (exported as CSV/Excel)
     ```
-    
+
     **File size limits:**
+
     - Up to 100MB per file
     - Up to 1 million rows
     - Automatic compression for large datasets
-    
+
     <Frame>
-      <img src="/images/csv-upload.png" alt="CSV upload interface showing drag and drop area with file format support" />
+      ![CSV upload interface showing drag and drop area with file format support](/images/csv-upload.png)
     </Frame>
   </Tab>
-  
   <Tab title="Cloud Integration">
     **Connect live data sources:**
-    
+
     <AccordionGroup>
       <Accordion title="Google Sheets">
         ```
@@ -72,7 +74,6 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         Use case: Live dashboards, dynamic content
         ```
       </Accordion>
-      
       <Accordion title="Airtable">
         ```
         Connection: API key authentication
@@ -81,7 +82,6 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         Use case: CRM data, project management
         ```
       </Accordion>
-      
       <Accordion title="Notion Databases">
         ```
         Connection: Integration token
@@ -92,10 +92,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
       </Accordion>
     </AccordionGroup>
   </Tab>
-  
   <Tab title="Database Exports">
     **Common database export formats:**
-    
+
     ```
     Analytics Data:
     ✅ Google Analytics exports
@@ -123,24 +122,24 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
 <Steps>
   <Step title="Upload Your Data">
     **Choose your import method:**
-    
+
     <Frame>
-      <img src="/images/data-import-options.png" alt="Data import interface showing different upload methods and connection options" />
+      ![Data import interface showing different upload methods and connection options](/images/data-import-options.png)
     </Frame>
-    
     **Quick upload:**
+
     - Drag and drop CSV/Excel files
     - Paste Google Sheets share link
     - Connect cloud data source
     - Import from URL endpoint
   </Step>
-  
   <Step title="Data Preview & Validation">
     **Figr analyzes your data structure:**
-    
+
     <Tabs>
       <Tab title="Column Detection">
         **Automatic identification:**
+
         ```
         Detected columns:
         📧 email_address (Email type)
@@ -151,9 +150,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         🏷️ user_type (Category)
         ```
       </Tab>
-      
       <Tab title="Data Quality Check">
         **Issues and recommendations:**
+
         ```
         ✅ 1,247 valid rows detected
         ⚠️ 23 rows with missing email addresses
@@ -162,9 +161,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         ⚠️ Some currency values missing $ symbol
         ```
       </Tab>
-      
       <Tab title="Sample Data">
         **Representative examples:**
+
         ```
         Sample entries (showing data variety):
         
@@ -176,13 +175,13 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
       </Tab>
     </Tabs>
   </Step>
-  
   <Step title="Map Data to Design Context">
     **Tell Figr how to use your data:**
-    
+
     <AccordionGroup>
       <Accordion title="Design Context Mapping">
         **Map columns to UI elements:**
+
         ```
         full_name → User profile displays, table headers
         email_address → Contact information, login references
@@ -191,9 +190,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         signup_date → Timeline displays, cohort analysis
         ```
       </Accordion>
-      
       <Accordion title="Scenario Creation">
         **Define realistic usage scenarios:**
+
         ```
         Scenario 1: Dashboard for high-usage enterprise customer
         Data filter: user_type = "Enterprise" AND usage_score > 80
@@ -205,9 +204,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         Data filter: Mixed sample across all user types
         ```
       </Accordion>
-      
       <Accordion title="Edge Case Identification">
         **Figr identifies potential design challenges:**
+
         ```
         Long names: "Dr. Alexander Hamilton-Richardson III"
         Special characters: "José María Fernández-O'Brien"
@@ -218,10 +217,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
       </Accordion>
     </AccordionGroup>
   </Step>
-  
   <Step title="Data Integration Confirmation">
     **Review how data will be used:**
-    
+
     ```yaml
     Data Usage Summary:
     
@@ -244,18 +242,19 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
 <Tabs>
   <Tab title="Tables & Lists">
     **Realistic data tables:**
-    
+
     <Frame>
-      <img src="/images/data-table-design.png" alt="Table design showing real customer data with varied name lengths and content" />
+      ![Table design showing real customer data with varied name lengths and content](/images/data-table-design.png)
     </Frame>
-    
     **What Figr considers:**
+
     - Column width requirements for real content
     - Sorting and filtering needs based on data types
     - Pagination requirements for large datasets
     - Responsive behavior with actual content lengths
-    
+
     **Example improvements:**
+
     ```
     Generic design: Equal column widths
     Data-driven design: Email column wider, status column narrow
@@ -264,21 +263,21 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
     Data-driven design: "Show 25 items" (based on typical usage)
     ```
   </Tab>
-  
   <Tab title="Dashboards & Analytics">
     **Real metrics and KPIs:**
-    
+
     <CardGroup cols={2}>
       <Card title="Metric Visualization" icon="chart-bar">
         **Based on actual data ranges:**
+
         - Chart scales reflect real value ranges
         - Trend lines show actual patterns
         - Anomalies and outliers included
         - Seasonal patterns represented
       </Card>
-      
       <Card title="Performance Indicators" icon="gauge">
         **Realistic KPI displays:**
+
         - Progress bars with actual percentages
         - Status indicators based on real thresholds
         - Alert states triggered by actual conditions
@@ -286,10 +285,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
       </Card>
     </CardGroup>
   </Tab>
-  
   <Tab title="User Profiles & Cards">
     **Varied user representations:**
-    
+
     ```
     Real user profile variations:
     
@@ -308,20 +306,21 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
     Location: Barcelona, Spain
     Language: Español
     ```
-    
+
     **Design considerations revealed:**
+
     - Name truncation strategies
     - Multi-language support needs
     - Profile photo fallback patterns
     - Contact information display variations
   </Tab>
-  
   <Tab title="Forms & Input Fields">
     **Realistic form validation:**
-    
+
     <AccordionGroup>
       <Accordion title="Input Field Sizing">
         **Based on actual data patterns:**
+
         ```
         Company name field: 15-85 characters (real range)
         Email field: 8-45 characters (typical range)
@@ -329,9 +328,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         Address field: Country-specific variations
         ```
       </Accordion>
-      
       <Accordion title="Validation Rules">
         **Informed by real data issues:**
+
         ```
         Email validation: Catches actual common mistakes
         Name validation: Handles international characters
@@ -339,9 +338,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         Date validation: Considers realistic date ranges
         ```
       </Accordion>
-      
       <Accordion title="Auto-complete Suggestions">
         **Based on existing data patterns:**
+
         ```
         Company suggestions: From existing customer list
         Location suggestions: Based on user geography
@@ -354,14 +353,14 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
 
 ## Privacy & Security
 
-<Callout type="shield">
-**Data protection:** Figr treats your data with enterprise-grade security and gives you complete control over privacy settings.
-</Callout>
+<shield>
+  **Data protection:** Figr treats your data with enterprise-grade security and gives you complete control over privacy settings.
+</shield>
 
 <Steps>
   <Step title="Data Anonymization">
     **Automatic privacy protection:**
-    
+
     <Tabs>
       <Tab title="Personal Information">
         ```
@@ -375,7 +374,6 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         Anonymized: [Address]
         ```
       </Tab>
-      
       <Tab title="Sensitive Data">
         ```
         Financial data: $XX,XXX (preserves magnitude)
@@ -383,7 +381,6 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         Medical info: [Protected Health Information]
         ```
       </Tab>
-      
       <Tab title="Custom Rules">
         ```yaml
         Anonymization Rules:
@@ -397,10 +394,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
       </Tab>
     </Tabs>
   </Step>
-  
   <Step title="Access Controls">
     **Granular data permissions:**
-    
+
     ```yaml
     Team Member Access:
     
@@ -410,10 +406,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
     Stakeholders: Aggregated metrics only
     ```
   </Step>
-  
   <Step title="Data Retention">
     **Configurable retention policies:**
-    
+
     ```
     Import Data Retention:
     - Design context: Permanent (anonymized)
@@ -429,12 +424,12 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
 <Tabs>
   <Tab title="Data Relationships">
     **Connect related datasets:**
-    
+
     <Frame>
-      <img src="/images/data-relationships.png" alt="Interface showing how to connect customer data with order data and analytics" />
+      ![Interface showing how to connect customer data with order data and analytics](/images/data-relationships.png)
     </Frame>
-    
     **Example relationships:**
+
     ```
     Customer Data + Order History:
     - Customer profiles with purchase patterns
@@ -447,10 +442,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
     - Engagement scoring
     ```
   </Tab>
-  
   <Tab title="Dynamic Data Updates">
     **Keep designs current with live data:**
-    
+
     <AccordionGroup>
       <Accordion title="Scheduled Refresh">
         ```yaml
@@ -461,7 +455,6 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         - On-demand: Campaign or event data
         ```
       </Accordion>
-      
       <Accordion title="Webhook Integration">
         ```yaml
         Trigger Events:
@@ -471,9 +464,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
         - Design iteration created
         ```
       </Accordion>
-      
       <Accordion title="Version Control">
         **Track data changes over time:**
+
         ```
         Data Version 1.0: Launch baseline (1,000 users)
         Data Version 1.1: Post-marketing campaign (1,500 users)
@@ -482,10 +475,9 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
       </Accordion>
     </AccordionGroup>
   </Tab>
-  
   <Tab title="Data Synthesis">
     **Generate additional realistic data:**
-    
+
     ```
     When your dataset is limited, Figr can:
     
@@ -506,17 +498,16 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
 <CardGroup cols={2}>
   <Card title="Data Quality" icon="shield-check">
     **Prepare quality data:**
-    
+
     ✅ **Clean data** before import (remove duplicates, fix errors)
     ✅ **Representative sample** (include edge cases and variations)
     ✅ **Current data** (recent enough to be relevant)
     ✅ **Complete records** (minimal missing values)
     ✅ **Diverse examples** (different user types, scenarios)
   </Card>
-  
   <Card title="Privacy First" icon="lock">
     **Protect sensitive information:**
-    
+
     ✅ **Remove unnecessary PII** before upload
     ✅ **Use test/demo data** when possible
     ✅ **Enable anonymization** for real data
@@ -529,6 +520,6 @@ Real data creates real designs. Import your actual spreadsheets, user data, and 
 
 <Card title="Explore Document Processing" icon="file-pdf">
   Learn how to import PDFs, design specs, and other documents to build comprehensive product context.
-  
+
   [PDF Processing →](/designing/input/pdf-processing)
 </Card>

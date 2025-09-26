@@ -1,26 +1,28 @@
 ---
 title: "Assets & Retention"
 description: "Manage how Figr stores, organizes, and retains your design assets and product knowledge over time."
-icon: "archive"
+icon: "shapes"
+sidebarTitle: "Assets & Retention"
 ---
 
 # Assets & Retention
 
 Figr's asset retention system ensures your product knowledge grows stronger over time while giving you complete control over what's stored, how long it's kept, and who can access it.
 
-<Callout type="info">
-**Smart retention:** Figr automatically manages your assets for optimal performance while respecting your data governance requirements and storage preferences.
-</Callout>
+<info>
+  **Smart retention:** Figr automatically manages your assets for optimal performance while respecting your data governance requirements and storage preferences.
+</info>
 
 ## Asset Categories
 
 <Tabs>
   <Tab title="Core Assets">
     **Permanently retained for product memory:**
-    
+
     <AccordionGroup>
       <Accordion title="Design System Components">
         **What's stored:**
+
         ```json
         {
           "designTokens": "Color palettes, typography, spacing",
@@ -29,13 +31,13 @@ Figr's asset retention system ensures your product knowledge grows stronger over
           "layoutPatterns": "Grid systems, breakpoints, containers"
         }
         ```
-        
+
         **Retention:** Permanent (until manually deleted)
         **Why:** Foundation for all future designs
       </Accordion>
-      
       <Accordion title="Product Context">
         **What's stored:**
+
         ```json
         {
           "userPersonas": "Detailed user profiles and behaviors",
@@ -44,13 +46,13 @@ Figr's asset retention system ensures your product knowledge grows stronger over
           "analytics": "Performance data and usage patterns"
         }
         ```
-        
+
         **Retention:** Permanent with version control
         **Why:** Context improves design relevance
       </Accordion>
-      
       <Accordion title="Design Decisions">
         **What's stored:**
+
         ```json
         {
           "patternRationale": "Why certain designs work",
@@ -59,49 +61,45 @@ Figr's asset retention system ensures your product knowledge grows stronger over
           "iterationHistory": "How designs evolved and why"
         }
         ```
-        
+
         **Retention:** 2 years by default (configurable)
         **Why:** Institutional knowledge and learning
       </Accordion>
     </AccordionGroup>
   </Tab>
-  
   <Tab title="Working Assets">
     **Temporary assets for active projects:**
-    
+
     <CardGroup cols={2}>
       <Card title="Draft Designs" icon="edit">
         **Content:** Work-in-progress designs, experiments, iterations
-        
+
         **Retention:** 90 days after last edit
-        
+
         **Purpose:** Collaboration and review during development
       </Card>
-      
       <Card title="Reference Materials" icon="image">
         **Content:** Screenshots, inspiration images, competitive analysis
-        
+
         **Retention:** 1 year or until project completion
-        
+
         **Purpose:** Context during design process
       </Card>
     </CardGroup>
-    
-    <Callout type="tip">
-    **Promotion to permanent:** Any working asset can be promoted to permanent storage if it becomes part of your core product knowledge.
-    </Callout>
+    <tip>
+      **Promotion to permanent:** Any working asset can be promoted to permanent storage if it becomes part of your core product knowledge.
+    </tip>
   </Tab>
-  
   <Tab title="Cached Assets">
     **Temporary performance optimization:**
-    
+
     ```
     Generated Images: 30 days
     Export Files: 7 days  
     Thumbnail Previews: 60 days
     API Responses: 24 hours
     ```
-    
+
     **Purpose:** Speed up Figr performance
     **Management:** Automatic cleanup, no user action needed
   </Tab>
@@ -112,7 +110,7 @@ Figr's asset retention system ensures your product knowledge grows stronger over
 <Steps>
   <Step title="Default Retention">
     **Out-of-the-box settings:**
-    
+
     ```yaml
     Design System Assets: Permanent
     Product Context: Permanent  
@@ -122,13 +120,12 @@ Figr's asset retention system ensures your product knowledge grows stronger over
     Reference Images: 1 year
     Export Files: 7 days
     ```
-    
+
     **Rationale:** Balances memory effectiveness with storage efficiency
   </Step>
-  
   <Step title="Custom Policies">
     **Adjust based on your needs:**
-    
+
     <Tabs>
       <Tab title="Startup/Small Team">
         ```yaml
@@ -139,10 +136,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         Reference Materials: 6 months
         Drafts: 30 days
         ```
-        
+
         **Good for:** Fast iteration, limited storage budget
       </Tab>
-      
       <Tab title="Enterprise/Regulated">
         ```yaml
         Focus: Compliance and audit trails
@@ -152,10 +148,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         User Research: 5 years
         All Changes: Audited and retained
         ```
-        
+
         **Good for:** Regulated industries, large organizations
       </Tab>
-      
       <Tab title="Agency/Consultancy">
         ```yaml
         Focus: Client data separation
@@ -164,20 +159,19 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         Cross-Client Learning: Anonymized patterns only
         Project Completion: Archive after 2 years
         ```
-        
+
         **Good for:** Multiple client projects, confidentiality
       </Tab>
     </Tabs>
   </Step>
-  
   <Step title="Automated Cleanup">
     **Smart asset management:**
-    
+
     <Frame>
-      <img src="/images/retention-timeline.png" alt="Timeline showing how different assets are retained and cleaned up automatically" />
+      ![Timeline showing how different assets are retained and cleaned up automatically](/images/retention-timeline.png)
     </Frame>
-    
     **Cleanup process:**
+
     1. **30 days before expiration:** Notification sent
     2. **7 days before expiration:** Final warning with easy extension
     3. **Expiration day:** Asset moved to recycle bin
@@ -190,7 +184,7 @@ Figr's asset retention system ensures your product knowledge grows stronger over
 <Tabs>
   <Tab title="Automatic Categorization">
     **Figr intelligently organizes your assets:**
-    
+
     <AccordionGroup>
       <Accordion title="By Asset Type">
         ```
@@ -207,7 +201,6 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         └── 📊 Analytics Data
         ```
       </Accordion>
-      
       <Accordion title="By Project Context">
         ```
         📁 Mobile App Design
@@ -221,7 +214,6 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         └── ♿ Accessibility Specs
         ```
       </Accordion>
-      
       <Accordion title="By Usage Frequency">
         ```
         ⭐ Frequently Used (quick access)
@@ -232,10 +224,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
       </Accordion>
     </AccordionGroup>
   </Tab>
-  
   <Tab title="Manual Organization">
     **Custom organization options:**
-    
+
     <CardGroup cols={2}>
       <Card title="Tags & Labels" icon="tag">
         ```
@@ -246,10 +237,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         #high-priority
         #deprecated
         ```
-        
+
         **Use for:** Custom categorization and filtering
       </Card>
-      
       <Card title="Folders & Projects" icon="folder">
         ```
         📁 Q4 Redesign
@@ -257,18 +247,16 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         📁 Accessibility Upgrade
         📁 Design System V2
         ```
-        
+
         **Use for:** Project-based organization
       </Card>
     </CardGroup>
-    
     **Smart suggestions:**
     Figr suggests tags and organization based on content analysis and usage patterns.
   </Tab>
-  
   <Tab title="Search & Discovery">
     **Find assets quickly:**
-    
+
     ```
     Search examples:
     "blue button component from Q3"
@@ -276,8 +264,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
     "accessibility patterns for forms"
     "dashboard layout with sidebar navigation"
     ```
-    
+
     **Search capabilities:**
+
     - Full-text search across all asset content
     - Visual similarity search for images
     - Semantic search for concepts and patterns
@@ -287,14 +276,14 @@ Figr's asset retention system ensures your product knowledge grows stronger over
 
 ## Data Export & Backup
 
-<Callout type="success">
-**Your data, your control:** Complete export capabilities ensure you never lose access to your product knowledge and design assets.
-</Callout>
+<success>
+  **Your data, your control:** Complete export capabilities ensure you never lose access to your product knowledge and design assets.
+</success>
 
 <Steps>
   <Step title="Individual Asset Export">
     **Export specific assets:**
-    
+
     <Tabs>
       <Tab title="Design Files">
         ```
@@ -306,7 +295,6 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         ✅ PDF (presentations)
         ```
       </Tab>
-      
       <Tab title="Code & Tokens">
         ```
         Available formats:
@@ -317,7 +305,6 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         ✅ HTML/CSS (static)
         ```
       </Tab>
-      
       <Tab title="Documentation">
         ```
         Available formats:
@@ -329,10 +316,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
       </Tab>
     </Tabs>
   </Step>
-  
   <Step title="Bulk Export">
     **Export entire knowledge base:**
-    
+
     ```yaml
     Export Package Contents:
     
@@ -351,17 +337,17 @@ Figr's asset retention system ensures your product knowledge grows stronger over
     ├── iterations/
     └── test-results.json
     ```
-    
+
     **Delivery methods:**
+
     - Direct download (ZIP file)
     - Cloud storage sync (Dropbox, Google Drive)
     - API integration (automated backups)
     - Email delivery (for small exports)
   </Step>
-  
   <Step title="Automated Backups">
     **Enterprise backup options:**
-    
+
     <CardGroup cols={2}>
       <Card title="Scheduled Exports" icon="calendar">
         ```
@@ -371,7 +357,6 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         Format: Choose optimal for your workflow
         ```
       </Card>
-      
       <Card title="Real-time Sync" icon="refresh">
         ```
         Trigger: Every asset change
@@ -389,12 +374,12 @@ Figr's asset retention system ensures your product knowledge grows stronger over
 <Tabs>
   <Tab title="Usage Monitoring">
     **Track your storage usage:**
-    
+
     <Frame>
-      <img src="/images/storage-dashboard.png" alt="Storage usage dashboard showing breakdown by asset type and growth over time" />
+      ![Storage usage dashboard showing breakdown by asset type and growth over time](/images/storage-dashboard.png)
     </Frame>
-    
     **Usage breakdown:**
+
     ```
     Design System Assets: 45% (2.1 GB)
     Product Context: 25% (1.2 GB)  
@@ -402,10 +387,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
     Working Files: 10% (480 MB)
     ```
   </Tab>
-  
   <Tab title="Optimization Suggestions">
     **Figr helps optimize storage:**
-    
+
     <AccordionGroup>
       <Accordion title="Automatic Optimizations">
         ```
@@ -415,7 +399,6 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         ✅ Optimize export files for size
         ```
       </Accordion>
-      
       <Accordion title="Manual Optimizations">
         ```
         📊 Review large assets (>50MB each)
@@ -424,9 +407,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
         🔄 Update retention policies for old projects
         ```
       </Accordion>
-      
       <Accordion title="Smart Suggestions">
         Figr analyzes your usage patterns and suggests:
+
         - Which assets can be safely archived
         - Duplicate assets that can be consolidated
         - Outdated materials that may need updating
@@ -434,10 +417,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
       </Accordion>
     </AccordionGroup>
   </Tab>
-  
   <Tab title="Enterprise Storage">
     **Advanced storage options:**
-    
+
     ```yaml
     On-Premise Storage:
     - Host Figr memory on your infrastructure
@@ -456,14 +438,14 @@ Figr's asset retention system ensures your product knowledge grows stronger over
 
 ## Compliance & Governance
 
-<Callout type="shield">
-**Enterprise-grade compliance:** Figr's retention system supports the most stringent data governance requirements while maintaining design workflow efficiency.
-</Callout>
+<shield>
+  **Enterprise-grade compliance:** Figr's retention system supports the most stringent data governance requirements while maintaining design workflow efficiency.
+</shield>
 
 <AccordionGroup>
   <Accordion title="GDPR Compliance">
     **European data protection compliance:**
-    
+
     ```
     ✅ Right to access: Export all user-related data
     ✅ Right to rectification: Edit or correct stored data
@@ -473,10 +455,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
     ✅ Consent management: Clear data usage agreements
     ```
   </Accordion>
-  
   <Accordion title="Industry-Specific Requirements">
     **Specialized compliance support:**
-    
+
     ```yaml
     Healthcare (HIPAA):
     - Encrypted storage at rest and in transit
@@ -497,10 +478,9 @@ Figr's asset retention system ensures your product knowledge grows stronger over
     - Incident response procedures
     ```
   </Accordion>
-  
   <Accordion title="Custom Governance">
     **Tailor retention to your policies:**
-    
+
     ```
     Policy Examples:
     
@@ -518,12 +498,12 @@ Figr's asset retention system ensures your product knowledge grows stronger over
 
 ---
 
-<Callout type="success">
-**Asset management mastered:** You now understand how Figr intelligently manages your design assets and product knowledge for optimal performance and compliance.
-</Callout>
+<success>
+  **Asset management mastered:** You now understand how Figr intelligently manages your design assets and product knowledge for optimal performance and compliance.
+</success>
 
 <Card title="Explore Input Methods" icon="upload">
   Learn how to efficiently add context and assets to Figr through various input methods.
-  
+
   [Screenshots & Images →](/designing/input/screenshots-images)
 </Card>
