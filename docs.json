@@ -122,22 +122,6 @@
                 ]
               }
             ]
-          },
-          {
-            "group": "Credits & Billing",
-            "pages": [
-              "account/credits-usage",
-              "account/team-management"
-            ]
-          },
-          {
-            "group": "Security & Legal",
-            "pages": [
-              "security/terms",
-              "legal/privacy",
-              "security/data-protection", 
-              "legal/Enterprise"
-            ]
           }
         ]
       },
