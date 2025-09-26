@@ -199,7 +199,7 @@
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
+      "label": "Design with Figr AI ↗",
       "href": "https://app.figr.design"
     }
   },
@@ -217,9 +217,9 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/figrdesign",
-      "github": "https://github.com/figrdesign",
-      "linkedin": "https://linkedin.com/company/figrdesign"
+      "x": "https://x.com/FigrDesign",
+      "instagram": "https://www.instagram.com/designwithfigr",
+      "linkedin": "https://in.linkedin.com/company/figrdesign"
     }
   },
   "seo": {
