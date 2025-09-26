@@ -1,5 +1,476 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Draft PRDs"
+description: "Generate comprehensive product requirement documents from user insights and competitive analysis."
+icon: "file-text"
 ---
 
+# Draft PRDs
+
+Transform research insights into structured product requirements. Figr helps you create comprehensive PRDs that bridge user needs, business goals, and technical constraints.
+
+<Callout type="success">
+**From insights to action:** Convert scattered research findings into clear, actionable product requirements that guide development and design decisions.
+</Callout>
+
+## PRD Generation Process
+
+<Steps>
+  <Step title="Insight Synthesis">
+    **Consolidate research findings:**
+    
+    <Frame>
+      <img src="/images/insight-synthesis.png" alt="Dashboard showing user research, competitive analysis, and business goals being consolidated" />
+    </Frame>
+    
+    **Input sources:**
+    ```yaml
+    User Research:
+    - Interview findings and pain points
+    - Usability testing results
+    - Survey data and feedback
+    - Analytics and behavior data
+    
+    Market Analysis:
+    - Competitive feature gaps
+    - Industry trends and patterns
+    - Market opportunity assessment
+    - User expectation benchmarks
+    
+    Business Context:
+    - Strategic objectives
+    - Revenue targets
+    - Resource constraints
+    - Timeline requirements
+    ```
+  </Step>
+  
+  <Step title="Requirement Extraction">
+    **Generate specific requirements:**
+    
+    <Tabs>
+      <Tab title="Functional Requirements">
+        ```yaml
+        Feature specifications:
+        - Core functionality definition
+        - User interaction patterns
+        - Data processing needs
+        - Integration requirements
+        - Performance criteria
+        ```
+      </Tab>
+      
+      <Tab title="User Experience Requirements">
+        ```yaml
+        UX specifications:
+        - User journey definitions
+        - Accessibility requirements
+        - Mobile responsiveness needs
+        - Error handling approaches
+        - Success state definitions
+        ```
+      </Tab>
+      
+      <Tab title="Technical Requirements">
+        ```yaml
+        Implementation specs:
+        - Platform compatibility
+        - Performance benchmarks
+        - Security requirements
+        - Scalability considerations
+        - Integration constraints
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Structure Generation">
+    **Create organized PRD framework:**
+    
+    <AccordionGroup>
+      <Accordion title="Executive Summary">
+        ```yaml
+        High-level overview:
+        - Problem statement
+        - Solution approach
+        - Success metrics
+        - Resource requirements
+        - Timeline overview
+        ```
+      </Accordion>
+      
+      <Accordion title="User Stories & Acceptance Criteria">
+        ```yaml
+        Detailed specifications:
+        - As a [user type], I want [capability] so that [benefit]
+        - Given [context], when [action], then [expected result]
+        - Success criteria and edge cases
+        - Priority levels and dependencies
+        ```
+      </Accordion>
+      
+      <Accordion title="Technical Specifications">
+        ```yaml
+        Implementation details:
+        - API requirements
+        - Database schema changes
+        - Third-party integrations
+        - Performance requirements
+        - Security considerations
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## PRD Templates & Frameworks
+
+<Tabs>
+  <Tab title="Feature PRD Template">
+    **Comprehensive feature documentation:**
+    
+    ```markdown
+    # Feature Name: [Descriptive Title]
+    
+    ## Problem Statement
+    - User pain point description
+    - Business impact assessment
+    - Current solution limitations
+    
+    ## Solution Overview
+    - Proposed feature description
+    - Key benefits and outcomes
+    - Success metrics definition
+    
+    ## User Stories
+    ### Primary User Journey
+    - Core workflow description
+    - Step-by-step user actions
+    - Expected outcomes
+    
+    ### Edge Cases
+    - Alternative scenarios
+    - Error handling
+    - Edge case management
+    
+    ## Technical Requirements
+    - Platform specifications
+    - Performance criteria
+    - Integration needs
+    - Security requirements
+    
+    ## Design Requirements
+    - UI/UX specifications
+    - Accessibility standards
+    - Responsive design needs
+    - Brand compliance
+    
+    ## Success Metrics
+    - KPI definitions
+    - Measurement methods
+    - Target benchmarks
+    - Timeline for assessment
+    ```
+  </Tab>
+  
+  <Tab title="Epic PRD Template">
+    **Large initiative documentation:**
+    
+    ```markdown
+    # Epic: [Initiative Name]
+    
+    ## Strategic Context
+    - Business objectives alignment
+    - Market opportunity size
+    - Competitive positioning
+    - Resource allocation rationale
+    
+    ## Feature Breakdown
+    ### Phase 1: Foundation
+    - Core functionality requirements
+    - MVP feature set
+    - Technical infrastructure
+    
+    ### Phase 2: Enhancement
+    - Advanced features
+    - User experience improvements
+    - Integration expansions
+    
+    ### Phase 3: Optimization
+    - Performance improvements
+    - Advanced analytics
+    - Ecosystem integration
+    
+    ## Cross-Functional Requirements
+    - Marketing requirements
+    - Sales enablement needs
+    - Customer support preparation
+    - Legal and compliance review
+    ```
+  </Tab>
+  
+  <Tab title="Research-Driven PRD">
+    **Evidence-based requirement generation:**
+    
+    ```markdown
+    # Research Insights → Requirements
+    
+    ## User Research Findings
+    Finding: "Users abandon checkout at shipping cost reveal"
+    Requirement: Display shipping estimates on product pages
+    Priority: High (affects 40% of conversions)
+    
+    ## Competitive Analysis Insights
+    Finding: "Competitors lack bulk editing capabilities"
+    Requirement: Implement batch operations for admin users
+    Priority: Medium (differentiation opportunity)
+    
+    ## Analytics Insights
+    Finding: "Mobile users prefer single-column layouts"
+    Requirement: Redesign mobile interface with vertical flow
+    Priority: High (68% mobile traffic)
+    ```
+  </Tab>
+</Tabs>
+
+## AI-Assisted PRD Creation
+
+<CardGroup cols={2}>
+  <Card title="Requirement Generation" icon="brain">
+    **AI extracts requirements from research:**
+    
+    - Analyze user interview transcripts
+    - Identify patterns in feedback data
+    - Generate user stories from pain points
+    - Suggest acceptance criteria
+    - Prioritize based on user impact
+  </Card>
+  
+  <Card title="Content Structuring" icon="organize">
+    **Intelligent document organization:**
+    
+    - Auto-categorize requirements by type
+    - Generate logical section structure
+    - Create cross-references and dependencies
+    - Suggest missing requirement areas
+    - Maintain consistency across sections
+  </Card>
+</CardGroup>
+
+## Collaborative PRD Development
+
+<Steps>
+  <Step title="Multi-Stakeholder Input">
+    **Gather requirements from all perspectives:**
+    
+    <Tabs>
+      <Tab title="Product Management">
+        ```yaml
+        PM contributions:
+        - Business case and market opportunity
+        - User journey mapping
+        - Feature prioritization
+        - Success metrics definition
+        - Competitive positioning
+        ```
+      </Tab>
+      
+      <Tab title="Engineering">
+        ```yaml
+        Engineering input:
+        - Technical feasibility assessment
+        - Implementation complexity estimates
+        - Performance requirement validation
+        - Security and compliance needs
+        - Integration constraint identification
+        ```
+      </Tab>
+      
+      <Tab title="Design">
+        ```yaml
+        Design requirements:
+        - User experience specifications
+        - Accessibility requirements
+        - Visual design constraints
+        - Interaction pattern definitions
+        - Mobile responsiveness needs
+        ```
+      </Tab>
+      
+      <Tab title="Business Stakeholders">
+        ```yaml
+        Business input:
+        - Strategic alignment verification
+        - Resource allocation approval
+        - Timeline constraint setting
+        - Success criteria validation
+        - Risk assessment and mitigation
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Iterative Refinement">
+    **Collaborative improvement process:**
+    
+    ```yaml
+    Review cycles:
+    1. Initial draft creation from research
+    2. Stakeholder review and feedback
+    3. Technical feasibility validation
+    4. Business alignment confirmation
+    5. Final approval and sign-off
+    
+    Feedback integration:
+    - Comment-based suggestion system
+    - Version control for changes
+    - Decision rationale documentation
+    - Conflict resolution processes
+    ```
+  </Step>
+  
+  <Step title="Living Documentation">
+    **Keep PRDs current and actionable:**
+    
+    ```yaml
+    Maintenance practices:
+    - Regular review and updates
+    - Progress tracking integration
+    - Scope change documentation
+    - Lessons learned capture
+    - Post-launch evaluation
+    ```
+  </Step>
+</Steps>
+
+## PRD Quality Assurance
+
+<Tabs>
+  <Tab title="Completeness Checking">
+    **Ensure comprehensive coverage:**
+    
+    <AccordionGroup>
+      <Accordion title="Requirement Coverage">
+        ```yaml
+        Essential elements:
+        ✅ Clear problem statement
+        ✅ Specific solution description
+        ✅ User story completeness
+        ✅ Acceptance criteria definition
+        ✅ Success metrics specification
+        ✅ Technical requirement clarity
+        ✅ Timeline and milestone definition
+        ```
+      </Accordion>
+      
+      <Accordion title="Stakeholder Alignment">
+        ```yaml
+        Validation checklist:
+        ✅ Business objective alignment
+        ✅ User need validation
+        ✅ Technical feasibility confirmation
+        ✅ Resource requirement realism
+        ✅ Timeline achievability
+        ✅ Success metric measurability
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Clarity & Actionability">
+    **Ensure implementation readiness:**
+    
+    ```yaml
+    Quality criteria:
+    
+    Clarity:
+    - Unambiguous requirement statements
+    - Clear success criteria
+    - Specific user story formatting
+    - Detailed acceptance criteria
+    
+    Actionability:
+    - Implementation-ready specifications
+    - Clear priority levels
+    - Dependency identification
+    - Resource requirement clarity
+    
+    Testability:
+    - Measurable success criteria
+    - Clear validation methods
+    - Specific performance benchmarks
+    - User acceptance test scenarios
+    ```
+  </Tab>
+</Tabs>
+
+## Integration with Development Process
+
+<CardGroup cols={2}>
+  <Card title="Agile Integration" icon="repeat">
+    **PRDs that support agile development:**
+    
+    - Epic and story breakdown
+    - Sprint planning readiness
+    - Acceptance criteria clarity
+    - Definition of done alignment
+    - Continuous refinement support
+  </Card>
+  
+  <Card title="Design Handoff" icon="arrow-right">
+    **Seamless PRD to design transition:**
+    
+    - Design requirement extraction
+    - User journey documentation
+    - Constraint specification
+    - Success metric definition
+    - Validation criteria establishment
+  </Card>
+</CardGroup>
+
+## PRD Best Practices
+
+<Steps>
+  <Step title="User-Centric Focus">
+    **Keep user needs central:**
+    
+    ```
+    ✅ Start with user problems, not solutions
+    ✅ Include real user quotes and feedback
+    ✅ Validate assumptions with research
+    ✅ Consider diverse user scenarios
+    ✅ Plan for accessibility from the start
+    ```
+  </Step>
+  
+  <Step title="Evidence-Based Requirements">
+    **Ground requirements in data:**
+    
+    ```
+    ✅ Reference specific research findings
+    ✅ Include quantitative supporting data
+    ✅ Cite competitive analysis insights
+    ✅ Document assumption validation plans
+    ✅ Plan success measurement methods
+    ```
+  </Step>
+  
+  <Step title="Implementation Realism">
+    **Ensure feasible requirements:**
+    
+    ```
+    ✅ Validate technical feasibility early
+    ✅ Consider resource constraints
+    ✅ Plan for realistic timelines
+    ✅ Account for dependencies
+    ✅ Include risk mitigation strategies
+    ```
+  </Step>
+</Steps>
+
+---
+
+<Card title="Begin Design Exploration" icon="compass">
+  Move from requirements to design exploration and concept development.
+  
+  [Pre-Design Exploration →](/designing/ideation/pre-design-exploration)
+</Card>

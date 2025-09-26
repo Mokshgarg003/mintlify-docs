@@ -1,5 +1,517 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "One-Click Figma"
+description: "Seamlessly export your Figr designs to Figma with perfect fidelity and maintained component relationships."
+icon: "figma"
 ---
 
+# One-Click Figma Export
+
+Bridge your Figr designs to Figma workflow seamlessly. Export with perfect fidelity, maintained component relationships, and design system consistency.
+
+<Callout type="success">
+**Seamless workflow integration:** Move from Figr's AI-powered design to Figma's collaborative environment without losing any design information or having to recreate components.
+</Callout>
+
+## Export Process
+
+<Steps>
+  <Step title="Pre-Export Preparation">
+    **Optimize your design for Figma export:**
+    
+    <Frame>
+      <img src="/images/figma-export-prep.png" alt="Interface showing design preparation checklist before Figma export" />
+    </Frame>
+    
+    **Preparation checklist:**
+    ```yaml
+    Design validation:
+    ✅ All fonts available in Figma
+    ✅ Images optimized and accessible
+    ✅ Components properly structured
+    ✅ Layers appropriately named
+    ✅ Design system tokens applied
+    
+    Content readiness:
+    ✅ Text content finalized
+    ✅ Placeholder images replaced
+    ✅ Component states defined
+    ✅ Responsive behaviors specified
+    ✅ Animation notes documented
+    
+    Organization cleanup:
+    ✅ Unnecessary elements removed
+    ✅ Layer hierarchy optimized
+    ✅ Artboards properly arranged
+    ✅ Style guides included
+    ✅ Documentation prepared
+    ```
+  </Step>
+  
+  <Step title="Export Configuration">
+    **Configure export settings for optimal results:**
+    
+    <Tabs>
+      <Tab title="Component Mapping">
+        ```yaml
+        Component translation:
+        
+        Figr buttons → Figma button components
+        - Maintain all variants (size, style, state)
+        - Preserve component properties
+        - Map design tokens to Figma variables
+        - Retain interaction definitions
+        
+        Figr layouts → Figma auto layout
+        - Convert spacing systems
+        - Maintain responsive behavior
+        - Preserve constraints and resizing
+        - Map grid systems to layout grids
+        
+        Figr text styles → Figma text styles
+        - Typography scale mapping
+        - Color token application
+        - Line height preservation
+        - Letter spacing retention
+        ```
+      </Tab>
+      
+      <Tab title="Asset Management">
+        ```yaml
+        Asset handling:
+        
+        Images and icons:
+        - Vector formats preserved (SVG → Figma vectors)
+        - Raster images embedded or linked
+        - Icon libraries transferred
+        - Image optimization applied
+        
+        Colors and effects:
+        - Color variables created in Figma
+        - Gradient definitions preserved
+        - Shadow effects transferred
+        - Blend modes maintained
+        
+        Design tokens:
+        - Spacing values → Figma spacing tokens
+        - Color palette → Figma color variables
+        - Typography → Figma text styles
+        - Effects → Figma effect styles
+        ```
+      </Tab>
+      
+      <Tab title="File Organization">
+        ```yaml
+        Figma file structure:
+        
+        Page organization:
+        - Design system library page
+        - Component documentation page
+        - Design screens and flows
+        - Archive and exploration pages
+        
+        Layer organization:
+        - Semantic layer naming
+        - Logical grouping and frames
+        - Component instance relationships
+        - Consistent naming conventions
+        
+        Documentation:
+        - Component usage guidelines
+        - Design decision rationale
+        - Implementation notes
+        - Responsive behavior specs
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Export Execution">
+    **One-click export with progress tracking:**
+    
+    <AccordionGroup>
+      <Accordion title="Export Process">
+        ```yaml
+        Export workflow:
+        1. Design analysis and optimization
+        2. Component structure mapping
+        3. Asset preparation and conversion
+        4. Figma file generation
+        5. Quality validation check
+        6. File delivery and notification
+        
+        Processing time:
+        - Simple designs: 30-60 seconds
+        - Complex layouts: 2-3 minutes
+        - Full design systems: 5-10 minutes
+        - Large projects: 10-15 minutes
+        ```
+      </Accordion>
+      
+      <Accordion title="Quality Assurance">
+        ```yaml
+        Automatic validation:
+        - Component integrity verification
+        - Design token consistency check
+        - Typography mapping validation
+        - Image quality assessment
+        - Responsive behavior preservation
+        
+        Issue detection:
+        - Missing font warnings
+        - Unsupported effect alerts
+        - Component structure issues
+        - Asset resolution problems
+        - Layout constraint conflicts
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Component Fidelity
+
+<Tabs>
+  <Tab title="Design System Preservation">
+    **Maintain design system integrity in Figma:**
+    
+    <CardGroup cols={2}>
+      <Card title="Token Mapping" icon="link">
+        **Design tokens → Figma variables:**
+        - Color tokens become Figma color variables
+        - Spacing tokens map to spacing variables
+        - Typography tokens create text styles
+        - Effect tokens generate effect styles
+      </Card>
+      
+      <Card title="Component Hierarchy" icon="hierarchy">
+        **Component relationships preserved:**
+        - Main components and instances
+        - Variant property structures
+        - Override capabilities maintained
+        - Component descriptions transferred
+      </Card>
+    </CardGroup>
+    
+    **Token mapping example:**
+    ```yaml
+    Figr design tokens:
+    - color-primary: #6366f1
+    - spacing-md: 16px
+    - font-size-lg: 18px
+    - shadow-lg: 0 10px 15px rgba(0,0,0,0.1)
+    
+    Figma variables:
+    - Primary/600: #6366f1 (Color variable)
+    - Spacing/Medium: 16 (Number variable)
+    - Typography/Large: 18px (Text style)
+    - Elevation/Large: Drop shadow effect style
+    ```
+  </Tab>
+  
+  <Tab title="Interactive Elements">
+    **Maintain component interactivity:**
+    
+    <Frame>
+      <img src="/images/figma-interactive-export.png" alt="Figma interface showing exported interactive components with preserved states and behaviors" />
+    </Frame>
+    
+    **Interaction preservation:**
+    ```yaml
+    Button components:
+    - Default, hover, active, disabled states
+    - Size variants (small, medium, large)
+    - Style variants (primary, secondary, outline)
+    - Icon placement and sizing
+    
+    Form components:
+    - Input states (default, focus, error, disabled)
+    - Validation message positioning
+    - Label and placeholder relationships
+    - Help text and error text styling
+    
+    Navigation components:
+    - Active and inactive states
+    - Hover and focus behaviors
+    - Dropdown and menu structures
+    - Breadcrumb and pagination elements
+    ```
+  </Tab>
+  
+  <Tab title="Layout Systems">
+    **Responsive behavior translation:**
+    
+    <AccordionGroup>
+      <Accordion title="Auto Layout Conversion">
+        ```yaml
+        Figr layouts → Figma auto layout:
+        
+        Flexbox containers:
+        - Direction (row/column) preserved
+        - Alignment settings maintained
+        - Gap spacing transferred
+        - Wrap behavior documented
+        
+        Grid systems:
+        - Column and row definitions
+        - Gap spacing preserved
+        - Alignment rules maintained
+        - Responsive breakpoints noted
+        
+        Constraints:
+        - Resize behavior specified
+        - Pin relationships maintained
+        - Content scaling rules preserved
+        ```
+      </Accordion>
+      
+      <Accordion title="Responsive Documentation">
+        ```yaml
+        Breakpoint information:
+        - Mobile, tablet, desktop variations
+        - Content reflow behavior
+        - Element visibility changes
+        - Interaction adaptations
+        
+        Implementation notes:
+        - CSS Grid/Flexbox recommendations
+        - JavaScript behavior requirements
+        - Performance considerations
+        - Accessibility implications
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Advanced Export Features
+
+<Steps>
+  <Step title="Selective Export">
+    **Export specific parts of your design:**
+    
+    <Tabs>
+      <Tab title="Component Library Only">
+        ```yaml
+        Design system export:
+        - All components and variants
+        - Design token definitions
+        - Usage documentation
+        - Style guide examples
+        
+        Perfect for:
+        - Design system updates
+        - Component library sharing
+        - Brand guideline distribution
+        - Developer handoff preparation
+        ```
+      </Tab>
+      
+      <Tab title="Specific Artboards">
+        ```yaml
+        Targeted screen export:
+        - Selected pages or flows
+        - Specific user journeys
+        - Feature-focused exports
+        - Prototype-ready screens
+        
+        Use cases:
+        - Feature presentation
+        - Stakeholder review
+        - User testing preparation
+        - Implementation planning
+        ```
+      </Tab>
+      
+      <Tab title="Responsive Variants">
+        ```yaml
+        Multi-device export:
+        - Desktop, tablet, mobile versions
+        - Breakpoint-specific layouts
+        - Device-optimized interactions
+        - Platform-specific adaptations
+        
+        Benefits:
+        - Complete responsive coverage
+        - Device-specific optimization
+        - Cross-platform consistency
+        - Comprehensive documentation
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Collaboration Setup">
+    **Prepare for team collaboration:**
+    
+    <CardGroup cols={2}>
+      <Card title="Team Access" icon="users">
+        **Collaboration configuration:**
+        - Team member permissions
+        - File sharing settings
+        - Comment and annotation rights
+        - Edit access management
+      </Card>
+      
+      <Card title="Version Control" icon="git-branch">
+        **File organization:**
+        - Version naming conventions
+        - Branch and iteration tracking
+        - Merge conflict prevention
+        - History preservation
+      </Card>
+    </CardGroup>
+  </Step>
+  
+  <Step title="Integration Workflows">
+    **Connect with existing processes:**
+    
+    ```yaml
+    Development integration:
+    - Figma Dev Mode preparation
+    - Code generation optimization
+    - Design token synchronization
+    - Component library updates
+    
+    Design workflow integration:
+    - Figma plugin compatibility
+    - Design system maintenance
+    - Review and approval processes
+    - Stakeholder presentation setup
+    
+    Documentation integration:
+    - Design specification generation
+    - Implementation guide creation
+    - Style guide maintenance
+    - Change log documentation
+    ```
+  </Step>
+</Steps>
+
+## Post-Export Optimization
+
+<Tabs>
+  <Tab title="Figma File Cleanup">
+    **Optimize exported files for best performance:**
+    
+    <AccordionGroup>
+      <Accordion title="Component Organization">
+        ```yaml
+        Component library optimization:
+        - Remove unused components
+        - Consolidate similar variants
+        - Optimize component structures
+        - Clean up override hierarchies
+        
+        Performance improvements:
+        - Reduce file complexity
+        - Optimize vector paths
+        - Compress large images
+        - Minimize layer count
+        ```
+      </Accordion>
+      
+      <Accordion title="Documentation Enhancement">
+        ```yaml
+        Add implementation guidance:
+        - Component usage examples
+        - Do's and don'ts illustrations
+        - Code snippet references
+        - Accessibility requirements
+        
+        Design rationale:
+        - Decision documentation
+        - User research references
+        - Business requirement links
+        - Technical constraint notes
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Team Onboarding">
+    **Help team members use exported files effectively:**
+    
+    <Steps>
+      <Step title="File Structure Tour">
+        Provide guided overview of exported file organization and navigation
+      </Step>
+      
+      <Step title="Component Usage Training">
+        Demonstrate proper component usage and override techniques
+      </Step>
+      
+      <Step title="Design System Guidelines">
+        Share design system principles and implementation standards
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
+
+## Quality Assurance
+
+<CardGroup cols={2}>
+  <Card title="Fidelity Verification" icon="check-circle">
+    **Ensure export accuracy:**
+    
+    ✅ Visual comparison with original
+    ✅ Component behavior verification
+    ✅ Design token accuracy check
+    ✅ Interactive state validation
+    ✅ Responsive behavior confirmation
+  </Card>
+  
+  <Card title="Usability Testing" icon="users">
+    **Validate exported design usability:**
+    
+    ✅ Navigation flow testing
+    ✅ Component interaction verification
+    ✅ Responsive behavior validation
+    ✅ Accessibility feature checking
+    ✅ Performance impact assessment
+  </Card>
+</CardGroup>
+
+## Troubleshooting Common Issues
+
+<AccordionGroup>
+  <Accordion title="Font and Typography Issues">
+    ```yaml
+    Problem: Fonts not displaying correctly in Figma
+    Solutions:
+    - Ensure fonts are available in Figma
+    - Use Google Fonts or Figma font library
+    - Provide font files for custom typography
+    - Set up appropriate font fallbacks
+    ```
+  </Accordion>
+  
+  <Accordion title="Component Structure Problems">
+    ```yaml
+    Problem: Components not maintaining proper hierarchy
+    Solutions:
+    - Review component nesting in Figr
+    - Optimize component structure before export
+    - Use Figma-compatible component patterns
+    - Simplify complex component relationships
+    ```
+  </Accordion>
+  
+  <Accordion title="Asset Quality Issues">
+    ```yaml
+    Problem: Images or graphics appear pixelated
+    Solutions:
+    - Use vector formats when possible
+    - Ensure sufficient image resolution
+    - Optimize asset compression settings
+    - Check Figma import settings
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+<Card title="Generate High-Resolution Assets" icon="image">
+  Learn how to export crisp, high-quality images and assets for various use cases and platforms.
+  
+  [High-Res Images →](/designing/export/high-res-images)
+</Card>

@@ -1,188 +1,229 @@
 ---
-title: "Who Should Use Figr"
-description: "Is Figr right for your team and workflow?"
-icon: "users"
+title: "Product-Aware Designing"
+description: "How Figr's deep product understanding creates designs that actually ship."
+icon: "bullseye"
 ---
 
-<Info>
-  No setup required. No design system needed. Just show Figr your product and watch the magic.
-</Info>
+# Product-Aware Designing
 
-claude
+Generic design AI gives you generic results. Figr creates designs that feel like they've always belonged in your product.
 
-## Perfect for these teams
+<Callout type="success">
+The secret: Figr doesn't just know design patterns. It knows **your** product's patterns, constraints, and user behavior.
+</Callout>
 
-<CardGroup cols={1}>
-  <Card title="Series B+ SaaS Product Teams" icon="building">
-    **You're perfect for Figr if:**
+## The Context Problem
 
-    - You ship weekly/biweekly to production
-    - Design-dev handoff is a bottleneck
-    - You have established design patterns but struggle with consistency
-    - PMs and designers waste time on alignment
-    - You need to move fast but maintain quality
-
-    **What you'll get:**
-
-    - 50% reduction in design-to-ship time
-    - Designs that engineers don't need to "interpret"
-    - Automatic consistency across hundreds of screens
-    - PMs can explore ideas without designer bottleneck
-  </Card>
-  <Card title="Growing Startups (10-50 people)" icon="rocket">
-    **You're ready for Figr if:**
-
-    - You're moving from "build anything" to "build consistently"
-    - Your design system exists but isn't fully documented
-    - One designer supports multiple squads
-    - You need to maintain velocity while improving quality
-
-    **What you'll get:**
-
-    - Design system enforcement without the manual work
-    - 10x more design explorations in the same time
-    - Junior PMs shipping senior-quality UX
-    - Design debt prevention, not accumulation
-  </Card>
-  <Card title="Enterprise Product Teams" icon="buildings">
-    **Figr fits if:**
-
-    - Multiple teams work on the same product
-
-      Consistency across teams is a challenge
-    - Compliance and accessibility are non-negotiable
-    - You need audit trails for design decisions
-
-    **What you'll get:**
-
-    - Centralized design intelligence across teams
-    - Automatic accessibility and compliance checks
-    - Full reasoning documentation for every design
-    - Enterprise SSO, permissions, and security
-  </Card>
-</CardGroup>
-
-## Perfect for these roles
-
-<Tabs>
-  <Tab title="Product Managers">
-    **Your current reality:**
-
-    - Waiting days for design mockups
-    - Explaining context repeatedly
-    - Rough sketches that designers misinterpret
-    - "Can we just try..." takes a week
-
-    **With Figr:**
-
-    - Explore design solutions in minutes
-    - Context is already loaded
-    - Production-ready designs from rough ideas
-    - A/B variants in one session
-
-    <success>
-  "I shipped a complete checkout redesign without waiting for designer availability. Figr knew our constraints better than I did." - PM at Series C SaaS
-</success>
-  </Tab>
-  <Tab title="Product Designers">
-    **Your current reality:**
-
-    - Recreating similar patterns endlessly
-    - Explaining your designs to developers
-    - Maintaining consistency across features
-    - Research and competitive analysis takes days
-
-    **With Figr:**
-
-    - Focus on strategy, not production
-    - Automatic pattern consistency
-    - Instant competitive benchmarks
-    - More time for user research
-
-    <success>
-  "I design 5x more variations now. Figr handles production while I focus on solving the right problems." - Senior Designer
-</success>
-  </Tab>
-  <Tab title="Design Engineers">
-    **Your current reality:**
-
-    - Translating Figma to code
-    - "This isn't technically feasible"
-    - Rebuilding components that exist
-    - Design drift from implementation
-
-    **With Figr:**
-
-    - Component-mapped exports
-    - Technically-aware designs
-    - Your constraints respected upfront
-    - Code that matches design exactly
-
-    <success>
-  "First design tool that outputs code I don't rewrite. It knows our component library." - Frontend Lead
-</success>
-  </Tab>
-</Tabs>
-
-<Check>
-  
-</Check>
-
-## Not ready for Figr yet?
-
-<Warning>
-  Figr might not be the right fit if:
-</Warning>
-
-<Accordion title="You're building your first product">
-  If you're still discovering product-market fit and everything changes weekly, you need maximum flexibility. Figr shines when you have some established patterns to build upon.
-
-  **Come back when:** You have paying customers and some UI patterns that work.
-</Accordion>
-
-<Accordion title="You need pixel-perfect brand designs">
-  Figr excels at product design—dashboards, workflows, SaaS interfaces. For brand websites, marketing pages, or artistic designs, specialized tools are better.
-
-  **Use Figr for:** Your app. **Use other tools for:** Your marketing site.
-</Accordion>
-
-<Accordion title="You're a solo designer on simple projects">
-  If you're designing simple sites with no handoff complexity, Figr might be overkill. Our collaboration and production features shine with teams.
-
-  **Consider Figr when:** You start handing off to developers or scaling beyond one designer.
-</Accordion>
-
-## Quick self-assessment
+Most AI design tools work like this:
 
 <Steps>
-  <Step title="Do you ship to production weekly?">
-    Yes → Figr will accelerate this
-    No → Might be premature
+  <Step title="Describe Your Need">
+    "Create a user dashboard for our analytics platform"
   </Step>
-  <Step title="Do you have established UI patterns?">
-    Yes → Figr will enforce consistency
-    No → Build some patterns first
+  
+  <Step title="Generic Output">
+    Beautiful dashboard with generic charts, standard layout, placeholder data
   </Step>
-  <Step title="Is design-dev handoff painful?">
-    Yes → Figr solves this
-    No → You might not need us yet
+  
+  <Step title="Reality Check">
+    Doesn't match your navigation, uses wrong colors, missing key features your users need
   </Step>
-  <Step title="Do you need to move faster without sacrificing quality?">
-    Yes → That's exactly what Figr does
-    No → Enjoy your current pace!
+  
+  <Step title="Manual Rework">
+    Spend hours adapting the generic design to your actual product
   </Step>
 </Steps>
 
-<Panel type="gradient">
-  <h3>The 5-minute test</h3>
+**This is backwards.** You shouldn't adapt AI output to your product. AI should adapt to your product.
 
-  Upload your PRD. Share your screen. Ask Figr to design one feature.
+## How Figr Builds Product Awareness
 
-  If the output makes you say "how did it know that?"—you're ready for Figr.
+<Tabs>
+  <Tab title="Screen Sharing">
+    Share your screen and navigate your actual product. Figr watches and learns:
+    
+    - Your navigation patterns and hierarchy
+    - How forms actually work in your product  
+    - Where your calls-to-action typically appear
+    - What your error states look like
+    - How data is typically displayed
+    
+    <Frame>
+      <img src="/images/screen-sharing-learning.png" alt="Figr learning from screen sharing session" />
+    </Frame>
+  </Tab>
+  
+  <Tab title="Design System Upload">
+    Import your design tokens once. Figr remembers:
+    
+    ```json
+    {
+      "colors": {
+        "primary": "#6366f1",
+        "success": "#10b981",
+        "warning": "#f59e0b"
+      },
+      "spacing": {
+        "xs": "4px",
+        "sm": "8px", 
+        "md": "16px"
+      },
+      "typography": {
+        "heading-1": "32px",
+        "body": "16px"
+      }
+    }
+    ```
+  </Tab>
+  
+  <Tab title="User Research Integration">
+    Upload user research, analytics, and personas. Figr designs based on actual user behavior:
+    
+    - Heat map data showing attention patterns
+    - A/B test results from previous features
+    - User interview insights about pain points
+    - Conversion funnel data
+  </Tab>
+  
+  <Tab title="Constraint Learning">
+    Tell Figr your technical and business constraints once:
+    
+    - "We can't use overlays because of our mobile app"
+    - "New users must see pricing within 30 seconds"
+    - "Enterprise customers need bulk actions on every list"
+    - "Our backend can only handle 50 items per page"
+  </Tab>
+</Tabs>
 
-  <div style={{ marginTop: '20px' }}>
-    <a href="/getting-started/setup/creating-your-account" style={{ background: '#695BE8', color: 'white', padding: '12px 24px', borderRadius: '6px', textDecoration: 'none', display: 'inline-block' }}>
-      Start your test →
-    </a>
-  </div>
-</Panel>
+## Context in Action
+
+### Before: Generic AI Dashboard
+
+```
+Prompt: "Create a user dashboard"
+Result: Standard 3-column layout, generic charts, 
+        placeholder navigation
+```
+
+### After: Product-Aware Dashboard  
+
+```
+Context: SaaS analytics tool, mobile-first users, 
+         complex data hierarchies
+Result: Custom visualization matching your data structure,
+        navigation that fits your existing app,
+        progressive disclosure based on user research
+```
+
+<CardGroup cols={2}>
+  <Card title="Generic Design" icon="template">
+    - Standard layout patterns
+    - Placeholder content
+    - Generic color schemes
+    - One-size-fits-all components
+  </Card>
+  
+  <Card title="Product-Aware Design" icon="target">
+    - Your established patterns
+    - Real content structure  
+    - Your actual design system
+    - Components that match your codebase
+  </Card>
+</CardGroup>
+
+## Memory Across Sessions
+
+<Callout type="info">
+**Persistent Context:** Unlike other AI tools, Figr remembers everything about your product permanently. Start a new canvas six months later, and Figr still knows your users prefer compact layouts and your enterprise clients need export features.
+</Callout>
+
+### What Gets Remembered
+
+<AccordionGroup>
+  <Accordion title="Product Patterns">
+    - How your navigation actually works
+    - Where important actions are typically placed  
+    - Your content hierarchy and information architecture
+    - Error handling and feedback patterns
+  </Accordion>
+  
+  <Accordion title="User Behavior">
+    - Which layouts convert better
+    - Where users typically get stuck
+    - What information they look for first
+    - How they navigate between features
+  </Accordion>
+  
+  <Accordion title="Technical Constraints">
+    - Component limitations in your codebase
+    - Performance requirements 
+    - Browser support needs
+    - Accessibility requirements
+  </Accordion>
+  
+  <Accordion title="Design Decisions">
+    - Why certain patterns were chosen
+    - What alternatives were considered
+    - Results from A/B tests
+    - Feedback from user testing
+  </Accordion>
+</AccordionGroup>
+
+## Building Your Product Context
+
+<Steps>
+  <Step title="Initial Product Tour">
+    Share your screen and give Figr a comprehensive tour of your product. Click through major flows, show different user types, demonstrate edge cases.
+    
+    **Time investment:** 15-20 minutes once
+    **Benefit:** Every future design understands your product deeply
+  </Step>
+  
+  <Step title="Upload Core Assets">
+    Import your design system, brand guidelines, user research, and any technical documentation.
+    
+    **What to include:**
+    - Design tokens (colors, typography, spacing)
+    - Component library or style guide
+    - User personas and research findings
+    - Analytics and conversion data
+  </Step>
+  
+  <Step title="Define Constraints">
+    Tell Figr about your technical limitations, business requirements, and user needs.
+    
+    **Examples:**
+    - "Mobile users are 70% of our traffic"
+    - "Enterprise features need approval workflows"
+    - "Page load times must stay under 2 seconds"
+  </Step>
+  
+  <Step title="Iterate and Refine">
+    As Figr creates designs, provide feedback about what works and what doesn't. This builds even deeper product understanding.
+  </Step>
+</Steps>
+
+## The Compound Effect
+
+The more Figr knows about your product, the better every design becomes:
+
+<Frame>
+  <img src="/images/context-improvement-graph.png" alt="Graph showing how design quality improves with more product context" />
+</Frame>
+
+**Week 1:** Designs need significant modification to fit your product
+**Month 1:** Designs require minor adjustments  
+**Month 3:** Designs ship with minimal changes
+**Month 6:** Figr anticipates needs you haven't even articulated
+
+---
+
+<Callout type="tip">
+**Pro tip:** The initial context-building session is the best investment you'll make. Spend 30 minutes showing Figr your product thoroughly, and save hours on every future design project.
+</Callout>
+
+<Card title="Ready to build your product context?" icon="brain">
+  Start with a comprehensive product tour to establish the foundation for all future designs.
+  
+  [Begin Account Setup →](/getting-started/setup/creating-your-account)
+</Card>

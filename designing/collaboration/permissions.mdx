@@ -1,5 +1,665 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Permissions"
+description: "Configure detailed permission systems for team roles, project access, and collaborative workflows in Figr."
+icon: "shield"
 ---
 
+# Permissions Management
+
+Set up comprehensive permission systems that align with your team structure and project requirements. Control who can access, edit, and share designs while maintaining security and workflow efficiency.
+
+<Callout type="shield">
+**Security by design:** Granular permissions that scale from small teams to enterprise organizations, ensuring the right people have the right access at the right time.
+</Callout>
+
+## Permission Hierarchy
+
+<Steps>
+  <Step title="Organization Level">
+    **Top-level access control:**
+    
+    <Frame>
+      <img src="/images/permission-hierarchy.png" alt="Diagram showing permission hierarchy from organization to individual project level" />
+    </Frame>
+    
+    **Organization permissions:**
+    ```yaml
+    Owner permissions:
+    - Full organization control
+    - Billing and subscription management
+    - User invitation and removal
+    - Security policy configuration
+    - Data export and deletion
+    
+    Admin permissions:
+    - User role management
+    - Project creation and deletion
+    - Team structure organization
+    - Integration configuration
+    - Security setting management
+    
+    Member permissions:
+    - Project participation
+    - Design creation and editing
+    - Team collaboration
+    - Asset usage and sharing
+    - Limited administrative tasks
+    ```
+  </Step>
+  
+  <Step title="Team Level">
+    **Department and group access control:**
+    
+    <Tabs>
+      <Tab title="Design Team">
+        ```yaml
+        Design team structure:
+        
+        Design Lead:
+        - Full design project access
+        - Design system management
+        - Team member oversight
+        - Client communication
+        - Quality assurance control
+        
+        Senior Designer:
+        - Project leadership capabilities
+        - Mentoring permissions
+        - Design system contributions
+        - Cross-team collaboration
+        - Advanced tool access
+        
+        Designer:
+        - Design creation and editing
+        - Team project participation
+        - Asset library access
+        - Feedback and review
+        - Standard tool features
+        
+        Design Intern:
+        - Supervised design access
+        - Learning project participation
+        - Feedback submission
+        - Basic tool functionality
+        - Mentorship program access
+        ```
+      </Tab>
+      
+      <Tab title="Product Team">
+        ```yaml
+        Product team integration:
+        
+        Product Manager:
+        - Requirements documentation
+        - Design review and approval
+        - Stakeholder communication
+        - Project priority setting
+        - Cross-functional coordination
+        
+        Product Owner:
+        - Feature specification access
+        - User story management
+        - Acceptance criteria definition
+        - Sprint planning participation
+        - Design validation
+        
+        Business Analyst:
+        - Requirements analysis
+        - Design impact assessment
+        - Stakeholder feedback collection
+        - Process documentation
+        - Compliance verification
+        ```
+      </Tab>
+      
+      <Tab title="Engineering Team">
+        ```yaml
+        Development team access:
+        
+        Tech Lead:
+        - Technical feasibility review
+        - Implementation planning
+        - Resource estimation
+        - Team coordination
+        - Architecture decisions
+        
+        Senior Developer:
+        - Design specification access
+        - Component implementation
+        - Technical feedback provision
+        - Code review participation
+        - Mentoring responsibilities
+        
+        Developer:
+        - Implementation-focused access
+        - Asset download capabilities
+        - Specification viewing
+        - Bug reporting access
+        - Code generation tools
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Project Level">
+    **Granular project access control:**
+    
+    <AccordionGroup>
+      <Accordion title="Project Roles">
+        ```yaml
+        Project-specific permissions:
+        
+        Project Owner:
+        - Full project control
+        - Permission management
+        - External sharing control
+        - Archive and deletion rights
+        - Budget and resource allocation
+        
+        Project Manager:
+        - Timeline and milestone management
+        - Team coordination
+        - Stakeholder communication
+        - Progress tracking
+        - Resource request capabilities
+        
+        Lead Contributor:
+        - Design direction setting
+        - Quality standard enforcement
+        - Team guidance provision
+        - Client interaction
+        - Final approval authority
+        
+        Contributor:
+        - Active design participation
+        - Collaborative editing
+        - Feedback and review
+        - Asset creation and modification
+        - Documentation contributions
+        
+        Reviewer:
+        - Design review and approval
+        - Feedback provision
+        - Comment and annotation
+        - Version comparison
+        - Quality assurance participation
+        
+        Viewer:
+        - Read-only project access
+        - Design viewing and navigation
+        - Basic commenting (if enabled)
+        - Export capabilities (if enabled)
+        - Progress monitoring
+        ```
+      </Accordion>
+      
+      <Accordion title="Content Permissions">
+        ```yaml
+        Content-specific access:
+        
+        Design Files:
+        - Create, edit, delete designs
+        - Version control access
+        - Duplication and templating
+        - Cross-project copying
+        - Archive management
+        
+        Asset Libraries:
+        - Asset upload and management
+        - Library organization
+        - Usage tracking and analytics
+        - License management
+        - Quality control
+        
+        Design Systems:
+        - Component creation and editing
+        - Token management
+        - Pattern library maintenance
+        - Documentation updates
+        - Distribution control
+        
+        Documentation:
+        - Specification writing
+        - Process documentation
+        - Guidelines creation
+        - Training material development
+        - Knowledge base maintenance
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Advanced Permission Features
+
+<Tabs>
+  <Tab title="Conditional Permissions">
+    **Context-aware access control:**
+    
+    <CardGroup cols={2}>
+      <Card title="Time-Based Access" icon="clock">
+        **Temporal permission control:**
+        - Business hours restrictions
+        - Project phase limitations
+        - Deadline-driven access
+        - Seasonal adjustments
+        - Emergency override protocols
+      </Card>
+      
+      <Card title="Location-Based Access" icon="map-pin">
+        **Geographic permission control:**
+        - Office network requirements
+        - Regional access restrictions
+        - Remote work policies
+        - Client site limitations
+        - Compliance zone enforcement
+      </Card>
+    </CardGroup>
+    
+    **Conditional access examples:**
+    ```yaml
+    Project phase access:
+    Discovery phase: Broad team access
+    Design phase: Design team focus
+    Review phase: Stakeholder inclusion
+    Implementation phase: Developer priority
+    Launch phase: Limited access
+    
+    Content sensitivity:
+    Public designs: Open team access
+    Client confidential: Restricted access
+    Internal only: Employee limitation
+    Executive review: Leadership access
+    Legal review: Compliance team access
+    ```
+  </Tab>
+  
+  <Tab title="Dynamic Permissions">
+    **Automated permission adjustments:**
+    
+    <Frame>
+      <img src="/images/dynamic-permissions.png" alt="Interface showing dynamic permission rules and automated adjustments" />
+    </Frame>
+    
+    **Automation triggers:**
+    ```yaml
+    Project lifecycle automation:
+    - Automatic role assignments
+    - Permission escalation rules
+    - Access removal triggers
+    - Review cycle permissions
+    - Archive access management
+    
+    User behavior adaptation:
+    - Activity-based access expansion
+    - Inactivity-triggered restrictions
+    - Quality-based privilege adjustments
+    - Collaboration-driven permissions
+    - Performance-linked access levels
+    
+    Integration-driven changes:
+    - Calendar-based access windows
+    - Task management integration
+    - Approval workflow triggers
+    - Notification-driven permissions
+    - External tool synchronization
+    ```
+  </Tab>
+  
+  <Tab title="Permission Templates">
+    **Standardized permission sets:**
+    
+    <AccordionGroup>
+      <Accordion title="Role-Based Templates">
+        ```yaml
+        Pre-configured role permissions:
+        
+        Design Director Template:
+        - Full design system access
+        - All project oversight
+        - Team management capabilities
+        - Client communication rights
+        - Strategic planning access
+        
+        Junior Designer Template:
+        - Supervised design access
+        - Learning project participation
+        - Peer review capabilities
+        - Asset library usage
+        - Mentorship program inclusion
+        
+        Client Reviewer Template:
+        - Project-specific viewing
+        - Commenting capabilities
+        - Approval workflow participation
+        - Export limitations
+        - Time-bounded access
+        ```
+      </Accordion>
+      
+      <Accordion title="Project Type Templates">
+        ```yaml
+        Project-specific permission sets:
+        
+        Client Project Template:
+        - Restricted external sharing
+        - Enhanced security measures
+        - Audit trail requirements
+        - Confidentiality controls
+        - Limited download permissions
+        
+        Internal Project Template:
+        - Open team collaboration
+        - Broad sharing capabilities
+        - Flexible access controls
+        - Standard security measures
+        - Enhanced creative freedom
+        
+        Open Source Template:
+        - Public viewing capabilities
+        - Community contribution features
+        - Attribution requirements
+        - License compliance
+        - Version control integration
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Permission Management Workflows
+
+<Steps>
+  <Step title="User Onboarding">
+    **Streamlined permission assignment:**
+    
+    <Tabs>
+      <Tab title="Automated Assignment">
+        ```yaml
+        Onboarding automation:
+        
+        Role detection:
+        - Email domain analysis
+        - Department identification
+        - Seniority level assessment
+        - Team structure mapping
+        - Historical pattern matching
+        
+        Permission application:
+        - Template-based assignment
+        - Gradual access provision
+        - Probationary limitations
+        - Mentorship pairings
+        - Training requirement integration
+        ```
+      </Tab>
+      
+      <Tab title="Manual Verification">
+        ```yaml
+        Human oversight process:
+        
+        Identity verification:
+        - Manager approval requirements
+        - HR department confirmation
+        - Security clearance validation
+        - Contract status verification
+        - Compliance training completion
+        
+        Access validation:
+        - Permission level appropriateness
+        - Project relevance assessment
+        - Security requirement compliance
+        - Business need justification
+        - Timeline limitation setting
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Permission Reviews">
+    **Regular access auditing:**
+    
+    <CardGroup cols={2}>
+      <Card title="Automated Reviews" icon="robot">
+        **Systematic permission auditing:**
+        - Quarterly access reviews
+        - Unused permission detection
+        - Over-privileged user identification
+        - Compliance violation flagging
+        - Risk assessment automation
+      </Card>
+      
+      <Card title="Manual Reviews" icon="eye">
+        **Human-driven validation:**
+        - Manager-led team reviews
+        - Project-based access audits
+        - Security team assessments
+        - Compliance officer reviews
+        - Executive oversight processes
+      </Card>
+    </CardGroup>
+  </Step>
+  
+  <Step title="Permission Changes">
+    **Managed access modifications:**
+    
+    <AccordionGroup>
+      <Accordion title="Elevation Requests">
+        ```yaml
+        Permission increase process:
+        
+        Request initiation:
+        - Self-service request forms
+        - Business justification requirements
+        - Timeline specification
+        - Risk assessment inclusion
+        - Alternative consideration
+        
+        Approval workflow:
+        - Manager authorization
+        - Security team review
+        - Business owner approval
+        - Risk assessment validation
+        - Implementation scheduling
+        ```
+      </Accordion>
+      
+      <Accordion title="Access Revocation">
+        ```yaml
+        Permission removal triggers:
+        
+        Immediate revocation:
+        - Employment termination
+        - Security policy violations
+        - Project completion
+        - Role changes
+        - Compliance requirements
+        
+        Gradual reduction:
+        - Project phase transitions
+        - Responsibility changes
+        - Performance-based adjustments
+        - Seasonal access patterns
+        - Cost optimization measures
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Security and Compliance
+
+<Tabs>
+  <Tab title="Enterprise Security">
+    **Advanced security features:**
+    
+    <Frame>
+      <img src="/images/enterprise-security.png" alt="Enterprise security dashboard showing access controls, audit logs, and compliance metrics" />
+    </Frame>
+    
+    **Security measures:**
+    ```yaml
+    Access control:
+    - Multi-factor authentication
+    - Single sign-on integration
+    - Session management
+    - Device registration
+    - Network restrictions
+    
+    Monitoring and logging:
+    - Real-time access monitoring
+    - Permission change tracking
+    - Suspicious activity detection
+    - Compliance violation alerting
+    - Incident response automation
+    
+    Data protection:
+    - Encryption at rest and transit
+    - Data loss prevention
+    - Backup and recovery
+    - Geographic restrictions
+    - Retention policy enforcement
+    ```
+  </Tab>
+  
+  <Tab title="Compliance Frameworks">
+    **Industry standard compliance:**
+    
+    <AccordionGroup>
+      <Accordion title="SOC 2 Compliance">
+        ```yaml
+        SOC 2 Type II requirements:
+        - Security principle implementation
+        - Availability assurance measures
+        - Processing integrity controls
+        - Confidentiality protection
+        - Privacy safeguard implementation
+        
+        Control implementation:
+        - Access control procedures
+        - Change management processes
+        - Monitoring and logging systems
+        - Incident response protocols
+        - Risk assessment frameworks
+        ```
+      </Accordion>
+      
+      <Accordion title="GDPR Compliance">
+        ```yaml
+        GDPR requirement fulfillment:
+        - Lawful basis documentation
+        - Consent management systems
+        - Data subject rights implementation
+        - Privacy by design principles
+        - Data breach notification procedures
+        
+        Technical measures:
+        - Data minimization practices
+        - Purpose limitation enforcement
+        - Storage limitation controls
+        - Accuracy maintenance procedures
+        - Security of processing measures
+        ```
+      </Accordion>
+      
+      <Accordion title="Industry-Specific">
+        ```yaml
+        Sector compliance:
+        
+        Healthcare (HIPAA):
+        - PHI protection measures
+        - Access control requirements
+        - Audit log maintenance
+        - Business associate agreements
+        - Risk assessment procedures
+        
+        Financial (SOX):
+        - Internal control documentation
+        - Financial reporting accuracy
+        - Change management procedures
+        - Access control reviews
+        - Segregation of duties
+        
+        Government (FedRAMP):
+        - Security control implementation
+        - Continuous monitoring
+        - Incident response procedures
+        - Configuration management
+        - System and information integrity
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Permission Analytics
+
+<CardGroup cols={2}>
+  <Card title="Usage Analytics" icon="chart-bar">
+    **Permission utilization insights:**
+    
+    - Access frequency patterns
+    - Permission utilization rates
+    - User activity correlations
+    - Resource usage optimization
+    - Cost-benefit analysis
+  </Card>
+  
+  <Card title="Security Metrics" icon="shield-check">
+    **Security posture monitoring:**
+    
+    - Permission violation tracking
+    - Access anomaly detection
+    - Compliance score monitoring
+    - Risk exposure assessment
+    - Incident response metrics
+  </Card>
+</CardGroup>
+
+## Best Practices
+
+<Steps>
+  <Step title="Principle of Least Privilege">
+    **Minimal necessary access:**
+    
+    ```
+    ✅ Grant minimum required permissions
+    ✅ Regular permission reviews and cleanup
+    ✅ Time-limited access for temporary needs
+    ✅ Role-based rather than individual permissions
+    ✅ Clear documentation of permission rationale
+    ```
+  </Step>
+  
+  <Step title="Permission Governance">
+    **Systematic permission management:**
+    
+    ```
+    ✅ Clear permission policies and procedures
+    ✅ Regular training on permission best practices
+    ✅ Automated permission monitoring and alerting
+    ✅ Integration with HR and IT systems
+    ✅ Documentation of permission decisions
+    ```
+  </Step>
+  
+  <Step title="User Experience Balance">
+    **Security without friction:**
+    
+    ```
+    ✅ Intuitive permission request processes
+    ✅ Clear communication of access limitations
+    ✅ Self-service options where appropriate
+    ✅ Transparent approval workflows
+    ✅ Helpful error messages and guidance
+    ```
+  </Step>
+</Steps>
+
+---
+
+<Card title="Enable Real-Time Collaboration" icon="users-cog">
+  Learn how to set up live co-editing and real-time collaboration features for seamless teamwork.
+  
+  [Co-Editing Live →](/designing/collaboration/co-editing-live)
+</Card>

@@ -1,5 +1,640 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Team Management"
+description: "Add team members, assign roles, manage permissions, and optimize collaborative workflows in Figr."
+icon: "users"
 ---
 
+# Team Management
+
+Build and manage effective design teams in Figr. Add members, assign appropriate roles, and create collaborative workflows that scale with your organization.
+
+<Callout type="success">
+**Team productivity amplified:** Well-organized teams with clear roles and permissions collaborate more effectively and produce better design outcomes.
+</Callout>
+
+## Team Structure
+
+<Tabs>
+  <Tab title="Role Hierarchy">
+    **Organizational structure for design teams:**
+    
+    <Frame>
+      <img src="/images/team-hierarchy.png" alt="Organizational chart showing different team roles and their relationships" />
+    </Frame>
+    
+    **Role definitions:**
+    ```yaml
+    Organization Owner:
+    - Full organizational control
+    - Billing and subscription management
+    - Security policy configuration
+    - Team structure planning
+    - Strategic oversight
+    
+    Team Lead:
+    - Team performance management
+    - Project assignment and oversight
+    - Quality assurance responsibility
+    - Client relationship management
+    - Resource allocation decisions
+    
+    Senior Designer:
+    - Complex project leadership
+    - Junior team member mentoring
+    - Design system contributions
+    - Cross-functional collaboration
+    - Technical design expertise
+    
+    Designer:
+    - Individual project execution
+    - Collaborative design work
+    - Design system usage
+    - Peer review participation
+    - Skill development focus
+    
+    Design Intern:
+    - Learning-focused participation
+    - Supervised project work
+    - Skill building activities
+    - Mentorship program participation
+    - Portfolio development
+    ```
+  </Tab>
+  
+  <Tab title="Cross-Functional Teams">
+    **Integrating with broader product teams:**
+    
+    <CardGroup cols={2}>
+      <Card title="Product Team Integration" icon="product-hunt">
+        **Product-focused collaboration:**
+        - Product managers with review access
+        - User researchers sharing insights
+        - Business analysts providing requirements
+        - Stakeholders with approval permissions
+      </Card>
+      
+      <Card title="Engineering Integration" icon="code">
+        **Development team collaboration:**
+        - Tech leads with feasibility input
+        - Frontend developers with implementation access
+        - DevOps engineers with deployment insights
+        - QA testers with validation access
+      </Card>
+    </CardGroup>
+    
+    **Integration benefits:**
+    ```yaml
+    Streamlined workflows:
+    - Reduced handoff friction
+    - Faster feedback cycles
+    - Better technical feasibility
+    - Improved user experience alignment
+    
+    Knowledge sharing:
+    - Cross-functional learning
+    - Shared context building
+    - Collaborative problem solving
+    - Unified goal alignment
+    ```
+  </Tab>
+  
+  <Tab title="Remote Team Management">
+    **Distributed team coordination:**
+    
+    <AccordionGroup>
+      <Accordion title="Timezone Coordination">
+        ```yaml
+        Global team management:
+        
+        Asynchronous workflows:
+        - Handoff documentation standards
+        - Progress update protocols
+        - Decision documentation requirements
+        - Clear communication channels
+        
+        Overlap optimization:
+        - Core collaboration hours identification
+        - Meeting schedule optimization
+        - Real-time work coordination
+        - Emergency contact protocols
+        
+        Cultural considerations:
+        - Communication style adaptation
+        - Holiday and vacation planning
+        - Local regulation compliance
+        - Cultural sensitivity training
+        ```
+      </Accordion>
+      
+      <Accordion title="Collaboration Tools">
+        ```yaml
+        Remote collaboration enhancement:
+        
+        Communication integration:
+        - Slack/Teams connectivity
+        - Video conferencing integration
+        - Screen sharing capabilities
+        - Voice note functionality
+        
+        Project management:
+        - Timeline and milestone tracking
+        - Task assignment and progress
+        - Resource allocation visibility
+        - Performance measurement tools
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Team Setup and Onboarding
+
+<Steps>
+  <Step title="Team Creation">
+    **Establish your design team structure:**
+    
+    <Tabs>
+      <Tab title="Initial Setup">
+        ```yaml
+        Team configuration:
+        
+        Basic information:
+        - Team name and description
+        - Primary contact designation
+        - Billing configuration
+        - Security settings
+        
+        Structure planning:
+        - Role hierarchy definition
+        - Permission level mapping
+        - Project assignment strategy
+        - Collaboration workflow design
+        
+        Resource allocation:
+        - Credit distribution planning
+        - Tool access provisioning
+        - Storage allocation
+        - Feature access configuration
+        ```
+      </Tab>
+      
+      <Tab title="Member Invitation">
+        ```yaml
+        Invitation process:
+        
+        Bulk invitations:
+        - CSV import for large teams
+        - Email domain-based invites
+        - Role pre-assignment
+        - Automated welcome messaging
+        
+        Individual invitations:
+        - Custom role assignment
+        - Project-specific access
+        - Personalized welcome messages
+        - Mentorship pairing
+        
+        External collaborators:
+        - Client access provisioning
+        - Contractor integration
+        - Temporary access management
+        - Security compliance
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Onboarding Process">
+    **Effective new team member integration:**
+    
+    <Frame>
+      <img src="/images/team-onboarding.png" alt="Onboarding checklist and progress tracking for new team members" />
+    </Frame>
+    
+    **Onboarding components:**
+    ```yaml
+    Welcome and orientation:
+    - Team introduction and structure
+    - Tool overview and training
+    - Project context and goals
+    - Communication protocols
+    
+    Skill assessment:
+    - Current capability evaluation
+    - Training need identification
+    - Mentorship assignment
+    - Learning path creation
+    
+    Initial assignments:
+    - Starter project allocation
+    - Pair programming/designing
+    - Shadow experienced team members
+    - Gradual responsibility increase
+    
+    Integration tracking:
+    - Progress milestone monitoring
+    - Feedback collection and response
+    - Performance evaluation
+    - Full integration confirmation
+    ```
+  </Step>
+  
+  <Step title="Role Assignment">
+    **Strategic role and permission distribution:**
+    
+    <AccordionGroup>
+      <Accordion title="Role-Based Permissions">
+        ```yaml
+        Permission mapping by role:
+        
+        Creative permissions:
+        - Design creation and editing rights
+        - Asset upload and management
+        - Design system contribution
+        - Template creation and sharing
+        
+        Administrative permissions:
+        - Team member management
+        - Project creation and archival
+        - Billing and subscription control
+        - Security configuration
+        
+        Collaboration permissions:
+        - Comment and review capabilities
+        - Approval workflow participation
+        - External sharing authorization
+        - Client communication rights
+        ```
+      </Accordion>
+      
+      <Accordion title="Project-Specific Roles">
+        ```yaml
+        Project role assignments:
+        
+        Project ownership:
+        - Overall project responsibility
+        - Timeline and milestone management
+        - Quality assurance oversight
+        - Stakeholder communication
+        
+        Technical leadership:
+        - Design system implementation
+        - Technical feasibility assessment
+        - Performance optimization
+        - Integration planning
+        
+        Creative direction:
+        - Visual design leadership
+        - Brand consistency oversight
+        - Creative decision making
+        - Team inspiration and guidance
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Team Performance Management
+
+<Tabs>
+  <Tab title="Performance Metrics">
+    **Track team productivity and quality:**
+    
+    <CardGroup cols={2}>
+      <Card title="Individual Metrics" icon="user">
+        **Personal performance tracking:**
+        - Design output volume and quality
+        - Collaboration contribution frequency
+        - Skill development progression
+        - Goal achievement measurement
+        - Peer feedback scores
+      </Card>
+      
+      <Card title="Team Metrics" icon="users">
+        **Collective performance assessment:**
+        - Project completion velocity
+        - Quality consistency maintenance
+        - Cross-functional collaboration
+        - Knowledge sharing frequency
+        - Innovation and creativity metrics
+      </Card>
+    </CardGroup>
+    
+    **Performance analytics:**
+    ```yaml
+    Productivity measurement:
+    - Design output per time period
+    - Revision cycle efficiency
+    - Stakeholder approval rates
+    - Implementation success rates
+    
+    Quality assessment:
+    - Design system compliance
+    - Accessibility standard adherence
+    - User experience improvement metrics
+    - Technical feasibility accuracy
+    
+    Collaboration evaluation:
+    - Cross-team interaction frequency
+    - Knowledge transfer effectiveness
+    - Mentorship contribution
+    - Team culture contribution
+    ```
+  </Tab>
+  
+  <Tab title="Goal Setting and Tracking">
+    **Structured performance management:**
+    
+    <Steps>
+      <Step title="Goal Definition">
+        Establish clear, measurable objectives aligned with team and organizational goals
+      </Step>
+      
+      <Step title="Progress Monitoring">
+        Regular check-ins and milestone tracking with data-driven insights
+      </Step>
+      
+      <Step title="Performance Reviews">
+        Comprehensive evaluation with peer feedback and improvement planning
+      </Step>
+    </Steps>
+    
+    **Goal framework:**
+    ```yaml
+    Individual goals:
+    - Skill development targets
+    - Project delivery objectives
+    - Quality improvement goals
+    - Collaboration enhancement aims
+    
+    Team goals:
+    - Collective productivity targets
+    - Innovation and experimentation
+    - Process improvement initiatives
+    - Client satisfaction objectives
+    
+    Organizational alignment:
+    - Strategic objective contribution
+    - Revenue impact measurement
+    - Market positioning support
+    - Competitive advantage building
+    ```
+  </Tab>
+  
+  <Tab title="Professional Development">
+    **Team growth and skill building:**
+    
+    <Frame>
+      <img src="/images/professional-development.png" alt="Professional development tracking showing skill progression and learning paths" />
+    </Frame>
+    
+    **Development programs:**
+    ```yaml
+    Skill building:
+    - Internal training sessions
+    - External course sponsorship
+    - Conference attendance support
+    - Certification program assistance
+    
+    Mentorship:
+    - Senior-junior pairing programs
+    - Cross-functional mentoring
+    - External mentor connections
+    - Reverse mentoring opportunities
+    
+    Career progression:
+    - Clear advancement pathways
+    - Role transition support
+    - Leadership development programs
+    - Specialization opportunity creation
+    
+    Knowledge sharing:
+    - Internal presentation opportunities
+    - Blog writing and publication
+    - Community contribution support
+    - Best practice documentation
+    ```
+  </Tab>
+</Tabs>
+
+## Team Workflow Optimization
+
+<Steps>
+  <Step title="Process Standardization">
+    **Establish consistent team workflows:**
+    
+    <Tabs>
+      <Tab title="Design Process">
+        ```yaml
+        Standardized design workflow:
+        
+        Discovery phase:
+        - Research review and synthesis
+        - Stakeholder requirement gathering
+        - Constraint identification
+        - Success criteria definition
+        
+        Ideation phase:
+        - Collaborative brainstorming
+        - Concept development
+        - Rapid prototyping
+        - Initial feasibility assessment
+        
+        Design phase:
+        - Detailed design creation
+        - Design system application
+        - Accessibility implementation
+        - Responsive design development
+        
+        Validation phase:
+        - Internal design review
+        - Stakeholder feedback collection
+        - User testing coordination
+        - Iteration and refinement
+        
+        Handoff phase:
+        - Development specification creation
+        - Asset preparation and delivery
+        - Implementation support
+        - Launch coordination
+        ```
+      </Tab>
+      
+      <Tab title="Review Process">
+        ```yaml
+        Quality assurance workflow:
+        
+        Peer review:
+        - Design critique sessions
+        - Collaborative improvement
+        - Knowledge sharing
+        - Skill development
+        
+        Stakeholder review:
+        - Structured feedback collection
+        - Decision documentation
+        - Approval tracking
+        - Communication management
+        
+        Technical review:
+        - Feasibility validation
+        - Performance assessment
+        - Accessibility compliance
+        - Implementation planning
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Communication Protocols">
+    **Effective team communication:**
+    
+    <AccordionGroup>
+      <Accordion title="Regular Meetings">
+        ```yaml
+        Meeting structure:
+        
+        Daily standups:
+        - Progress updates
+        - Blocker identification
+        - Resource need communication
+        - Collaboration coordination
+        
+        Weekly reviews:
+        - Project milestone assessment
+        - Quality metric review
+        - Process improvement discussion
+        - Team alignment verification
+        
+        Monthly retrospectives:
+        - Process effectiveness evaluation
+        - Team satisfaction assessment
+        - Improvement opportunity identification
+        - Goal adjustment and planning
+        ```
+      </Accordion>
+      
+      <Accordion title="Documentation Standards">
+        ```yaml
+        Documentation requirements:
+        
+        Project documentation:
+        - Clear project briefs and requirements
+        - Decision rationale recording
+        - Progress update maintenance
+        - Final deliverable documentation
+        
+        Process documentation:
+        - Workflow guideline maintenance
+        - Best practice compilation
+        - Tool usage instructions
+        - Troubleshooting guides
+        
+        Knowledge base:
+        - Design pattern library
+        - Component usage guidelines
+        - Brand standard documentation
+        - Client requirement archives
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  
+  <Step title="Tool Integration">
+    **Seamless workflow tool connectivity:**
+    
+    ```yaml
+    Integration ecosystem:
+    
+    Project management:
+    - Jira integration for task tracking
+    - Asana connectivity for project planning
+    - Trello boards for workflow visualization
+    - Monday.com for resource management
+    
+    Communication tools:
+    - Slack workspace integration
+    - Microsoft Teams connectivity
+    - Discord server integration
+    - Email notification systems
+    
+    Development tools:
+    - GitHub repository connections
+    - GitLab project integration
+    - Figma import/export capabilities
+    - Code generation tool connectivity
+    ```
+  </Step>
+</Steps>
+
+## Team Security and Compliance
+
+<CardGroup cols={2}>
+  <Card title="Access Control" icon="lock">
+    **Secure team access management:**
+    
+    - Role-based permission systems
+    - Project-level access control
+    - Time-limited access grants
+    - Device registration requirements
+    - Geographic access restrictions
+  </Card>
+  
+  <Card title="Compliance Management" icon="shield-check">
+    **Regulatory requirement adherence:**
+    
+    - GDPR compliance for EU team members
+    - SOC 2 security standard implementation
+    - Industry-specific requirement adherence
+    - Audit trail maintenance
+    - Data protection protocol enforcement
+  </Card>
+</CardGroup>
+
+## Best Practices
+
+<Steps>
+  <Step title="Team Building">
+    **Foster effective team dynamics:**
+    
+    ```
+    ✅ Clear role definitions and expectations
+    ✅ Regular communication and feedback
+    ✅ Collaborative decision-making processes
+    ✅ Recognition and celebration of achievements
+    ✅ Continuous learning and development opportunities
+    ```
+  </Step>
+  
+  <Step title="Performance Optimization">
+    **Maximize team effectiveness:**
+    
+    ```
+    ✅ Data-driven performance measurement
+    ✅ Regular process evaluation and improvement
+    ✅ Tool optimization and integration
+    ✅ Skill gap identification and training
+    ✅ Work-life balance maintenance
+    ```
+  </Step>
+  
+  <Step title="Culture Development">
+    **Build positive team culture:**
+    
+    ```
+    ✅ Open communication and transparency
+    ✅ Innovation and experimentation encouragement
+    ✅ Diversity and inclusion promotion
+    ✅ Knowledge sharing and mentorship
+    ✅ Work quality and pride cultivation
+    ```
+  </Step>
+</Steps>
+
+---
+
+<Card title="Legal Documentation" icon="scale">
+  Review important legal information including terms of service, privacy policy, and data protection details.
+  
+  [Terms of Service →](/legal/terms)
+</Card>

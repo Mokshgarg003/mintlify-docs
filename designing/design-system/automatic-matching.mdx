@@ -1,5 +1,505 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Automatic Matching"
+description: "Figr automatically identifies and applies your design patterns, ensuring consistency and suggesting improvements across all designs."
+icon: "target"
 ---
 
+# Automatic Matching
+
+Figr's pattern recognition ensures design consistency without manual effort. Learn how automatic matching works and how to leverage it for better design systems.
+
+<Callout type="tip">
+**Effortless consistency:** Figr automatically identifies your design patterns and applies them consistently, while suggesting improvements to strengthen your design system.
+</Callout>
+
+## How Automatic Matching Works
+
+<Steps>
+  <Step title="Pattern Recognition">
+    **Figr analyzes your existing designs:**
+    
+    <Frame>
+      <img src="/images/pattern-recognition.png" alt="Interface showing Figr analyzing existing designs and identifying common patterns" />
+    </Frame>
+    
+    **Analysis capabilities:**
+    ```yaml
+    Visual pattern detection:
+    - Color usage frequency and combinations
+    - Typography hierarchies and relationships
+    - Spacing patterns and rhythms
+    - Component shapes and styling
+    - Layout structures and grids
+    
+    Interaction pattern recognition:
+    - Button behaviors and states
+    - Form validation approaches
+    - Navigation interaction models
+    - Hover and focus effects
+    - Animation and transition styles
+    ```
+  </Step>
+  
+  <Step title="Pattern Classification">
+    **Organizing discovered patterns:**
+    
+    <Tabs>
+      <Tab title="Component Patterns">
+        ```yaml
+        Identified components:
+        
+        Button variations:
+        - Primary: Blue background, white text
+        - Secondary: White background, blue border
+        - Danger: Red background, white text
+        - Ghost: Transparent background, blue text
+        
+        Card patterns:
+        - Standard: White background, subtle shadow
+        - Elevated: Higher shadow, slight border
+        - Flat: No shadow, border only
+        - Highlighted: Colored left border accent
+        ```
+      </Tab>
+      
+      <Tab title="Layout Patterns">
+        ```yaml
+        Structural patterns:
+        
+        Page layouts:
+        - Dashboard: Sidebar + main content + right panel
+        - Settings: Vertical navigation + form areas
+        - List view: Header + filterable content + pagination
+        - Detail view: Breadcrumbs + content + actions
+        
+        Component arrangements:
+        - Form sections: Label + input + help text
+        - Data rows: Icon + primary text + secondary + actions
+        - Navigation items: Icon + label + badge/arrow
+        ```
+      </Tab>
+      
+      <Tab title="Content Patterns">
+        ```yaml
+        Information patterns:
+        
+        Typography hierarchy:
+        - Page titles: 32px, bold, brand color
+        - Section headers: 24px, semibold, dark gray
+        - Body text: 16px, regular, medium gray
+        - Captions: 14px, regular, light gray
+        
+        Content organization:
+        - Error messages: Icon + text + action button
+        - Success states: Checkmark + title + description
+        - Empty states: Illustration + headline + call-to-action
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Pattern Application">
+    **Automatic pattern matching in new designs:**
+    
+    <AccordionGroup>
+      <Accordion title="Context-Aware Matching">
+        ```yaml
+        Smart pattern selection:
+        
+        Button context matching:
+        Form submission → Primary button pattern
+        Destructive action → Danger button pattern
+        Secondary action → Secondary button pattern
+        Navigation link → Ghost button pattern
+        
+        Layout context matching:
+        User management → Settings layout pattern
+        Data visualization → Dashboard layout pattern
+        Content browsing → List view pattern
+        ```
+      </Accordion>
+      
+      <Accordion title="Confidence Scoring">
+        ```yaml
+        Pattern match confidence:
+        
+        High confidence (90%+):
+        - Exact color and typography matches
+        - Identical component structures
+        - Perfect spacing alignments
+        
+        Medium confidence (70-89%):
+        - Similar but not identical patterns
+        - Minor variations in implementation
+        - Close but not exact measurements
+        
+        Low confidence (50-69%):
+        - Conceptually similar patterns
+        - Different implementation approaches
+        - Potential pattern variations
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Pattern Enhancement Suggestions
+
+<Tabs>
+  <Tab title="Consistency Improvements">
+    **Identifying and fixing inconsistencies:**
+    
+    <Frame>
+      <img src="/images/consistency-suggestions.png" alt="Interface showing suggestions for improving design consistency across components" />
+    </Frame>
+    
+    **Common improvement areas:**
+    ```yaml
+    Color consistency:
+    Issue: "Using #1a73e8 and #1976d2 for primary actions"
+    Suggestion: "Standardize on single primary blue: #1a73e8"
+    Impact: "Affects 23 components across 8 pages"
+    
+    Spacing inconsistency:
+    Issue: "Card padding varies between 16px, 20px, and 24px"
+    Suggestion: "Standardize card padding to 20px"
+    Impact: "Creates uniform visual rhythm"
+    
+    Typography hierarchy:
+    Issue: "Section headers use 22px, 24px, and 26px"
+    Suggestion: "Use consistent 24px for all section headers"
+    Impact: "Improves content hierarchy clarity"
+    ```
+  </Tab>
+  
+  <Tab title="Pattern Evolution">
+    **Suggestions for pattern improvements:**
+    
+    <CardGroup cols={2}>
+      <Card title="Accessibility Enhancements" icon="universal-access">
+        **Improve pattern accessibility:**
+        - Increase color contrast ratios
+        - Add focus indicators
+        - Improve touch target sizes
+        - Enhance keyboard navigation
+      </Card>
+      
+      <Card title="Modern Pattern Updates" icon="refresh">
+        **Evolve patterns with best practices:**
+        - Update interaction conventions
+        - Improve mobile responsiveness
+        - Add loading and error states
+        - Enhance visual feedback
+      </Card>
+    </CardGroup>
+  </Tab>
+  
+  <Tab title="Missing Pattern Detection">
+    **Identify gaps in your design system:**
+    
+    ```yaml
+    Common missing patterns:
+    
+    State variations:
+    Found: Default button state
+    Missing: Loading, disabled, hover states
+    Recommendation: Complete button state library
+    
+    Responsive variations:
+    Found: Desktop navigation
+    Missing: Mobile navigation pattern
+    Recommendation: Mobile-first navigation design
+    
+    Error handling:
+    Found: Form validation
+    Missing: Page-level error patterns
+    Recommendation: Comprehensive error state system
+    ```
+  </Tab>
+</Tabs>
+
+## Advanced Matching Features
+
+<Steps>
+  <Step title="Semantic Pattern Understanding">
+    **Beyond visual matching to purpose recognition:**
+    
+    <AccordionGroup>
+      <Accordion title="Functional Classification">
+        ```yaml
+        Purpose-based pattern recognition:
+        
+        Primary actions: "Get Started", "Save Changes", "Submit"
+        Secondary actions: "Cancel", "Back", "Edit"
+        Destructive actions: "Delete", "Remove", "Clear"
+        Informational actions: "Learn More", "View Details", "Help"
+        
+        Context understanding:
+        - Form submission buttons (primary style)
+        - Navigation buttons (ghost style)
+        - Confirmation dialogs (secondary + primary)
+        - Error states (danger styling)
+        ```
+      </Accordion>
+      
+      <Accordion title="Content-Aware Matching">
+        ```yaml
+        Content context recognition:
+        
+        User-generated content: Flexible containers, overflow handling
+        System messages: Consistent alert styling, icon usage
+        Marketing content: Brand-forward styling, engaging visuals
+        Data displays: Information density, scanning optimization
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  
+  <Step title="Cross-Platform Pattern Adaptation">
+    **Intelligent pattern translation across platforms:**
+    
+    <Tabs>
+      <Tab title="Web to Mobile">
+        ```yaml
+        Adaptive pattern translation:
+        
+        Desktop hover states → Mobile press states
+        Click interactions → Touch gestures
+        Tooltips → Contextual panels
+        Dropdown menus → Bottom sheets
+        Multi-column layouts → Stacked layouts
+        ```
+      </Tab>
+      
+      <Tab title="Platform-Specific Patterns">
+        ```yaml
+        Native pattern integration:
+        
+        iOS adaptations:
+        - Navigation: Back buttons, tab bars
+        - Actions: Swipe gestures, long press
+        - Feedback: Haptic feedback integration
+        
+        Android adaptations:
+        - Material Design components
+        - Floating action buttons
+        - Bottom navigation patterns
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Pattern Performance Optimization">
+    **Suggest performance-optimized pattern implementations:**
+    
+    ```yaml
+    Performance improvements:
+    
+    Image optimization:
+    Pattern: Hero image backgrounds
+    Suggestion: WebP format with fallbacks
+    Impact: 40% faster page loads
+    
+    Animation efficiency:
+    Pattern: Button hover effects
+    Suggestion: Transform-based animations
+    Impact: Smoother 60fps animations
+    
+    Layout optimization:
+    Pattern: Grid-based layouts
+    Suggestion: CSS Grid over flexbox for complex layouts
+    Impact: Better rendering performance
+    ```
+  </Step>
+</Steps>
+
+## Customizing Automatic Matching
+
+<Tabs>
+  <Tab title="Pattern Priorities">
+    **Control which patterns take precedence:**
+    
+    <Frame>
+      <img src="/images/pattern-priorities.png" alt="Interface for setting pattern matching priorities and preferences" />
+    </Frame>
+    
+    **Priority configuration:**
+    ```yaml
+    Matching preferences:
+    
+    Brand consistency: High priority
+    - Always use brand colors over generic
+    - Maintain brand typography hierarchy
+    - Apply brand-specific spacing
+    
+    Accessibility: Critical priority
+    - Override patterns that fail accessibility
+    - Prioritize WCAG-compliant variations
+    - Suggest accessibility improvements
+    
+    Platform conventions: Medium priority
+    - Follow iOS/Android design guidelines
+    - Respect web usability conventions
+    - Consider cross-platform consistency
+    ```
+  </Tab>
+  
+  <Tab title="Pattern Exceptions">
+    **Define when to break pattern consistency:**
+    
+    ```yaml
+    Exception scenarios:
+    
+    Marketing pages:
+    - Allow brand expression variations
+    - Enable creative layout exploration
+    - Permit non-standard color usage
+    
+    Error and edge cases:
+    - Prioritize clarity over consistency
+    - Use attention-grabbing variations
+    - Apply emergency state patterns
+    
+    Experimental features:
+    - Enable pattern innovation
+    - Allow testing new approaches
+    - Document experimental decisions
+    ```
+  </Tab>
+  
+  <Tab title="Learning Controls">
+    **Manage how Figr learns from your designs:**
+    
+    <AccordionGroup>
+      <Accordion title="Pattern Approval">
+        ```yaml
+        Review and approval workflow:
+        
+        New pattern detection:
+        1. Figr identifies potential new pattern
+        2. Presents pattern for team review
+        3. Team approves or rejects pattern
+        4. Approved patterns added to library
+        5. Rejected patterns marked as exceptions
+        ```
+      </Accordion>
+      
+      <Accordion title="Pattern Deprecation">
+        ```yaml
+        Evolving away from old patterns:
+        
+        Deprecation process:
+        1. Mark pattern as deprecated
+        2. Set replacement pattern
+        3. Gradual migration suggestions
+        4. Timeline for pattern removal
+        5. Impact assessment and team notification
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Pattern Quality Assurance
+
+<Steps>
+  <Step title="Automated Pattern Validation">
+    **Quality checks for pattern consistency:**
+    
+    ```yaml
+    Validation checks:
+    
+    Accessibility compliance:
+    - Color contrast ratio verification
+    - Touch target size validation
+    - Keyboard navigation support
+    - Screen reader compatibility
+    
+    Visual consistency:
+    - Typography scale adherence
+    - Color palette compliance
+    - Spacing system alignment
+    - Component proportion harmony
+    
+    Technical feasibility:
+    - Implementation complexity assessment
+    - Performance impact evaluation
+    - Cross-browser compatibility
+    - Responsive behavior validation
+    ```
+  </Step>
+  
+  <Step title="Pattern Usage Analytics">
+    **Track pattern effectiveness:**
+    
+    <CardGroup cols={2}>
+      <Card title="Usage Metrics" icon="chart-bar">
+        **Pattern adoption tracking:**
+        - Frequency of pattern application
+        - Success rate of automatic matching
+        - User satisfaction with suggestions
+        - Time saved through automation
+      </Card>
+      
+      <Card title="Performance Impact" icon="zap">
+        **Pattern performance analysis:**
+        - Loading time impact
+        - User interaction success rates
+        - Conversion rate improvements
+        - Accessibility score improvements
+      </Card>
+    </CardGroup>
+  </Step>
+  
+  <Step title="Continuous Improvement">
+    **Evolve patterns based on data:**
+    
+    ```yaml
+    Improvement cycle:
+    
+    Data collection:
+    - User behavior analytics
+    - Design system usage patterns
+    - Performance monitoring
+    - Accessibility audits
+    
+    Pattern refinement:
+    - Identify underperforming patterns
+    - Test pattern variations
+    - Update pattern definitions
+    - Document improvement rationale
+    ```
+  </Step>
+</Steps>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Pattern Definition" icon="ruler">
+    **Create clear, reusable patterns:**
+    
+    ✅ Define patterns with specific contexts
+    ✅ Document pattern usage guidelines
+    ✅ Include accessibility requirements
+    ✅ Plan for responsive variations
+    ✅ Consider cross-platform adaptations
+  </Card>
+  
+  <Card title="System Evolution" icon="trending-up">
+    **Grow your pattern library strategically:**
+    
+    ✅ Regular pattern audits and cleanup
+    ✅ Gradual pattern evolution over revolution
+    ✅ Team consensus on pattern changes
+    ✅ Clear deprecation and migration paths
+    ✅ Documentation of pattern decisions
+  </Card>
+</CardGroup>
+
+---
+
+<Card title="Phase 3 Complete!" icon="check-circle">
+  **Congratulations!** You've completed the advanced designing features. Ready to move to precise editing and export capabilities.
+  
+  [Precise Edits →](/designing/edits/click-to-refine)
+</Card>

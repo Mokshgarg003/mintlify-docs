@@ -1,5 +1,344 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Organizing Iterations"
+description: "Structure your design evolution and iteration cycles for clear progress tracking and decision making."
+icon: "repeat"
 ---
 
+# Organizing Iterations
+
+Design is iterative by nature. Figr helps you organize design evolution clearly, making it easy to track progress, compare alternatives, and maintain design history.
+
+<Callout type="tip">
+**Design evolution made visible:** See your design journey from concept to completion, understand what worked, and build on successful patterns.
+</Callout>
+
+## Iteration Organization Patterns
+
+<Tabs>
+  <Tab title="Linear Evolution">
+    **Sequential design progression:**
+    
+    <Frame>
+      <img src="/images/linear-iterations.png" alt="Canvas showing linear progression from wireframe to final design" />
+    </Frame>
+    
+    **When to use:**
+    - Clear design direction
+    - Incremental improvements
+    - Client presentation needs
+    - Timeline-based development
+    
+    **Organization:**
+    ```
+    v1.0: Initial concept → v1.1: Stakeholder feedback → 
+    v1.2: User testing → v2.0: Final design
+    ```
+  </Tab>
+  
+  <Tab title="Branching Exploration">
+    **Parallel alternative development:**
+    
+    <CardGroup cols={2}>
+      <Card title="Concept Branches" icon="git-branch">
+        Explore different approaches simultaneously before converging on the best solution
+      </Card>
+      
+      <Card title="Feature Variations" icon="layers">
+        Test multiple interaction patterns or visual approaches for specific features
+      </Card>
+    </CardGroup>
+    
+    **Organization:**
+    ```
+    Main concept
+    ├── Approach A: Minimal design
+    ├── Approach B: Rich interactions  
+    └── Approach C: Mobile-first
+    ```
+  </Tab>
+  
+  <Tab title="Cyclical Refinement">
+    **Continuous improvement cycles:**
+    
+    <Steps>
+      <Step title="Design">Create initial concept</Step>
+      <Step title="Test">Gather feedback or data</Step>
+      <Step title="Learn">Analyze results</Step>
+      <Step title="Iterate">Refine based on insights</Step>
+    </Steps>
+    
+    **Perfect for:**
+    - User testing cycles
+    - A/B testing workflows
+    - Agile development
+    - Continuous product improvement
+  </Tab>
+</Tabs>
+
+## Iteration Management Tools
+
+<Steps>
+  <Step title="Version Control">
+    **Track design changes systematically:**
+    
+    <AccordionGroup>
+      <Accordion title="Automatic Versioning">
+        ```yaml
+        Auto-save points:
+        - Significant design changes
+        - Before team collaboration
+        - Daily work session saves
+        - Pre-review snapshots
+        
+        Version naming:
+        - Semantic versioning (v1.2.3)
+        - Date-based (2024-03-15)
+        - Feature-based (checkout-v2)
+        - Custom naming schemes
+        ```
+      </Accordion>
+      
+      <Accordion title="Manual Checkpoints">
+        ```yaml
+        Create named versions:
+        - "Stakeholder review ready"
+        - "User testing version"
+        - "Developer handoff"
+        - "Final approved design"
+        
+        Include context:
+        - What changed and why
+        - Decisions made
+        - Feedback incorporated
+        - Next steps planned
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  
+  <Step title="Change Tracking">
+    **Visualize design evolution:**
+    
+    <Frame>
+      <img src="/images/change-tracking.png" alt="Interface showing design changes highlighted and annotated" />
+    </Frame>
+    
+    **Change indicators:**
+    ```
+    🟢 New elements added
+    🔵 Modified existing elements
+    🟡 Moved or repositioned items
+    🔴 Removed elements
+    ⚪ Unchanged from previous version
+    ```
+  </Step>
+  
+  <Step title="Comparison Views">
+    **Side-by-side analysis:**
+    
+    <Tabs>
+      <Tab title="Before/After">
+        **Sequential comparison:**
+        ```
+        Split view: Previous | Current
+        Overlay mode: Changes highlighted
+        Animation: Morph between versions
+        Diff view: Structural changes only
+        ```
+      </Tab>
+      
+      <Tab title="Multi-Version">
+        **Compare multiple alternatives:**
+        ```
+        Grid layout: All versions visible
+        Carousel mode: Swipe between options
+        Focus mode: One version highlighted
+        Matrix view: Feature comparison table
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+</Steps>
+
+## Iteration Documentation
+
+<CardGroup cols={2}>
+  <Card title="Design Rationale" icon="lightbulb">
+    **Document decision reasoning:**
+    
+    ```yaml
+    For each iteration:
+    - What problem it solves
+    - Why this approach was chosen
+    - What alternatives were considered
+    - Success metrics defined
+    - Testing or validation planned
+    ```
+  </Card>
+  
+  <Card title="Feedback Integration" icon="message-square">
+    **Track how feedback shapes design:**
+    
+    ```yaml
+    Feedback sources:
+    - Stakeholder reviews
+    - User testing sessions
+    - Team collaboration
+    - Analytics insights
+    - Technical constraints
+    ```
+  </Card>
+</CardGroup>
+
+## Collaborative Iteration
+
+<Steps>
+  <Step title="Team Iteration Workflows">
+    **Structured team collaboration:**
+    
+    <Tabs>
+      <Tab title="Designer-Led">
+        ```yaml
+        Process:
+        1. Designer creates initial concepts
+        2. Team provides feedback and requirements
+        3. Designer iterates based on input
+        4. Review and approval cycle
+        5. Handoff to development
+        ```
+      </Tab>
+      
+      <Tab title="Collaborative Design">
+        ```yaml
+        Process:
+        1. Team brainstorms together
+        2. Multiple people contribute designs
+        3. Collaborative refinement
+        4. Consensus building
+        5. Unified final direction
+        ```
+      </Tab>
+      
+      <Tab title="Review-Driven">
+        ```yaml
+        Process:
+        1. Design checkpoint presentations
+        2. Structured feedback collection
+        3. Prioritized improvement list
+        4. Iteration assignments
+        5. Follow-up review cycles
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Async Iteration">
+    **Work across time zones effectively:**
+    
+    ```yaml
+    Handoff tools:
+    - Progress notes on each iteration
+    - Clear next steps documentation
+    - Priority levels for feedback items
+    - Context preservation between sessions
+    - Change summaries for quick catch-up
+    ```
+  </Step>
+</Steps>
+
+## Iteration Analytics
+
+<Tabs>
+  <Tab title="Design Metrics">
+    **Track iteration effectiveness:**
+    
+    <AccordionGroup>
+      <Accordion title="Progress Indicators">
+        ```yaml
+        Measure iteration success:
+        - Time to stakeholder approval
+        - Number of revision cycles
+        - Feedback resolution rate
+        - Team satisfaction scores
+        - Design system compliance
+        ```
+      </Accordion>
+      
+      <Accordion title="Quality Metrics">
+        ```yaml
+        Design improvement tracking:
+        - Usability test score improvements
+        - Accessibility compliance increases
+        - Performance optimizations
+        - User satisfaction changes
+        - Conversion rate impacts
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Process Optimization">
+    **Improve iteration workflows:**
+    
+    ```yaml
+    Workflow insights:
+    - Which iteration patterns work best
+    - Common feedback themes
+    - Bottlenecks in approval process
+    - Most effective review methods
+    - Team collaboration efficiency
+    ```
+  </Tab>
+</Tabs>
+
+## Best Practices for Iteration Organization
+
+<Steps>
+  <Step title="Clear Naming Conventions">
+    **Consistent iteration labeling:**
+    
+    ```
+    ✅ Good naming:
+    "Dashboard v2.1 - Mobile responsive"
+    "Checkout flow - Post user testing"
+    "Navigation - Accessibility improvements"
+    
+    ❌ Avoid vague names:
+    "Design 1", "Latest version", "Final final"
+    ```
+  </Step>
+  
+  <Step title="Strategic Iteration Points">
+    **Plan meaningful checkpoints:**
+    
+    ```yaml
+    Natural iteration triggers:
+    - After user research sessions
+    - Before stakeholder presentations
+    - Following technical feasibility reviews
+    - Post-accessibility audits
+    - After A/B test results
+    ```
+  </Step>
+  
+  <Step title="Archive Management">
+    **Keep workspace organized:**
+    
+    ```yaml
+    Organization strategy:
+    - Active iterations: Central workspace
+    - Recent versions: Nearby reference
+    - Archived concepts: Separate area
+    - Rejected ideas: Documented but hidden
+    - Final approved: Clearly marked
+    ```
+  </Step>
+</Steps>
+
+---
+
+<Card title="Learn About Design Comparison" icon="balance-scale">
+  Discover how to effectively compare design alternatives and make informed decisions.
+  
+  [Comparing Designs →](/designing/canvas/comparing-designs)
+</Card>

@@ -1,5 +1,363 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Links & Notes"
+description: "Add contextual links and notes to provide Figr with comprehensive product understanding and design guidance."
+icon: "link"
 ---
 
+# Links & Notes
+
+Enhance Figr's product understanding with contextual links and detailed notes. Share references, document decisions, and provide ongoing guidance that shapes every design.
+
+<Callout type="info">
+**Contextual intelligence:** Links and notes create a rich knowledge base that Figr references when making design decisions, ensuring consistency and context-awareness.
+</Callout>
+
+## Types of Contextual Information
+
+<Tabs>
+  <Tab title="Reference Links">
+    **External resources that inform design:**
+    
+    <CardGroup cols={2}>
+      <Card title="Product References" icon="external-link">
+        - Live product URLs (staging/production)
+        - Competitor websites and apps
+        - Industry best practices
+        - Design inspiration sources
+        - Documentation sites
+      </Card>
+      
+      <Card title="Research Resources" icon="search">
+        - User testing videos
+        - Analytics dashboards
+        - Survey results
+        - Case studies
+        - Academic research
+      </Card>
+    </CardGroup>
+  </Tab>
+  
+  <Tab title="Design Notes">
+    **Contextual guidance and decisions:**
+    
+    ```
+    Decision Notes:
+    "We use blue for primary actions because user testing 
+    showed 23% better click-through rates vs. green"
+    
+    Constraint Notes:
+    "Mobile layouts must work with one-handed usage - 
+    primary actions in thumb reach zone"
+    
+    Pattern Notes:
+    "Error messages appear below form fields, not above, 
+    based on eye-tracking studies"
+    ```
+  </Tab>
+  
+  <Tab title="Team Knowledge">
+    **Institutional memory and learnings:**
+    
+    - Design rationale and reasoning
+    - A/B test results and insights
+    - User feedback themes
+    - Technical implementation notes
+    - Stakeholder preferences and requirements
+  </Tab>
+</Tabs>
+
+## Adding Links and References
+
+<Steps>
+  <Step title="Link Categories">
+    **Organize references by purpose:**
+    
+    <AccordionGroup>
+      <Accordion title="Product Context">
+        ```
+        🔗 Production app: https://app.yourproduct.com
+        🔗 Staging environment: https://staging.yourproduct.com
+        🔗 Design system: https://design.yourcompany.com
+        🔗 Component library: https://storybook.yourproduct.com
+        ```
+      </Accordion>
+      
+      <Accordion title="Research & Analytics">
+        ```
+        📊 Google Analytics: dashboard.google.com/analytics
+        🎥 User testing videos: loom.com/share/user-research
+        📋 Survey results: typeform.com/results/user-survey
+        📈 Mixpanel dashboard: mixpanel.com/project/insights
+        ```
+      </Accordion>
+      
+      <Accordion title="Inspiration & Benchmarks">
+        ```
+        🎨 Design inspiration: dribbble.com/shots/saved
+        🏆 Best practices: nngroup.com/articles/mobile-ux
+        🔍 Competitor analysis: competitor.com/feature-name
+        📱 Mobile patterns: mobbin.design/patterns
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  
+  <Step title="Contextual Notes">
+    **Add detailed context and reasoning:**
+    
+    <Frame>
+      <img src="/images/contextual-notes.png" alt="Interface for adding contextual notes with rich text formatting" />
+    </Frame>
+    
+    **Note types:**
+    ```
+    📝 Design Decisions: Why certain choices were made
+    ⚠️ Constraints: Technical or business limitations
+    💡 Insights: User research findings
+    🎯 Goals: Success metrics and objectives
+    🔄 Iterations: What was tried and why it changed
+    ```
+  </Step>
+  
+  <Step title="Smart Tagging">
+    **Automatic context organization:**
+    
+    ```yaml
+    Auto-tags based on content:
+    - #accessibility (WCAG, screen readers)
+    - #mobile-first (responsive, touch)
+    - #performance (load times, optimization)
+    - #conversion (CTAs, funnels)
+    - #enterprise (B2B, admin features)
+    - #onboarding (new user experience)
+    ```
+  </Step>
+</Steps>
+
+## Note-Taking Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Effective Notes" icon="pencil">
+    **Write notes that inform future designs:**
+    
+    ✅ **Specific and actionable**
+    "Users expect save button top-right in admin interfaces"
+    
+    ✅ **Include reasoning**
+    "Single-column mobile layout because 68% of users are one-handed"
+    
+    ✅ **Reference data**
+    "Blue CTAs convert 15% better than green (A/B test July 2024)"
+  </Card>
+  
+  <Card title="Context Hierarchy" icon="list">
+    **Organize information by importance:**
+    
+    🔴 **Critical constraints** (must follow)
+    🟡 **Strong preferences** (should follow)
+    🟢 **Nice to have** (consider when possible)
+    
+    **Example:**
+    🔴 "WCAG AA compliance required for government contract"
+    🟡 "Users prefer minimal form fields"
+    🟢 "Consider animation to delight users"
+  </Card>
+</CardGroup>
+
+## Link Processing & Integration
+
+<Tabs>
+  <Tab title="Automatic Analysis">
+    **Figr analyzes linked content:**
+    
+    ```
+    When you add: https://competitor.com/dashboard
+    
+    Figr extracts:
+    ✅ Visual design patterns
+    ✅ Layout structures
+    ✅ Color schemes and typography
+    ✅ Interactive elements
+    ✅ Content organization
+    
+    Application:
+    "Referenced competitor uses sidebar navigation 
+    with collapsible sections - consider for enterprise users"
+    ```
+  </Tab>
+  
+  <Tab title="Content Monitoring">
+    **Track changes in referenced content:**
+    
+    <CardGroup cols={2}>
+      <Card title="Update Notifications" icon="bell">
+        - Competitor feature changes
+        - Design system updates
+        - Documentation changes
+        - Research report updates
+      </Card>
+      
+      <Card title="Relevance Scoring" icon="star">
+        - High relevance: Direct feature comparisons
+        - Medium relevance: Similar user flows
+        - Low relevance: General inspiration
+        - Outdated: No longer applicable
+      </Card>
+    </CardGroup>
+  </Tab>
+  
+  <Tab title="Smart Suggestions">
+    **Figr suggests relevant links:**
+    
+    ```
+    When designing checkout flow:
+    "Consider reviewing the Stripe checkout pattern you bookmarked"
+    
+    When creating mobile layout:
+    "Reference the thumb-zone research from NN Group"
+    
+    When adding error states:
+    "Check the error message guidelines in your design system"
+    ```
+  </Tab>
+</Tabs>
+
+## Collaborative Notes
+
+<Steps>
+  <Step title="Team Contributions">
+    **Everyone adds their expertise:**
+    
+    ```yaml
+    Product Manager notes:
+    - Business requirements and constraints
+    - User feedback and feature requests
+    - Market research and competitive insights
+    
+    Designer notes:
+    - Visual design decisions and rationale
+    - Usability insights and best practices
+    - Accessibility considerations
+    
+    Engineer notes:
+    - Technical constraints and possibilities
+    - Performance implications
+    - Implementation complexity
+    ```
+  </Step>
+  
+  <Step title="Note Threading">
+    **Connected conversations:**
+    
+    <Frame>
+      <img src="/images/note-threading.png" alt="Interface showing threaded notes and discussions around design decisions" />
+    </Frame>
+    
+    **Discussion flow:**
+    - Initial note with context
+    - Team member responses and questions
+    - Resolution and final decision
+    - Reference in future designs
+  </Step>
+  
+  <Step title="Knowledge Building">
+    **Cumulative team intelligence:**
+    
+    ```
+    Month 1: Basic product context
+    Month 3: Pattern recognition and preferences
+    Month 6: Deep user understanding and edge cases
+    Month 12: Institutional knowledge and design wisdom
+    ```
+  </Step>
+</Steps>
+
+## Advanced Features
+
+<AccordionGroup>
+  <Accordion title="Smart Linking">
+    **Automatic relationship detection:**
+    ```
+    When you mention "mobile navigation" in notes,
+    Figr suggests relevant:
+    - Mobile design pattern links
+    - Competitor mobile examples
+    - Touch interaction guidelines
+    - Accessibility mobile standards
+    ```
+  </Accordion>
+  
+  <Accordion title="Note Analytics">
+    **Understand knowledge usage:**
+    ```
+    Most referenced notes:
+    1. Mobile interaction guidelines
+    2. Brand color usage rules
+    3. Enterprise user requirements
+    4. Performance constraints
+    
+    Insight: Mobile guidelines heavily used → 
+    Suggests mobile-first design approach
+    ```
+  </Accordion>
+  
+  <Accordion title="Export & Sharing">
+    **Transform notes into documentation:**
+    ```
+    Export options:
+    ✅ Design decision log (PDF)
+    ✅ Knowledge base (Markdown)
+    ✅ Team wiki pages (HTML)
+    ✅ Reference library (JSON)
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Integration with Design Process
+
+<Callout type="success">
+**Contextual design:** Notes and links become active participants in the design process, not just static documentation.
+</Callout>
+
+<Tabs>
+  <Tab title="Design Generation">
+    **Notes influence AI suggestions:**
+    ```
+    Note: "Enterprise users need bulk actions"
+    Design output: Tables include checkboxes and bulk operation toolbar
+    
+    Link: Mobile navigation best practices
+    Design output: Thumb-friendly navigation with clear touch targets
+    ```
+  </Tab>
+  
+  <Tab title="Validation">
+    **Automatic compliance checking:**
+    ```
+    Constraint note: "Buttons must be minimum 44px for accessibility"
+    Figr check: ✅ All buttons meet minimum size requirement
+    
+    Reference link: Brand guidelines
+    Figr check: ✅ Colors match brand palette
+    ```
+  </Tab>
+  
+  <Tab title="Iteration">
+    **Context-aware improvements:**
+    ```
+    Previous note: "Users confused by icon-only navigation"
+    Design suggestion: Add text labels to navigation icons
+    
+    Research link: Form completion study
+    Design suggestion: Reduce form fields based on completion data
+    ```
+  </Tab>
+</Tabs>
+
+---
+
+<Card title="Explore Screen Sharing" icon="screen-share">
+  Learn how to share your screen with Figr for the deepest product understanding possible.
+  
+  [Screen Sharing →](/designing/input/screen-sharing)
+</Card>

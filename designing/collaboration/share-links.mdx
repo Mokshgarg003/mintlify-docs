@@ -1,5 +1,594 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Share Links"
+description: "Create secure, customizable sharing links for design reviews, stakeholder feedback, and team collaboration."
+icon: "link"
 ---
 
+# Share Links
+
+Share your designs securely with stakeholders, clients, and team members through customizable sharing links. Control access, gather feedback, and maintain design confidentiality.
+
+<Callout type="info">
+**Secure collaboration:** Share designs with the right people, at the right time, with the right level of access - all while maintaining security and control over your design assets.
+</Callout>
+
+## Sharing Options
+
+<Tabs>
+  <Tab title="Public Links">
+    **Open sharing for broad collaboration:**
+    
+    <Frame>
+      <img src="/images/share-link-creation.png" alt="Interface for creating share links with various access and security options" />
+    </Frame>
+    
+    **Public link features:**
+    ```yaml
+    Access control:
+    - View-only access (default)
+    - Comment permissions
+    - Download permissions
+    - Time-limited access
+    
+    Security options:
+    - Password protection
+    - Domain restrictions
+    - Expiration dates
+    - Access logging
+    
+    Customization:
+    - Custom link names
+    - Branded sharing pages
+    - Welcome messages
+    - Usage instructions
+    ```
+  </Tab>
+  
+  <Tab title="Private Links">
+    **Secure sharing for sensitive designs:**
+    
+    <CardGroup cols={2}>
+      <Card title="Invitation-Only" icon="lock">
+        **Controlled access sharing:**
+        - Email-based invitations
+        - Account requirement for access
+        - Revokable permissions
+        - Audit trail tracking
+      </Card>
+      
+      <Card title="Team-Only" icon="users">
+        **Internal collaboration:**
+        - Organization member access
+        - Department-specific sharing
+        - Role-based permissions
+        - Automatic team sync
+      </Card>
+    </CardGroup>
+    
+    **Private sharing benefits:**
+    ```yaml
+    Enhanced security:
+    - No anonymous access
+    - User authentication required
+    - Activity monitoring
+    - Immediate access revocation
+    
+    Advanced controls:
+    - Granular permission settings
+    - Time-based access windows
+    - Device restrictions
+    - Location-based access
+    ```
+  </Tab>
+  
+  <Tab title="Embedded Links">
+    **Integration with existing workflows:**
+    
+    <AccordionGroup>
+      <Accordion title="Website Embedding">
+        ```html
+        <!-- Embed Figr design in webpage -->
+        <iframe 
+          src="https://share.figr.design/embed/abc123"
+          width="800" 
+          height="600"
+          frameborder="0"
+          allowfullscreen>
+        </iframe>
+        
+        <!-- Responsive embedding -->
+        <div class="figr-embed-container">
+          <iframe 
+            src="https://share.figr.design/embed/abc123"
+            class="figr-embed-responsive">
+          </iframe>
+        </div>
+        ```
+      </Accordion>
+      
+      <Accordion title="Presentation Integration">
+        ```yaml
+        Presentation platforms:
+        - PowerPoint/Keynote embedding
+        - Google Slides integration
+        - Figma presentation mode
+        - Custom presentation tools
+        
+        Benefits:
+        - Live design updates
+        - Interactive prototypes
+        - High-resolution display
+        - Seamless presentation flow
+        ```
+      </Accordion>
+      
+      <Accordion title="Documentation Integration">
+        ```yaml
+        Documentation platforms:
+        - Notion page embedding
+        - Confluence integration
+        - Wiki page inclusion
+        - README file displays
+        
+        Use cases:
+        - Design specification docs
+        - Style guide presentations
+        - Process documentation
+        - Training materials
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Access Control Management
+
+<Steps>
+  <Step title="Permission Levels">
+    **Granular access control options:**
+    
+    <Tabs>
+      <Tab title="Viewer Permissions">
+        ```yaml
+        View-only access includes:
+        ✅ Design viewing and navigation
+        ✅ Zoom and pan capabilities
+        ✅ Layer inspection (if enabled)
+        ✅ Measurement tools access
+        ✅ Export basic formats (if enabled)
+        
+        Restrictions:
+        ❌ No editing capabilities
+        ❌ No comment creation
+        ❌ No asset downloads
+        ❌ No sharing permissions
+        ❌ No version history access
+        ```
+      </Tab>
+      
+      <Tab title="Commenter Permissions">
+        ```yaml
+        Feedback and review access:
+        ✅ All viewer permissions
+        ✅ Comment creation and replies
+        ✅ Suggestion annotations
+        ✅ Approval/rejection marking
+        ✅ Thread participation
+        
+        Enhanced features:
+        ✅ @mention capabilities
+        ✅ Comment resolution tracking
+        ✅ Feedback categorization
+        ✅ Priority level assignment
+        ✅ Status update notifications
+        ```
+      </Tab>
+      
+      <Tab title="Collaborator Permissions">
+        ```yaml
+        Advanced collaboration access:
+        ✅ All commenter permissions
+        ✅ Design element inspection
+        ✅ Asset download access
+        ✅ High-resolution exports
+        ✅ Prototype interaction
+        
+        Professional features:
+        ✅ Specification viewing
+        ✅ Code snippet access
+        ✅ Design token inspection
+        ✅ Component library access
+        ✅ Version comparison tools
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Time-Based Access">
+    **Temporary sharing with automatic expiration:**
+    
+    <Frame>
+      <img src="/images/time-based-access.png" alt="Interface showing time-based access controls with expiration settings" />
+    </Frame>
+    
+    **Temporal access options:**
+    ```yaml
+    Short-term sharing (1-7 days):
+    - Client presentations
+    - Quick feedback rounds
+    - Emergency reviews
+    - Time-sensitive approvals
+    
+    Medium-term sharing (1-4 weeks):
+    - Project development cycles
+    - Stakeholder review periods
+    - User testing phases
+    - Implementation planning
+    
+    Long-term sharing (1-6 months):
+    - Ongoing project access
+    - Client collaboration
+    - Documentation reference
+    - Style guide maintenance
+    
+    Permanent sharing:
+    - Public portfolios
+    - Open source projects
+    - Educational materials
+    - Community resources
+    ```
+  </Step>
+  
+  <Step title="Dynamic Access Control">
+    **Smart permission management:**
+    
+    <AccordionGroup>
+      <Accordion title="Conditional Access">
+        ```yaml
+        Smart access rules:
+        
+        Time-based conditions:
+        - Business hours only access
+        - Weekend restriction
+        - Timezone-aware permissions
+        - Project phase alignment
+        
+        User-based conditions:
+        - Role-specific access levels
+        - Department-based permissions
+        - Seniority-based privileges
+        - Project involvement level
+        
+        Content-based conditions:
+        - Sensitivity level restrictions
+        - Confidentiality requirements
+        - IP protection needs
+        - Client-specific access
+        ```
+      </Accordion>
+      
+      <Accordion title="Automatic Adjustments">
+        ```yaml
+        Permission automation:
+        
+        Project lifecycle integration:
+        - Discovery phase: Broad access
+        - Development phase: Team focus
+        - Review phase: Stakeholder access
+        - Launch phase: Public sharing
+        
+        User behavior adaptation:
+        - Active users: Extended permissions
+        - Inactive users: Reduced access
+        - High-value feedback: Enhanced privileges
+        - Policy violations: Restricted access
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Feedback Collection
+
+<Tabs>
+  <Tab title="Comment System">
+    **Structured feedback collection:**
+    
+    <CardGroup cols={2}>
+      <Card title="Contextual Comments" icon="message-square">
+        **Precise feedback placement:**
+        - Pin comments to specific elements
+        - Area-based feedback regions
+        - Page-level general comments
+        - Design-wide suggestions
+      </Card>
+      
+      <Card title="Comment Threading" icon="message-circle">
+        **Organized discussions:**
+        - Reply chains and discussions
+        - Comment resolution tracking
+        - Status updates and follow-ups
+        - Decision documentation
+      </Card>
+    </CardGroup>
+    
+    **Comment features:**
+    ```yaml
+    Rich text formatting:
+    - Bold, italic, underline text
+    - Bullet points and numbering
+    - Link insertion and references
+    - Code snippet inclusion
+    
+    Media attachments:
+    - Screenshot annotations
+    - Reference image uploads
+    - Document attachments
+    - Video explanation links
+    
+    Categorization:
+    - Feedback type tagging
+    - Priority level assignment
+    - Department categorization
+    - Action item identification
+    ```
+  </Tab>
+  
+  <Tab title="Approval Workflows">
+    **Structured review processes:**
+    
+    <Steps>
+      <Step title="Review Assignment">
+        Assign specific reviewers with defined responsibilities and deadlines
+      </Step>
+      
+      <Step title="Feedback Collection">
+        Gather structured feedback with approval/rejection decisions
+      </Step>
+      
+      <Step title="Consensus Building">
+        Facilitate discussion and resolution of conflicting feedback
+      </Step>
+      
+      <Step title="Final Approval">
+        Document final decisions and approval for implementation
+      </Step>
+    </Steps>
+    
+    **Workflow automation:**
+    ```yaml
+    Automated notifications:
+    - Review assignment alerts
+    - Deadline reminders
+    - Feedback submission confirmations
+    - Approval milestone notifications
+    
+    Progress tracking:
+    - Review completion status
+    - Outstanding feedback items
+    - Approval percentage tracking
+    - Timeline adherence monitoring
+    ```
+  </Tab>
+  
+  <Tab title="Analytics and Insights">
+    **Feedback pattern analysis:**
+    
+    <Frame>
+      <img src="/images/feedback-analytics.png" alt="Analytics dashboard showing feedback patterns, response times, and collaboration metrics" />
+    </Frame>
+    
+    **Feedback metrics:**
+    ```yaml
+    Engagement analytics:
+    - View duration and frequency
+    - Comment volume and quality
+    - User participation rates
+    - Response time analysis
+    
+    Quality indicators:
+    - Actionable feedback percentage
+    - Resolution rate tracking
+    - Stakeholder satisfaction scores
+    - Design iteration efficiency
+    
+    Collaboration insights:
+    - Most active contributors
+    - Feedback category distribution
+    - Peak collaboration times
+    - Cross-functional participation
+    ```
+  </Tab>
+</Tabs>
+
+## Security and Privacy
+
+<Steps>
+  <Step title="Data Protection">
+    **Comprehensive security measures:**
+    
+    <Tabs>
+      <Tab title="Encryption">
+        ```yaml
+        Data security:
+        - TLS 1.3 for data transmission
+        - AES-256 encryption at rest
+        - End-to-end encryption for sensitive shares
+        - Secure key management
+        
+        Access security:
+        - Multi-factor authentication support
+        - SSO integration capabilities
+        - Session management and timeouts
+        - Device fingerprinting
+        ```
+      </Tab>
+      
+      <Tab title="Privacy Controls">
+        ```yaml
+        Privacy protection:
+        - Anonymous viewing options
+        - Personal data minimization
+        - GDPR compliance features
+        - Data retention controls
+        
+        Confidentiality:
+        - Watermarking options
+        - Screenshot prevention
+        - Right-click protection
+        - Print restriction capabilities
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Compliance Features">
+    **Enterprise-grade compliance:**
+    
+    <AccordionGroup>
+      <Accordion title="Audit Trails">
+        ```yaml
+        Activity logging:
+        - User access tracking
+        - Action timestamps
+        - IP address logging
+        - Device information capture
+        
+        Compliance reporting:
+        - Access audit reports
+        - Data handling documentation
+        - Privacy compliance verification
+        - Security incident tracking
+        ```
+      </Accordion>
+      
+      <Accordion title="Data Governance">
+        ```yaml
+        Data management:
+        - Retention policy enforcement
+        - Automatic data purging
+        - Export and portability
+        - Right to deletion compliance
+        
+        Geographic compliance:
+        - Data residency controls
+        - Cross-border transfer restrictions
+        - Regional privacy law compliance
+        - Localized data processing
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Advanced Sharing Features
+
+<CardGroup cols={2}>
+  <Card title="Branded Sharing" icon="paintbrush">
+    **Custom branded experience:**
+    
+    - Company logo integration
+    - Custom color schemes
+    - Branded domain usage
+    - Personalized welcome messages
+    - Corporate footer inclusion
+  </Card>
+  
+  <Card title="Integration Workflows" icon="plug">
+    **Tool ecosystem integration:**
+    
+    - Slack sharing and notifications
+    - Microsoft Teams integration
+    - Email client embedding
+    - Project management tool sync
+    - Calendar meeting integration
+  </Card>
+</CardGroup>
+
+## Sharing Best Practices
+
+<Steps>
+  <Step title="Access Strategy">
+    **Plan appropriate access levels:**
+    
+    ```
+    ✅ Use least privilege principle
+    ✅ Set appropriate expiration dates
+    ✅ Regular access review and cleanup
+    ✅ Clear sharing purpose communication
+    ✅ Document sharing decisions
+    ```
+  </Step>
+  
+  <Step title="Feedback Optimization">
+    **Maximize feedback quality:**
+    
+    ```
+    ✅ Provide context and objectives
+    ✅ Set clear feedback guidelines
+    ✅ Use structured review processes
+    ✅ Follow up on action items
+    ✅ Acknowledge contributions
+    ```
+  </Step>
+  
+  <Step title="Security Maintenance">
+    **Maintain sharing security:**
+    
+    ```
+    ✅ Regularly audit active shares
+    ✅ Revoke unnecessary access
+    ✅ Monitor for unusual activity
+    ✅ Update security settings
+    ✅ Train team on best practices
+    ```
+  </Step>
+</Steps>
+
+## Troubleshooting Common Issues
+
+<AccordionGroup>
+  <Accordion title="Access Problems">
+    ```yaml
+    Issue: Users can't access shared designs
+    Solutions:
+    - Verify link hasn't expired
+    - Check permission settings
+    - Confirm user authentication
+    - Test link functionality
+    - Review access restrictions
+    ```
+  </Accordion>
+  
+  <Accordion title="Performance Issues">
+    ```yaml
+    Issue: Slow loading of shared designs
+    Solutions:
+    - Optimize design file size
+    - Check internet connection
+    - Use appropriate sharing format
+    - Enable progressive loading
+    - Consider embedded alternatives
+    ```
+  </Accordion>
+  
+  <Accordion title="Security Concerns">
+    ```yaml
+    Issue: Unauthorized access or sharing
+    Solutions:
+    - Revoke compromised links
+    - Enable additional security measures
+    - Review and update permissions
+    - Implement stronger authentication
+    - Audit access logs
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+<Card title="Manage Team Permissions" icon="shield">
+  Learn how to set up detailed permission systems for different team roles and responsibilities.
+  
+  [Permissions →](/designing/collaboration/permissions)
+</Card>

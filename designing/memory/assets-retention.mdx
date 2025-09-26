@@ -1,5 +1,529 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Assets & Retention"
+description: "Manage how Figr stores, organizes, and retains your design assets and product knowledge over time."
+icon: "archive"
 ---
 
+# Assets & Retention
+
+Figr's asset retention system ensures your product knowledge grows stronger over time while giving you complete control over what's stored, how long it's kept, and who can access it.
+
+<Callout type="info">
+**Smart retention:** Figr automatically manages your assets for optimal performance while respecting your data governance requirements and storage preferences.
+</Callout>
+
+## Asset Categories
+
+<Tabs>
+  <Tab title="Core Assets">
+    **Permanently retained for product memory:**
+    
+    <AccordionGroup>
+      <Accordion title="Design System Components">
+        **What's stored:**
+        ```json
+        {
+          "designTokens": "Color palettes, typography, spacing",
+          "componentLibrary": "Button styles, form patterns, navigation",
+          "brandAssets": "Logos, icons, imagery guidelines",
+          "layoutPatterns": "Grid systems, breakpoints, containers"
+        }
+        ```
+        
+        **Retention:** Permanent (until manually deleted)
+        **Why:** Foundation for all future designs
+      </Accordion>
+      
+      <Accordion title="Product Context">
+        **What's stored:**
+        ```json
+        {
+          "userPersonas": "Detailed user profiles and behaviors",
+          "workflows": "Key user journeys and task flows",
+          "constraints": "Technical, business, and regulatory limits",
+          "analytics": "Performance data and usage patterns"
+        }
+        ```
+        
+        **Retention:** Permanent with version control
+        **Why:** Context improves design relevance
+      </Accordion>
+      
+      <Accordion title="Design Decisions">
+        **What's stored:**
+        ```json
+        {
+          "patternRationale": "Why certain designs work",
+          "testResults": "A/B test outcomes and learnings",
+          "userFeedback": "Research insights and usability findings",
+          "iterationHistory": "How designs evolved and why"
+        }
+        ```
+        
+        **Retention:** 2 years by default (configurable)
+        **Why:** Institutional knowledge and learning
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Working Assets">
+    **Temporary assets for active projects:**
+    
+    <CardGroup cols={2}>
+      <Card title="Draft Designs" icon="edit">
+        **Content:** Work-in-progress designs, experiments, iterations
+        
+        **Retention:** 90 days after last edit
+        
+        **Purpose:** Collaboration and review during development
+      </Card>
+      
+      <Card title="Reference Materials" icon="image">
+        **Content:** Screenshots, inspiration images, competitive analysis
+        
+        **Retention:** 1 year or until project completion
+        
+        **Purpose:** Context during design process
+      </Card>
+    </CardGroup>
+    
+    <Callout type="tip">
+    **Promotion to permanent:** Any working asset can be promoted to permanent storage if it becomes part of your core product knowledge.
+    </Callout>
+  </Tab>
+  
+  <Tab title="Cached Assets">
+    **Temporary performance optimization:**
+    
+    ```
+    Generated Images: 30 days
+    Export Files: 7 days  
+    Thumbnail Previews: 60 days
+    API Responses: 24 hours
+    ```
+    
+    **Purpose:** Speed up Figr performance
+    **Management:** Automatic cleanup, no user action needed
+  </Tab>
+</Tabs>
+
+## Retention Policies
+
+<Steps>
+  <Step title="Default Retention">
+    **Out-of-the-box settings:**
+    
+    ```yaml
+    Design System Assets: Permanent
+    Product Context: Permanent  
+    User Research: 3 years
+    Design History: 2 years
+    Draft Designs: 90 days
+    Reference Images: 1 year
+    Export Files: 7 days
+    ```
+    
+    **Rationale:** Balances memory effectiveness with storage efficiency
+  </Step>
+  
+  <Step title="Custom Policies">
+    **Adjust based on your needs:**
+    
+    <Tabs>
+      <Tab title="Startup/Small Team">
+        ```yaml
+        Focus: Maximize learning, minimize costs
+        
+        Core Assets: Permanent
+        Design History: 1 year
+        Reference Materials: 6 months
+        Drafts: 30 days
+        ```
+        
+        **Good for:** Fast iteration, limited storage budget
+      </Tab>
+      
+      <Tab title="Enterprise/Regulated">
+        ```yaml
+        Focus: Compliance and audit trails
+        
+        Core Assets: Permanent + versioned
+        Design History: 7 years  
+        User Research: 5 years
+        All Changes: Audited and retained
+        ```
+        
+        **Good for:** Regulated industries, large organizations
+      </Tab>
+      
+      <Tab title="Agency/Consultancy">
+        ```yaml
+        Focus: Client data separation
+        
+        Client Assets: Per project retention
+        Cross-Client Learning: Anonymized patterns only
+        Project Completion: Archive after 2 years
+        ```
+        
+        **Good for:** Multiple client projects, confidentiality
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Automated Cleanup">
+    **Smart asset management:**
+    
+    <Frame>
+      <img src="/images/retention-timeline.png" alt="Timeline showing how different assets are retained and cleaned up automatically" />
+    </Frame>
+    
+    **Cleanup process:**
+    1. **30 days before expiration:** Notification sent
+    2. **7 days before expiration:** Final warning with easy extension
+    3. **Expiration day:** Asset moved to recycle bin
+    4. **30 days in recycle bin:** Permanent deletion
+  </Step>
+</Steps>
+
+## Asset Organization
+
+<Tabs>
+  <Tab title="Automatic Categorization">
+    **Figr intelligently organizes your assets:**
+    
+    <AccordionGroup>
+      <Accordion title="By Asset Type">
+        ```
+        📁 Design System
+        ├── 🎨 Colors & Typography
+        ├── 🧩 Components
+        ├── 📐 Layout Patterns
+        └── 🖼️ Brand Assets
+        
+        📁 Product Knowledge
+        ├── 👥 User Research
+        ├── 🔄 Workflows
+        ├── ⚙️ Technical Constraints
+        └── 📊 Analytics Data
+        ```
+      </Accordion>
+      
+      <Accordion title="By Project Context">
+        ```
+        📁 Mobile App Design
+        ├── 📱 iOS Patterns
+        ├── 🤖 Android Adaptations
+        └── 🔄 Cross-Platform Consistency
+        
+        📁 Web Platform
+        ├── 💻 Desktop Layouts
+        ├── 📲 Mobile Responsive
+        └── ♿ Accessibility Specs
+        ```
+      </Accordion>
+      
+      <Accordion title="By Usage Frequency">
+        ```
+        ⭐ Frequently Used (quick access)
+        📌 Recently Updated (fresh context)
+        📚 Reference Library (archived but searchable)
+        🗑️ Scheduled for Cleanup (review needed)
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Manual Organization">
+    **Custom organization options:**
+    
+    <CardGroup cols={2}>
+      <Card title="Tags & Labels" icon="tag">
+        ```
+        #design-system
+        #user-research
+        #mobile-specific
+        #accessibility
+        #high-priority
+        #deprecated
+        ```
+        
+        **Use for:** Custom categorization and filtering
+      </Card>
+      
+      <Card title="Folders & Projects" icon="folder">
+        ```
+        📁 Q4 Redesign
+        📁 Mobile App Launch
+        📁 Accessibility Upgrade
+        📁 Design System V2
+        ```
+        
+        **Use for:** Project-based organization
+      </Card>
+    </CardGroup>
+    
+    **Smart suggestions:**
+    Figr suggests tags and organization based on content analysis and usage patterns.
+  </Tab>
+  
+  <Tab title="Search & Discovery">
+    **Find assets quickly:**
+    
+    ```
+    Search examples:
+    "blue button component from Q3"
+    "mobile checkout flow user research"
+    "accessibility patterns for forms"
+    "dashboard layout with sidebar navigation"
+    ```
+    
+    **Search capabilities:**
+    - Full-text search across all asset content
+    - Visual similarity search for images
+    - Semantic search for concepts and patterns
+    - Filter by date, type, project, or usage
+  </Tab>
+</Tabs>
+
+## Data Export & Backup
+
+<Callout type="success">
+**Your data, your control:** Complete export capabilities ensure you never lose access to your product knowledge and design assets.
+</Callout>
+
+<Steps>
+  <Step title="Individual Asset Export">
+    **Export specific assets:**
+    
+    <Tabs>
+      <Tab title="Design Files">
+        ```
+        Available formats:
+        ✅ Figma (.fig)
+        ✅ Sketch (.sketch)  
+        ✅ Adobe XD (.xd)
+        ✅ PNG/SVG (images)
+        ✅ PDF (presentations)
+        ```
+      </Tab>
+      
+      <Tab title="Code & Tokens">
+        ```
+        Available formats:
+        ✅ JSON (design tokens)
+        ✅ CSS/SCSS (stylesheets)
+        ✅ React/Vue (components)
+        ✅ Flutter (mobile code)
+        ✅ HTML/CSS (static)
+        ```
+      </Tab>
+      
+      <Tab title="Documentation">
+        ```
+        Available formats:
+        ✅ Markdown (documentation)
+        ✅ PDF (specifications)
+        ✅ CSV (data tables)
+        ✅ JSON (structured data)
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Bulk Export">
+    **Export entire knowledge base:**
+    
+    ```yaml
+    Export Package Contents:
+    
+    📁 design-system/
+    ├── tokens.json
+    ├── components/
+    └── documentation.md
+    
+    📁 user-research/
+    ├── personas.json
+    ├── analytics-data.csv
+    └── research-findings.pdf
+    
+    📁 design-history/
+    ├── decisions.json
+    ├── iterations/
+    └── test-results.json
+    ```
+    
+    **Delivery methods:**
+    - Direct download (ZIP file)
+    - Cloud storage sync (Dropbox, Google Drive)
+    - API integration (automated backups)
+    - Email delivery (for small exports)
+  </Step>
+  
+  <Step title="Automated Backups">
+    **Enterprise backup options:**
+    
+    <CardGroup cols={2}>
+      <Card title="Scheduled Exports" icon="calendar">
+        ```
+        Frequency: Daily/Weekly/Monthly
+        Scope: Full/Incremental/Changes only
+        Destination: Your cloud storage
+        Format: Choose optimal for your workflow
+        ```
+      </Card>
+      
+      <Card title="Real-time Sync" icon="refresh">
+        ```
+        Trigger: Every asset change
+        Method: API webhooks
+        Destination: Your systems
+        Format: JSON + files
+        ```
+      </Card>
+    </CardGroup>
+  </Step>
+</Steps>
+
+## Storage Management
+
+<Tabs>
+  <Tab title="Usage Monitoring">
+    **Track your storage usage:**
+    
+    <Frame>
+      <img src="/images/storage-dashboard.png" alt="Storage usage dashboard showing breakdown by asset type and growth over time" />
+    </Frame>
+    
+    **Usage breakdown:**
+    ```
+    Design System Assets: 45% (2.1 GB)
+    Product Context: 25% (1.2 GB)  
+    Design History: 20% (950 MB)
+    Working Files: 10% (480 MB)
+    ```
+  </Tab>
+  
+  <Tab title="Optimization Suggestions">
+    **Figr helps optimize storage:**
+    
+    <AccordionGroup>
+      <Accordion title="Automatic Optimizations">
+        ```
+        ✅ Compress uploaded images without quality loss
+        ✅ Remove duplicate assets automatically
+        ✅ Archive unused reference materials
+        ✅ Optimize export files for size
+        ```
+      </Accordion>
+      
+      <Accordion title="Manual Optimizations">
+        ```
+        📊 Review large assets (>50MB each)
+        🗑️ Clean up old drafts and experiments
+        📁 Archive completed projects
+        🔄 Update retention policies for old projects
+        ```
+      </Accordion>
+      
+      <Accordion title="Smart Suggestions">
+        Figr analyzes your usage patterns and suggests:
+        - Which assets can be safely archived
+        - Duplicate assets that can be consolidated
+        - Outdated materials that may need updating
+        - Storage policy adjustments based on team size
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Enterprise Storage">
+    **Advanced storage options:**
+    
+    ```yaml
+    On-Premise Storage:
+    - Host Figr memory on your infrastructure
+    - Complete data sovereignty
+    - Custom retention and backup policies
+    - Integration with existing storage systems
+    
+    Hybrid Cloud:
+    - Critical assets on-premise
+    - Working files in Figr cloud
+    - Automatic synchronization
+    - Compliance with data residency requirements
+    ```
+  </Tab>
+</Tabs>
+
+## Compliance & Governance
+
+<Callout type="shield">
+**Enterprise-grade compliance:** Figr's retention system supports the most stringent data governance requirements while maintaining design workflow efficiency.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="GDPR Compliance">
+    **European data protection compliance:**
+    
+    ```
+    ✅ Right to access: Export all user-related data
+    ✅ Right to rectification: Edit or correct stored data
+    ✅ Right to erasure: Delete data on request
+    ✅ Data portability: Export in machine-readable formats
+    ✅ Privacy by design: Minimal data collection
+    ✅ Consent management: Clear data usage agreements
+    ```
+  </Accordion>
+  
+  <Accordion title="Industry-Specific Requirements">
+    **Specialized compliance support:**
+    
+    ```yaml
+    Healthcare (HIPAA):
+    - Encrypted storage at rest and in transit
+    - Access logging and audit trails
+    - Business associate agreements
+    - Patient data segregation
+    
+    Financial (SOX):
+    - Immutable audit logs
+    - Change tracking and approval workflows
+    - Data retention for regulatory periods
+    - Secure deletion verification
+    
+    Government (FedRAMP):
+    - Authorized cloud infrastructure
+    - Security control implementation
+    - Continuous monitoring
+    - Incident response procedures
+    ```
+  </Accordion>
+  
+  <Accordion title="Custom Governance">
+    **Tailor retention to your policies:**
+    
+    ```
+    Policy Examples:
+    
+    "Design decisions must be retained for 5 years 
+     for patent and intellectual property protection"
+    
+    "User research data expires after 2 years 
+     unless participants provide extended consent"
+    
+    "Competitive analysis materials archived after 
+     product launch to prevent accidental disclosure"
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+<Callout type="success">
+**Asset management mastered:** You now understand how Figr intelligently manages your design assets and product knowledge for optimal performance and compliance.
+</Callout>
+
+<Card title="Explore Input Methods" icon="upload">
+  Learn how to efficiently add context and assets to Figr through various input methods.
+  
+  [Screenshots & Images →](/designing/input/screenshots-images)
+</Card>

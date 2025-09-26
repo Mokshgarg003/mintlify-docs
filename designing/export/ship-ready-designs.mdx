@@ -1,5 +1,697 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Ship-Ready Designs"
+description: "Export complete, production-ready design packages with specifications, assets, and implementation guidance for seamless developer handoff."
+icon: "rocket"
 ---
 
+# Ship-Ready Designs
+
+Deliver complete design packages that developers can implement immediately. Figr generates comprehensive handoff materials with specifications, code, and assets that eliminate guesswork.
+
+<Callout type="success">
+**Zero ambiguity handoffs:** Complete design packages with pixel-perfect specifications, implementation-ready code, and all required assets organized for immediate development.
+</Callout>
+
+## Complete Design Package
+
+<Steps>
+  <Step title="Design Specifications">
+    **Comprehensive implementation documentation:**
+    
+    <Frame>
+      <img src="/images/ship-ready-package.png" alt="Complete design package showing specifications, code, and assets organized for development" />
+    </Frame>
+    
+    **Specification components:**
+    ```yaml
+    Visual specifications:
+    - Exact measurements and spacing
+    - Color values and opacity settings
+    - Typography details and line heights
+    - Shadow and effect specifications
+    - Border radius and stroke details
+    
+    Layout specifications:
+    - Component positioning coordinates
+    - Responsive behavior definitions
+    - Grid and flexbox parameters
+    - Breakpoint-specific variations
+    - Container constraint definitions
+    
+    Interactive specifications:
+    - State definitions and transitions
+    - Animation timing and easing
+    - Hover and focus behaviors
+    - Form validation requirements
+    - Error and success state designs
+    ```
+  </Step>
+  
+  <Step title="Implementation Code">
+    **Production-ready code generation:**
+    
+    <Tabs>
+      <Tab title="React Components">
+        ```jsx
+        // Button component with all variants and states
+        import React from 'react';
+        import { cn } from '@/lib/utils';
+        
+        interface ButtonProps {
+          variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+          size?: 'sm' | 'md' | 'lg';
+          disabled?: boolean;
+          loading?: boolean;
+          children: React.ReactNode;
+          onClick?: () => void;
+        }
+        
+        export const Button: React.FC<ButtonProps> = ({
+          variant = 'primary',
+          size = 'md',
+          disabled = false,
+          loading = false,
+          children,
+          onClick,
+          ...props
+        }) => {
+          return (
+            <button
+              className={cn(
+                'inline-flex items-center justify-center font-medium transition-colors',
+                'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+                'disabled:pointer-events-none disabled:opacity-50',
+                {
+                  // Size variants
+                  'h-9 px-3 text-sm': size === 'sm',
+                  'h-10 px-4 py-2': size === 'md',
+                  'h-11 px-8 text-lg': size === 'lg',
+                  
+                  // Style variants
+                  'bg-primary text-primary-foreground hover:bg-primary/90': variant === 'primary',
+                  'bg-secondary text-secondary-foreground hover:bg-secondary/80': variant === 'secondary',
+                  'border border-input bg-background hover:bg-accent': variant === 'outline',
+                  'hover:bg-accent hover:text-accent-foreground': variant === 'ghost',
+                }
+              )}
+              disabled={disabled || loading}
+              onClick={onClick}
+              {...props}
+            >
+              {loading && (
+                <svg className="mr-2 h-4 w-4 animate-spin" viewBox="0 0 24 24">
+                  <circle cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" strokeDasharray="32" strokeDashoffset="32">
+                    <animate attributeName="stroke-dasharray" dur="2s" values="0 64;32 32;64 0;32 32;0 64" repeatCount="indefinite"/>
+                  </circle>
+                </svg>
+              )}
+              {children}
+            </button>
+          );
+        };
+        ```
+      </Tab>
+      
+      <Tab title="Vue Components">
+        ```vue
+        <template>
+          <button
+            :class="buttonClasses"
+            :disabled="disabled || loading"
+            @click="handleClick"
+          >
+            <svg
+              v-if="loading"
+              class="mr-2 h-4 w-4 animate-spin"
+              viewBox="0 0 24 24"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+                stroke="currentColor"
+                stroke-width="4"
+                fill="none"
+                stroke-dasharray="32"
+                stroke-dashoffset="32"
+              />
+            </svg>
+            <slot />
+          </button>
+        </template>
+        
+        <script setup lang="ts">
+        import { computed } from 'vue';
+        
+        interface Props {
+          variant?: 'primary' | 'secondary' | 'outline' | 'ghost';
+          size?: 'sm' | 'md' | 'lg';
+          disabled?: boolean;
+          loading?: boolean;
+        }
+        
+        const props = withDefaults(defineProps<Props>(), {
+          variant: 'primary',
+          size: 'md',
+          disabled: false,
+          loading: false,
+        });
+        
+        const emit = defineEmits<{
+          click: [event: MouseEvent];
+        }>();
+        
+        const buttonClasses = computed(() => [
+          'inline-flex items-center justify-center font-medium transition-colors',
+          'focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring',
+          'disabled:pointer-events-none disabled:opacity-50',
+          
+          // Size classes
+          {
+            'h-9 px-3 text-sm': props.size === 'sm',
+            'h-10 px-4 py-2': props.size === 'md',
+            'h-11 px-8 text-lg': props.size === 'lg',
+          },
+          
+          // Variant classes
+          {
+            'bg-primary text-primary-foreground hover:bg-primary/90': props.variant === 'primary',
+            'bg-secondary text-secondary-foreground hover:bg-secondary/80': props.variant === 'secondary',
+            'border border-input bg-background hover:bg-accent': props.variant === 'outline',
+            'hover:bg-accent hover:text-accent-foreground': props.variant === 'ghost',
+          }
+        ]);
+        
+        const handleClick = (event: MouseEvent) => {
+          if (!props.disabled && !props.loading) {
+            emit('click', event);
+          }
+        };
+        </script>
+        ```
+      </Tab>
+      
+      <Tab title="CSS Styles">
+        ```css
+        /* Complete CSS with design tokens */
+        :root {
+          /* Design tokens from Figr */
+          --color-primary: #6366f1;
+          --color-primary-foreground: #ffffff;
+          --color-secondary: #f1f5f9;
+          --color-secondary-foreground: #0f172a;
+          --color-accent: #f8fafc;
+          --color-accent-foreground: #0f172a;
+          --color-border: #e2e8f0;
+          
+          --spacing-sm: 0.75rem;
+          --spacing-md: 1rem;
+          --spacing-lg: 1.5rem;
+          
+          --border-radius: 0.375rem;
+          --font-size-sm: 0.875rem;
+          --font-size-md: 1rem;
+          --font-size-lg: 1.125rem;
+        }
+        
+        .button {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: 500;
+          transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+          border-radius: var(--border-radius);
+          cursor: pointer;
+          border: none;
+        }
+        
+        .button:focus-visible {
+          outline: none;
+          box-shadow: 0 0 0 2px var(--color-primary);
+        }
+        
+        .button:disabled {
+          pointer-events: none;
+          opacity: 0.5;
+        }
+        
+        /* Size variants */
+        .button--sm {
+          height: 2.25rem;
+          padding: 0 var(--spacing-sm);
+          font-size: var(--font-size-sm);
+        }
+        
+        .button--md {
+          height: 2.5rem;
+          padding: 0.5rem var(--spacing-md);
+          font-size: var(--font-size-md);
+        }
+        
+        .button--lg {
+          height: 2.75rem;
+          padding: 0 var(--spacing-lg);
+          font-size: var(--font-size-lg);
+        }
+        
+        /* Style variants */
+        .button--primary {
+          background-color: var(--color-primary);
+          color: var(--color-primary-foreground);
+        }
+        
+        .button--primary:hover {
+          background-color: hsl(from var(--color-primary) h s calc(l * 0.9));
+        }
+        
+        .button--secondary {
+          background-color: var(--color-secondary);
+          color: var(--color-secondary-foreground);
+        }
+        
+        .button--secondary:hover {
+          background-color: hsl(from var(--color-secondary) h s calc(l * 0.8));
+        }
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Asset Package">
+    **Complete asset delivery:**
+    
+    <AccordionGroup>
+      <Accordion title="Organized Asset Structure">
+        ```
+        /design-assets
+        ├── /icons
+        │   ├── /svg
+        │   │   ├── icon-arrow-right.svg
+        │   │   ├── icon-user.svg
+        │   │   └── icon-settings.svg
+        │   └── /png
+        │       ├── icon-arrow-right@1x.png
+        │       ├── icon-arrow-right@2x.png
+        │       └── icon-arrow-right@3x.png
+        ├── /images
+        │   ├── hero-background.webp
+        │   ├── hero-background.jpg
+        │   └── hero-background@2x.jpg
+        ├── /fonts
+        │   ├── Inter-Regular.woff2
+        │   ├── Inter-Medium.woff2
+        │   └── Inter-Bold.woff2
+        └── /components
+            ├── button-states.png
+            ├── form-elements.png
+            └── navigation-examples.png
+        ```
+      </Accordion>
+      
+      <Accordion title="Asset Specifications">
+        ```yaml
+        Icon specifications:
+        - Format: SVG (primary), PNG (fallback)
+        - Sizes: 16px, 20px, 24px, 32px
+        - Stroke width: 1.5px
+        - Style: Outline icons
+        - Color: Inherit from parent
+        
+        Image specifications:
+        - Format: WebP (primary), JPG (fallback)
+        - Optimization: 85% quality
+        - Responsive: @1x, @2x variants
+        - Alt text: Descriptive text provided
+        
+        Font specifications:
+        - Family: Inter
+        - Weights: 400 (Regular), 500 (Medium), 700 (Bold)
+        - Format: WOFF2 (primary), WOFF (fallback)
+        - Preload: Critical font weights
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Implementation Documentation
+
+<Tabs>
+  <Tab title="Technical Specifications">
+    **Detailed implementation requirements:**
+    
+    <Frame>
+      <img src="/images/technical-specs.png" alt="Technical specification document showing detailed measurements and implementation notes" />
+    </Frame>
+    
+    **Documentation sections:**
+    ```yaml
+    Layout specifications:
+    - Grid system definitions
+    - Breakpoint behaviors
+    - Container constraints
+    - Element positioning
+    - Responsive adaptations
+    
+    Component specifications:
+    - State definitions
+    - Interaction behaviors
+    - Animation requirements
+    - Accessibility features
+    - Performance considerations
+    
+    Integration requirements:
+    - API endpoint connections
+    - Data structure expectations
+    - Error handling approaches
+    - Loading state management
+    - Form validation rules
+    ```
+  </Tab>
+  
+  <Tab title="Style Guide">
+    **Visual design system documentation:**
+    
+    <CardGroup cols={2}>
+      <Card title="Design Tokens" icon="palette">
+        **Complete token documentation:**
+        - Color palette with hex values
+        - Typography scale and usage
+        - Spacing system explanations
+        - Component pattern library
+      </Card>
+      
+      <Card title="Usage Guidelines" icon="book">
+        **Implementation best practices:**
+        - When to use each component
+        - Accessibility requirements
+        - Responsive behavior guides
+        - Brand compliance rules
+      </Card>
+    </CardGroup>
+    
+    **Style guide contents:**
+    ```yaml
+    Brand elements:
+    - Logo usage and variations
+    - Color psychology and meaning
+    - Typography personality
+    - Voice and tone guidelines
+    
+    Component library:
+    - Button variants and states
+    - Form element specifications
+    - Navigation patterns
+    - Data display components
+    
+    Layout principles:
+    - Grid system usage
+    - Spacing methodologies
+    - Hierarchy principles
+    - White space management
+    ```
+  </Tab>
+  
+  <Tab title="Developer Notes">
+    **Implementation-specific guidance:**
+    
+    <AccordionGroup>
+      <Accordion title="Performance Considerations">
+        ```yaml
+        Optimization requirements:
+        
+        Critical rendering path:
+        - Above-fold content priority
+        - Inline critical CSS
+        - Preload essential fonts
+        - Optimize largest contentful paint
+        
+        Asset optimization:
+        - Image lazy loading
+        - Icon sprite usage
+        - Font display strategies
+        - JavaScript code splitting
+        
+        Accessibility requirements:
+        - Semantic HTML structure
+        - ARIA labels and descriptions
+        - Keyboard navigation support
+        - Screen reader optimization
+        ```
+      </Accordion>
+      
+      <Accordion title="Browser Support">
+        ```yaml
+        Compatibility requirements:
+        
+        Supported browsers:
+        - Chrome 90+
+        - Firefox 88+
+        - Safari 14+
+        - Edge 90+
+        
+        Progressive enhancement:
+        - CSS Grid with flexbox fallback
+        - WebP images with JPEG fallback
+        - Modern CSS with vendor prefixes
+        - JavaScript feature detection
+        
+        Testing requirements:
+        - Cross-browser validation
+        - Device testing coverage
+        - Accessibility audit compliance
+        - Performance benchmark meeting
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Quality Assurance Package
+
+<Steps>
+  <Step title="Design Validation">
+    **Comprehensive design review checklist:**
+    
+    <Tabs>
+      <Tab title="Visual Quality">
+        ```yaml
+        Design consistency check:
+        ✅ Color usage follows design system
+        ✅ Typography hierarchy is clear
+        ✅ Spacing follows established patterns
+        ✅ Component usage is consistent
+        ✅ Brand guidelines are followed
+        
+        Visual polish verification:
+        ✅ Pixel-perfect alignment
+        ✅ Appropriate contrast ratios
+        ✅ Consistent border radius usage
+        ✅ Proper shadow application
+        ✅ Icon style consistency
+        ```
+      </Tab>
+      
+      <Tab title="Functionality">
+        ```yaml
+        Interaction verification:
+        ✅ All interactive elements defined
+        ✅ State variations documented
+        ✅ Error scenarios covered
+        ✅ Success states designed
+        ✅ Loading states included
+        
+        Responsive behavior:
+        ✅ Mobile layouts optimized
+        ✅ Tablet adaptations defined
+        ✅ Desktop experience complete
+        ✅ Breakpoint behaviors clear
+        ✅ Touch targets appropriately sized
+        ```
+      </Tab>
+      
+      <Tab title="Accessibility">
+        ```yaml
+        Accessibility compliance:
+        ✅ WCAG 2.1 AA color contrast
+        ✅ Keyboard navigation planned
+        ✅ Screen reader compatibility
+        ✅ Focus indicators visible
+        ✅ Alternative text provided
+        
+        Inclusive design features:
+        ✅ Reduced motion considerations
+        ✅ High contrast mode support
+        ✅ Text scaling compatibility
+        ✅ Clear visual hierarchy
+        ✅ Simple, understandable language
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Implementation Testing">
+    **Validation framework for development:**
+    
+    <CardGroup cols={2}>
+      <Card title="Automated Testing" icon="robot">
+        **Test suite generation:**
+        - Visual regression tests
+        - Component unit tests
+        - Accessibility audit scripts
+        - Performance benchmarks
+      </Card>
+      
+      <Card title="Manual Testing" icon="hand">
+        **Human validation checklist:**
+        - Cross-browser testing plan
+        - Device testing matrix
+        - User acceptance criteria
+        - Edge case scenarios
+      </Card>
+    </CardGroup>
+  </Step>
+  
+  <Step title="Launch Preparation">
+    **Pre-launch verification:**
+    
+    ```yaml
+    Pre-launch checklist:
+    
+    Technical readiness:
+    ✅ All assets optimized and delivered
+    ✅ Code reviewed and tested
+    ✅ Performance benchmarks met
+    ✅ Accessibility standards achieved
+    ✅ Cross-browser compatibility verified
+    
+    Content readiness:
+    ✅ Copy finalized and proofread
+    ✅ Images optimized and alt text added
+    ✅ Forms tested and validated
+    ✅ Error messages defined
+    ✅ Success states confirmed
+    
+    Business readiness:
+    ✅ Stakeholder approval obtained
+    ✅ Analytics tracking implemented
+    ✅ A/B testing setup (if applicable)
+    ✅ Launch timeline confirmed
+    ✅ Rollback plan prepared
+    ```
+  </Step>
+</Steps>
+
+## Delivery Formats
+
+<Tabs>
+  <Tab title="Development Package">
+    **Complete technical handoff:**
+    
+    ```yaml
+    Package contents:
+    
+    Code files:
+    - Component source code
+    - Stylesheet definitions
+    - Configuration files
+    - Type definitions (TypeScript)
+    
+    Asset files:
+    - Optimized images
+    - Icon libraries
+    - Font files
+    - Graphics and illustrations
+    
+    Documentation:
+    - Implementation guide
+    - API integration notes
+    - Testing requirements
+    - Performance guidelines
+    ```
+  </Tab>
+  
+  <Tab title="Design System Update">
+    **Design system integration package:**
+    
+    ```yaml
+    System updates:
+    
+    Component additions:
+    - New component definitions
+    - Variant specifications
+    - Usage guidelines
+    - Code examples
+    
+    Token updates:
+    - New design tokens
+    - Deprecated token migration
+    - Usage pattern changes
+    - Implementation notes
+    
+    Documentation updates:
+    - Style guide additions
+    - Pattern library updates
+    - Best practice guidelines
+    - Migration instructions
+    ```
+  </Tab>
+  
+  <Tab title="Stakeholder Package">
+    **Executive and client presentation:**
+    
+    ```yaml
+    Presentation materials:
+    
+    Visual overview:
+    - High-level design presentation
+    - Key feature highlights
+    - User journey illustrations
+    - Before/after comparisons
+    
+    Business impact:
+    - User experience improvements
+    - Conversion optimization notes
+    - Accessibility enhancements
+    - Performance improvements
+    
+    Implementation plan:
+    - Development timeline
+    - Resource requirements
+    - Risk assessment
+    - Success metrics
+    ```
+  </Tab>
+</Tabs>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Complete Documentation" icon="file-text">
+    **Comprehensive handoff materials:**
+    
+    ✅ Every element specified precisely
+    ✅ All states and variations documented
+    ✅ Responsive behavior clearly defined
+    ✅ Accessibility requirements included
+    ✅ Performance considerations noted
+  </Card>
+  
+  <Card title="Developer-Friendly" icon="code">
+    **Implementation-ready deliverables:**
+    
+    ✅ Clean, semantic code generation
+    ✅ Design token integration
+    ✅ Component library compatibility
+    ✅ Testing framework inclusion
+    ✅ Optimization best practices
+  </Card>
+</CardGroup>
+
+---
+
+<Card title="Enable Team Collaboration" icon="users">
+  Learn how to set up effective team collaboration workflows with shared links and permissions.
+  
+  [Share Links →](/designing/collaboration/share-links)
+</Card>

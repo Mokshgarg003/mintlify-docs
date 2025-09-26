@@ -1,5 +1,627 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Co-Editing Live"
+description: "Enable real-time collaborative editing with live cursors, simultaneous edits, and seamless team coordination features."
+icon: "users-cog"
 ---
 
+# Live Co-Editing
+
+Collaborate in real-time with your team through Figr's live co-editing features. See teammates' cursors, make simultaneous edits, and coordinate design decisions seamlessly.
+
+<success>
+  **Real-time magic:** Multiple team members working on the same design simultaneously, with intelligent conflict resolution and seamless synchronization across all devices.
+</success>
+
+## Real-Time Collaboration Features
+
+<Steps>
+  <Step title="Live Presence Indicators">
+    **See who's working on what, when:**
+
+    <Frame>
+      ![Interface showing multiple user cursors and real-time editing indicators](/images/live-collaboration.png)
+    </Frame>
+    **Presence features:**
+
+    ```yaml
+    User indicators:
+    - Live cursor positions with names
+    - User avatar displays
+    - Activity status indicators
+    - Current tool usage display
+    - Selection highlighting
+    
+    Activity tracking:
+    - Real-time edit notifications
+    - Recent action summaries
+    - User focus area indicators
+    - Collaboration timeline
+    - Work session overlap tracking
+    
+    Communication tools:
+    - Quick emoji reactions
+    - Voice note capabilities
+    - Screen sharing integration
+    - Chat overlay options
+    - Video call launching
+    ```
+  </Step>
+  <Step title="Simultaneous Editing">
+    **Multiple editors without conflicts:**
+
+    <Tabs>
+      <Tab title="Intelligent Merge">
+        ```yaml
+        Conflict resolution system:
+        
+        Automatic merging:
+        - Non-overlapping edits merge seamlessly
+        - Property changes apply in sequence
+        - Transform operations reconcile automatically
+        - Version vector synchronization
+        - Operational transformation algorithms
+        
+        Conflict detection:
+        - Simultaneous edit identification
+        - Overlapping change detection
+        - Priority-based resolution
+        - User notification systems
+        - Manual resolution workflows
+        
+        Data consistency:
+        - CRDT (Conflict-free Replicated Data Types)
+        - Event sourcing for audit trails
+        - Eventual consistency guarantees
+        - Rollback and recovery mechanisms
+        - State synchronization protocols
+        ```
+      </Tab>
+      <Tab title="Element Locking">
+        ```yaml
+        Smart locking mechanisms:
+        
+        Soft locking:
+        - Visual indicators of active editing
+        - Temporary exclusive access
+        - Automatic lock release on inactivity
+        - Override capabilities for emergencies
+        - Lock duration limits
+        
+        Collaborative editing:
+        - Shared element modification
+        - Property-level granular editing
+        - Non-blocking collaborative changes
+        - Real-time property synchronization
+        - Merge preview capabilities
+        
+        Lock management:
+        - Lock request queuing
+        - Priority-based lock assignment
+        - Lock transfer mechanisms
+        - Emergency override protocols
+        - Lock timeout handling
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Communication Integration">
+    **Seamless team coordination:**
+
+    <AccordionGroup>
+      <Accordion title="In-Context Messaging">
+        ```yaml
+        Design-focused communication:
+        
+        Contextual chat:
+        - Element-specific discussions
+        - Design decision documentation
+        - Quick clarification requests
+        - Implementation note sharing
+        - Feedback and approval workflows
+        
+        Rich messaging:
+        - Markdown formatting support
+        - Code snippet sharing
+        - Image and file attachments
+        - Link previews and references
+        - @mention notifications
+        
+        Message organization:
+        - Thread-based conversations
+        - Topic categorization
+        - Search and filter capabilities
+        - Message archival
+        - Notification management
+        ```
+      </Accordion>
+      <Accordion title="Voice and Video">
+        ```yaml
+        Real-time communication:
+        
+        Voice integration:
+        - Push-to-talk functionality
+        - Voice note recording
+        - Ambient audio channels
+        - Spatial audio positioning
+        - Noise cancellation features
+        
+        Video capabilities:
+        - Face-to-face design reviews
+        - Screen sharing and annotation
+        - Presentation mode integration
+        - Recording and playback
+        - Multi-participant support
+        
+        Collaboration modes:
+        - Focus mode with minimal distractions
+        - Presentation mode for stakeholders
+        - Workshop mode for brainstorming
+        - Review mode for feedback
+        - Implementation mode for handoff
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Collaboration Workflows
+
+<Tabs>
+  <Tab title="Design Sprints">
+    **Collaborative design sprint facilitation:**
+
+    <CardGroup cols={2}>
+      <Card title="Ideation Sessions" icon="lightbulb">
+        **Brainstorming and concept development:**
+
+        - Shared sticky note creation
+        - Real-time idea clustering
+        - Voting and prioritization
+        - Concept sketching together
+        - Rapid iteration cycles
+      </Card>
+      <Card title="Design Reviews" icon="eye">
+        **Structured feedback sessions:**
+
+        - Guided review workflows
+        - Annotation and markup tools
+        - Decision documentation
+        - Action item tracking
+        - Approval status management
+      </Card>
+    </CardGroup>
+    **Sprint workflow integration:**
+
+    ```yaml
+    Day 1: Problem definition and user mapping
+    - Collaborative problem statement creation
+    - User journey mapping together
+    - Opportunity identification
+    - Goal setting and success metrics
+    
+    Day 2: Solution sketching
+    - Individual concept development
+    - Shared inspiration gathering
+    - Rapid sketch sharing
+    - Concept explanation sessions
+    
+    Day 3: Decision making
+    - Collaborative evaluation
+    - Voting mechanisms
+    - Solution combination
+    - Prototype planning
+    
+    Day 4: Prototyping
+    - Parallel prototype development
+    - Asset sharing and reuse
+    - Integration and assembly
+    - Testing preparation
+    
+    Day 5: Testing and validation
+    - Observation session facilitation
+    - Real-time note taking
+    - Insight synthesis
+    - Next step planning
+    ```
+  </Tab>
+  <Tab title="Design System Development">
+    **Collaborative design system creation:**
+
+    <Frame>
+      ![Design system collaboration showing multiple contributors working on components simultaneously](/images/design-system-collaboration.png)
+    </Frame>
+    **Component collaboration:**
+
+    ```yaml
+    Parallel component development:
+    - Multiple designers on different components
+    - Shared token and style management
+    - Cross-component consistency checking
+    - Integration testing workflows
+    - Documentation collaboration
+    
+    Token management:
+    - Real-time token updates
+    - Usage impact visualization
+    - Collaborative token naming
+    - Version control integration
+    - Automated consistency checking
+    
+    Documentation workflows:
+    - Collaborative guideline writing
+    - Example creation and maintenance
+    - Usage documentation
+    - Best practice development
+    - Training material creation
+    ```
+  </Tab>
+  <Tab title="Client Collaboration">
+    **External stakeholder integration:**
+
+    <Steps>
+      <Step title="Controlled Access">
+        Set up appropriate permissions and access levels for external collaborators
+      </Step>
+      <Step title="Guided Workflows">
+        Provide structured review and feedback processes for non-designers
+      </Step>
+      <Step title="Communication Facilitation">
+        Enable clear communication channels while maintaining project control
+      </Step>
+    </Steps>
+    **Client collaboration features:**
+
+    ```yaml
+    Review facilitation:
+    - Presentation mode for client reviews
+    - Guided tour capabilities
+    - Annotation and markup tools
+    - Approval workflow integration
+    - Version comparison tools
+    
+    Feedback management:
+    - Structured feedback collection
+    - Priority and categorization
+    - Response and resolution tracking
+    - Client communication tools
+    - Decision documentation
+    
+    Access control:
+    - Time-limited collaboration
+    - Feature-restricted access
+    - Watermarking and protection
+    - Audit trail maintenance
+    - Confidentiality controls
+    ```
+  </Tab>
+</Tabs>
+
+## Performance and Scalability
+
+<Steps>
+  <Step title="Real-Time Synchronization">
+    **Optimized collaboration performance:**
+
+    <Tabs>
+      <Tab title="Network Optimization">
+        ```yaml
+        Connection management:
+        - WebSocket connections for low latency
+        - Automatic reconnection handling
+        - Bandwidth adaptation algorithms
+        - Regional server deployment
+        - CDN integration for assets
+        
+        Data optimization:
+        - Delta synchronization protocols
+        - Compression algorithms
+        - Batch operation processing
+        - Predictive prefetching
+        - Efficient serialization formats
+        
+        Offline resilience:
+        - Local change buffering
+        - Conflict resolution queuing
+        - Automatic sync on reconnection
+        - Offline mode indicators
+        - Recovery mechanisms
+        ```
+      </Tab>
+      <Tab title="Scalability Architecture">
+        ```yaml
+        System scalability:
+        - Horizontal scaling capabilities
+        - Load balancing algorithms
+        - Database sharding strategies
+        - Caching layer optimization
+        - Microservice architecture
+        
+        Performance monitoring:
+        - Real-time latency tracking
+        - Collaboration session analytics
+        - Resource usage monitoring
+        - Error rate tracking
+        - User experience metrics
+        
+        Capacity management:
+        - Dynamic resource allocation
+        - Auto-scaling mechanisms
+        - Peak load handling
+        - Resource optimization
+        - Cost-effective scaling
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Large Team Support">
+    **Collaboration at enterprise scale:**
+
+    <AccordionGroup>
+      <Accordion title="Team Size Optimization">
+        ```yaml
+        Scalable collaboration:
+        
+        Small teams (2-5 people):
+        - Full real-time synchronization
+        - Complete presence awareness
+        - Unrestricted simultaneous editing
+        - Rich communication features
+        - Maximum responsiveness
+        
+        Medium teams (6-15 people):
+        - Selective presence indicators
+        - Activity-based notifications
+        - Structured communication channels
+        - Role-based access patterns
+        - Optimized update frequencies
+        
+        Large teams (16+ people):
+        - Hierarchical presence display
+        - Notification prioritization
+        - Segmented collaboration areas
+        - Performance-optimized updates
+        - Structured workflow enforcement
+        ```
+      </Accordion>
+      <Accordion title="Resource Management">
+        ```yaml
+        Efficient resource utilization:
+        
+        Bandwidth optimization:
+        - Adaptive quality settings
+        - Selective synchronization
+        - Intelligent batching
+        - Compression algorithms
+        - Priority-based updates
+        
+        CPU optimization:
+        - Efficient rendering algorithms
+        - Background processing
+        - Lazy loading strategies
+        - Caching mechanisms
+        - Memory management
+        
+        Storage optimization:
+        - Differential storage
+        - Garbage collection
+        - Archive management
+        - Compression techniques
+        - Cleanup automation
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Advanced Collaboration Features
+
+<Tabs>
+  <Tab title="AI-Assisted Collaboration">
+    **Intelligent collaboration enhancement:**
+
+    <CardGroup cols={2}>
+      <Card title="Smart Suggestions" icon="brain">
+        **AI-powered collaboration insights:**
+
+        - Conflict resolution suggestions
+        - Design consistency recommendations
+        - Workflow optimization hints
+        - Best practice guidance
+        - Productivity improvements
+      </Card>
+      <Card title="Automated Coordination" icon="robot">
+        **Intelligent workflow automation:**
+
+        - Task assignment suggestions
+        - Deadline and milestone tracking
+        - Resource allocation optimization
+        - Communication facilitation
+        - Progress monitoring
+      </Card>
+    </CardGroup>
+  </Tab>
+  <Tab title="Integration Ecosystem">
+    **Third-party tool integration:**
+
+    <Frame>
+      ![Integration dashboard showing connections to various collaboration and productivity tools](/images/collaboration-integrations.png)
+    </Frame>
+    **Tool integrations:**
+
+    ```yaml
+    Communication platforms:
+    - Slack workspace integration
+    - Microsoft Teams connectivity
+    - Discord server integration
+    - Zoom meeting integration
+    - Google Meet compatibility
+    
+    Project management:
+    - Jira ticket integration
+    - Asana task synchronization
+    - Trello board connectivity
+    - Monday.com integration
+    - Linear issue tracking
+    
+    Development tools:
+    - GitHub repository integration
+    - GitLab project connectivity
+    - Bitbucket integration
+    - Azure DevOps integration
+    - CI/CD pipeline hooks
+    
+    Documentation platforms:
+    - Notion workspace integration
+    - Confluence page embedding
+    - GitBook documentation
+    - Coda document integration
+    - Airtable database connectivity
+    ```
+  </Tab>
+</Tabs>
+
+## Collaboration Analytics
+
+<Steps>
+  <Step title="Team Performance Metrics">
+    **Collaboration effectiveness measurement:**
+
+    <Tabs>
+      <Tab title="Productivity Metrics">
+        ```yaml
+        Collaboration analytics:
+        
+        Individual metrics:
+        - Design contribution volume
+        - Collaboration frequency
+        - Review participation rates
+        - Response time averages
+        - Quality score tracking
+        
+        Team metrics:
+        - Simultaneous editing efficiency
+        - Conflict resolution rates
+        - Communication effectiveness
+        - Decision-making speed
+        - Project completion velocity
+        
+        Project metrics:
+        - Collaboration session duration
+        - Parallel work efficiency
+        - Handoff success rates
+        - Iteration cycle times
+        - Stakeholder satisfaction
+        ```
+      </Tab>
+      <Tab title="Communication Analysis">
+        ```yaml
+        Communication insights:
+        
+        Message analytics:
+        - Communication volume trends
+        - Response time patterns
+        - Topic distribution analysis
+        - Sentiment tracking
+        - Knowledge sharing frequency
+        
+        Collaboration patterns:
+        - Peak collaboration times
+        - Cross-functional interaction
+        - Knowledge transfer efficiency
+        - Decision-making patterns
+        - Conflict resolution effectiveness
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Workflow Optimization">
+    **Data-driven collaboration improvement:**
+
+    ```yaml
+    Optimization opportunities:
+    
+    Process improvements:
+    - Bottleneck identification
+    - Workflow streamlining
+    - Communication optimization
+    - Tool usage efficiency
+    - Resource allocation optimization
+    
+    Team development:
+    - Skill gap identification
+    - Training need assessment
+    - Collaboration skill building
+    - Tool proficiency improvement
+    - Best practice sharing
+    ```
+  </Step>
+</Steps>
+
+## Best Practices for Live Collaboration
+
+<CardGroup cols={2}>
+  <Card title="Effective Coordination" icon="users">
+    **Smooth team collaboration:**
+
+    ✅ Establish clear collaboration protocols
+    ✅ Use voice communication for complex discussions
+    ✅ Respect others' focus time and work areas
+    ✅ Document decisions and rationale
+    ✅ Maintain awareness of team activities
+  </Card>
+  <Card title="Conflict Prevention" icon="shield-check">
+    **Minimize collaboration friction:**
+
+    ✅ Communicate intentions before major changes
+    ✅ Use element locking for focused work
+    ✅ Regular saves and version checkpoints
+    ✅ Clear role definitions and responsibilities
+    ✅ Structured review and approval processes
+  </Card>
+</CardGroup>
+
+## Troubleshooting Collaboration Issues
+
+<AccordionGroup>
+  <Accordion title="Synchronization Problems">
+    ```yaml
+    Issue: Changes not appearing for other users
+    Solutions:
+    - Check network connection stability
+    - Refresh browser or restart application
+    - Verify user permissions and access
+    - Clear cache and reload project
+    - Contact support for server issues
+    ```
+  </Accordion>
+  <Accordion title="Performance Issues">
+    ```yaml
+    Issue: Slow response during collaboration
+    Solutions:
+    - Reduce number of simultaneous editors
+    - Close unnecessary browser tabs
+    - Check internet bandwidth
+    - Use wired connection if possible
+    - Optimize design file complexity
+    ```
+  </Accordion>
+  <Accordion title="Conflict Resolution">
+    ```yaml
+    Issue: Conflicting edits causing problems
+    Solutions:
+    - Use manual conflict resolution tools
+    - Communicate with other editors
+    - Create version branches for major changes
+    - Implement element locking protocols
+    - Establish editing conventions
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+<Card title="Phase 4 Complete!" icon="check-circle">
+  **Excellent progress!** You've mastered precise editing, export capabilities, and team collaboration. Ready for account management and legal documentation.
+
+  [Account Management →](/account/credits-usage)
+</Card>

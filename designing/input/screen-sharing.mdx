@@ -1,5 +1,412 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Screen Sharing"
+description: "Share your screen with Figr to provide the deepest possible product understanding through live product demonstration."
+icon: "screen-share"
 ---
 
+# Screen Sharing
+
+Screen sharing is Figr's most powerful context-building feature. Show Figr your actual product in action to build comprehensive understanding that no document or screenshot can match.
+
+<Callout type="tip">
+**The game changer:** 15 minutes of screen sharing teaches Figr more about your product than hours of documentation. It sees how things actually work, not just how they're supposed to work.
+</Callout>
+
+## Why Screen Sharing Works
+
+<CardGroup cols={2}>
+  <Card title="Static Context" icon="image">
+    **Screenshots and docs show:**
+    - How interfaces look
+    - Individual page states
+    - Design system components
+    - Documented workflows
+    
+    **Missing:** Flow, interaction, real usage patterns
+  </Card>
+  
+  <Card title="Live Context" icon="video">
+    **Screen sharing reveals:**
+    - How users actually navigate
+    - Real interaction patterns
+    - Edge cases and error states
+    - Performance and loading behavior
+    
+    **Result:** Complete product understanding
+  </Card>
+</CardGroup>
+
+## Screen Sharing Setup
+
+<Steps>
+  <Step title="Prepare Your Demo">
+    **Before starting the session:**
+    
+    ```yaml
+    Environment Setup:
+    ✅ Use staging or demo environment
+    ✅ Prepare realistic test data
+    ✅ Close sensitive tabs/applications
+    ✅ Test screen sharing permissions
+    ✅ Plan 3-4 key user flows to demonstrate
+    ```
+    
+    <Callout type="warning">
+    **Privacy first:** Only share demo environments with test data. Figr doesn't record sessions, but practice good security hygiene.
+    </Callout>
+  </Step>
+  
+  <Step title="Start Screen Sharing">
+    **Initiate from Figr project:**
+    
+    <Frame>
+      <img src="/images/screen-share-start.png" alt="Figr interface showing screen sharing initiation button and setup options" />
+    </Frame>
+    
+    **Sharing options:**
+    - **Entire screen:** Best for comprehensive demos
+    - **Application window:** Focus on specific app
+    - **Browser tab:** Web application demos
+    - **Mobile device:** Via USB debugging or simulator
+  </Step>
+  
+  <Step title="Guided Navigation">
+    **What to show Figr:**
+    
+    <Tabs>
+      <Tab title="Core Workflows">
+        **Primary user journeys:**
+        ```
+        1. User login and dashboard arrival
+        2. Primary task completion (e.g., create project)
+        3. Data entry and form interactions
+        4. Navigation between major sections
+        5. Settings and account management
+        ```
+      </Tab>
+      
+      <Tab title="Edge Cases">
+        **Important variations:**
+        ```
+        1. Empty states (new user, no data)
+        2. Error scenarios (validation, network issues)
+        3. Loading states (slow connections, large datasets)
+        4. Different user types (admin vs. regular user)
+        5. Mobile responsive behavior
+        ```
+      </Tab>
+      
+      <Tab title="Interaction Details">
+        **How things actually work:**
+        ```
+        1. Form validation timing and messages
+        2. Search and filtering behavior
+        3. Drag-and-drop interactions
+        4. Modal and overlay patterns
+        5. Navigation and breadcrumb behavior
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+</Steps>
+
+## What Figr Learns from Screen Sharing
+
+<Tabs>
+  <Tab title="Navigation Patterns">
+    **How users move through your product:**
+    
+    <AccordionGroup>
+      <Accordion title="Information Architecture">
+        ```
+        Observed patterns:
+        - Main navigation structure and hierarchy
+        - Breadcrumb usage and paths
+        - Back button behavior
+        - Deep linking and URL patterns
+        - Cross-section navigation flows
+        ```
+      </Accordion>
+      
+      <Accordion title="User Behavior">
+        ```
+        Real usage insights:
+        - Where users typically start tasks
+        - Common path variations
+        - Points of confusion or hesitation
+        - Shortcuts and power user patterns
+        - Mobile vs. desktop differences
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Interaction Design">
+    **How your interface actually behaves:**
+    
+    ```yaml
+    Form Patterns:
+    - Validation timing (on blur, on submit, real-time)
+    - Error message placement and styling
+    - Success feedback and confirmations
+    - Auto-save behavior and indicators
+    
+    Data Display:
+    - Table sorting and filtering patterns
+    - Pagination vs. infinite scroll
+    - Loading states and skeleton screens
+    - Empty state handling and CTAs
+    
+    Navigation:
+    - Menu collapse/expand behavior
+    - Active state indicators
+    - Hover effects and micro-interactions
+    - Mobile navigation patterns
+    ```
+  </Tab>
+  
+  <Tab title="Performance Reality">
+    **Real-world performance characteristics:**
+    
+    <CardGroup cols={2}>
+      <Card title="Loading Behavior" icon="clock">
+        - Actual page load times
+        - Data fetching patterns
+        - Progressive loading strategies
+        - User perception of speed
+      </Card>
+      
+      <Card title="Responsiveness" icon="mobile">
+        - Touch interaction responsiveness
+        - Animation performance
+        - Scroll behavior and smoothness
+        - Cross-device consistency
+      </Card>
+    </CardGroup>
+  </Tab>
+</Tabs>
+
+## Effective Screen Sharing Techniques
+
+<Steps>
+  <Step title="Narrate Your Actions">
+    **Provide context as you navigate:**
+    
+    ```
+    Good narration:
+    "I'm clicking on Projects because that's where users 
+    typically start their workflow. Notice how the sidebar 
+    stays collapsed on tablet sizes..."
+    
+    "This error message appears because we validate email 
+    addresses in real-time. Users often miss this if 
+    they're typing quickly..."
+    
+    "The dashboard loads slowly with lots of data, so we 
+    show these skeleton components to maintain the illusion 
+    of speed..."
+    ```
+  </Step>
+  
+  <Step title="Show Multiple User Types">
+    **Demonstrate different perspectives:**
+    
+    <Tabs>
+      <Tab title="Admin Users">
+        ```
+        Admin-specific flows:
+        - User management interfaces
+        - System configuration options
+        - Bulk operations and data management
+        - Analytics and reporting views
+        ```
+      </Tab>
+      
+      <Tab title="Regular Users">
+        ```
+        Standard user experience:
+        - Core feature usage patterns
+        - Self-service options
+        - Limited permission interfaces
+        - Simplified navigation
+        ```
+      </Tab>
+      
+      <Tab title="New Users">
+        ```
+        Onboarding experience:
+        - First-time user flows
+        - Progressive disclosure
+        - Help and guidance elements
+        - Setup and configuration steps
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Demonstrate Edge Cases">
+    **Show what happens when things go wrong:**
+    
+    ```yaml
+    Error Scenarios:
+    - Network connectivity issues
+    - Server errors and downtime
+    - Invalid data entry
+    - Permission denied states
+    - Timeout and session expiry
+    
+    Data Variations:
+    - Empty states and first-time use
+    - Maximum data scenarios (full tables, long lists)
+    - International content (different languages)
+    - Special characters and edge case data
+    ```
+  </Step>
+</Steps>
+
+## Screen Sharing for Different Products
+
+<Tabs>
+  <Tab title="Web Applications">
+    **Browser-based product demos:**
+    
+    <Frame>
+      <img src="/images/web-app-sharing.png" alt="Screen sharing interface showing web application demo with multiple browser tabs" />
+    </Frame>
+    
+    **Focus areas:**
+    - Responsive behavior across screen sizes
+    - Browser compatibility differences
+    - Progressive web app features
+    - Cross-tab synchronization
+  </Tab>
+  
+  <Tab title="Mobile Applications">
+    **Native mobile app demonstrations:**
+    
+    ```yaml
+    Demo methods:
+    - iOS Simulator (via macOS screen sharing)
+    - Android Emulator (via desktop screen sharing)
+    - Physical device (via USB debugging)
+    - Mobile browser (for web apps)
+    
+    Key demonstrations:
+    - Touch interactions and gestures
+    - Orientation changes
+    - Push notification handling
+    - Offline behavior
+    ```
+  </Tab>
+  
+  <Tab title="Desktop Applications">
+    **Native desktop software:**
+    
+    ```
+    Important aspects:
+    ✅ Window management and resizing
+    ✅ Keyboard shortcuts and accessibility
+    ✅ File system integration
+    ✅ Multi-monitor support
+    ✅ Operating system integration
+    ```
+  </Tab>
+</Tabs>
+
+## Advanced Screen Sharing Features
+
+<CardGroup cols={2}>
+  <Card title="Multi-Device Sessions" icon="devices">
+    **Show cross-platform consistency:**
+    
+    - Desktop → tablet → mobile progression
+    - Sync behavior across devices
+    - Responsive breakpoint demonstrations
+    - Platform-specific patterns
+  </Card>
+  
+  <Card title="Collaborative Sessions" icon="users">
+    **Team-based demonstrations:**
+    
+    - Multiple team members showing different aspects
+    - Real-time collaboration features
+    - User testing session recordings
+    - Stakeholder-guided tours
+  </Card>
+</CardGroup>
+
+## Screen Sharing Security
+
+<Callout type="shield">
+**Privacy protection:** Figr's screen sharing is designed for security-conscious teams with enterprise-grade privacy controls.
+</Callout>
+
+<AccordionGroup>
+  <Accordion title="Data Protection">
+    ```yaml
+    Security measures:
+    - No session recording or storage
+    - Real-time processing only
+    - Encrypted transmission
+    - Automatic session termination
+    - No personal data capture
+    ```
+  </Accordion>
+  
+  <Accordion title="Access Controls">
+    ```yaml
+    Team permissions:
+    - Who can initiate screen sharing
+    - Who can view shared sessions
+    - Session duration limits
+    - Approval workflows for sensitive demos
+    ```
+  </Accordion>
+  
+  <Accordion title="Compliance">
+    ```yaml
+    Enterprise features:
+    - SOC 2 Type II compliance
+    - GDPR data handling
+    - HIPAA-compatible sessions
+    - Custom security policies
+    ```
+  </Accordion>
+</AccordionGroup>
+
+## Troubleshooting Screen Sharing
+
+<CardGroup cols={2}>
+  <Card title="Connection Issues" icon="wifi">
+    **Common problems and solutions:**
+    
+    ❌ **Can't start sharing**
+    ✅ Check browser permissions
+    ✅ Try incognito/private mode
+    ✅ Disable VPN temporarily
+    
+    ❌ **Poor quality/lag**
+    ✅ Close unnecessary applications
+    ✅ Use wired internet connection
+    ✅ Reduce shared screen resolution
+  </Card>
+  
+  <Card title="Browser Compatibility" icon="browser">
+    **Supported browsers and features:**
+    
+    ✅ **Chrome:** Full feature support
+    ✅ **Firefox:** Standard screen sharing
+    ✅ **Safari:** macOS native support
+    ✅ **Edge:** Windows integration
+    
+    **Note:** Chrome recommended for best experience
+  </Card>
+</CardGroup>
+
+---
+
+<Card title="Explore Canvas Features" icon="canvas">
+  Learn how to organize and work with your designs in Figr's infinite canvas workspace.
+  
+  [Infinite Workspace →](/designing/canvas/infinite-workspace)
+</Card>

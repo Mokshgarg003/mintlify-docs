@@ -1,5 +1,506 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Setting Tokens"
+description: "Configure design tokens to ensure consistent visual language across all AI-generated designs and team collaboration."
+icon: "palette"
 ---
 
+# Setting Tokens
+
+Design tokens are the foundation of consistent design systems. Figr uses your tokens to ensure every generated design matches your visual language perfectly.
+
+<success>
+  **Design system automation:** Set your tokens once, and Figr applies them consistently across all designs, maintaining brand integrity and visual consistency automatically.
+</success>
+
+## Token Configuration Process
+
+<Steps>
+  <Step title="Token Import">
+    **Bring your existing design tokens into Figr:**
+
+    <Frame>
+      ![Interface showing design token import from various sources like JSON, CSS, and design tools](/images/token-import.png)
+    </Frame>
+    **Supported formats:**
+
+    ```yaml
+    File formats:
+    ✅ JSON design tokens (W3C standard)
+    ✅ CSS custom properties
+    ✅ SCSS/SASS variables
+    ✅ Style Dictionary outputs
+    ✅ Figma design tokens (via plugin)
+    ✅ Sketch shared styles
+    
+    Import methods:
+    - File upload (drag & drop)
+    - URL import from design tools
+    - API integration
+    - Manual token entry
+    - Git repository sync
+    ```
+  </Step>
+  <Step title="Token Organization">
+    **Structure tokens for optimal usage:**
+
+    <Tabs>
+      <Tab title="Color Tokens">
+        ```json
+        {
+          "color": {
+            "brand": {
+              "primary": "#6366f1",
+              "secondary": "#8b5cf6",
+              "tertiary": "#06b6d4"
+            },
+            "semantic": {
+              "success": "#10b981",
+              "warning": "#f59e0b",
+              "error": "#ef4444",
+              "info": "#3b82f6"
+            },
+            "neutral": {
+              "50": "#f9fafb",
+              "100": "#f3f4f6",
+              "500": "#6b7280",
+              "900": "#111827"
+            }
+          }
+        }
+        ```
+      </Tab>
+      <Tab title="Typography Tokens">
+        ```json
+        {
+          "typography": {
+            "font-family": {
+              "sans": "Inter, system-ui, sans-serif",
+              "serif": "Georgia, serif",
+              "mono": "JetBrains Mono, monospace"
+            },
+            "font-size": {
+              "xs": "0.75rem",
+              "sm": "0.875rem",
+              "base": "1rem",
+              "lg": "1.125rem",
+              "xl": "1.25rem",
+              "2xl": "1.5rem",
+              "3xl": "1.875rem"
+            },
+            "font-weight": {
+              "normal": "400",
+              "medium": "500",
+              "semibold": "600",
+              "bold": "700"
+            }
+          }
+        }
+        ```
+      </Tab>
+      <Tab title="Spacing Tokens">
+        ```json
+        {
+          "spacing": {
+            "xs": "0.25rem",
+            "sm": "0.5rem",
+            "md": "1rem",
+            "lg": "1.5rem",
+            "xl": "2rem",
+            "2xl": "3rem",
+            "3xl": "4rem"
+          },
+          "border-radius": {
+            "none": "0",
+            "sm": "0.125rem",
+            "md": "0.375rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          }
+        }
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Token Validation">
+    **Ensure token quality and consistency:**
+
+    <AccordionGroup>
+      <Accordion title="Automatic Validation">
+        ```yaml
+        Quality checks:
+        ✅ Color contrast ratio validation
+        ✅ Typography scale consistency
+        ✅ Spacing system harmony
+        ✅ Naming convention compliance
+        ✅ Token relationship verification
+        
+        Accessibility validation:
+        ✅ WCAG AA compliance checking
+        ✅ Color blindness compatibility
+        ✅ Minimum touch target sizes
+        ✅ Typography readability scores
+        ```
+      </Accordion>
+      <Accordion title="Consistency Analysis">
+        ```yaml
+        System coherence:
+        - Mathematical scale relationships
+        - Brand color harmony
+        - Typography hierarchy logic
+        - Component token alignment
+        - Cross-platform compatibility
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Token Categories
+
+<Tabs>
+  <Tab title="Core Visual Tokens">
+    **Fundamental design system elements:**
+
+    <CardGroup cols={2}>
+      <Card title="Color System" icon="palette">
+        **Complete color architecture:**
+
+        - Primary brand colors
+        - Secondary and accent colors
+        - Semantic color meanings
+        - Neutral color scales
+        - Dark mode variations
+        - Accessibility-compliant contrast pairs
+      </Card>
+      <Card title="Typography System" icon="type">
+        **Text styling foundation:**
+
+        - Font family selections
+        - Size and scale definitions
+        - Weight and style variations
+        - Line height relationships
+        - Letter spacing values
+        - Responsive typography scales
+      </Card>
+    </CardGroup>
+  </Tab>
+  <Tab title="Layout & Spacing">
+    **Structural design elements:**
+
+    <AccordionGroup>
+      <Accordion title="Spacing Scale">
+        ```yaml
+        Spacing system design:
+        Base unit: 4px (0.25rem)
+        Scale progression: Linear or geometric
+        Component spacing: Defined relationships
+        Layout margins: Consistent application
+        Responsive adjustments: Breakpoint-specific values
+        ```
+      </Accordion>
+      <Accordion title="Layout Grids">
+        ```yaml
+        Grid system tokens:
+        Column counts: 12, 16, or custom
+        Gutter widths: Responsive values
+        Container max-widths: Breakpoint definitions
+        Margin calculations: Auto or fixed
+        Nested grid behaviors: Inheritance rules
+        ```
+      </Accordion>
+      <Accordion title="Border & Shadow">
+        ```yaml
+        Surface design tokens:
+        Border radius: Scale from subtle to rounded
+        Border widths: Consistent stroke weights
+        Shadow depths: Elevation system
+        Opacity levels: Transparency standards
+        Blur values: Effect intensity scale
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  <Tab title="Interactive Elements">
+    **Component-specific tokens:**
+
+    ```yaml
+    Button tokens:
+    - Height variations (sm, md, lg)
+    - Padding specifications
+    - Border radius applications
+    - Color state definitions
+    - Typography scale assignments
+    
+    Form element tokens:
+    - Input field sizing
+    - Border and focus states
+    - Label positioning
+    - Error state styling
+    - Placeholder text appearance
+    
+    Navigation tokens:
+    - Menu item spacing
+    - Active state indicators
+    - Hover effect definitions
+    - Breadcrumb separators
+    - Mobile navigation patterns
+    ```
+  </Tab>
+</Tabs>
+
+## Advanced Token Management
+
+<Steps>
+  <Step title="Token Relationships">
+    **Create systematic token dependencies:**
+
+    <Frame>
+      ![Diagram showing how design tokens relate to each other in a hierarchical system](/images/token-relationships.png)
+    </Frame>
+    **Relationship types:**
+
+    ```yaml
+    Alias tokens:
+    color-primary: "{color.brand.primary}"
+    color-error: "{color.semantic.error}"
+    
+    Composite tokens:
+    button-primary-bg: "{color.brand.primary}"
+    button-primary-text: "{color.neutral.white}"
+    button-primary-border: "{color.brand.primary}"
+    
+    Calculated tokens:
+    spacing-component: "calc({spacing.md} * 1.5)"
+    color-primary-hover: "hsl(from {color.brand.primary} h s calc(l * 0.9))"
+    ```
+  </Step>
+  <Step title="Contextual Variations">
+    **Handle different contexts and themes:**
+
+    <Tabs>
+      <Tab title="Dark Mode">
+        ```json
+        {
+          "color": {
+            "background": {
+              "light": "#ffffff",
+              "dark": "#0f0f0f"
+            },
+            "text": {
+              "light": "#1f2937",
+              "dark": "#f9fafb"
+            }
+          }
+        }
+        ```
+      </Tab>
+      <Tab title="Platform Variations">
+        ```json
+        {
+          "component": {
+            "button": {
+              "height": {
+                "web": "2.5rem",
+                "mobile": "3rem",
+                "desktop": "2.25rem"
+              }
+            }
+          }
+        }
+        ```
+      </Tab>
+      <Tab title="Brand Variations">
+        ```json
+        {
+          "theme": {
+            "consumer": {
+              "primary": "#6366f1",
+              "radius": "0.5rem"
+            },
+            "enterprise": {
+              "primary": "#1f2937",
+              "radius": "0.25rem"
+            }
+          }
+        }
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Token Documentation">
+    **Comprehensive usage guidelines:**
+
+    ```yaml
+    Documentation elements:
+    
+    Token descriptions:
+    - Purpose and intended usage
+    - Application examples
+    - Usage restrictions
+    - Accessibility considerations
+    
+    Visual examples:
+    - Component usage demonstrations
+    - Color combination examples
+    - Typography scale applications
+    - Spacing relationship illustrations
+    
+    Code examples:
+    - CSS implementation snippets
+    - Component library usage
+    - Platform-specific applications
+    - Integration with frameworks
+    ```
+  </Step>
+</Steps>
+
+## Token Application in Figr
+
+<Tabs>
+  <Tab title="Automatic Application">
+    **How Figr uses your tokens:**
+
+    <CardGroup cols={2}>
+      <Card title="Design Generation" icon="magic-wand">
+        **AI applies tokens automatically:**
+
+        - Color selection from your palette
+        - Typography scale adherence
+        - Spacing system compliance
+        - Component pattern consistency
+      </Card>
+      <Card title="Design Validation" icon="check-shield">
+        **Token compliance checking:**
+
+        - Off-brand color detection
+        - Spacing inconsistency alerts
+        - Typography scale violations
+        - Accessibility compliance warnings
+      </Card>
+    </CardGroup>
+  </Tab>
+  <Tab title="Design System Evolution">
+    **Token updates propagate automatically:**
+
+    <Frame>
+      ![Interface showing how token updates automatically update existing designs](/images/token-propagation.png)
+    </Frame>
+    **Update workflows:**
+
+    ```yaml
+    Global updates:
+    1. Import new token values
+    2. Review impact assessment
+    3. Approve changes
+    4. Automatic design updates
+    5. Team notification
+    
+    Gradual migration:
+    1. Add new tokens alongside old
+    2. Update designs incrementally
+    3. Deprecate old tokens
+    4. Remove unused tokens
+    5. Clean up token library
+    ```
+  </Tab>
+  <Tab title="Export Integration">
+    **Tokens flow to development:**
+
+    ```yaml
+    Export formats:
+    
+    CSS custom properties:
+    :root {
+      --color-primary: #6366f1;
+      --spacing-md: 1rem;
+      --font-size-lg: 1.125rem;
+    }
+    
+    JavaScript tokens:
+    export const tokens = {
+      color: { primary: '#6366f1' },
+      spacing: { md: '1rem' },
+      fontSize: { lg: '1.125rem' }
+    };
+    
+    Platform-specific:
+    - iOS: Swift color extensions
+    - Android: XML color resources
+    - React Native: StyleSheet objects
+    - Flutter: Dart theme definitions
+    ```
+  </Tab>
+</Tabs>
+
+## Token Best Practices
+
+<CardGroup cols={2}>
+  <Card title="System Design" icon="cog">
+    **Create scalable token systems:**
+
+    ✅ Use mathematical relationships for spacing scales
+    ✅ Design color systems with accessibility in mind
+    ✅ Create consistent naming conventions
+    ✅ Plan for dark mode and themes from start
+    ✅ Document usage guidelines thoroughly
+  </Card>
+  <Card title="Maintenance" icon="wrench">
+    **Keep tokens healthy over time:**
+
+    ✅ Regular token audits and cleanup
+    ✅ Version control for token changes
+    ✅ Impact assessment before updates
+    ✅ Team training on token usage
+    ✅ Automated validation in workflows
+  </Card>
+</CardGroup>
+
+## Troubleshooting Common Issues
+
+<AccordionGroup>
+  <Accordion title="Token Import Problems">
+    **Resolving import issues:**
+
+    ```yaml
+    Common solutions:
+    - Validate JSON syntax before import
+    - Check file encoding (UTF-8 recommended)
+    - Verify token naming conventions
+    - Ensure color values use consistent formats
+    - Review file size limits and token count
+    ```
+  </Accordion>
+  <Accordion title="Inconsistent Application">
+    **Fixing token usage issues:**
+
+    ```yaml
+    Resolution steps:
+    - Review token relationship definitions
+    - Check for naming conflicts
+    - Validate token value formats
+    - Verify platform-specific mappings
+    - Update component library connections
+    ```
+  </Accordion>
+  <Accordion title="Performance Impact">
+    **Optimizing token performance:**
+
+    ```yaml
+    Optimization strategies:
+    - Reduce token count through consolidation
+    - Use efficient token formats
+    - Implement caching strategies
+    - Optimize token loading order
+    - Consider runtime vs build-time application
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+<Card title="Automatic Design System Matching" icon="target">
+  Learn how Figr automatically matches your design patterns and suggests improvements to maintain consistency.
+
+  [Automatic Matching →](/designing/design-system/automatic-matching)
+</Card>

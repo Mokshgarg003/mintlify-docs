@@ -1,6 +1,534 @@
 ---
-title: "New file"
-description: "Description of your new file."
+title: "CSV & Excel Import"
+description: "Import structured data to create realistic, data-driven designs with actual content and user scenarios."
+icon: "table"
 ---
 
-4
+# CSV & Excel Import
+
+Real data creates real designs. Import your actual spreadsheets, user data, and analytics to help Figr understand your content structure and create designs with realistic, representative data.
+
+<Callout type="tip">
+**Data-driven design:** Designs created with real data look more convincing, reveal layout challenges early, and help stakeholders envision the final product accurately.
+</Callout>
+
+## Why Real Data Matters
+
+<CardGroup cols={2}>
+  <Card title="Before: Lorem Ipsum Design" icon="file-text">
+    **Generic placeholder content leads to:**
+    - Unrealistic layout assumptions
+    - Missing edge cases (long names, empty states)
+    - Stakeholder disconnect from reality
+    - Implementation surprises
+    
+    **Example:** "John Doe" fits nicely, but "Alexander von Habsburg-Lothringen III" breaks your layout
+  </Card>
+  
+  <Card title="After: Real Data Design" icon="database">
+    **Actual content reveals:**
+    - True space requirements
+    - Edge cases and data variations
+    - Realistic user scenarios  
+    - Implementation requirements
+    
+    **Example:** Real customer names show you need truncation patterns and tooltip expansions
+  </Card>
+</CardGroup>
+
+## Supported Data Formats
+
+<Tabs>
+  <Tab title="Spreadsheet Files">
+    **Direct file uploads:**
+    
+    ```
+    ✅ CSV files (.csv)
+    ✅ Excel files (.xlsx, .xls)
+    ✅ Google Sheets (via share link)
+    ✅ TSV files (.tsv)
+    ✅ Apple Numbers (exported as CSV/Excel)
+    ```
+    
+    **File size limits:**
+    - Up to 100MB per file
+    - Up to 1 million rows
+    - Automatic compression for large datasets
+    
+    <Frame>
+      <img src="/images/csv-upload.png" alt="CSV upload interface showing drag and drop area with file format support" />
+    </Frame>
+  </Tab>
+  
+  <Tab title="Cloud Integration">
+    **Connect live data sources:**
+    
+    <AccordionGroup>
+      <Accordion title="Google Sheets">
+        ```
+        Connection: OAuth authentication
+        Sync: Real-time or scheduled updates
+        Permissions: Read-only access
+        Use case: Live dashboards, dynamic content
+        ```
+      </Accordion>
+      
+      <Accordion title="Airtable">
+        ```
+        Connection: API key authentication
+        Sync: Webhook-triggered updates
+        Permissions: Base-level access
+        Use case: CRM data, project management
+        ```
+      </Accordion>
+      
+      <Accordion title="Notion Databases">
+        ```
+        Connection: Integration token
+        Sync: Manual refresh or scheduled
+        Permissions: Database-specific access
+        Use case: Content management, documentation
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Database Exports">
+    **Common database export formats:**
+    
+    ```
+    Analytics Data:
+    ✅ Google Analytics exports
+    ✅ Mixpanel data exports
+    ✅ Adobe Analytics CSV
+    ✅ Custom dashboard exports
+    
+    CRM Data:
+    ✅ Salesforce reports
+    ✅ HubSpot exports
+    ✅ Pipedrive data
+    ✅ Custom CRM exports
+    
+    E-commerce Data:
+    ✅ Shopify order exports
+    ✅ WooCommerce data
+    ✅ Product catalog CSVs
+    ✅ Customer behavior data
+    ```
+  </Tab>
+</Tabs>
+
+## Data Import Process
+
+<Steps>
+  <Step title="Upload Your Data">
+    **Choose your import method:**
+    
+    <Frame>
+      <img src="/images/data-import-options.png" alt="Data import interface showing different upload methods and connection options" />
+    </Frame>
+    
+    **Quick upload:**
+    - Drag and drop CSV/Excel files
+    - Paste Google Sheets share link
+    - Connect cloud data source
+    - Import from URL endpoint
+  </Step>
+  
+  <Step title="Data Preview & Validation">
+    **Figr analyzes your data structure:**
+    
+    <Tabs>
+      <Tab title="Column Detection">
+        **Automatic identification:**
+        ```
+        Detected columns:
+        📧 email_address (Email type)
+        👤 full_name (Person name)
+        📅 signup_date (Date)
+        💰 subscription_value (Currency)
+        📊 usage_score (Numeric)
+        🏷️ user_type (Category)
+        ```
+      </Tab>
+      
+      <Tab title="Data Quality Check">
+        **Issues and recommendations:**
+        ```
+        ✅ 1,247 valid rows detected
+        ⚠️ 23 rows with missing email addresses
+        ⚠️ 5 duplicate entries found
+        ✅ Date formats consistent
+        ⚠️ Some currency values missing $ symbol
+        ```
+      </Tab>
+      
+      <Tab title="Sample Data">
+        **Representative examples:**
+        ```
+        Sample entries (showing data variety):
+        
+        John Smith, john@company.com, Free Plan
+        María González-López, maria@startup.io, Pro Plan  
+        Dr. Alexander Chen, alex.chen@enterprise.com, Enterprise
+        Sarah Johnson-Williams, s.johnson@agency.co.uk, Pro Plan
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Map Data to Design Context">
+    **Tell Figr how to use your data:**
+    
+    <AccordionGroup>
+      <Accordion title="Design Context Mapping">
+        **Map columns to UI elements:**
+        ```
+        full_name → User profile displays, table headers
+        email_address → Contact information, login references
+        user_type → Access level indicators, feature availability
+        usage_score → Progress bars, analytics visualizations
+        signup_date → Timeline displays, cohort analysis
+        ```
+      </Accordion>
+      
+      <Accordion title="Scenario Creation">
+        **Define realistic usage scenarios:**
+        ```
+        Scenario 1: Dashboard for high-usage enterprise customer
+        Data filter: user_type = "Enterprise" AND usage_score > 80
+        
+        Scenario 2: Onboarding flow for new free users
+        Data filter: user_type = "Free" AND signup_date < 7 days ago
+        
+        Scenario 3: Admin view with diverse user types
+        Data filter: Mixed sample across all user types
+        ```
+      </Accordion>
+      
+      <Accordion title="Edge Case Identification">
+        **Figr identifies potential design challenges:**
+        ```
+        Long names: "Dr. Alexander Hamilton-Richardson III"
+        Special characters: "José María Fernández-O'Brien"
+        Empty values: Some users without profile photos
+        Extreme values: Usage scores of 0 or 100+
+        Date variations: Different signup patterns
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  
+  <Step title="Data Integration Confirmation">
+    **Review how data will be used:**
+    
+    ```yaml
+    Data Usage Summary:
+    
+    Primary Dataset: Customer data (1,247 records)
+    Design Applications:
+      - User tables and lists
+      - Profile displays
+      - Dashboard metrics
+      - Analytics visualizations
+    
+    Privacy Settings: Anonymize emails, blur sensitive data
+    Update Frequency: Static import (refresh manually)
+    Retention: 90 days (configurable)
+    ```
+  </Step>
+</Steps>
+
+## Data-Driven Design Applications
+
+<Tabs>
+  <Tab title="Tables & Lists">
+    **Realistic data tables:**
+    
+    <Frame>
+      <img src="/images/data-table-design.png" alt="Table design showing real customer data with varied name lengths and content" />
+    </Frame>
+    
+    **What Figr considers:**
+    - Column width requirements for real content
+    - Sorting and filtering needs based on data types
+    - Pagination requirements for large datasets
+    - Responsive behavior with actual content lengths
+    
+    **Example improvements:**
+    ```
+    Generic design: Equal column widths
+    Data-driven design: Email column wider, status column narrow
+    
+    Generic design: "Show 10 items"
+    Data-driven design: "Show 25 items" (based on typical usage)
+    ```
+  </Tab>
+  
+  <Tab title="Dashboards & Analytics">
+    **Real metrics and KPIs:**
+    
+    <CardGroup cols={2}>
+      <Card title="Metric Visualization" icon="chart-bar">
+        **Based on actual data ranges:**
+        - Chart scales reflect real value ranges
+        - Trend lines show actual patterns
+        - Anomalies and outliers included
+        - Seasonal patterns represented
+      </Card>
+      
+      <Card title="Performance Indicators" icon="gauge">
+        **Realistic KPI displays:**
+        - Progress bars with actual percentages
+        - Status indicators based on real thresholds
+        - Alert states triggered by actual conditions
+        - Comparison baselines from historical data
+      </Card>
+    </CardGroup>
+  </Tab>
+  
+  <Tab title="User Profiles & Cards">
+    **Varied user representations:**
+    
+    ```
+    Real user profile variations:
+    
+    👤 Standard User
+    Name: Sarah Johnson
+    Role: Marketing Manager
+    Company: TechStartup Inc.
+    
+    👤 Executive User  
+    Name: Dr. Alexander Chen
+    Title: Chief Technology Officer
+    Company: Fortune 500 Enterprise Solutions
+    
+    👤 International User
+    Name: María José Fernández-González
+    Location: Barcelona, Spain
+    Language: Español
+    ```
+    
+    **Design considerations revealed:**
+    - Name truncation strategies
+    - Multi-language support needs
+    - Profile photo fallback patterns
+    - Contact information display variations
+  </Tab>
+  
+  <Tab title="Forms & Input Fields">
+    **Realistic form validation:**
+    
+    <AccordionGroup>
+      <Accordion title="Input Field Sizing">
+        **Based on actual data patterns:**
+        ```
+        Company name field: 15-85 characters (real range)
+        Email field: 8-45 characters (typical range)
+        Phone field: Various international formats
+        Address field: Country-specific variations
+        ```
+      </Accordion>
+      
+      <Accordion title="Validation Rules">
+        **Informed by real data issues:**
+        ```
+        Email validation: Catches actual common mistakes
+        Name validation: Handles international characters
+        Phone validation: Supports global formats
+        Date validation: Considers realistic date ranges
+        ```
+      </Accordion>
+      
+      <Accordion title="Auto-complete Suggestions">
+        **Based on existing data patterns:**
+        ```
+        Company suggestions: From existing customer list
+        Location suggestions: Based on user geography
+        Category suggestions: From actual usage patterns
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Privacy & Security
+
+<Callout type="shield">
+**Data protection:** Figr treats your data with enterprise-grade security and gives you complete control over privacy settings.
+</Callout>
+
+<Steps>
+  <Step title="Data Anonymization">
+    **Automatic privacy protection:**
+    
+    <Tabs>
+      <Tab title="Personal Information">
+        ```
+        Original: john.smith@company.com
+        Anonymized: j***@company.com
+        
+        Original: 555-123-4567
+        Anonymized: 555-***-***7
+        
+        Original: 123 Main Street, Apt 4B
+        Anonymized: [Address]
+        ```
+      </Tab>
+      
+      <Tab title="Sensitive Data">
+        ```
+        Financial data: $XX,XXX (preserves magnitude)
+        ID numbers: XXX-XX-1234 (pattern preserved)
+        Medical info: [Protected Health Information]
+        ```
+      </Tab>
+      
+      <Tab title="Custom Rules">
+        ```yaml
+        Anonymization Rules:
+        
+        email: "mask_middle"
+        phone: "mask_except_last_4"  
+        ssn: "full_mask"
+        credit_card: "mask_except_last_4"
+        custom_field: "hash_value"
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Access Controls">
+    **Granular data permissions:**
+    
+    ```yaml
+    Team Member Access:
+    
+    Designers: Anonymized data only
+    Product Managers: Full data access (with consent)
+    Developers: Structure only, no personal data
+    Stakeholders: Aggregated metrics only
+    ```
+  </Step>
+  
+  <Step title="Data Retention">
+    **Configurable retention policies:**
+    
+    ```
+    Import Data Retention:
+    - Design context: Permanent (anonymized)
+    - Raw data: 90 days (configurable)
+    - Aggregated insights: 2 years
+    - Personal identifiers: 30 days maximum
+    ```
+  </Step>
+</Steps>
+
+## Advanced Data Features
+
+<Tabs>
+  <Tab title="Data Relationships">
+    **Connect related datasets:**
+    
+    <Frame>
+      <img src="/images/data-relationships.png" alt="Interface showing how to connect customer data with order data and analytics" />
+    </Frame>
+    
+    **Example relationships:**
+    ```
+    Customer Data + Order History:
+    - Customer profiles with purchase patterns
+    - Lifetime value calculations
+    - Behavior-based segmentation
+    
+    User Data + Analytics:
+    - Activity-based user profiles
+    - Feature usage patterns
+    - Engagement scoring
+    ```
+  </Tab>
+  
+  <Tab title="Dynamic Data Updates">
+    **Keep designs current with live data:**
+    
+    <AccordionGroup>
+      <Accordion title="Scheduled Refresh">
+        ```yaml
+        Update Schedule:
+        - Daily: Critical business metrics
+        - Weekly: User behavior data
+        - Monthly: Demographic data
+        - On-demand: Campaign or event data
+        ```
+      </Accordion>
+      
+      <Accordion title="Webhook Integration">
+        ```yaml
+        Trigger Events:
+        - New data available in source system
+        - Significant data changes detected
+        - Manual refresh requested
+        - Design iteration created
+        ```
+      </Accordion>
+      
+      <Accordion title="Version Control">
+        **Track data changes over time:**
+        ```
+        Data Version 1.0: Launch baseline (1,000 users)
+        Data Version 1.1: Post-marketing campaign (1,500 users)
+        Data Version 1.2: Feature release impact (1,800 users)
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="Data Synthesis">
+    **Generate additional realistic data:**
+    
+    ```
+    When your dataset is limited, Figr can:
+    
+    ✅ Generate similar synthetic records
+    ✅ Create variations of existing patterns
+    ✅ Add realistic edge cases
+    ✅ Expand datasets for testing layouts
+    ✅ Create multi-language versions
+    
+    Example: 50 real customers → 500 synthetic customers
+    with similar patterns for stress-testing designs
+    ```
+  </Tab>
+</Tabs>
+
+## Best Practices for Data Import
+
+<CardGroup cols={2}>
+  <Card title="Data Quality" icon="shield-check">
+    **Prepare quality data:**
+    
+    ✅ **Clean data** before import (remove duplicates, fix errors)
+    ✅ **Representative sample** (include edge cases and variations)
+    ✅ **Current data** (recent enough to be relevant)
+    ✅ **Complete records** (minimal missing values)
+    ✅ **Diverse examples** (different user types, scenarios)
+  </Card>
+  
+  <Card title="Privacy First" icon="lock">
+    **Protect sensitive information:**
+    
+    ✅ **Remove unnecessary PII** before upload
+    ✅ **Use test/demo data** when possible
+    ✅ **Enable anonymization** for real data
+    ✅ **Check team permissions** before sharing
+    ✅ **Review data retention** settings regularly
+  </Card>
+</CardGroup>
+
+---
+
+<Card title="Explore Document Processing" icon="file-pdf">
+  Learn how to import PDFs, design specs, and other documents to build comprehensive product context.
+  
+  [PDF Processing →](/designing/input/pdf-processing)
+</Card>

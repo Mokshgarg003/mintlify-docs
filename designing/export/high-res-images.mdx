@@ -1,5 +1,598 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "High-Res Images"
+description: "Export crisp, high-quality images and assets optimized for different platforms, devices, and use cases."
+icon: "image"
 ---
 
+# High-Resolution Image Export
+
+Generate pixel-perfect assets for any platform or use case. Figr's advanced export engine ensures your designs look crisp on every device and at every scale.
+
+<Callout type="tip">
+**Perfect quality, every time:** Automated optimization for different platforms while maintaining visual fidelity and performance requirements.
+</Callout>
+
+## Export Formats and Quality
+
+<Tabs>
+  <Tab title="Raster Formats">
+    **Pixel-based image exports:**
+    
+    <Frame>
+      <img src="/images/export-formats-grid.png" alt="Grid showing different export formats with quality comparisons" />
+    </Frame>
+    
+    **Format specifications:**
+    ```yaml
+    PNG (Portable Network Graphics):
+    - Best for: UI elements, icons, screenshots
+    - Transparency: Full alpha channel support
+    - Quality: Lossless compression
+    - Use cases: App store screenshots, UI documentation
+    
+    JPG/JPEG (Joint Photographic Experts Group):
+    - Best for: Photography, complex images
+    - Compression: Adjustable quality (60-95%)
+    - File size: Smaller than PNG for photos
+    - Use cases: Marketing materials, presentations
+    
+    WebP (Web Picture format):
+    - Best for: Web optimization
+    - Features: Better compression than PNG/JPG
+    - Browser support: Modern browsers
+    - Use cases: Website assets, web applications
+    
+    AVIF (AV1 Image File Format):
+    - Best for: Next-generation web
+    - Compression: Superior to WebP
+    - Support: Latest browsers
+    - Use cases: Progressive web enhancement
+    ```
+  </Tab>
+  
+  <Tab title="Vector Formats">
+    **Scalable graphics exports:**
+    
+    <CardGroup cols={2}>
+      <Card title="SVG" icon="vector-square">
+        **Scalable Vector Graphics:**
+        - Infinite scalability
+        - Small file sizes
+        - CSS and JavaScript integration
+        - Perfect for icons and illustrations
+      </Card>
+      
+      <Card title="PDF" icon="file-pdf">
+        **Portable Document Format:**
+        - Print-ready quality
+        - Multi-page support
+        - Vector and raster combination
+        - Professional documentation
+      </Card>
+    </CardGroup>
+    
+    **Vector optimization:**
+    ```yaml
+    SVG optimization:
+    - Path simplification
+    - Unnecessary metadata removal
+    - Color palette optimization
+    - Code cleanup and minification
+    
+    PDF configuration:
+    - Print resolution (300 DPI)
+    - Color space selection (RGB/CMYK)
+    - Compression settings
+    - Font embedding options
+    ```
+  </Tab>
+  
+  <Tab title="Platform-Specific">
+    **Optimized for specific platforms:**
+    
+    <AccordionGroup>
+      <Accordion title="iOS Assets">
+        ```yaml
+        iOS export configuration:
+        
+        App icons:
+        - Multiple sizes: 20px to 1024px
+        - @1x, @2x, @3x density variants
+        - Rounded corner handling
+        - Safe area considerations
+        
+        Interface assets:
+        - @1x: Standard resolution
+        - @2x: Retina displays
+        - @3x: Super Retina displays
+        - Dark mode variants
+        
+        Format requirements:
+        - PNG for transparency
+        - No alpha for app icons
+        - sRGB color space
+        - Optimized file sizes
+        ```
+      </Accordion>
+      
+      <Accordion title="Android Assets">
+        ```yaml
+        Android export configuration:
+        
+        Density buckets:
+        - ldpi: 0.75x (120 DPI)
+        - mdpi: 1x (160 DPI)
+        - hdpi: 1.5x (240 DPI)
+        - xhdpi: 2x (320 DPI)
+        - xxhdpi: 3x (480 DPI)
+        - xxxhdpi: 4x (640 DPI)
+        
+        Asset types:
+        - Launcher icons (adaptive)
+        - Notification icons
+        - Action bar icons
+        - Background images
+        
+        Format considerations:
+        - WebP for efficiency
+        - PNG for transparency
+        - Vector drawables (XML)
+        ```
+      </Accordion>
+      
+      <Accordion title="Web Optimization">
+        ```yaml
+        Web-specific exports:
+        
+        Responsive images:
+        - Multiple breakpoint sizes
+        - Device pixel ratio variants
+        - Progressive JPEG support
+        - WebP with fallbacks
+        
+        Performance optimization:
+        - Optimized compression
+        - Next-gen format support
+        - Lazy loading preparation
+        - Critical resource prioritization
+        
+        SEO considerations:
+        - Descriptive filenames
+        - Alt text preparation
+        - Schema markup ready
+        - Social media optimization
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+</Tabs>
+
+## Resolution and Scaling
+
+<Steps>
+  <Step title="DPI and Pixel Density">
+    **Understanding resolution requirements:**
+    
+    <Tabs>
+      <Tab title="Standard Resolutions">
+        ```yaml
+        Common DPI standards:
+        
+        Web/Screen (72-96 DPI):
+        - Standard monitors: 96 DPI
+        - Retina displays: 192-288 DPI
+        - Mobile devices: 300-500+ DPI
+        - Export: @1x, @2x, @3x variants
+        
+        Print (300 DPI):
+        - High-quality printing
+        - Professional publications
+        - Marketing materials
+        - Large format displays
+        
+        Presentation (150 DPI):
+        - PowerPoint/Keynote slides
+        - Digital presentations
+        - Conference displays
+        - Document illustrations
+        ```
+      </Tab>
+      
+      <Tab title="Automatic Scaling">
+        ```yaml
+        Smart resolution generation:
+        
+        Base size calculation:
+        - Analyze design dimensions
+        - Determine optimal base resolution
+        - Calculate scaling factors
+        - Generate required variants
+        
+        Quality preservation:
+        - Vector elements remain crisp
+        - Raster effects properly scaled
+        - Text rendering optimization
+        - Icon pixel alignment
+        
+        File size optimization:
+        - Compression level adjustment
+        - Format selection by content
+        - Progressive enhancement
+        - Bandwidth consideration
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Multi-Scale Export">
+    **Generate multiple resolutions simultaneously:**
+    
+    <Frame>
+      <img src="/images/multi-scale-export.png" alt="Interface showing batch export of multiple image sizes and formats" />
+    </Frame>
+    
+    **Batch export features:**
+    ```yaml
+    Simultaneous generation:
+    - All required sizes at once
+    - Multiple format variants
+    - Platform-specific naming
+    - Organized folder structure
+    
+    Quality consistency:
+    - Proportional scaling algorithms
+    - Edge sharpening optimization
+    - Color profile preservation
+    - Compression standardization
+    
+    Automation benefits:
+    - Time-saving workflow
+    - Human error reduction
+    - Consistent output quality
+    - Streamlined asset delivery
+    ```
+  </Step>
+  
+  <Step title="Smart Optimization">
+    **AI-powered quality enhancement:**
+    
+    <AccordionGroup>
+      <Accordion title="Content-Aware Optimization">
+        ```yaml
+        Intelligent processing:
+        
+        UI elements:
+        - Sharp pixel alignment
+        - Icon grid snapping
+        - Text rendering optimization
+        - Interface element clarity
+        
+        Photographic content:
+        - Noise reduction algorithms
+        - Detail preservation
+        - Color accuracy maintenance
+        - Compression artifact minimization
+        
+        Illustrations:
+        - Vector path optimization
+        - Color gradient smoothness
+        - Shape edge refinement
+        - Artistic detail preservation
+        ```
+      </Accordion>
+      
+      <Accordion title="Performance Optimization">
+        ```yaml
+        File size reduction:
+        
+        Lossless optimization:
+        - Metadata removal
+        - Color palette optimization
+        - Redundant data elimination
+        - Encoding efficiency improvements
+        
+        Lossy optimization (when appropriate):
+        - Perceptual quality maintenance
+        - Selective compression areas
+        - Detail importance weighting
+        - Quality/size balance optimization
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Specialized Export Modes
+
+<Tabs>
+  <Tab title="Development Assets">
+    **Optimized for development workflow:**
+    
+    <CardGroup cols={2}>
+      <Card title="Code Integration" icon="code">
+        **Developer-friendly exports:**
+        - CSS background-image ready
+        - Sprite sheet generation
+        - Icon font creation
+        - Data URI encoding
+      </Card>
+      
+      <Card title="Asset Organization" icon="folder">
+        **Structured file delivery:**
+        - Consistent naming conventions
+        - Logical folder hierarchies
+        - Platform-specific organization
+        - Version control friendly
+      </Card>
+    </CardGroup>
+    
+    **Development export structure:**
+    ```
+    /assets
+    ├── /icons
+    │   ├── icon-name@1x.png
+    │   ├── icon-name@2x.png
+    │   └── icon-name@3x.png
+    ├── /images
+    │   ├── hero-image.webp
+    │   ├── hero-image.jpg (fallback)
+    │   └── hero-image@2x.jpg
+    └── /graphics
+        ├── logo.svg
+        └── background-pattern.png
+    ```
+  </Tab>
+  
+  <Tab title="Marketing Materials">
+    **High-quality presentation assets:**
+    
+    <AccordionGroup>
+      <Accordion title="Social Media">
+        ```yaml
+        Platform-specific sizing:
+        
+        Instagram:
+        - Post: 1080×1080px (square)
+        - Story: 1080×1920px (vertical)
+        - Reel cover: 1080×1920px
+        
+        Twitter/X:
+        - Post image: 1200×675px
+        - Header: 1500×500px
+        - Profile: 400×400px
+        
+        LinkedIn:
+        - Post: 1200×627px
+        - Cover: 1584×396px
+        - Company logo: 300×300px
+        
+        Facebook:
+        - Post: 1200×630px
+        - Cover: 851×315px
+        - Profile: 180×180px
+        ```
+      </Accordion>
+      
+      <Accordion title="Print Materials">
+        ```yaml
+        Print-ready specifications:
+        
+        Business cards:
+        - Standard: 3.5×2 inches
+        - Resolution: 300 DPI
+        - Bleed: 0.125 inch
+        - Color mode: CMYK
+        
+        Brochures:
+        - Tri-fold: 8.5×11 inches
+        - Resolution: 300 DPI
+        - Color profile: FOGRA39
+        - Format: PDF/X-1a
+        
+        Posters:
+        - Large format ready
+        - Vector when possible
+        - High-resolution raster
+        - Professional color profiles
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  
+  <Tab title="App Store Assets">
+    **Store listing optimization:**
+    
+    <Steps>
+      <Step title="iOS App Store">
+        Generate all required iOS app store assets including icons, screenshots, and promotional graphics
+      </Step>
+      
+      <Step title="Google Play Store">
+        Create Android app store assets with proper sizing and quality requirements
+      </Step>
+      
+      <Step title="Cross-Platform">
+        Maintain visual consistency across different app store environments
+      </Step>
+    </Steps>
+    
+    **App store asset requirements:**
+    ```yaml
+    iOS App Store:
+    - App icons: 20×20 to 1024×1024
+    - Screenshots: Device-specific sizes
+    - Promotional graphics: 1024×1024
+    - Apple Watch assets: Multiple sizes
+    
+    Google Play:
+    - Launcher icon: 512×512
+    - Screenshots: 16:9 or 9:16 ratio
+    - Feature graphic: 1024×500
+    - Promotional video thumbnail: 1024×500
+    ```
+  </Tab>
+</Tabs>
+
+## Advanced Export Features
+
+<Steps>
+  <Step title="Batch Processing">
+    **Efficient bulk export workflows:**
+    
+    <Frame>
+      <img src="/images/batch-export-interface.png" alt="Batch export interface showing multiple designs being processed simultaneously" />
+    </Frame>
+    
+    **Batch capabilities:**
+    ```yaml
+    Multi-design export:
+    - Select multiple artboards
+    - Apply consistent settings
+    - Generate variants simultaneously
+    - Maintain quality standards
+    
+    Template-based export:
+    - Save export configurations
+    - Apply templates to new designs
+    - Standardize team workflows
+    - Ensure consistency across projects
+    
+    Automated scheduling:
+    - Set up recurring exports
+    - Version control integration
+    - Notification systems
+    - Quality assurance checks
+    ```
+  </Step>
+  
+  <Step title="Quality Control">
+    **Automated quality assurance:**
+    
+    <Tabs>
+      <Tab title="Visual Validation">
+        ```yaml
+        Automatic quality checks:
+        - Resolution verification
+        - Color accuracy validation
+        - Edge sharpness assessment
+        - Compression artifact detection
+        
+        Comparison tools:
+        - Before/after quality comparison
+        - Zoom inspection capabilities
+        - Pixel-level accuracy checking
+        - Color difference analysis
+        ```
+      </Tab>
+      
+      <Tab title="Technical Validation">
+        ```yaml
+        File compliance checking:
+        - Format specification adherence
+        - File size optimization verification
+        - Metadata requirement compliance
+        - Platform compatibility validation
+        
+        Performance analysis:
+        - Loading time estimation
+        - Bandwidth usage calculation
+        - Caching optimization assessment
+        - Progressive loading readiness
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  
+  <Step title="Delivery Integration">
+    **Streamlined asset delivery:**
+    
+    ```yaml
+    Cloud storage integration:
+    - Dropbox, Google Drive, OneDrive
+    - Automatic folder organization
+    - Team access management
+    - Version history preservation
+    
+    Development tool integration:
+    - Git repository uploads
+    - CDN direct uploads
+    - CI/CD pipeline integration
+    - Asset management systems
+    
+    Collaboration features:
+    - Stakeholder notification
+    - Download link generation
+    - Access permission management
+    - Usage tracking and analytics
+    ```
+  </Step>
+</Steps>
+
+## Best Practices
+
+<CardGroup cols={2}>
+  <Card title="Quality Optimization" icon="star">
+    **Maximize visual quality:**
+    
+    ✅ Use vector formats when possible
+    ✅ Export at appropriate resolutions
+    ✅ Optimize compression settings
+    ✅ Maintain color accuracy
+    ✅ Test across target devices
+  </Card>
+  
+  <Card title="Workflow Efficiency" icon="zap">
+    **Streamline export processes:**
+    
+    ✅ Set up export templates
+    ✅ Use batch processing features
+    ✅ Organize assets systematically
+    ✅ Automate repetitive tasks
+    ✅ Integrate with existing tools
+  </Card>
+</CardGroup>
+
+## Troubleshooting Export Issues
+
+<AccordionGroup>
+  <Accordion title="Quality Problems">
+    ```yaml
+    Issue: Exported images appear blurry or pixelated
+    Solutions:
+    - Increase export resolution
+    - Use vector formats when possible
+    - Check source design quality
+    - Verify scaling algorithms
+    ```
+  </Accordion>
+  
+  <Accordion title="File Size Issues">
+    ```yaml
+    Issue: Exported files are too large
+    Solutions:
+    - Adjust compression settings
+    - Use appropriate formats (WebP, AVIF)
+    - Optimize image content
+    - Consider progressive loading
+    ```
+  </Accordion>
+  
+  <Accordion title="Color Accuracy">
+    ```yaml
+    Issue: Colors don't match original design
+    Solutions:
+    - Check color profile settings
+    - Verify monitor calibration
+    - Use consistent color spaces
+    - Test on target devices
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+<Card title="Ship-Ready Designs" icon="rocket">
+  Learn how to prepare complete, production-ready design packages for development teams.
+  
+  [Ship-Ready Designs →](/designing/export/ship-ready-designs)
+</Card>

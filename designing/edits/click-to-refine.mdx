@@ -1,5 +1,507 @@
 ---
-title: 'New file'
-description: 'Description of your new file.'
+title: "Click to Refine"
+description: "Make precise adjustments to AI-generated designs through intuitive click-based editing and contextual refinements."
+icon: "mouse-pointer"
 ---
 
+# Click to Refine
+
+Transform AI-generated designs with precise, contextual edits. Figr's click-to-refine system lets you adjust any element while maintaining design system consistency and product context.
+
+<tip>
+  **Intelligent editing:** Click any element to see contextual refinement options that understand your design system, user needs, and technical constraints.
+</tip>
+
+## How Click-to-Refine Works
+
+<Steps>
+  <Step title="Element Selection">
+    **Click any design element for instant refinement options:**
+
+    <Frame>
+      ![Interface showing contextual editing options when clicking on a button element](/images/click-to-refine-interface.png)
+    </Frame>
+    **What you can refine:**
+
+    ```yaml
+    Visual elements:
+    - Colors and backgrounds
+    - Typography and text content
+    - Spacing and sizing
+    - Borders and shadows
+    - Images and icons
+    
+    Interactive elements:
+    - Button states and styling
+    - Form inputs and validation
+    - Navigation behaviors
+    - Link destinations and styling
+    - Interactive feedback
+    
+    Layout elements:
+    - Component positioning
+    - Grid and alignment
+    - Responsive behavior
+    - Content hierarchy
+    - Whitespace distribution
+    ```
+  </Step>
+  <Step title="Contextual Suggestions">
+    **Smart refinement options based on element context:**
+
+    <Tabs>
+      <Tab title="Button Refinements">
+        **Context-aware button options:**
+
+        ```yaml
+        Style variations:
+        - Primary → Secondary button style
+        - Size: Small → Medium → Large
+        - Shape: Square → Rounded → Pill
+        - State: Default → Hover → Disabled
+        
+        Content adjustments:
+        - Text: "Submit" → "Save Changes"
+        - Icon: Add checkmark or arrow
+        - Loading: Add spinner state
+        - Confirmation: Add success state
+        
+        Behavioral changes:
+        - Action: Form submit → Page navigation
+        - Validation: Add form validation trigger
+        - Feedback: Success message display
+        ```
+      </Tab>
+      <Tab title="Text Refinements">
+        **Typography and content options:**
+
+        ```yaml
+        Typography adjustments:
+        - Size: Follow design system scale
+        - Weight: Light → Regular → Bold
+        - Color: Brand palette options
+        - Alignment: Left → Center → Right
+        
+        Content improvements:
+        - Clarity: "Click here" → "Download report"
+        - Tone: Technical → Conversational
+        - Length: Expand or condense text
+        - Accessibility: Add alt text, labels
+        
+        Hierarchy changes:
+        - Heading level: H3 → H2 → H1
+        - Emphasis: Regular → Highlighted
+        - Supporting text: Add descriptions
+        ```
+      </Tab>
+      <Tab title="Layout Refinements">
+        **Spacing and positioning options:**
+
+        ```yaml
+        Spacing adjustments:
+        - Padding: Tight → Comfortable → Spacious
+        - Margins: Design system increments
+        - Gaps: Between elements optimization
+        - Alignment: Grid-based positioning
+        
+        Positioning changes:
+        - Horizontal: Left → Center → Right
+        - Vertical: Top → Middle → Bottom
+        - Stacking: Layer order adjustments
+        - Responsive: Mobile behavior tuning
+        
+        Container adjustments:
+        - Width: Fixed → Fluid → Constrained
+        - Height: Auto → Fixed → Min/max
+        - Overflow: Hidden → Scroll → Visible
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Design System Compliance">
+    **Maintain consistency while editing:**
+
+    <AccordionGroup>
+      <Accordion title="Automatic Constraint Checking">
+        ```yaml
+        System validation:
+        - Color palette compliance
+        - Typography scale adherence
+        - Spacing system alignment
+        - Component pattern consistency
+        - Brand guideline compliance
+        
+        Suggestions when off-system:
+        "Custom color #ff6b35 detected"
+        → "Use brand orange: #f59e0b instead?"
+        → "Add to design system as new accent color?"
+        ```
+      </Accordion>
+      <Accordion title="Smart Alternatives">
+        ```yaml
+        System-compliant options:
+        
+        Color selection:
+        - Brand palette priorities
+        - Accessibility-compliant combinations
+        - Semantic color meanings
+        - Dark mode considerations
+        
+        Typography choices:
+        - Hierarchy-appropriate sizes
+        - Weight combinations that work
+        - Line height optimization
+        - Reading experience improvements
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+</Steps>
+
+## Editing Modes
+
+<Tabs>
+  <Tab title="Quick Adjustments">
+    **Instant refinements for common changes:**
+
+    <CardGroup cols={2}>
+      <Card title="One-Click Fixes" icon="zap">
+        **Common quick adjustments:**
+
+        - Make button primary/secondary
+        - Increase/decrease text size
+        - Add/remove element spacing
+        - Change color to brand palette
+        - Toggle between light/dark variants
+      </Card>
+      <Card title="Smart Suggestions" icon="lightbulb">
+        **AI-powered improvements:**
+
+        - "Make this more accessible"
+        - "Optimize for mobile"
+        - "Improve visual hierarchy"
+        - "Match existing patterns"
+        - "Enhance call-to-action"
+      </Card>
+    </CardGroup>
+  </Tab>
+  <Tab title="Detailed Editing">
+    **Precise control for specific adjustments:**
+
+    <Frame>
+      ![Detailed editing panel showing precise controls for typography, spacing, and styling](/images/detailed-editing-panel.png)
+    </Frame>
+    **Detailed controls:**
+
+    ```yaml
+    Typography precision:
+    - Font size: Exact pixel values or rem units
+    - Line height: Optimal reading ratios
+    - Letter spacing: Fine-tuned adjustments
+    - Text decoration: Underlines, emphasis
+    
+    Spacing precision:
+    - Margin: Top, right, bottom, left values
+    - Padding: Component-specific spacing
+    - Gaps: Flexbox and grid spacing
+    - Alignment: Pixel-perfect positioning
+    
+    Visual effects:
+    - Shadows: Depth and direction
+    - Borders: Width, style, color
+    - Opacity: Transparency levels
+    - Transforms: Rotation, scale, position
+    ```
+  </Tab>
+  <Tab title="Bulk Editing">
+    **Apply changes to multiple elements:**
+
+    <Steps>
+      <Step title="Selection">
+        Select multiple similar elements (buttons, text, cards)
+      </Step>
+      <Step title="Batch Operations">
+        Apply consistent changes across selected elements
+      </Step>
+      <Step title="Pattern Creation">
+        Save bulk edits as new component patterns
+      </Step>
+    </Steps>
+    **Bulk edit examples:**
+
+    ```yaml
+    Multi-element changes:
+    - Update all button colors to new brand palette
+    - Increase spacing on all form fields
+    - Change all icons to outlined style
+    - Apply consistent border radius to cards
+    - Update typography across similar text elements
+    ```
+  </Tab>
+</Tabs>
+
+## Context-Aware Refinements
+
+<Steps>
+  <Step title="User Context Application">
+    **Edits informed by your user research:**
+
+    <AccordionGroup>
+      <Accordion title="User Behavior Integration">
+        ```yaml
+        Editing suggestions based on user data:
+        
+        "Users often miss this button"
+        → Increase size and contrast
+        → Add icon for better recognition
+        → Move to more prominent location
+        
+        "Mobile users struggle with this form"
+        → Larger touch targets
+        → Simplified input methods
+        → Better error messaging
+        
+        "Users expect this action here"
+        → Relocate to standard position
+        → Use familiar interaction pattern
+        → Add supporting context
+        ```
+      </Accordion>
+      <Accordion title="Accessibility Improvements">
+        ```yaml
+        Automatic accessibility enhancements:
+        
+        Color contrast: Suggest WCAG-compliant alternatives
+        Touch targets: Ensure 44px minimum size
+        Focus indicators: Add visible focus states
+        Screen readers: Improve alt text and labels
+        Keyboard navigation: Enhance tab order
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Step>
+  <Step title="Technical Context Integration">
+    **Edits that consider implementation reality:**
+
+    <Tabs>
+      <Tab title="Performance Optimization">
+        ```yaml
+        Performance-aware suggestions:
+        
+        Image optimization:
+        "Large image detected" → "Compress or use WebP format?"
+        
+        Animation efficiency:
+        "Complex animation" → "Use CSS transforms for better performance?"
+        
+        Layout optimization:
+        "Nested flexbox" → "Consider CSS Grid for this layout?"
+        ```
+      </Tab>
+      <Tab title="Browser Compatibility">
+        ```yaml
+        Cross-browser considerations:
+        
+        Modern features:
+        "CSS Grid used" → "Fallback for IE11 needed?"
+        
+        Progressive enhancement:
+        "Advanced CSS" → "Graceful degradation planned?"
+        
+        Feature detection:
+        "New API usage" → "Feature detection recommended?"
+        ```
+      </Tab>
+    </Tabs>
+  </Step>
+  <Step title="Brand Context Maintenance">
+    **Keep edits aligned with brand guidelines:**
+
+    ```yaml
+    Brand consistency checks:
+    
+    Color usage:
+    "Off-brand color detected"
+    → Show nearest brand-compliant alternatives
+    → Explain color meaning and usage
+    
+    Typography hierarchy:
+    "Heading level inconsistent"
+    → Suggest proper hierarchy level
+    → Show content structure implications
+    
+    Component patterns:
+    "Custom component created"
+    → Check against existing patterns
+    → Suggest standardization opportunities
+    ```
+  </Step>
+</Steps>
+
+## Advanced Refinement Features
+
+<Tabs>
+  <Tab title="Natural Language Editing">
+    **Describe changes in plain English:**
+
+    <Frame>
+      ![Interface showing natural language input for design changes](/images/natural-language-editing.png)
+    </Frame>
+    **Example commands:**
+
+    ```yaml
+    Content changes:
+    "Make this heading larger and blue"
+    "Change button text to 'Get Started'"
+    "Add an icon to this button"
+    "Make this text easier to read"
+    
+    Layout adjustments:
+    "Move this button to the right"
+    "Add more space between these elements"
+    "Make this section full width"
+    "Stack these elements on mobile"
+    
+    Style modifications:
+    "Make this look more like our other buttons"
+    "Increase the contrast for accessibility"
+    "Round the corners more"
+    "Add a subtle shadow"
+    ```
+  </Tab>
+  <Tab title="Conditional Refinements">
+    **Context-dependent changes:**
+
+    <AccordionGroup>
+      <Accordion title="Responsive Variations">
+        ```yaml
+        Device-specific refinements:
+        
+        Desktop: Larger spacing, hover effects
+        Tablet: Medium spacing, touch-friendly
+        Mobile: Compact layout, thumb-accessible
+        
+        Conditional logic:
+        "On mobile: Stack vertically"
+        "On desktop: Show additional details"
+        "On touch devices: Larger tap targets"
+        ```
+      </Accordion>
+      <Accordion title="User State Variations">
+        ```yaml
+        Context-aware presentations:
+        
+        New users: Simplified interface, more guidance
+        Power users: Advanced features, shortcuts
+        Mobile users: Optimized for one-handed use
+        Enterprise users: Compliance indicators, audit trails
+        
+        Dynamic adjustments:
+        "For first-time users: Add tooltips"
+        "For return visitors: Hide onboarding"
+        "For admin users: Show management options"
+        ```
+      </Accordion>
+    </AccordionGroup>
+  </Tab>
+  <Tab title="A/B Testing Integration">
+    **Create variations for testing:**
+
+    ```yaml
+    Variation creation:
+    
+    Button variations:
+    - Version A: Blue primary button
+    - Version B: Green primary button
+    - Test: Conversion rate comparison
+    
+    Layout variations:
+    - Version A: Sidebar navigation
+    - Version B: Top navigation
+    - Test: User task completion rates
+    
+    Content variations:
+    - Version A: "Sign Up Now"
+    - Version B: "Get Started Free"
+    - Test: Click-through rates
+    ```
+  </Tab>
+</Tabs>
+
+## Best Practices for Effective Refinement
+
+<CardGroup cols={2}>
+  <Card title="Systematic Editing" icon="list-check">
+    **Organized refinement approach:**
+
+    ✅ Start with content and hierarchy
+    ✅ Refine layout and spacing
+    ✅ Adjust visual styling last
+    ✅ Test refinements on different devices
+    ✅ Validate against design system
+  </Card>
+  <Card title="User-Centered Refinements" icon="users">
+    **Keep user needs central:**
+
+    ✅ Consider accessibility in every edit
+    ✅ Test changes with real users
+    ✅ Maintain familiar interaction patterns
+    ✅ Optimize for primary user tasks
+    ✅ Document refinement reasoning
+  </Card>
+</CardGroup>
+
+## Common Refinement Scenarios
+
+<AccordionGroup>
+  <Accordion title="Improving Button Effectiveness">
+    ```yaml
+    Problem: Low click-through rates on CTA button
+    
+    Refinements applied:
+    - Color: Changed to high-contrast brand primary
+    - Size: Increased to improve visibility
+    - Text: Made more action-oriented
+    - Position: Moved above the fold
+    - Context: Added supporting benefit text
+    
+    Result: 23% improvement in conversion
+    ```
+  </Accordion>
+  <Accordion title="Mobile Optimization">
+    ```yaml
+    Problem: Desktop design difficult to use on mobile
+    
+    Refinements applied:
+    - Touch targets: Increased to 44px minimum
+    - Navigation: Simplified to essential items
+    - Text: Increased size for readability
+    - Spacing: Optimized for thumb navigation
+    - Forms: Streamlined input requirements
+    
+    Result: 35% reduction in mobile bounce rate
+    ```
+  </Accordion>
+  <Accordion title="Accessibility Enhancement">
+    ```yaml
+    Problem: Design fails accessibility audit
+    
+    Refinements applied:
+    - Contrast: Improved color contrast ratios
+    - Focus: Added visible focus indicators
+    - Labels: Enhanced form input labels
+    - Structure: Improved heading hierarchy
+    - Alt text: Added descriptive image alt text
+    
+    Result: WCAG 2.1 AA compliance achieved
+    ```
+  </Accordion>
+</AccordionGroup>
+
+---
+
+<Card title="Explore Micro-Improvements" icon="search-plus">
+  Learn how to make small but impactful refinements that significantly enhance user experience.
+
+  [Micro Improvements →](/designing/edits/micro-improvements)
+</Card>
