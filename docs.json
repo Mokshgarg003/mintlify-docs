@@ -221,5 +221,10 @@
       "og:type": "website",
       "og:site_name": "Figr AI Docs"
     }
+  },
+  "integrations": {
+    "ga4": {
+        "measurementId": "G-ZH1YR36TK8"
+    }
   }
 }
