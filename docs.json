@@ -69,8 +69,7 @@
                 "pages": [
                   "designing/canvas/infinite-workspace",
                   "designing/canvas/organizing-iterations",
-                  "designing/canvas/comparing-designs",
-                  "designing/canvas/zooming-overview"
+                  "designing/canvas/comparing-designs"
                 ]
               },
               {
@@ -101,8 +100,7 @@
                 "group": "Precise Edits",
                 "pages": [
                   "designing/edits/click-to-refine",
-                  "designing/edits/micro-improvements",
-                  "designing/edits/element-control"
+                  "designing/edits/micro-improvements"
                 ]
               },
               {
@@ -165,24 +163,24 @@
         ]
       }
     ],
-  "global": {
-    "anchors": [
-      {
-        "anchor": "Documentation",
-        "href": "https://docs.figr.design/",
-        "icon": "book"
-      },
-      {
-        "anchor": "Talk to Us",
-        "href": "https://figr.design/contact",
-        "icon": "comments"
-      },
-      {
-        "anchor": "Blog",
-        "href": "https://figr.design/blog",
-        "icon": "books"
-      }
-    ]
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "href": "https://docs.figr.design/",
+          "icon": "book"
+        },
+        {
+          "anchor": "Talk to Us",
+          "href": "https://figr.design/contact",
+          "icon": "comments"
+        },
+        {
+          "anchor": "Blog",
+          "href": "https://figr.design/blog",
+          "icon": "books"
+        }
+      ]
     }
   },
   "logo": {
@@ -224,7 +222,7 @@
   },
   "integrations": {
     "ga4": {
-        "measurementId": "G-ZH1YR36TK8"
+      "measurementId": "G-ZH1YR36TK8"
     }
   }
 }
