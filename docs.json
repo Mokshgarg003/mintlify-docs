@@ -30,7 +30,6 @@
                 "group": "Account Setup",
                 "pages": [
                   "getting-started/setup/creating-your-account",
-                  "getting-started/setup/project-setup",
                   "getting-started/setup/team-invitations"
                 ]
               },
