@@ -4,7 +4,102 @@ description: "Latest updates, new features, and improvements to the Figr platfor
 icon: "clock"
 ---
 
-## November 2024
+## December 2025
+
+### Version 2.9.1 - Dec 16, 2025
+
+<Card title="Figr AI is Now Public" icon="globe" iconType="regular">
+  - Anyone can now try Figr AI. No waitlist. No whitelist required.
+  - Thank you for being an early user. Your feedback shaped this release.
+</Card>
+
+**Features**
+
+- **Separate thinking and execution agents.** Figr now reasons through problems before building. Dedicated agents for UX thinking and design execution mean better edge case detection, stronger flow logic, and reasoning you can follow.
+- **Web search and asset extraction.** Research competitors, pull design patterns, and extract assets from URLs directly. Figr finds what you need and integrates it into your work.
+- **Gallery of real projects.** See what's possible with Figr through actual solved problems, not demos. Includes builds on existing products, research & PRDs, user flows, edge cases, UX reviews, and test cases.
+- **File system sandbox.** Work with files and assets in an isolated environment for safer experimentation and iteration.
+- **Pricing update**. Individual plans now start at \*\*\$19/month. \*\*Team plans start at **\$24/member.**
+
+**Improvements**
+
+- **Automatic mode switching.** Figr selects the appropriate mode (Chat, Design, Review) based on your request. Less manual toggling.
+- **Enhanced versioning system.** Design versions (v1, v2, v3) now managed cleanly. Regenerating replaces old versions instead of creating duplicates.
+- **Higher quality diagrams and flows.** Improved output for flowcharts, user journeys, and technical diagrams.
+- **Reliable regeneration.** "Try again" functionality now works consistently across all design types.
+
+**Fixes**
+
+- Corrected zoom level behavior in flow diagrams.
+- Resolved accessibility issues in flow navigation and controls.
+
+---
+
+**What this means:** Figr now thinks like a PM and designs like a designer. Research → Think → Design → Test. All in one place.
+
+### Version 2.9.0 - Dec 9, 2025
+
+<Card title="Major Release" icon="atom-simple" iconType="regular">
+  - **Chrome Extension for web parsing.** Capture HTML structure from any live website in one click. Figr reads actual layout, spacing, and component hierarchy—not just visual screenshots. Use captured structures as input for design generation or UX audits and accessibility reviews.
+  - **Multi-model orchestration.** Figr now automatically routes between Opus 4.5, Gemini 3, and custom models based on task requirements. Multiple model calls run in parallel for higher quality results without manual switching.
+</Card>
+
+<iframe src="https://www.youtube.com/embed/8VP-Yb4kWy4" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+**Improvements**
+
+- **Progressive loading indicators.** Real-time progress feedback during design generation shows which steps are executing.
+- **Faster query processing.** Eliminated processing bottlenecks for quicker response times across all tools.
+
+**Fixes**
+
+- Resolved full-screen display issues affecting design view.
+- Fixed query editing functionality that prevented modifications to in-progress requests.
+
+## November 2025
+
+### Version 2.8.6 - Nov 27, 2025
+
+![Review27nov](/images/review27nov.png)
+
+**Features**
+
+- **A/B testing comparison tool.** Upload two designs to compare side by side. Figr analyzes based on UX principles, interaction patterns, and data from 200,000+ app screens. Get specific breakdowns of what works and why, grounded in real patterns rather than generic suggestions.
+- **Custom image uploads for brand assets.** Upload your own imagery and brand assets. Figr automatically integrates them into generated designs to match your visual style.
+
+**Improvements**
+
+- **Enhanced UX review depth.** Design reviews now reference specific patterns from the 200k+ screen database. Feedback includes actionable insights tied to proven UX principles.
+- **Mobile-optimized published links.** Prototypes shared via web links now render properly on mobile devices. Test and share designs across any screen size.
+- **Refined full-screen zoom controls.** Smoother zoom behavior with better aspect ratio preservation in full-screen design view.
+- **Faster tool response times.** Reduced latency when switching between editing modes and invoking design tools.
+
+**Fixes**
+
+- Overall stability improvements and faster page load times across the platform.
+
+### Version 2.8.4 - Nov 17, 2025
+
+<Card title="Major Release" icon="atom-simple" iconType="regular">
+  - **Publish prototypes to web.** Generate shareable links for any prototype. Recipients can view and interact with designs without a Figr account. Test flows with stakeholders or present work externally.
+  - **Memory management controls.** Edit or delete stored memories directly from the sidebar. Toggle whether Figr uses memories for each query. Control what product context, preferences, and decisions are retained.
+  - **Enhanced design reviews.** Upload multiple screens or complete flows for comprehensive evaluation. Figr analyzes full context and provides targeted feedback based on what you're showing.
+  - **Real images in designs.** Paste any asset URL or search Unsplash directly. Figr integrates actual images into high-fidelity prototypes instead of placeholders.
+</Card>
+
+![Publish](/images/publish.png)
+
+**Improvements**
+
+- **Parallel Figma processing.** Auto-fetch design systems and process multiple Figma links simultaneously for faster context gathering.
+- **Improved Figma layout understanding.** Better extraction of component structure, spacing, and design system patterns from Figma files.
+- **Streaming stability.** Fixed response doubling and eliminated reload requirements during generation.
+
+**Fixes**
+
+- Resolved missing Figma fetch operations during queries.
+- Fixed design system not loading at project start.
+- Reduced unnecessary "thinking" steps for more direct responses.
 
 ### Version 2.8.0 - Nov 10, 2025
 
