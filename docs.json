@@ -42,6 +42,15 @@
               }
             ]
           },
+            {
+            "group": "Inputs",
+            "pages": [
+              "inputs/upload-from-computer",
+              "inputs/figma-input",
+              "inputs/chrome-extension",
+              "inputs/screen-recording"
+            ]
+          },
           {
             "group": "Credits & Billing",
             "pages": [
