@@ -5,7 +5,7 @@ description: "Connect Figma and paste frame links directly into Figr. Get exact 
 
 ## Connecting Figma
 
-<video controls className="w-full aspect-video rounded-xl" src="https://docs.figr.design/videos/Figma Connect.mp4" />
+<video controls className="w-full rounded-xl" src="https://docs.figr.design/videos/Figma Connect.mp4" />
 
 ### First-Time Setup
 
@@ -41,48 +41,31 @@ Permissions:
 4. Paste directly into the Figr query box (⌘V)
 5. Figr automatically detects and attaches the frame
 
----
-
 ## Why Figma Input Matters
 
 Screenshots lose information. When Figr analyzes an image, it estimates colors, guesses spacing, approximates radius values. Close, but not exact. Figma frames give Figr the real data.
 
 Exact hex values. Precise spacing in pixels. Actual border radius. Real typography settings. No guessing, no approximation. Figr reads your design file directly and uses the true values.
 
-### Screenshot Input
-
-- Colors estimated from image pixels
-- Spacing approximated visually
-- Border radius guessed
-- Typography inferred
-- Font weights assumed
-
-### Figma Frame Input
-
-- Exact color values (`#6366F1`, not "purple-ish")
-- Precise spacing (24px, not "about 24")
-- Actual border radius (8px)
-- Real typography settings
-- Correct font weights and sizes
+| **Screenshot input**               | **Figma frame input**                            |
+| ---------------------------------- | ------------------------------------------------ |
+| Colors estimated from image pixels | Exact color values (`#6366F1`, not "purple-ish") |
+| Spacing approximated visually      | Precise spacing (`24px`, not "about 24")         |
+| Border radius guessed              | Actual border radius (`8px`)                     |
+| Typography inferred                | Real typography settings                         |
+| Font weights assumed               | Correct font weights and sizes                   |
 
 ---
 
 ## Figma vs Screenshots
 
-### When to Use Figma Frames
-
-- Your own product designs
-- Design system components
-- Screens you want to match exactly
-- Building on existing work
-- Maintaining design consistency
-
-### When Screenshots Are Fine
-
-- Competitor analysis (you don't have their Figma)
-- Quick inspiration
-- External reference designs
-- Live product captures
+| **When to use Figma frames**      | **When screenshots are fine**                    |
+| --------------------------------- | ------------------------------------------------ |
+| Your own product designs          | Competitor analysis (you don't have their Figma) |
+| Design system components          | Quick inspiration                                |
+| Screens you want to match exactly | External reference designs                       |
+| Building on existing work         | Live product captures                            |
+| Maintaining design consistency    |                                                  |
 
 ---
 
@@ -99,7 +82,7 @@ your-email@company.com     [Unlink]
 
 ### Unlink Figma
 
-<video controls className="w-full aspect-video rounded-xl" src="https://docs.figr.design/videos/Unlink Figma.mp4" />
+<video controls className="w-full rounded-xl" src="https://docs.figr.design/videos/Unlink Figma.mp4" />
 
 To disconnect your Figma account:
 
@@ -123,42 +106,42 @@ To connect a different Figma account:
 
 ## Best Practices
 
-### Share Specific Frames
+<AccordionGroup>
+  <Accordion title="Share Specific Frames">
+    Don't paste entire file links. Select the relevant frame.
 
-Don't paste entire file links. Select the relevant frame.
+    - Link to specific dashboard frame
+    - Link to component you want to match
+    - Link to the exact screen you're extending
 
-- Link to specific dashboard frame
-- Link to component you want to match
-- Link to the exact screen you're extending
+    **Avoid:**
 
-Avoid:
+    - Entire file links without context
+    - Page links with dozens of frames
+    - Outdated frames that don't reflect current design
+  </Accordion>
+  <Accordion title="Combine with prompts">
+    Frame alone doesn't tell Figr what you want. Add context.
 
-- Entire file links without context
-- Page links with dozens of frames
-- Outdated frames that don't reflect current design
+    ```
+    Good prompts with Figma frames:
+    
+    "Match this dashboard style but create a 
+    settings page with these sections..."
+    
+    "Use the card component from this frame 
+    for a new feature announcement layout"
+    
+    "Keep this navigation pattern but redesign 
+    the content area for data visualization"
+    ```
+  </Accordion>
+  <Accordion title="Use for Design System Setup">
+    Figma frames are ideal for setting up your design language. High-value frames to share:
 
-### Combine with Prompts
-
-Frame alone doesn't tell Figr what you want. Add context.
-
-```
-Good prompts with Figma frames:
-
-"Match this dashboard style but create a 
-settings page with these sections..."
-
-"Use the card component from this frame 
-for a new feature announcement layout"
-
-"Keep this navigation pattern but redesign 
-the content area for data visualization"
-```
-
-### Use for Design System Setup
-
-Figma frames are ideal for setting up your design language. High-value frames to share:
-
-- Style guide or design tokens page
-- Component library frames
-- Pattern documentation
-- Recent approved designs
+    - Style guide or design tokens page
+    - Component library frames
+    - Pattern documentation
+    - Recent approved designs
+  </Accordion>
+</AccordionGroup>
