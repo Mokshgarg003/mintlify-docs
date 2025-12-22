@@ -54,52 +54,27 @@ Build context from multiple sources in a single session. Useful for competitor a
 
 Once captured, your product context flows into every conversation.
 
-### Reference in Prompts
+<AccordionGroup>
+  <Accordion title="Reference in Prompts">
+    Example prompts that leverage captures:
 
-```
-Example prompts that leverage captures:
+    - "Design a settings page that matches the navigation pattern from my dashboard capture"
+    - "Create a form using the same validation approach I showed you in the checkout flow"
+    - "Build a table component following the patterns from my existing data views"
+  </Accordion>
+  <Accordion title="Build on Existing">
+    Figr uses captures to extend your product, not create something generic.
 
-"Design a settings page that matches the navigation 
-pattern from my dashboard capture"
-
-"Create a form using the same validation approach 
-I showed you in the checkout flow"
-
-"Build a table component following the patterns 
-from my existing data views"
-```
-
-### Build on Existing
-
-Figr uses captures to extend your product, not create something generic.
-
-```
-Design request: "Add a notification center"
-
-Without capture: Generic notification dropdown
-With capture: Notification center that matches your 
-nav style, uses your button variants, follows 
-your spacing system, and fits your IA
-```
-
-### Market & competitive research
-
-```
-Competitor benchmarking:
-Capture checkout flows from Stripe, Shopify, and Square. 
-Ask Figr to design yours incorporating the best patterns 
-from each.
-
-Pattern library building:
-Capture dashboard designs from Linear, Notion, and Figma. 
-Build a reference set Figr can draw from for your own 
-dashboard work.
-
-Feature research:
-Capture how 5 different products handle user onboarding. 
-Ask Figr to analyze patterns and recommend an approach 
-for your product.
-```
+    | **Design prompt**           | **Without capture**           | **With capture**                                                                                                          |
+    | --------------------------- | ----------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+    | "Add a notification center" | Generic notification dropdown | Notification center that matches your nav style, uses your button variants, follows your spacing system, and fits your IA |
+  </Accordion>
+  <Accordion title="Market & competitive research">
+    | **Competitor benchmarking**                                                                                                  | **Pattern library building**                                                                                                    | **Feature research**                                                                                                              |
+    | ---------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+    | Capture checkout flows from Stripe, Shopify, and Square. Ask Figr to design yours incorporating the best patterns from each. | Capture dashboard designs from Linear, Notion, and Figma. Build a reference set Figr can draw from for your own dashboard work. | Capture how 5 different products handle user onboarding. Ask Figr to analyze patterns and recommend an approach for your product. |
+  </Accordion>
+</AccordionGroup>
 
 ---
 
@@ -109,18 +84,11 @@ Most design AI asks you to describe your product. **Figr sees your actual produc
 
 The Chrome extension captures the real HTML structure, component hierarchy, and visual layout of any web app. Not screenshots. Not descriptions. The actual thing.
 
-### Traditional Input
-
-- Screenshot uploads lose interaction context
-- Text descriptions miss visual patterns
-- Manual specification takes hours
-- Context gets lost in translation
-
-### Figr Chrome Extension
-
-- Captures live HTML structure and hierarchy
-- Understands component relationships
-- Reads styling patterns and tokens
-- Sees what you actually built
+| **Traditional Input**                       | **Figr Chrome Extension**                  |
+| ------------------------------------------- | ------------------------------------------ |
+| Screenshot uploads lose interaction context | Captures live HTML structure and hierarchy |
+| Text descriptions miss visual patterns      | Understands component relationships        |
+| Manual specification takes hours            | Reads styling patterns and tokens          |
+| Context gets lost in translation            | Sees what you actually built               |
 
 ---
