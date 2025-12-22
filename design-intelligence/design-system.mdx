@@ -1,0 +1,137 @@
+---
+title: "Design System"
+description: "Import your design system and Figr uses your actual components, tokens, and patterns in every design. Not generic UI. Yours."
+---
+
+## Setting Up Your Design Language
+
+![Design Language Setup](</images/Inputs-and-all/Design Language Setup.gif>)
+
+### Access Design Language Settings
+
+1. Open the sidebar
+2. Click **Design Language**
+3. You'll see the setup interface with two sections
+
+### Upload Product Screenshots
+
+The first section asks for product screenshots or files. What to upload:
+
+- Screenshots of your existing product screens
+- Figma frames exported as images
+- UI mockups and designs
+- Component examples
+- CSS or style files
+
+Drag and drop files into the upload area, or click to browse.
+
+<Tip>
+  **The more you upload, the better.** Figr analyzes every image to understand your visual patterns. Five screenshots give basic understanding. Twenty screenshots give deep pattern recognition.
+</Tip>
+
+### Add Design Instructions
+
+The second section lets you describe your design language in text. What to include:
+
+- Design style description ("minimal, lots of whitespace")
+- Color guidelines ("primary is purple #6366f1")
+- Typography notes ("Inter for UI, system fonts for body")
+- Spacing conventions ("8px base unit")
+- Component preferences ("rounded buttons, subtle shadows")
+- Any specific rules or constraints
+
+You can also:
+
+- **Attach files** (click the attachment icon) for CSS, design tokens, or documentation
+- **Add Figma frames** (click the Figma icon) to import directly from Figma
+- **Use voice input** (click the microphone) to describe your design style verbally
+
+### Complete Setup
+
+Click **Setup design language** to process everything. What happens:
+
+1. Figr analyzes all uploaded images 
+2. Extracts color palettes, typography, spacing 
+3. Identifies component patterns
+4. Combines with your written instructions 
+5. Generates your design language profile​
+
+---
+
+## [​](https://claude.ai/chat/684132ea-a66c-4c79-bac8-fb4e6f29fc5a#editing-your-design-language) Editing Your Design Language
+
+After setup, Figr generates a structured CSS Tokens document with your design language.
+
+![Edit Design Language](</images/Inputs-and-all/Edit Design Language.gif>)
+
+### View Your Tokens
+
+1. Open **Design Language** in the sidebar
+2. See generated tokens organized by category: Typography, Colors - Brand, Colors - Neutrals, Colors - Icons
+3. Each token includes usage comments like `/* Card titles */` or `/* Primary text */`
+
+### Edit Tokens
+
+1. Click **Edit** (purple button, bottom-right)
+2. Make changes directly in the document
+3. Use the formatting toolbar for headings, bold, italic, links, and lists
+4. Click **Save changes** to apply, or **Discard** to cancel
+
+### Regenerate Tokens
+
+1. Click **Regenerate** to have Figr re-analyze your uploads
+2. Review the new token document
+3. Edit further if needed, then save
+
+---
+
+## Why Design System Import Matters
+
+Generic AI outputs look like generic AI outputs. Wrong colors. Wrong spacing. Wrong button styles. You spend more time fixing than you saved generating.
+
+**Figr designs with your design system.** Import once. Every design that follows uses your exact tokens, your component variants, your spacing scale. The output looks like it belongs in your product because it literally uses your product's building blocks.
+
+### Without Design System
+
+- Generic components that need restyling
+- Colors that don't match your brand
+- Spacing that feels "off"
+- Typography that needs manual fixing
+- Components that don't exist in your library
+
+### With Design System Import
+
+- Your actual components with correct variants
+- Your exact color tokens applied automatically
+- Your spacing scale enforced throughout
+- Your typography hierarchy respected
+- Designs that match your Figma library
+
+---
+
+## Design Language in Action
+
+### Without Setup
+
+```
+Your prompt:
+"Design a settings page"
+
+Result:
+Generic settings page with arbitrary colors, 
+standard spacing, default component styles. 
+Looks like a template, not your product.
+```
+
+### With Design Language
+
+```
+Your prompt:
+"Design a settings page"
+
+Result:
+Settings page using your purple accent color,
+your Inter typography, your 8px spacing grid,
+your rounded button style, your card shadows.
+Looks like it belongs in your product.
+```
