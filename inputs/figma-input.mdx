@@ -1,0 +1,164 @@
+---
+title: "Figma Input"
+description: "Connect Figma and paste frame links directly into Figr. Get exact design values instead of assumptions from screenshots."
+---
+
+## Connecting Figma
+
+![Figma Connect](</images/Inputs-and-all/Figma Connect.gif>)
+
+### First-Time Setup
+
+1. Click the Figma icon in the query box, or paste a Figma link
+2. The **Connect to Figma** modal appears
+3. Click **Connect to Figma** (purple button)
+4. You'll be redirected to Figma's authentication page
+5. Authorize Figr to access your files
+6. Return to Figr with your account connected
+
+### What Figr Accesses
+
+```
+Permissions:
+✅ Read-only access to your files
+✅ Process frames as input only
+❌ Cannot edit your Figma files
+❌ Cannot delete anything
+❌ Cannot access files you don't share
+```
+
+<Tip>
+  Figr only accesses connection data with your permission. You can revoke access anytime.
+</Tip>
+
+## [​](#using-figma-frames)Using Figma Frames
+
+### Paste a Frame Link
+
+1. Open your Figma file
+2. Select the frame you want to share
+3. Copy the link (right-click → Copy link, or ⌘L)
+4. Paste directly into the Figr query box (⌘V)
+5. Figr automatically detects and attaches the frame
+
+---
+
+## Why Figma Input Matters
+
+Screenshots lose information. When Figr analyzes an image, it estimates colors, guesses spacing, approximates radius values. Close, but not exact. Figma frames give Figr the real data.
+
+Exact hex values. Precise spacing in pixels. Actual border radius. Real typography settings. No guessing, no approximation. Figr reads your design file directly and uses the true values.
+
+### Screenshot Input
+
+- Colors estimated from image pixels
+- Spacing approximated visually
+- Border radius guessed
+- Typography inferred
+- Font weights assumed
+
+### Figma Frame Input
+
+- Exact color values (`#6366F1`, not "purple-ish")
+- Precise spacing (24px, not "about 24")
+- Actual border radius (8px)
+- Real typography settings
+- Correct font weights and sizes
+
+---
+
+## Figma vs Screenshots
+
+### When to Use Figma Frames
+
+- Your own product designs
+- Design system components
+- Screens you want to match exactly
+- Building on existing work
+- Maintaining design consistency
+
+### When Screenshots Are Fine
+
+- Competitor analysis (you don't have their Figma)
+- Quick inspiration
+- External reference designs
+- Live product captures
+
+---
+
+## Managing Your Connection
+
+### Check Connection Status
+
+Your Figma connection status shows the linked email and an option to unlink.
+
+```
+Figma account connected
+your-email@company.com     [Unlink]
+```
+
+### Unlink Figma
+
+![Unlink Figma](</images/Inputs-and-all/Unlink Figma.gif>)
+
+To disconnect your Figma account:
+
+1. Click **Unlink** next to your connected email
+2. Confirm the disconnection
+3. Your Figma access is revoked immediately
+
+<Tip>
+  You can reconnect anytime by pasting a Figma link or clicking the Figma icon.
+</Tip>
+
+### Switch Accounts
+
+To connect a different Figma account:
+
+1. Unlink current account
+2. Paste a new Figma link
+3. Authenticate with the new account
+
+---
+
+## Best Practices
+
+### Share Specific Frames
+
+Don't paste entire file links. Select the relevant frame.
+
+- Link to specific dashboard frame
+- Link to component you want to match
+- Link to the exact screen you're extending
+
+Avoid:
+
+- Entire file links without context
+- Page links with dozens of frames
+- Outdated frames that don't reflect current design
+
+### Combine with Prompts
+
+Frame alone doesn't tell Figr what you want. Add context.
+
+```
+Good prompts with Figma frames:
+
+"Match this dashboard style but create a 
+settings page with these sections..."
+
+"Use the card component from this frame 
+for a new feature announcement layout"
+
+"Keep this navigation pattern but redesign 
+the content area for data visualization"
+```
+
+### Use for Design System Setup
+
+Figma frames are ideal for setting up your design language. High-value frames to share:
+
+- Style guide or design tokens page
+- Component library frames
+- Pattern documentation
+- Recent approved designs
