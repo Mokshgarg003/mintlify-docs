@@ -70,6 +70,14 @@
             ]
           },
           {
+            "group": "Research",
+            "pages": [
+              "research/web-search",
+              "research/design-inspiration",
+              "research/understand-url"
+            ]
+          },
+          {
             "group": "Credits & Billing",
             "pages": [
               "account/credits-usage",
