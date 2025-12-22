@@ -52,6 +52,24 @@
             ]
           },
           {
+            "group": "Design Intelligence",
+            "pages": [
+              "design-intelligence/design-system",
+              "design-intelligence/product-context",
+              "design-intelligence/product-memory"
+            ]
+          },
+          {
+            "group": "Product Thinking",
+            "pages": [
+              "product-thinking/brainstorm",
+              "product-thinking/user-flow",
+              "product-thinking/prototype",
+              "product-thinking/refine-design",
+              "product-thinking/review-design"
+            ]
+          },
+          {
             "group": "Credits & Billing",
             "pages": [
               "account/credits-usage",
