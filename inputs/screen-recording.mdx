@@ -5,7 +5,7 @@ description: "Capture real-time interactions and user flows to give Figr deep un
 
 ## Getting Started
 
-<video controls className="w-full aspect-video rounded-xl" src="https://docs.figr.design/videos/Screen Recording.mp4" />
+<video controls className="w-full rounded-xl" src="https://docs.figr.design/videos/Screen Recording.mp4" />
 
 1. Open your Figr project
 2. Click the **New Screen Share** button in the input panel
@@ -26,82 +26,67 @@ Static screenshots show what your product looks like. Screen recordings show how
 
 Figr watches you click through flows, sees transitions, notices loading states, and understands the rhythm of your product. It's the difference between seeing a photo of a car and watching someone drive it.
 
-### Static Inputs
-
-- Screenshots miss interaction patterns
-- Descriptions can't capture timing
-- Flow diagrams oversimplify real behavior
-- Edge cases get forgotten
-
-### Screen Recording
-
-- Captures actual click sequences and paths
-- Sees loading states, transitions, animations
-- Records real user flow timing
-- Catches the interactions you'd forget to mention
+| **Static Inputs**                        | **Screen Recording**                             |
+| ---------------------------------------- | ------------------------------------------------ |
+| Screenshots miss interaction patterns    | Captures actual click sequences and paths        |
+| Descriptions can't capture timing        | Sees loading states, transitions, animations     |
+| Flow diagrams oversimplify real behavior | Records real user flow timing                    |
+| Edge cases get forgotten                 | Catches the interactions you'd forget to mention |
 
 ---
 
 ## [​](#recording-best-practices) Best Practices
 
-### Narrate Your Actions
+<AccordionGroup>
+  <Accordion title="Narrate your Actions">
+    Talk while you record. Figr uses your commentary as context.
 
-Talk while you record. Figr uses your commentary as context.
+    ```
+    Good narration:
+    "I'm clicking Projects because that's where users 
+    typically start. Notice how the sidebar collapses 
+    on smaller screens..."
+    
+    "This error appears because we validate emails 
+    in real-time. Users often miss it if they're 
+    typing quickly..."
+    
+    "The dashboard loads slowly with lots of data, 
+    so we show skeleton components here..."
+    ```
+  </Accordion>
+  <Accordion title="Show, Don't Tell">
+    Instead of describing what you want, show Figr examples.
 
-```
-Good narration:
-"I'm clicking Projects because that's where users 
-typically start. Notice how the sidebar collapses 
-on smaller screens..."
+    ```
+    Less effective:
+    "I want a form with inline validation"
+    
+    More effective:
+    Record yourself filling out a form, triggering 
+    validation errors, and correcting them. Figr 
+    sees exactly how it should work.
+    ```
+  </Accordion>
+  <Accordion title="Record Real Data">
+    Demo environments with realistic content give better results.
 
-"This error appears because we validate emails 
-in real-time. Users often miss it if they're 
-typing quickly..."
+    ```
+    Before recording:
+    ✅ Populate with realistic test data
+    ✅ Create multiple items to show list/table behavior
+    ✅ Set up different user states to demonstrate
+    ✅ Prepare error scenarios you can trigger
+    ```
+  </Accordion>
+  <Accordion title="Keep Recordings Focused">
+    Shorter, focused recordings beat long rambling ones.
 
-"The dashboard loads slowly with lots of data, 
-so we show skeleton components here..."
-```
-
-### Show, Don't Tell
-
-Instead of describing what you want, show Figr examples.
-
-```
-Less effective:
-"I want a form with inline validation"
-
-More effective:
-Record yourself filling out a form, triggering 
-validation errors, and correcting them. Figr 
-sees exactly how it should work.
-```
-
-### Record Real Data
-
-Demo environments with realistic content give better results.
-
-```
-Before recording:
-✅ Populate with realistic test data
-✅ Create multiple items to show list/table behavior
-✅ Set up different user states to demonstrate
-✅ Prepare error scenarios you can trigger
-```
-
-### Keep Recordings Focused
-
-Shorter, focused recordings beat long rambling ones.
-
-```
-Recommended approach:
-- One flow per recording
-- 1-3 minutes typical length
-- Clear start and end points
-- Pause between distinct actions
-
-Avoid:
-- 10+ minute recordings covering everything
-- Jumping between unrelated features
-- Excessive pauses or hesitation
-- Sensitive data on screen
-```
+    | **Recommended appraoch**       | **Avoid**                                 |
+    | ------------------------------ | ----------------------------------------- |
+    | One flow per recording         | 10+ minute recordings covering everything |
+    | 1-3 minutes typical length     | Jumping between unrelated features        |
+    | Clear start and end points     | Excessive pauses or hesitation            |
+    | Pause between distinct actions | Sensitive data on screen                  |
+  </Accordion>
+</AccordionGroup>
