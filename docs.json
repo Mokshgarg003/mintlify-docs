@@ -9,6 +9,25 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Documentation",
+          "icon": "book",
+          "href": "https://docs.figr.design/"
+        },
+        {
+          "anchor": "Talk to Us",
+          "icon": "comments",
+          "href": "https://figr.design/contact"
+        },
+        {
+          "anchor": "Blog",
+          "icon": "books",
+          "href": "https://figr.design/blog"
+        }
+      ]
+    },
     "tabs": [
       {
         "tab": "Docs",
@@ -42,7 +61,7 @@
               }
             ]
           },
-            {
+          {
             "group": "Inputs",
             "pages": [
               "inputs/upload-from-computer",
@@ -118,26 +137,7 @@
           }
         ]
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://docs.figr.design/",
-          "icon": "book"
-        },
-        {
-          "anchor": "Talk to Us",
-          "href": "https://figr.design/contact",
-          "icon": "comments"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://figr.design/blog",
-          "icon": "books"
-        }
-      ]
-    }
+    ]
   },
   "logo": {
     "light": "/logo/light.svg",
