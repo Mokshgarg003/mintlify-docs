@@ -106,6 +106,7 @@
           {
             "group": "Security & Legal",
             "pages": [
+              "docs/security-and-legal/enterprise-legal",
               "legal/terms",
               "legal/privacy",
               "legal/data-protection"
@@ -166,7 +167,9 @@
     "socials": {
       "x": "https://x.com/FigrDesign",
       "instagram": "https://www.instagram.com/designwithfigr",
-      "linkedin": "https://in.linkedin.com/company/figrdesign"
+      "linkedin": "https://in.linkedin.com/company/figrdesign",
+      "website": "https://figr.design/",
+      "youtube": "https://www.youtube.com/@Figr_design"
     }
   },
   "seo": {
@@ -180,5 +183,8 @@
     "ga4": {
       "measurementId": "G-ZH1YR36TK8"
     }
+  },
+  "appearance": {
+    "default": "light"
   }
 }
