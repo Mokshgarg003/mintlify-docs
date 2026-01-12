@@ -73,6 +73,7 @@
           {
             "group": "Design Intelligence",
             "pages": [
+              "docs/design-intelligence/figr-mcp",
               "design-intelligence/design-system",
               "design-intelligence/product-context",
               "design-intelligence/product-memory"
