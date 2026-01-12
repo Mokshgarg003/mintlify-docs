@@ -1,0 +1,124 @@
+---
+title: "Figr MCP"
+description: "Connect Figr to AI coding assistants like Claude, Cursor, and others. Access your designs, artifacts, and project context directly from your development environment."
+---
+
+## [​](#what-is-figr-mcp)What is Figr MCP
+
+MCP (Model Context Protocol) lets AI assistants access external tools and data. Figr MCP connects your Figr projects to AI coding environments, so you can reference designs, extract code, and understand design decisions without leaving your editor.
+
+With Figr MCP you can:
+
+- Access artifact code from your IDE
+- Read design decisions and context
+- Search across project files
+- Explore project structure
+- Get design-to-code context for implementation
+
+## Setup an MCP client
+
+<Tabs>
+  <Tab title="Cursor">
+    1. Open Cursor → Settings → Cursor Settings
+    2. Click on Tools & Integrations
+    3. Under MCP Tools, click + to add a custom MCP server
+    4. Paste the code snippet into the mcp.json file and save
+
+    ```json
+    {
+      "mcpServers": {
+        "figr": {
+          "type": "http",
+          "url": "https://mcp.figr.design/mcp"
+        }
+      }
+    }
+    ```
+  </Tab>
+  <Tab title="Claude Code">
+    Open your terminal and run:
+
+    ```
+    claude mcp add figr --transport http https://mcp.figr.design/mcp
+    ```
+  </Tab>
+  <Tab title="Google Antigravity">
+    1. Open the MCP store via the "..." dropdown at the top of the editor's agent panel.
+    2. Click on "Manage MCP Servers"
+    3. Click on "View raw config"
+    4. Modify the mcp_config.json with Figr's custom MCP server configuration.
+
+    ```json
+    {
+      "mcpServers": {
+        "figr": {
+          "type": "http",
+          "url": "https://mcp.figr.design/mcp"
+        }
+      }
+    }
+    ```
+  </Tab>
+  <Tab title="Other Editors">
+    1. Other code editors and tools that support SSE (Server-Sent Events) can also connect to the Figma MCP server
+    2. Check your editor's documentation to confirm it supports SSE-based communication
+    3. If it does, you can manually add the Figma MCP server using this configuration:
+
+    ```json
+    {
+      "mcpServers": {
+        "figr": {
+          "type": "http",
+          "url": "https://mcp.figr.design/mcp"
+        }
+      }
+    }
+    ```
+  </Tab>
+</Tabs>
+
+### Connect the MCP server to your editor
+
+Follow instructions for your specific editor to connect to the Figr MCP server,
+
+| **Client**             | **Support** |
+| :--------------------- | :---------: |
+| **Android Studio**     | ✓           |
+| **Claude Code**        | ✓           |
+| **Codex by OpenAI**    | ✓           |
+| **Cursor**             | ✓           |
+| **Google Antigravity** | ✓           |
+| **Kiro**               | ✓           |
+| **Replit**             | ✓           |
+| **VS Code**            | ✓           |
+| **Warp**               | ✓           |
+
+---
+
+## Prompt your MCP Server
+
+To use Figr MCP, share your project link first. This tells the AI which Figr project to look at.
+
+```
+"Here's my Figr project: https://app.figr.design/..."
+```
+
+Once connected, you can explore everything in that project.
+
+---
+
+## What You Can Do
+
+- **See what's in your project** Ask to see all your designs, past conversations, and files.
+- **Read any design** Open any artifact to see the code and how it was built.
+- **Understand why something was designed that way** Get the full story behind a design, including the decisions and reasoning from your conversations with Figr.
+- **Search across everything** Find specific elements, patterns, or text across all your designs at once.
+- **Check file details** See when something was created, modified, or get other details about any file.
+
+---
+
+## Use Cases
+
+- **Implementing designs:** Get design context → understand decisions → implement with full context
+- **Finding patterns:** Search across artifacts → read relevant files → apply consistent patterns
+- **Extracting code:** Read artifact → copy component code → adapt to your codebase
