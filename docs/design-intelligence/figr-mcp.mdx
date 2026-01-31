@@ -50,12 +50,17 @@ With Figr MCP you can:
 
     ```json
     {
-      "mcpServers": {
-        "figr": {
-          "type": "http",
-          "url": "https://mcp.figr.design/mcp"
+        "mcpServers": {
+            "figr": {
+                "command": "npx",
+                "args": [
+                    "-y",
+                    "mcp-remote",
+                    "https://mcp.figr.design/mcp"
+                ],
+                "env": {}
+            }
         }
-      }
     }
     ```
   </Tab>
