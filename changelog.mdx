@@ -4,6 +4,71 @@ description: "Latest updates, new features, and improvements to the Figr platfor
 icon: "clock"
 ---
 
+## April 2026
+
+### Version 3.2.0 - April 7, 2026
+
+<Card title="Major Release" icon="atom-simple" iconType="regular">
+  Agent 2.0 is live in beta. Figma plugin for live sync.
+</Card>
+
+**Features**
+
+- **Agent 2.0 is live in beta.** Figr now builds a complete file system for your project, goes significantly deeper into multi-screen design, and handles complex prototypes in a single session. Editing is faster, more precise, and the agent can run longer on ambitious builds.
+- **Figma Plugin for live sync.** No more pasting Figma links one by one. Open the Figr plugin inside any Figma file and Figr instantly accesses the complete file, including tokens, components, and any frame you select, with real-time sync.
+- **Refreshed canvas experience.** Comments, sticky notes, artifact rearranging, deleting, and full canvas management are now built in. Your canvas is a proper workspace.
+
+**Improvements**
+
+- **Instant retry.** Retry button now starts streaming immediately. Updates are offloaded to the background.
+- **Optimized canvas loading for deep agents.** Files load incrementally, canvas state can be modified mid-stream, and layout algorithm is improved.
+
+**Fixes**
+
+- Canvas state saving bug resolved.
+
+## March 2026
+
+### Version 3.1.0 - Mar 26, 2026
+
+**Features**
+
+- **Deep Agent available for all Pro users.** The deep agent, previously in limited access, is now live for every Pro subscriber. Longer-running, more complex design projects with multi-screen output.
+- **Context Pods (formerly Product Ally).** Renamed for clarity. Same powerful context system, now called Context Pods across the product. Includes much better processing and fetches specific parts of the context to save token cost.
+
+**Improvements**
+
+- **Significantly faster app performance.** First load, project pages, chat pages, and Context Pods all load noticeably faster. Projects are paginated. Chat canvases load incrementally as you scroll instead of all at once.
+- **All lists virtualized.** Long project lists, chat histories, and artifact collections no longer cause lag regardless of size.
+- **Better error messages.** Errors from the backend now surface with specific, actionable messages instead of generic failures.
+
+**Fixes**
+
+- Figma copy behavior fixed.
+- XML code no longer appears in outputs.
+- Permanent loading states now have retry handling.
+
+### Version 3.0.6 - Mar 3, 2026
+
+**Features**
+
+- **Edit subagent for design changes.** A dedicated agent now handles design edits with better context isolation. Edits are more precise and don't bleed into unrelated parts of your design.
+- **Video analysis in execution agent.** The execution agent can now process video attachments directly during design work. Share a screen recording mid-flow and Figr incorporates it without switching modes.
+
+**Improvements**
+
+- **Smarter context orchestration.** Major upgrade to how Figr manages context during sessions. Less bloating, lower credit consumption, more stable performance across long conversations.
+- **Figma image fidelity.** Imported Figma images no longer descale. What you see in Figma is what Figr works with.
+- **Onboarding flow refined.** Cleaner first-time experience with improved copywriting and smoother account setup.
+- **Attachment handling.** Attachments already in your conversation won't get re-fetched unnecessarily. Less redundant processing, fewer wasted credits.
+- **Dynamic thinking.** Figr scales its reasoning depth to match query complexity. Simple questions get fast answers. Complex problems get deep thinking. Lower memory usage across the board.
+
+**Fixes**
+
+- Regenerate button now appears for errored states in spaces after 10 minutes.
+- Credits modal copywriting updated for clarity.
+- Various stability optimizations throughout the app.
+
 ## February 2026
 
 ### Version 3.0.4 - Feb 23, 2026
@@ -20,7 +85,7 @@ icon: "clock"
 - **Faster design edits.** The execution agent now uses targeted reads (grep → offset → edit) instead of reading full files. Roughly 5x less context consumed per edit.
 - **Better video analysis.** Improved model and analysis for screen recording interpretation. Figr extracts more accurate context from video walkthroughs.
 - **More reliable image reading.** Improved handling for fetching reference images from URLs with graceful fallback when sources are inaccessible.
--  **Credit deduction improvement.** More accurate billing, fewer surprise spikes.
+- **Credit deduction improvement.** More accurate billing, fewer surprise spikes.
 - **Workspace rename permissions.** Only workspace owners and admins can rename workspaces now.
 - **Persistent filters and org selection.** Project filters you apply now persist across sessions. Your last opened org stays selected even after logout.
 
@@ -37,8 +102,8 @@ icon: "clock"
 
 ### Version 3.0.1 - Feb 12, 2026
 
-<Card icon="atom-simple" iconType="regular" title="Major Release">
-  **Product Ally Context Space**. A context graph for your product. 
+<Card title="Major Release" icon="atom-simple" iconType="regular">
+  **Product Ally Context Space**. A context graph for your product.
 
   Add your product's screens, docs, PDFs, analytics, screen recordings, and custom instructions, all in one place. Think of it as onboarding a teammate who never forgets what you told them.
 </Card>
@@ -81,7 +146,6 @@ icon: "clock"
 
 - **Visual UX reviews with annotations.** Upload a screen, flow, share your screen, add Figma frames, or capture via Chrome extension. **Figr marks up your actual design with pinpointed annotations identifying UX clarity issues**, accessibility violations, UX copy problems, or conversion drop-off risks. \
   _UX Reviews evaluate whether the built design meets the original requirement's goal. Works across full flows, not just individual screens._
-
   <img
     src="/images/unnamed.png"
     alt="Unnamed"
@@ -99,21 +163,18 @@ icon: "clock"
 **Features**
 
 - **Editable user flows with export.** Flows are now fully editable directly in canvas. Modify nodes, connections, and labels inline. Export to PNG or SVG for documentation and stakeholder sharing.
-
   <img
     src="/images/Editableflows.gif"
     alt="Editableflows"
     style={{ width:"72%" }}
   />
 - **Figr MCP Server.** Connect your entire project context to your IDE. Decisions trail, generated code, user flows, and design artifacts transfer to Cursor, VS Code, or any MCP-compatible environment. Setup takes minutes.
-
   <img
     src="/images/MCPServer.gif"
     alt="MCP Server"
     style={{ width:"73%" }}
   />
 - **Planning-first design execution.** For multi-screen projects, Figr now generates a planning document before heavy design work. Includes: screens to build, decisions made, what execution decides, and constraints. _No more missing screens in complex prototypes_.
-
   <img
     src="/images/docsinplanning.png"
     alt="Docsinplanning"
@@ -121,7 +182,6 @@ icon: "clock"
     style={{ width:"73%" }}
   />
 - **Visual thinking in chat.** Dynamic artifacts, flows, and diagrams render directly in conversation. Sharper zone-level wireframes during planning. Clear separation between thinking (structure) and execution (visual design).
-
   <img
     src="/images/VisualThinking.gif"
     alt="Visual Thinking"
@@ -141,7 +201,6 @@ icon: "clock"
 **Features**
 
 - **Document artifact type.** Generate editable documents in Markdown format for PRDs, specs, and planning docs. Edit inline, download as PDF, or export to your preferred text editor.
-
   <img
     src="/images/PRD 6.gif"
     alt="PRD 6"
@@ -181,7 +240,7 @@ icon: "clock"
 
 ### Version 2.9.1 - Dec 16, 2025
 
-<Card icon="globe" iconType="regular" title="Figr AI is Now Public">
+<Card title="Figr AI is Now Public" icon="globe" iconType="regular">
   - Anyone can now try Figr AI. No waitlist. No whitelist required.
   - Thank you for being an early user. Your feedback shaped this release.
 </Card>
@@ -213,7 +272,7 @@ icon: "clock"
 
 ### Version 2.9.0 - Dec 9, 2025
 
-<Card icon="atom-simple" iconType="regular" title="Major Release">
+<Card title="Major Release" icon="atom-simple" iconType="regular">
   - **Chrome Extension for web parsing.** Capture HTML structure from any live website in one click. Figr reads actual layout, spacing, and component hierarchy—not just visual screenshots. Use captured structures as input for design generation or UX audits and accessibility reviews.
   - **Multi-model orchestration.** Figr now automatically routes between Opus 4.5, Gemini 3, and custom models based on task requirements. Multiple model calls run in parallel for higher quality results without manual switching.
 </Card>
@@ -242,12 +301,12 @@ icon: "clock"
 
 **Features**
 
-- **A/B testing comparison tool.** Upload two designs to compare side by side. Figr analyzes based on UX principles, interaction patterns, and data from 200,000+ app screens. Get specific breakdowns of what works and why, grounded in real patterns rather than generic suggestions.
+- **A/B testing comparison tool.** Upload two designs to compare side by side. Figr analyzes based on UX principles, interaction patterns, and data from 200,000\+ app screens. Get specific breakdowns of what works and why, grounded in real patterns rather than generic suggestions.
 - **Custom image uploads for brand assets.** Upload your own imagery and brand assets. Figr automatically integrates them into generated designs to match your visual style.
 
 **Improvements**
 
-- **Enhanced UX review depth.** Design reviews now reference specific patterns from the 200k+ screen database. Feedback includes actionable insights tied to proven UX principles.
+- **Enhanced UX review depth.** Design reviews now reference specific patterns from the 200k\+ screen database. Feedback includes actionable insights tied to proven UX principles.
 - **Mobile-optimized published links.** Prototypes shared via web links now render properly on mobile devices. Test and share designs across any screen size.
 - **Refined full-screen zoom controls.** Smoother zoom behavior with better aspect ratio preservation in full-screen design view.
 - **Faster tool response times.** Reduced latency when switching between editing modes and invoking design tools.
@@ -258,7 +317,7 @@ icon: "clock"
 
 ### Version 2.8.4 - Nov 17, 2025
 
-<Card icon="atom-simple" iconType="regular" title="Major Release">
+<Card title="Major Release" icon="atom-simple" iconType="regular">
   - **Publish prototypes to web.** Generate shareable links for any prototype. Recipients can view and interact with designs without a Figr account. Test flows with stakeholders or present work externally.
   - **Memory management controls.** Edit or delete stored memories directly from the sidebar. Toggle whether Figr uses memories for each query. Control what product context, preferences, and decisions are retained.
   - **Enhanced design reviews.** Upload multiple screens or complete flows for comprehensive evaluation. Figr analyzes full context and provides targeted feedback based on what you're showing.
@@ -285,7 +344,7 @@ icon: "clock"
 
 ### Version 2.8.0 - Nov 10, 2025
 
-<Card icon="atom-simple" iconType="regular" title="Major Release">
+<Card title="Major Release" icon="atom-simple" iconType="regular">
   - **Advanced quick prototyping.** Connect screens together to build interactive prototypes. Navigate between designs to simulate complete user flows.
   - **Planning tool for structured problem-solving.** Break down complex design problems into actionable steps. Figr thinks through the approach before execution.
 </Card>
@@ -333,7 +392,7 @@ icon: "clock"
 
 **Features**
 
-<Card icon="atom-simple" iconType="regular" title="Major Release">
+<Card title="Major Release" icon="atom-simple" iconType="regular">
   **Figma input integration.** Paste Figma URLs directly as attachments. Figr extracts layout metadata automatically for pixel-perfect design work.
 </Card>
 
@@ -374,7 +433,7 @@ icon: "clock"
 
 ### Version 2.5.0 - Oct 5, 2025
 
-<Card icon="atom-simple" iconType="regular" title="Major Release">
+<Card title="Major Release" icon="atom-simple" iconType="regular">
   A refreshed UI and better project management.
 </Card>
 
@@ -443,7 +502,7 @@ icon: "clock"
 
 **Features**
 
-- **Inspiration module launched.** Figr now references to 200k+ best designed screens and refers to best UX laws to help you design the best version fo your product.
+- **Inspiration module launched.** Figr now references to 200k\+ best designed screens and refers to best UX laws to help you design the best version fo your product.
 
 **Improvements**
 
@@ -452,7 +511,7 @@ icon: "clock"
 
 ### Version 2.0.1 - Aug 20, 2025
 
-<Card icon="atom-simple" iconType="regular" title="Major Release">
+<Card title="Major Release" icon="atom-simple" iconType="regular">
   **Figr is fully agentic now.** This is the big one. Figr doesn't just generate - it thinks, plans, and builds. It has a deeper understanding and retention of your context.
 </Card>
 
@@ -476,7 +535,7 @@ icon: "clock"
 
 ### Version 1.7.0 - Jul 16, 2025
 
-<Card icon="lock" iconType="solid" title="Enterprise Security">
+<Card title="Enterprise Security" icon="lock" iconType="solid">
   Figr is now SOC 2 Type II compliance certified.
 </Card>
 
