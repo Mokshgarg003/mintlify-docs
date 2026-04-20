@@ -6,17 +6,82 @@ icon: "clock"
 
 ## April 2026
 
-### Version 3.2.0 - April 7, 2026
+### Version 3.2.4 - Apr 17, 2026
+
+**Features**
+
+- **Project cloning.** Duplicate any project, yours or a teammate's, and start a new project from where they left off. All context, artifacts, and product knowledge carried over. No rebuilding from scratch.
+- **Agent 2.0 MCP Server.** An advanced MCP server built for Agent 2.0. Take your prototypes, flows, and product context from Figr into any AI application that supports MCP. Cursor, VS Code, or any MCP-compatible environment. Your work stays accessible wherever you build.
+- **Usage metrics for all plans.** Detailed usage metrics are now live in Settings with user-by-user breakdowns for teams. Previously enterprise-only. Now available on free, pro, and team plans.
+
+**Improvements**
+
+- **Opus 4.7 for thinking agents.** Figr uses 5-6 specialized agents working together to deliver results. The thinking layer now runs on Opus 4.7 by default for everyone. It reasons more critically, catches more nuance, and generates sharper interfaces.
+- **Better Figma export fidelity.** Exported designs transfer to Figma with improved accuracy across layout, spacing, and component structure.
+- **Richer Figma asset extraction.** Asset import from Figma files now captures more vectors, icons, and images with higher precision.
+
+**Fixes**
+
+- Deeper Figma Sync connection. The plugin maintains a more stable, reliable connection between Figma and Figr throughout your session.
+
+### Version 3.2.3 - Apr 10, 2026
 
 <Card title="Major Release" icon="atom-simple" iconType="regular">
-  Agent 2.0 is live in beta. Figma plugin for live sync.
+  Figr Launch Week begins. Five major features over five days. \
+  Each built from what 50 PMs told us slows them down most.
 </Card>
 
 **Features**
 
-- **Agent 2.0 is live in beta.** Figr now builds a complete file system for your project, goes significantly deeper into multi-screen design, and handles complex prototypes in a single session. Editing is faster, more precise, and the agent can run longer on ambitious builds.
-- **Figma Plugin for live sync.** No more pasting Figma links one by one. Open the Figr plugin inside any Figma file and Figr instantly accesses the complete file, including tokens, components, and any frame you select, with real-time sync.
-- **Refreshed canvas experience.** Comments, sticky notes, artifact rearranging, deleting, and full canvas management are now built in. Your canvas is a proper workspace.
+- **Design System Agent.** A new agent that understands your design system as structured, connected context, not a flattened markdown file. 
+  - **Import from Figma.** Open the Figr Sync plugin and the agent maps your design tokens, usage guidelines, and component variants exactly the way you've documented them.
+  - I**mport from your live product.** No documented design system? Use the Chrome extension to capture your live web app or upload docs. Figr builds your design system with semantic tokens, linked and structured properly. 
+  - **Talk to it.** Ask where a token should be used. Ask which component fits a pattern. Your design system becomes a conversation, not a reference doc you never open. When needed, the agent can edit and update the design system with your permission.
+  - _Existing users: Your current design system has been migrated to the new format automatically._
+- **Agent 2.0 general availability.** Agent 2.0 is now fully available to all users. It reads your Context Pod, your design system, your flows, and works across 40-50\+ screens in a single prototype. \
+  **Bigger builds.** Give it a complex product problem. Complete flows, not fragments you stitch together yourself. The agent builds a file system for your project and works through it screen by screen, state by state. \
+  **More precise.** The agent reads smarter, knows when to pull from your Context Pod, when to reference your design system, and how much context it actually needs. Edits stay surgical. \
+  **Lower cost.** Optimized context handling means fewer unnecessary reads and smarter context fetch. Better outputs while using fewer credits.
+
+**Improvements**
+
+- **Design system compliance by default.** Every prototype Figr generates now follows your tokens, components, and visual language automatically. No prompting required.
+
+### Version 3.2.2 - Apr 8, 2026
+
+<Card title="Major Release" icon="atom-simple" iconType="regular">
+  Figr Launch Week begins. Five major features over five days. \
+  Each built from what 50 PMs told us slows them down most.
+</Card>
+
+**Features**
+
+- **Context Pods with Connectors.** Context Pod is where Figr learns everything about your product. With Connectors, your context flows in automatically from Notion, Atlassian, Mixpanel, Amplitude, Google Workspace, Granola, Miro, and any tool that supports MCP. No copy-pasting between tools. Every new input makes Figr smarter about your product. This isn't retrieval. It's a context graph that compounds.
+- **Refreshed Infinite Canvas.** Your brainstorms, user flows, edge cases, and high-fidelity prototypes now live in one connected workspace. Rearrange artifacts. Hide what you don't need. Comment directly on designs. Export what's ready. Canvas is your product thinking space, not a chat log. \
+  _Note: The updated Canvas works in new projects and with Agent 2.0 only._
+
+**Improvements**
+
+- **Canvas artifact management.** Add sticky notes, rearrange artifacts freely, delete what you don't need, and organize your canvas the way you think.
+- **Inline commenting on artifacts.** Leave comments directly on any artifact in the canvas for team collaboration and decision tracking.
+- **Optimized canvas loading.** Files load incrementally, canvas state can be modified mid-stream, and layout algorithm is improved.
+
+**Fixes**
+
+- Improved error messages now surface specific, actionable details instead of generic failures.
+
+### Version 3.2.1 - Apr 6, 2026
+
+<Card title="Major Release" icon="atom-simple" iconType="regular">
+  Figr Launch Week begins. Five major features over five days. \
+  Each built from what 50 PMs told us slows them down most.
+</Card>
+
+**Features**
+
+- **Figma Sync Plugin.** A native Figma plugin that gives Figr instant access to your complete file. Open the plugin inside any Figma file and Figr reads your tokens, components, instances, and sections in one click. No more pasting links one by one. Every prototype Figr builds now follows your spacing, your components, your visual language automatically.
+- **Agent 2.0 (Beta).** A ground-up rebuild of Figr's design agent. Figr now builds a complete file system for your project, handles multi-screen prototypes in a single session, and runs longer on complex builds. Editing is faster and more precise. Enable it by selecting "Auto" below the chat input.
+- **Edit subagent.** A dedicated agent now handles design edits with better context isolation. Changes to one screen don't bleed into unrelated parts of your design.
 
 **Improvements**
 
