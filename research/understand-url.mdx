@@ -1,6 +1,7 @@
 ---
 title: "Understand Url"
 description: "Share any link and Figr reads the content. Extract information from articles, documentation, product pages, or any webpage to inform your work."
+hidden: true
 ---
 
 ## [​](#what-understand-url-does) What Understand URL Does
@@ -30,36 +31,39 @@ Figr engages URL understanding when you:
 
 ## [​](#content-vs-visual)Content vs. Visual Reference
 
-| **Understand URL (Content)**   | **Chrome Extension (Visual)**      |
-| ------------------------------ | ---------------------------------- |
-| Reading article content        | Capturing visual design patterns   |
+| **Understand URL (Content)** | **Chrome Extension (Visual)** |
+| --- | --- |
+| Reading article content | Capturing visual design patterns |
 | Extracting product information | Extracting colors, spacing, layout |
-| Understanding documentation    | Referencing UI component styles    |
-| Getting text-based context     | Matching visual design language    |
+| Understanding documentation | Referencing UI component styles |
+| Getting text-based context | Matching visual design language |
 
 ## [​](#best-practices)Best Practices
 
 <AccordionGroup>
   <Accordion title="Use Full URLs">
-    Provide complete links: "Read https://docs.stripe.com/webhooks" rather than "Look at Stripe's webhook docs"
+    Provide complete links: "Read [https://docs.stripe.com/webhooks](https://docs.stripe.com/webhooks)" rather than "Look at Stripe's webhook docs"
   </Accordion>
+
   <Accordion title="Specify What You Need">
     Focused extraction:
 
-    - "Read [URL] and extract the feature list"
-    - "Look at [URL] and summarize the pricing tiers"
-    - "What does [URL] say about their API limits?"
+    - "Read \[URL\] and extract the feature list"
+    - "Look at \[URL\] and summarize the pricing tiers"
+    - "What does \[URL\] say about their API limits?"
   </Accordion>
-  <Accordion title="Combine with Design Requests">
-    Content-informed design: 
 
-    - "Read this documentation [URL], then design an interface for the workflow it describes"
-    - "Extract the requirements from [URL] and create a PRD, then design the feature"
+  <Accordion title="Combine with Design Requests">
+    Content-informed design:
+
+    - "Read this documentation \[URL\], then design an interface for the workflow it describes"
+    - "Extract the requirements from \[URL\] and create a PRD, then design the feature"
   </Accordion>
+
   <Accordion title="For Visual Reference, Use Chrome Extension">
     If you want to match styling:
 
-    - **Don't**: "Look at [URL] and match their design"
+    - **Don't**: "Look at \[URL\] and match their design"
     - **Do**: Capture the page with Chrome extension, then reference the visual capture
   </Accordion>
 </AccordionGroup>

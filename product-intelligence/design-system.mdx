@@ -1,0 +1,78 @@
+---
+title: "Design System"
+description: "Import your design system once and Figr designs with your actual components, tokens, and patterns, not generic UI."
+sidebarTitle: "Design system"
+---
+
+## Setting up your Design Language
+
+<iframe src="https://www.youtube.com/embed/1au0OBqrfl4" title="Setting up your Design Language" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+### Open Design Language
+
+From the sidebar, click **Design Language**. The setup screen has two sections: sources and instructions.
+
+### Upload product screenshots
+
+The first section takes screenshots and files. Upload your existing product screens, Figma frames exported as images, UI mockups, component examples, and CSS or style files. Drag and drop into the upload area, or click to browse.
+
+<Tip>
+  **The more you upload, the better.** Figr analyzes every image to learn your visual patterns. Five screenshots give a basic read; twenty give deep pattern recognition.
+</Tip>
+
+### Add design instructions
+
+The second section lets you describe your design language in text:
+
+- Style ("minimal, lots of whitespace")
+- Color ("primary is purple #6366f1")
+- Typography ("Inter for UI, system fonts for body")
+- Spacing ("8px base unit")
+- Components ("rounded buttons, subtle shadows")
+- Any specific rules or constraints
+
+You can also attach files for CSS, tokens, or documentation, add Figma frames to import directly, or use voice input to describe your style out loud.
+
+### Complete setup
+
+Click **Setup design language**. Figr analyzes the uploads, extracts color, typography, and spacing, identifies component patterns, combines them with your written instructions, and generates your design language profile.
+
+## Editing your Design Language
+
+After setup, Figr generates a structured CSS tokens document with your design language.
+
+<iframe src="https://www.youtube.com/embed/XMysFmnuE1Y" title="Editing your Design Language" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+
+### View your tokens
+
+Open **Design Language** in the sidebar to see your tokens organized by category: Typography, Colors Brand, Colors Neutrals, and Colors Icons. Each token carries a usage comment, like `/* Card titles */` or `/* Primary text */`.
+
+### Edit tokens
+
+Click **Edit** (bottom right), make changes directly in the document, and use the toolbar for headings, bold, italic, links, and lists. Click **Save changes** to apply, or **Discard** to cancel.
+
+### Regenerate tokens
+
+Click **Regenerate** to have Figr re-analyze your uploads, review the new document, edit if needed, then save.
+
+## Why it matters
+
+Generic AI output looks generic: wrong colors, wrong spacing, wrong button styles. You spend more time fixing than you saved.
+
+With a design system imported, every design that follows uses your exact tokens, your component variants, and your spacing scale. The output looks like it belongs in your product because it uses your product's building blocks.
+
+| Without Design System | With Design System |
+| --- | --- |
+| Generic components that need restyling | Your actual components with correct variants |
+| Colors that miss your brand | Your exact color tokens, applied automatically |
+| Spacing that feels off | Your spacing scale enforced throughout |
+| Typography that needs manual fixing | Your type hierarchy respected |
+| Components that are not in your library | Designs that match your Figma library |
+
+For "Design a settings page," that is the difference between a template with arbitrary colors and default styles, and a page using your accent color, your Inter typography, your 8px grid, your button style, and your card shadows, one that looks like your product.
+
+{/* DOC PLAN, internal, remove before publishing
+  Priority: P0 | Ownership: Self | Status: In Progress
+  Videos kept: 1au0OBqrfl4 (setup), XMysFmnuE1Y (editing)
+  VERIFY: exact button labels (Setup design language, Edit, Regenerate), token category names.
+  */}

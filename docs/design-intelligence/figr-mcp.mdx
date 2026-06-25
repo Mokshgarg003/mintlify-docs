@@ -1,6 +1,7 @@
 ---
 title: "Figr MCP"
 description: "Connect Figr to AI coding assistants like Claude, Cursor, and others. Access your designs, artifacts, and project context directly from your development environment."
+hidden: true
 ---
 
 ## [​](#what-is-figr-mcp)What is Figr MCP
@@ -21,7 +22,7 @@ With Figr MCP you can:
   <Tab title="Cursor">
     1. Open Cursor → Settings → Cursor Settings
     2. Click on Tools & Integrations
-    3. Under MCP Tools, click + to add a custom MCP server
+    3. Under MCP Tools, click \+ to add a custom MCP server
     4. Paste the code snippet into the mcp.json file and save
 
     ```json
@@ -38,7 +39,7 @@ With Figr MCP you can:
   <Tab title="Claude Code">
     Open your terminal and run:
 
-    ```
+    ```text
     claude mcp add figr --transport http https://mcp.figr.design/mcp
     ```
   </Tab>
@@ -46,7 +47,7 @@ With Figr MCP you can:
     1. Open the MCP store via the "..." dropdown at the top of the editor's agent panel.
     2. Click on "Manage MCP Servers"
     3. Click on "View raw config"
-    4. Modify the mcp_config.json with Figr's custom MCP server configuration.
+    4. Modify the mcp\_config.json with Figr's custom MCP server configuration.
 
     ```json
     {
@@ -86,17 +87,17 @@ With Figr MCP you can:
 
 Follow instructions for your specific editor to connect to the Figr MCP server,
 
-| **Client**             | **Support** |
-| :--------------------- | :---------: |
-| **Android Studio**     | ✓           |
-| **Claude Code**        | ✓           |
-| **Codex by OpenAI**    | ✓           |
-| **Cursor**             | ✓           |
-| **Google Antigravity** | ✓           |
-| **Kiro**               | ✓           |
-| **Replit**             | ✓           |
-| **VS Code**            | ✓           |
-| **Warp**               | ✓           |
+| **Client** | **Support** |
+| :-- | :-: |
+| **Android Studio** | ✓ |
+| **Claude Code** | ✓ |
+| **Codex by OpenAI** | ✓ |
+| **Cursor** | ✓ |
+| **Google Antigravity** | ✓ |
+| **Kiro** | ✓ |
+| **Replit** | ✓ |
+| **VS Code** | ✓ |
+| **Warp** | ✓ |
 
 ---
 
@@ -104,7 +105,7 @@ Follow instructions for your specific editor to connect to the Figr MCP server,
 
 To use Figr MCP, share your project link first. This tells the AI which Figr project to look at.
 
-```
+```text
 "Here's my Figr project: https://app.figr.design/..."
 ```
 

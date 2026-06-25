@@ -1,0 +1,92 @@
+---
+title: "Item Actions"
+description: "Quick actions for any item you select on the Canvas, plus deeper actions in full screen."
+sidebarTitle: "Item actions"
+---
+
+{/* DOC PLAN — remove before publishing
+  Format (K): MDX reference table
+  Priority (H): P1 | Ownership (F): Self (Product verify) | Status (G): In Progress
+  Assets (J): the sheet tracks one "Screenshot Set" (04-02-item-actions); the Doc calls for two shots, split here into two files:
+  - /images/canvas/04-02-item-actions-quick-actions.png — screenshot, P0 — quick actions on a selected canvas item
+  - /images/canvas/04-02-item-actions-full-screen.png — screenshot, P0 — full-screen prototype view with Export, version dropdown, device preview, Go to Canvas
+  - No video on this page (screenshot only, per the Graphics Checklist)
+  Reference links (L): 4.1 Canvas Overview, 7.2 Export to Figma, 7.4 Publish and Share, 7.3 Figr MCP
+  VERIFY (M, I): exact actions available per canvas item type. Terminology: use "canvas item", never "node".
+  */}
+
+When you select an item on the Canvas, Figr shows quick actions for that item. A canvas item can be a generated prototype, UX review, user flow, PRD, screenshot, reference, sticky note, or any other artifact on the Canvas. For prototypes, the quick actions can include **Interact** and **Full screen**. Interact lets you click through the prototype directly on the Canvas; Full screen opens it in a focused view for closer review.\
+
+<Frame caption="Quick actions on a selected canvas item">
+  ![Chat GPT Image Jun 24, 2026, 03 01 32 AM (1) 3](/images/ChatGPT-Image-Jun-24,-2026,-03_01_32-AM-\(1\)-3.png)
+</Frame>
+
+{/* @aryan full toolbar — actioned: the quick-actions screenshot below shows the full toolbar plus the more-actions menu (Duplicate, Bring to front, Send to back, Hide, Delete) */}
+
+{/* SCREENSHOT — replace src with /images/canvas/04-02-item-actions-quick-actions.png once captured */}
+
+In full screen, you can reach deeper actions: export the design, copy it as an image, use the MCP server, download code, switch versions, or return to the Canvas.
+
+## Common actions
+
+<Note>
+  Available actions depend on the item type. \
+  The list below covers prototypes and common artifacts.
+</Note>
+
+| Action | What it does | Where |
+| --- | --- | --- |
+| Interact | Click through a prototype on the Canvas | Selected item |
+| Full screen | Open a focused review view | Selected item |
+| Duplicate | Copy the item on the Canvas | Selected item |
+| Delete | Remove the item from the Canvas | Selected item |
+| Return to Canvas | Go back from full screen | Full screen |
+| Export to Figma | Send the design to Figma as editable output | Full screen |
+| Copy as image | Copy a rendered snapshot to your clipboard | Full screen |
+| Use MCP server | Give a coding assistant project context | Full screen |
+| Download code | Download the item's front-end output | Full screen |
+| Switch versions | Move between earlier and later outputs | Full screen |
+| Preview device sizes | Check the output at different screen sizes | Full screen |
+
+{/* @aryan add duplicate, delete to above table — actioned: added Duplicate and Delete rows */}
+
+This makes the Canvas a working surface, not a static board. Select an output, inspect it, interact with it, export it, or move it forward without leaving the project.
+
+{/* SCREENSHOT — replace src with /images/canvas/04-02-item-actions-full-screen.png once captured */}
+
+<Frame caption="Full-screen prototype view with Export, version dropdown, device preview, and Go to Canvas">
+  <img
+    alt="Full-screen prototype view with Export, version dropdown, device preview, and Go to Canvas"
+    lightAlt="Full-screen prototype view with Export, version dropdown, device preview, and Go to Canvas"
+    darkAlt="Full-screen prototype view with Export, version dropdown, device preview, and Go to Canvas"
+    src="/images/07-01-export-menu.png"
+    className="dark:hidden"
+  />
+  <img
+    alt="Full-screen prototype view with Export, version dropdown, device preview, and Go to Canvas"
+    lightAlt="Full-screen prototype view with Export, version dropdown, device preview, and Go to Canvas"
+    darkAlt="Full-screen prototype view with Export, version dropdown, device preview, and Go to Canvas"
+    src="https://placehold.co/1600x900/EEEEEE/31343C?text=04-02-item-actions-full-screen.png"
+    className="hidden dark:block"
+  />
+</Frame>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Export to Figma" href="/designing/export/one-click-figma">
+    Continue a generated design in your team's Figma workflow.
+  </Card>
+
+  <Card title="Publish and Share" href="/designing/collaboration/share-links">
+    Turn an artifact into a public page or share the full project.
+  </Card>
+
+  <Card title="Figr MCP" href="/docs/design-intelligence/figr-mcp">
+    Let AI coding assistants read project context.
+  </Card>
+
+  <Card title="Canvas Overview" href="/designing/canvas/infinite-workspace">
+    How the visual workspace fits together.
+  </Card>
+</CardGroup>

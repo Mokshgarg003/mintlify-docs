@@ -1,0 +1,112 @@
+---
+title: "Troubleshooting"
+description: "Fixes for the most common Figr issues: design system, edge cases, prompts, and Figma export."
+icon: "screwdriver-wrench"
+sidebarTitle: "Troubleshooting"
+hidden: true
+---
+
+When Figr does not do what you expected, it is usually a context or prompt gap. Work through the relevant section below.
+
+<AccordionGroup>
+  <Accordion title="Figr did not follow my design system">
+    Check these first:
+
+    - Is a design language or design system actually added?
+    - Is the right Context Pod attached?
+    - Did you point Figr at the existing layout or component to follow?
+
+    {/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/troubleshooting/10-troubleshooting-design-system.png then change src to "/images/troubleshooting/10-troubleshooting-design-system.png" */}
+
+    <Frame caption="Active design system">
+      <img
+        src="https://placehold.co/1600x900/EEEEEE/31343C?text=10-troubleshooting-design-system.png"
+        alt="Where the active design system shows in the interface"
+        title="Active design system"
+        style={{ width:"93%" }}
+      />
+    </Frame>
+
+    Then nudge it:
+
+    ```text
+    Make this screen closer to our existing settings pages, using the current components and spacing.
+    ```
+  </Accordion>
+
+  <Accordion title="Figr missed important edge cases">
+    Ask for them explicitly:
+
+    ```text
+    List the edge cases for this billing upgrade flow, including payment failure, expired card, permission restriction, and downgrade impact.
+    ```
+
+    <Frame caption="State checklist">
+      <img
+        src="/images/troubleshooting/10-troubleshooting-state-checklist.svg"
+        alt="A checklist of states to request"
+        title="State checklist"
+        style={{ width:"93%" }}
+      />
+    </Frame>
+  </Accordion>
+
+  <Accordion title="My prompt is not working">
+    Use this formula:
+
+    <Frame caption="Prompt formula">
+      <img
+        src="/images/troubleshooting/10-troubleshooting-prompt-formula.svg"
+        alt="A card showing the prompt formula"
+        title="Prompt formula"
+        style={{ width:"93%" }}
+      />
+    </Frame>
+
+    ```text
+    Given [context], help [user] achieve [goal]. The current problem is [problem]. Use [inputs and design system]. Consider [states and edge cases]. Output [artifact, design, or review].
+    ```
+
+    Example:
+
+    ```text
+    Given our onboarding flow and design system, help a workspace admin finish setup faster. The current problem is drop-off on the team-invite step. Use the attached recording and design language. Consider empty, error, and success states. Output a redesigned setup screen.
+    ```
+  </Accordion>
+
+  <Accordion title="Export to Figma is not matching expectations">
+    Check these:
+
+    - Is the design final enough to export?
+    - Did you export the right item?
+    - Are you comparing against the latest version?
+
+    {/* VIDEO: YouTube hosts this, no upload needed. Replace VIDEO_ID with your video's ID. Delete this block if unused. */}
+
+    <Frame caption="Fix a Figma export by refining and re-exporting">
+      <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Fix a Figma export by refining and re-exporting" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+    </Frame>
+
+    {/* VERIFY (remove before publishing): confirm any known Figma export limits so this section sets the right expectations. Owner: Product. */}
+  </Accordion>
+</AccordionGroup>
+
+## Account and access
+
+<AccordionGroup>
+  <Accordion title="I can't see Organization settings">
+    You are not an Admin. Only Admins see the full organization settings. Ask an Admin to change your role or to make the change for you. See [Roles and permissions](/roles-and-permissions/canonical-roles-and-permissions).
+  </Accordion>
+
+  <Accordion title="A teammate joined the workspace automatically">
+    Domain access is on, so anyone with a matching company email joins without an invitation. Turn it off if you want to approve every invite manually. See [Domain auto-join](/roles-and-permissions/domain-auto-join).
+  </Accordion>
+
+  <Accordion title="I removed someone but they can still see projects">
+    Check whether you removed them from the organization or only changed their role. A role change does not remove access, but removing them from Members & Roles does.
+  </Accordion>
+
+  <Accordion title="I ran out of credits mid-month">
+    Your team shares one credit pool. Upgrade to a higher plan to get more credits immediately, or wait for next month's allocation. See [Usage and credits](/billing-and-settings/usage-and-credits).
+  </Accordion>
+</AccordionGroup>

@@ -34,44 +34,127 @@
         "icon": "book",
         "groups": [
           {
-            "group": "Getting Started",
+            "group": "How to Begin?",
             "expanded": true,
             "pages": [
               {
                 "group": "Welcome to Figr",
                 "pages": [
-                  "getting-started/welcome/what-makes-figr-different",
+                  "getting-started/welcome/what-is-figr",
+                  "getting-started/welcome/difference",
                   "getting-started/welcome/product-aware-designing",
                   "getting-started/welcome/who-should-use-figr"
                 ]
               },
               {
-                "group": "Account Setup",
+                "group": "Getting Started",
                 "pages": [
                   "getting-started/setup/creating-your-account",
-                  "getting-started/setup/team-invitations"
+                  "getting-started/setup/add-product-context",
+                  "getting-started/setup/invite-team",
+                  "getting-started/setup/referral"
                 ]
               },
               {
-                "group": "Quick Win Tutorial",
+                "group": "Product Design Flow",
                 "pages": [
-                  "getting-started/tutorial/first-design-5-minutes",
-                  "getting-started/tutorial/prd-to-designing"
+                  "getting-started/tutorial/understanding-workflow",
+                  "getting-started/tutorial/what-figr-creates",
+                  "getting-started/tutorial/brainstorm",
+                  "getting-started/tutorial/review",
+                  "getting-started/tutorial/map-edge-cases",
+                  "getting-started/tutorial/create-prds",
+                  "getting-started/tutorial/prototypes",
+                  "getting-started/tutorial/untitled-page-5"
                 ]
               }
             ]
           },
           {
-            "group": "Inputs",
+            "group": "Canvas",
             "pages": [
-              "inputs/upload-from-computer",
-              "inputs/figma-input",
-              "inputs/chrome-extension",
+              "canvas/canvas-overview",
+              "canvas/action-items",
+              "canvas/organize",
+              "canvas/history-layers"
+            ]
+          },
+          {
+            "group": "Inputs and Research",
+            "pages": [
+              "input-research/input-guide",
+              "input-research/screen-recording",
+              "input-research/chrome-extension",
+              "input-research/figma-input",
+              "input-research/files-research"
+            ]
+          },
+          {
+            "group": "Product Intelligence",
+            "pages": [
+              "product-intelligence/design-system",
+              "product-intelligence/context-pods",
+              "product-intelligence/connectors"
+            ]
+          },
+          {
+            "group": "Export and Share",
+            "pages": [
+              "export/options",
+              "export/figma",
+              "export/mcp",
+              "export/copy-download",
+              "export/publish"
+            ]
+          },
+          {
+            "group": "Account and Settings",
+            "hidden": true,
+            "pages": [
+              "page1",
+              "page2",
+              "page4",
+              "page3",
+              "page5",
+              "page6"
+            ]
+          },
+          {
+            "group": "Roles and Permissions",
+            "hidden": true,
+            "pages": [
+              "yea",
+              "yes-3",
+              "yes-4"
+            ]
+          },
+          {
+            "group": "Troubleshooting",
+            "hidden": true,
+            "pages": [
+              "aryan"
+            ]
+          },
+          {
+            "group": "Security & Legal",
+            "pages": [
+              "docs/security-and-legal/enterprise-legal",
+              "legal/terms",
+              "legal/privacy",
+              "legal/data-protection"
+            ]
+          },
+          {
+            "group": "Inputs",
+            "hidden": true,
+            "pages": [
+              "yes",
               "inputs/screen-recording"
             ]
           },
           {
             "group": "Design Intelligence",
+            "hidden": true,
             "pages": [
               "docs/design-intelligence/figr-mcp",
               "design-intelligence/design-system",
@@ -81,6 +164,7 @@
           },
           {
             "group": "Product Thinking",
+            "hidden": true,
             "pages": [
               "product-thinking/brainstorm",
               "product-thinking/user-flow",
@@ -91,6 +175,7 @@
           },
           {
             "group": "Research",
+            "hidden": true,
             "pages": [
               "research/web-search",
               "research/design-inspiration",
@@ -99,18 +184,11 @@
           },
           {
             "group": "Credits & Billing",
+            "hidden": true,
             "pages": [
               "account/credits-usage",
-              "account/team-management"
-            ]
-          },
-          {
-            "group": "Security & Legal",
-            "pages": [
-              "docs/security-and-legal/enterprise-legal",
-              "legal/terms",
-              "legal/privacy",
-              "legal/data-protection"
+              "account/team-management",
+              "getting-started/setup/team-invitations"
             ]
           }
         ]

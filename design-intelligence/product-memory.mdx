@@ -2,6 +2,7 @@
 title: "Memories"
 description: "Figr remembers your product, your patterns, and your preferences. Every conversation makes it smarter."
 sidebarTitle: "Memories"
+hidden: true
 ---
 
 ---
@@ -60,12 +61,12 @@ Every other AI tool has amnesia. You explain your product, describe your pattern
 
 Your design patterns. Your user flows. Your content style. That decision you made three months ago about button placement. The way you like tables structured. All of it compounds into deeper product understanding over time.
 
-| **Traditional AI Tools**                                 | **Figr's Memory**                                          |
-| -------------------------------------------------------- | ---------------------------------------------------------- |
-| Forget everything between sessions                       | Learns from every conversation automatically               |
-| Require re-explaining context every time                 | Builds deeper understanding over time                      |
-| Generate generic outputs that miss your product's nuance | Generates designs that match your existing product         |
-| Can't learn from past decisions or feedback              | Remembers decisions, patterns, and preferences permanently |
+| **Traditional AI Tools** | **Figr's Memory** |
+| --- | --- |
+| Forget everything between sessions | Learns from every conversation automatically |
+| Require re-explaining context every time | Builds deeper understanding over time |
+| Generate generic outputs that miss your product's nuance | Generates designs that match your existing product |
+| Can't learn from past decisions or feedback | Remembers decisions, patterns, and preferences permanently |
 
 ## Memory Categories
 
@@ -73,7 +74,7 @@ Your design patterns. Your user flows. Your content style. That decision you mad
   <Accordion title="Product Context">
     The foundational details about what you're building.
 
-    ```
+    ```text
     Examples:
     - "Dashboard is the entry point after login, 
        shows key metrics and recent activity"
@@ -83,10 +84,11 @@ Your design patterns. Your user flows. Your content style. That decision you mad
        collapses on mobile"
     ```
   </Accordion>
+
   <Accordion title="Design Patterns">
     How your product looks and behaves visually.
 
-    ```
+    ```text
     Examples:
     - "Primary CTA uses solid blue/purple button 
        with icon, positioned top-right"
@@ -96,10 +98,11 @@ Your design patterns. Your user flows. Your content style. That decision you mad
     - "Cards use subtle shadow with 8px radius"
     ```
   </Accordion>
+
   <Accordion title="Flow Patterns">
     How users move through your product.
 
-    ```
+    ```text
     Examples:
     - "Manage Members screen is entry point for 
        organization-level member and seat management"
@@ -110,10 +113,11 @@ Your design patterns. Your user flows. Your content style. That decision you mad
        4 steps with skip option on non-critical steps"
     ```
   </Accordion>
+
   <Accordion title="Work Style">
     How you prefer to work with Figr.
 
-    ```
+    ```text
     Examples:
     - "Prefers seeing 2-3 variations before committing 
        to a direction"
@@ -122,10 +126,11 @@ Your design patterns. Your user flows. Your content style. That decision you mad
     - "Prefers mobile-first approach for new features"
     ```
   </Accordion>
+
   <Accordion title="Content Patterns">
     Your voice, tone, and copy conventions.
 
-    ```
+    ```text
     Examples:
     - "Error messages are friendly, never blame the user"
     - "CTAs use action verbs: 'Create project' not 
@@ -143,7 +148,7 @@ Your design patterns. Your user flows. Your content style. That decision you mad
   <Accordion title="Ask Figr to Remember">
     In any conversation, explicitly ask Figr to store something.
 
-    ```
+    ```text
     Example prompts:
     
     "Remember that we always use inline validation 
@@ -159,13 +164,14 @@ Your design patterns. Your user flows. Your content style. That decision you mad
     but professional, never casual"
     ```
   </Accordion>
+
   <Accordion title="Be Specific">
     Vague memories aren't useful. Specific ones are.
 
-    | **Less useful**             | **More useful**                                                                                                                                                               |
-    | --------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-    | "Remember our button style" | "Remember that primary buttons are solid with   #6366f1 background, secondary buttons are outline   style, and destructive buttons use red background"                        |
-    | "Remember how forms work"   | "Remember that forms use inline validation on blur,   error messages appear below the field in red, and   submit button stays disabled until all required   fields are valid" |
+    | **Less useful** | **More useful** |
+    | --- | --- |
+    | "Remember our button style" | "Remember that primary buttons are solid with   #6366f1 background, secondary buttons are outline   style, and destructive buttons use red background" |
+    | "Remember how forms work" | "Remember that forms use inline validation on blur,   error messages appear below the field in red, and   submit button stays disabled until all required   fields are valid" |
   </Accordion>
 </AccordionGroup>
 
@@ -173,6 +179,6 @@ Your design patterns. Your user flows. Your content style. That decision you mad
 
 ## Memory in Action
 
-| **Your prompt**          | **Without Memory**                                                                                                                                | **With Memory**                                                                                                                                                                                                                                 |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Your prompt** | **Without Memory** | **With Memory** |
+| --- | --- | --- |
 | "Design a settings page" | A settings page that looks like every other   settings page. Wrong colors. Wrong patterns.   Wrong component styles. You spend an hour fixing it. | A settings page that:  - Uses your left sidebar navigation pattern  - Follows your form layout conventions  - Matches your button hierarchy (primary/secondary)  - Includes your error state styling  - Uses your typography and spacing system |

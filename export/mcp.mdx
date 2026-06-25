@@ -1,0 +1,241 @@
+---
+title: "Figr MCP"
+description: "Give AI coding assistants the context behind your designs, not just the pixels."
+sidebarTitle: "Figr MCP"
+---
+
+{/* DOC PLAN — remove before publishing
+  Format: MDX cards/steps/tabs/tables | Priority: P1 | Ownership: Eng verify | Status: In Progress
+  Assets:
+  - /images/export-and-share/06-04-figr-mcp.png — screenshot — Export dropdown -> Use MCP Server dialog (VS Code/Cursor options, Project link + Board node link copy buttons). Placed under "From a node".
+  - Connector path: reuse Connectors screen frames (cn-05-custom-modal, cn-06-requires-auth) under "As a connector".
+  (Graphics Checklist numbers this 6.4; the doc files the page under 7.3). Screenshot only, no video.
+  Reference links: 7.1 Export Options, 7.5 Download code, Setting up connectors, 9.1 Canonical roles and permissions
+  PLACEHOLDER: MCP tool list must come from the live server manifest / internal spec. Do not invent.
+  */}
+
+Figr MCP gives AI coding assistants the real design behind your screens: its structure, values, artifacts, and the reasoning that shaped it, not a screenshot. MCP (Model Context Protocol) is an open standard that lets AI tools read external sources. Figr's server exposes your projects and board nodes to any MCP-compatible IDE, so your assistant builds from the actual design instead of a guess at a picture. Use it when you move from design into implementation.
+
+## What you can do
+
+<CardGroup cols={2}>
+  <Card title="See what's in your project">
+    List every design, past conversation, and file in the project.
+  </Card>
+
+  <Card title="Read any design">
+    Open any artifact to see its code and how it was built.
+  </Card>
+
+  <Card title="Understand the why">
+    Pull the reasoning behind a design from your conversations with Figr.
+  </Card>
+
+  <Card title="Search across everything">
+    Find elements, patterns, or text across all designs at once.
+  </Card>
+
+  <Card title="Check file details">
+    See when something was created or modified, and other file metadata.
+  </Card>
+</CardGroup>
+
+## Two ways to connect
+
+- **From a node**: hand one design off to your IDE from the Export menu. Fast, specific.
+- **As a connector**: register the Figr MCP server once so any tool reaches your whole workspace. Persistent.
+
+## From a node
+
+Send one design straight from the canvas.
+
+<Steps>
+  <Step title="Select a prototype node">
+    Click the node on the canvas. The floating toolbar appears.
+  </Step>
+  <Step title="Open Export, then Use MCP server">
+    A dialog opens with integration options for VS Code and Cursor, plus two copy buttons.
+  </Step>
+  <Step title="Copy the link you need">
+    Project link for the whole project, or Board node link for this one design.
+  </Step>
+  <Step title="Paste it into your IDE's MCP configuration">
+    Your assistant can now read the design's real layout, structure, and values.
+  </Step>
+</Steps>
+
+{/* SCREENSHOT — replace src with /images/export-and-share/06-04-figr-mcp.png once captured */}
+
+<Frame caption="Export, then Use MCP server: integration options for VS Code and Cursor, with Project link and Board node link.">
+  <img
+    alt="The Use MCP Server dialog with VS Code and Cursor options and copy buttons for Project link and Board node link"
+    title="Use MCP Server"
+    style={{ width:"93%" }}
+    lightAlt="The Use MCP Server dialog with VS Code and Cursor options and copy buttons for Project link and Board node link"
+    darkAlt="The Use MCP Server dialog with VS Code and Cursor options and copy buttons for Project link and Board node link"
+    src="/images/07-03-mcp-modal.png"
+    className="dark:hidden"
+  />
+  <img
+    alt="The Use MCP Server dialog with VS Code and Cursor options and copy buttons for Project link and Board node link"
+    title="Use MCP Server"
+    style={{ width:"93%" }}
+    lightAlt="The Use MCP Server dialog with VS Code and Cursor options and copy buttons for Project link and Board node link"
+    darkAlt="The Use MCP Server dialog with VS Code and Cursor options and copy buttons for Project link and Board node link"
+    src="https://placehold.co/1600x900/EEEEEE/31343C?text=06-04-figr-mcp.png"
+    className="hidden dark:block"
+  />
+</Frame>
+
+| Link | Scope | Use when |
+| --- | --- | --- |
+| Project link | The entire project | The assistant should see every screen and how they relate |
+| Board node link | One specific node | You are implementing a single screen or component |
+
+## As a connector
+
+Register the Figr MCP server once so any project is reachable, instead of copying a link per node. The server URL is the same for everyone: `https://mcp.figr.design/mcp`.
+
+### Through a connectors page
+
+<Steps>
+  <Step title="Open the Connectors page and click + Add custom">
+  </Step>
+  <Step title="Enter a name and the server URL">
+    Name it (for example, Figr mcp) and use `https://mcp.figr.design/mcp`.
+  </Step>
+  <Step title="Save, then Connect">
+    Complete the OAuth consent to grant workspace and project read access.
+  </Step>
+  <Step title="Wait for the connector to turn green">
+    Your tools can now reach Figr live. Share a project or node link in your assistant to focus it.
+  </Step>
+</Steps>
+
+{/* SCREENSHOT — reuse Connectors frames cn-05-custom-modal and cn-06-requires-auth here once available */}
+
+### Through your editor's config
+
+Some editors register the server through a config file instead of a connectors page.
+
+<Tabs>
+  <Tab title="Cursor">
+    1. Open **Cursor → Settings → Cursor Settings**.
+    2. Click **Tools & Integrations**.
+    3. Under **MCP Tools**, click **\+** to add a custom MCP server.
+    4. Paste this into `mcp.json` and save.
+
+    ```json
+        {
+          "mcpServers": {
+            "figr": {
+              "type": "http",
+              "url": "https://mcp.figr.design/mcp"
+            }
+          }
+        }
+    ```
+  </Tab>
+  <Tab title="Claude Code">
+    Open your terminal and run:
+
+    ```bash
+        claude mcp add figr --transport http https://mcp.figr.design/mcp
+    ```
+  </Tab>
+  <Tab title="Google Antigravity">
+    1. Open the MCP store via the **...** dropdown at the top of the agent panel.
+    2. Click **Manage MCP Servers**, then **View raw config**.
+    3. Add the Figr server to `mcp_config.json`.
+
+    ```json
+        {
+          "mcpServers": {
+            "figr": {
+              "command": "npx",
+              "args": ["-y", "mcp-remote", "https://mcp.figr.design/mcp"],
+              "env": {}
+            }
+          }
+        }
+    ```
+  </Tab>
+  <Tab title="Other editors">
+    Any editor with HTTP (StreamableHTTP) transport can connect. Confirm HTTP support in your editor's docs, then add the server manually:
+
+    ```json
+        {
+          "mcpServers": {
+            "figr": {
+              "type": "http",
+              "url": "https://mcp.figr.design/mcp"
+            }
+          }
+        }
+    ```
+  </Tab>
+</Tabs>
+
+## Supported clients
+
+| Client | Supported |
+| :-- | :-: |
+| Android Studio | ✓ |
+| Claude Code | ✓ |
+| Codex by OpenAI | ✓ |
+| Cursor | ✓ |
+| Google Antigravity | ✓ |
+| Kiro | ✓ |
+| Replit | ✓ |
+| VS Code | ✓ |
+| Warp | ✓ |
+
+## Why it matters
+
+Handing a design to a developer usually means lossy translation: a screenshot, a spec doc, a guess at spacing. MCP removes that gap.
+
+| Without MCP | With the Figr MCP server |
+| --- | --- |
+| Screenshot the design, describe it to your AI | The IDE reads the real design directly |
+| The assistant guesses layout and spacing | The assistant builds from actual structure |
+| Re-explain context every session | The project stays connected as live context |
+| Manual copy-paste between tools | One link, persistent access |
+
+## Best practices
+
+- Use a Board node link for focused work. Pointing the assistant at one screen keeps its context tight and its output accurate.
+- Use a Project link for broader builds, when the assistant needs to see how screens relate.
+- Register the connector once if you work in your IDE daily, instead of copying a node link each time.
+- Review the OAuth scopes before authorizing, so you know what workspace access you are granting.
+
+## Troubleshooting
+
+| Issue | Fix |
+| --- | --- |
+| IDE can't reach the server | Confirm the URL is exact: `https://mcp.figr.design/mcp` |
+| Connector stuck on "Requires authentication" | Click Connect and finish the OAuth consent flow |
+| Assistant can't see a design | Check the scope. A Board node link points at one node only |
+| Access revoked unexpectedly | Re-run OAuth from the Connectors page to refresh the connection |
+
+{/* ## MCP tools
+
+  <Warning>
+  PLACEHOLDER: the exact MCP tool list must come from the live server manifest or internal spec. Do not document specific tools until confirmed. Owner: Eng.
+  </Warning>
+  */}
+
+## Related
+
+<CardGroup cols={3}>
+  <Card title="Export options" href="/designing/export/one-click-figma">
+    Other ways to hand off a design.
+  </Card>
+
+  <Card title="Download code" href="/designing/export/ship-ready-designs">
+    A front-end starting point for implementation.
+  </Card>
+
+  <Card title="Roles and permissions" href="/designing/collaboration/permissions">
+    Who can access projects and exports.
+  </Card>
+</CardGroup>

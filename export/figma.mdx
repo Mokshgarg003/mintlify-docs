@@ -1,0 +1,114 @@
+---
+title: "Export to Figma"
+description: "Send any Figr prototype to Figma as editable layers, with its real variables attached."
+sidebarTitle: "Export to figma"
+---
+
+{/* DOC PLAN — remove before publishing
+  Format (K): MDX how-to with <Steps>
+  Priority (H): P0 | Ownership (F): Self (Product/Eng verify) | Status (G): In Progress
+  Assets (J):
+  - /images/export-and-share/07-02-export-to-figma.mp4 — video (YouTube embed), P0 — export → progress modal → design appears in Figma
+  - Screenshot guide supplies 4 stills of the same flow (selected node; Export to Figma modal + Open Plugin link; progress bar; "Design sent to Figma" success). Source stills are watermarked (clideo.com); need clean captures. Use only if stills replace the video. Placements marked under "Export a prototype".
+  Reference links (L): 5.4 Figma input, 6.1 Design System Intelligence, 10 Troubleshooting
+  VERIFY (M, I): confirm single-frame-per-export, no-auto-layout, and one-directional limits still hold; token/component handling.
+  */}
+
+Export to Figma pushes any Figr prototype back into Figma as editable layers, with its real variables attached. It runs through the same Figr AI - Figma Sync plugin you use for Figma input, so the design lands on the Figma canvas ready to refine, hand off, or fold into your library. It closes the loop: you design in Figr with your real system, then send the finished work back so designers can polish it where they already work. Generate fast in Figr, refine in Figma, hand off as usual.
+
+{/* VIDEO — source: 07-02-export-to-figma.mp4 | replace VIDEO_ID with the YouTube embed ID */}
+
+<Frame caption="Export a prototype, watch the progress modal, then pick up in Figma">
+  <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Export to Figma" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+</Frame>
+
+## Before you start
+
+You need the Figr AI - Figma Sync plugin installed and connected. If you set it up for [Figma input](/inputs/figma-input), you are ready. Connect once, export anytime.
+
+## Export a prototype
+
+<Steps>
+  <Step title="Select a prototype node">
+    Click the node on the canvas. A floating toolbar appears above it with Select & edit, Full screen, Tell Figr about this, Export, and Publish.
+  </Step>
+  <Step title="Open Export, then Export to Figma">
+    A setup modal opens with step-by-step instructions and an Open Plugin in Figma link.
+  </Step>
+  <Step title="Run the plugin in your target Figma file">
+    Open it from the modal's link, in the file where you want the design to land.
+  </Step>
+  <Step title="Wait for the transfer">
+    A progress bar shows "Adding variables to your design," then "Exporting to Figma."
+  </Step>
+  <Step title="Confirm it landed">
+    A green "Design sent to Figma" toast appears. Your frame is on the Figma canvas with its variables attached.
+  </Step>
+</Steps>
+
+{/* SCREENSHOTS (placement guide, under "Export a prototype") — capture clean; PDF stills are watermarked:
+   1. Selected prototype node + floating toolbar (Select & edit, Full screen, Tell Figr about this, Export, Publish)
+   2. Export to Figma modal — setup steps + Open Plugin in Figma link
+   3. Active export — progress bar "Adding variables to your design" / "Exporting to Figma"
+   4. Success — green "Design sent to Figma" toast + dialog confirmation
+   Video above covers this flow for now; swap stills in here if you drop the video. */}
+
+## What comes across
+
+- The frame: your prototype's layout, rendered as Figma layers.
+- Variables: design values transfer as Figma variables, not flattened styles.
+
+## Current limitations
+
+{/* VERIFY before publishing: confirm these still hold. Owner: Product/Eng. */}
+
+- One frame per export. Each export carries the single frame you triggered it from, not every screen or state. Export additional frames one at a time.
+- No Auto Layout yet. Frames arrive as plain groups; re-apply Figma Auto Layout manually.
+- One-directional. The handoff happens per action. There is no live, continuous sync between a Figr node and its Figma copy. The single-frame and Auto Layout limits are both in active development.
+
+## Other ways to hand off
+
+Export to Figma is one option in the Export dropdown. Depending on where the work goes next:
+
+| Option | Best for |
+| --- | --- |
+| Export to Figma | Handing off to a designer to refine in Figma |
+| Copy as image | Dropping a quick visual into a doc, deck, or message |
+| Use MCP server | Pulling the design into an IDE like VS Code or Cursor |
+| Download code | Getting the full front-end package as a ZIP |
+
+## Best practices
+
+- Export the frame you want, not the whole flow. Trigger export from the specific node, and repeat per frame for multi-screen work.
+- Plan to re-apply Auto Layout once frames land, so they behave responsively in Figma.
+- Confirm the plugin is connected before exporting, to avoid a failed transfer.
+- Use Copy as image when you only need a static visual. It is instant and needs no plugin.
+
+## Troubleshooting
+
+| Issue | Fix |
+| --- | --- |
+| Export modal can't find the plugin | Run Figr AI - Figma Sync in your target Figma file, then retry |
+| Only one frame came across | Expected. Export each frame separately |
+| Frame has no Auto Layout | Expected. Re-apply it manually in Figma |
+| Export stalls on the progress bar | Confirm the plugin shows Connected, close the modal, and re-trigger |
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Figma input" href="/inputs/figma-input">
+    Bring Figma frames and your design system into Figr.
+  </Card>
+
+  <Card title="Design system intelligence" href="/design-intelligence/design-system">
+    How Figr learns and applies your tokens and components.
+  </Card>
+
+  <Card title="Figr MCP" href="/docs/design-intelligence/figr-mcp">
+    Pull a design into an IDE instead of Figma.
+  </Card>
+
+  <Card title="Download code" href="/designing/export/ship-ready-designs">
+    Get the front-end package for implementation.
+  </Card>
+</CardGroup>
