@@ -1,196 +1,100 @@
 ---
-title: "Product-Aware Designing"
-description: "How Figr's deep product understanding creates designs that actually ship."
-sidebarTitle: "Product-Aware Designing"
+title: "Product-aware designing"
+description: "Context Pods, Design Language, and the Canvas combine so Figr designs from your real product context."
+sidebarTitle: "Product-aware designing"
 ---
 
-<Check>
-  The secret: Figr doesn't just know design patterns. It knows **your** product's patterns, constraints, and user behavior.
-</Check>
+<Frame caption="What product-aware design looks like: output that fits your existing product.">
+  <img
+    src="/images/01-03-product-aware-hero-(1)-1.png"
+    alt="Figr generating designs that match an existing product"
+    lightAlt="Figr generating designs that match an existing product"
+    darkAlt="Figr generating designs that match an existing product"
+    className="dark:hidden"
+  />
+  <img
+    src="https://placehold.co/1600x900/EEEEEE/31343C?text=01-03-product-aware-hero.png"
+    alt="Figr generating designs that match an existing product"
+    lightAlt="Figr generating designs that match an existing product"
+    darkAlt="Figr generating designs that match an existing product"
+    className="hidden dark:block"
+  />
+</Frame>
 
-## The Context Problem
+Product-aware means Figr designs around your specific product, not a generic idea of what an app should look like. Three parts make that possible, and they work together:
 
-Most AI design tools work like this:
-
-<Steps>
-  <Step title="Describe Your Need">
-    "Create a user dashboard for our analytics platform"
-  </Step>
-  <Step title="Generic Output">
-    Beautiful dashboard with generic charts, standard layout, placeholder data
-  </Step>
-  <Step title="Reality Check">
-    Doesn't match your navigation, uses wrong colors, missing key features your users need
-  </Step>
-  <Step title="Manual Rework">
-    Spend hours adapting the generic design to your actual product
-  </Step>
-</Steps>
-
-**This is backwards.** You shouldn't adapt AI output to your product. AI should adapt to your product.
-
-## How Figr Builds Product Awareness
-
-<Tabs>
-  <Tab title="Screen Sharing">
-    Share your screen and navigate your actual product. Figr watches and learns:
-
-    - Your navigation patterns and hierarchy
-    - How forms actually work in your product
-    - Where your calls-to-action typically appear
-    - What your error states look like
-    - How data is typically displayed
-
-    <Frame>
-      ![Figr learning from screen sharing session](/images/screen-sharing-learning.png)
-    </Frame>
-  </Tab>
-  <Tab title="Design System Upload">
-    Import your design tokens once. Figr remembers:
-
-    ```json
-    {
-      "colors": {
-        "primary": "#6366f1",
-        "success": "#10b981",
-        "warning": "#f59e0b"
-      },
-      "spacing": {
-        "xs": "4px",
-        "sm": "8px", 
-        "md": "16px"
-      },
-      "typography": {
-        "heading-1": "32px",
-        "body": "16px"
-      }
-    }
-    ```
-  </Tab>
-  <Tab title="User Research Integration">
-    Upload user research, analytics, and personas. Figr designs based on actual user behavior:
-
-    - Heat map data showing attention patterns
-    - A/B test results from previous features
-    - User interview insights about pain points
-    - Conversion funnel data
-  </Tab>
-  <Tab title="Constraint Learning">
-    Tell Figr your technical and business constraints once:
-
-    - "We can't use overlays because of our mobile app"
-    - "New users must see pricing within 30 seconds"
-    - "Enterprise customers need bulk actions on every list"
-    - "Our backend can only handle 50 items per page"
-  </Tab>
-</Tabs>
-
-## Context in Action
-
-### Before: Generic AI Dashboard
-
-```
-Prompt: "Create a user dashboard"
-Result: Standard 3-column layout, generic charts, 
-        placeholder navigation
-```
-
-### After: Product-Aware Dashboard
-
-```
-Context: SaaS analytics tool, mobile-first users, 
-         complex data hierarchies
-Result: Custom visualization matching your data structure,
-        navigation that fits your existing app,
-        progressive disclosure based on user research
-```
-
-<CardGroup cols={2}>
-  <Card title="Generic Design" icon="template">
-    - Standard layout patterns
-    - Placeholder content
-    - Generic color schemes
-    - One-size-fits-all components
+<CardGroup cols={3}>
+  <Card title="Context Pod" href="/product-intelligence/context-pods">
+    Your product knowledge graph: recordings, docs, links, specs, and design system.
   </Card>
-  <Card title="Product-Aware Design" icon="target">
-    - Your established patterns
-    - Real content structure
-    - Your actual design system
-    - Components that match your codebase
+
+  <Card title="Design Language" href="/product-intelligence/design-system-intelligence">
+    Components, patterns, typography, spacing, and your product's visual rules.
+  </Card>
+
+  <Card title="Infinite Canvas" href="/canvas/canvas-overview">
+    Screens, flows, reviews, prototypes, and iterations in one workspace.
   </Card>
 </CardGroup>
 
-## Memory Across Sessions
+## Why the combination matters
 
-<Info>
-  **Persistent Context:** Unlike other AI tools, Figr remembers everything about your product permanently. Start a new canvas six months later, and Figr still knows your users prefer compact layouts and your enterprise clients need export features.
-</Info>
+A Context Pod tells Figr what your product is and what you are building. Your Design Language tells it how the product looks and behaves. The Canvas is where you brainstorm, [review](/product-design-flow/review-ux), and refine. The result is design grounded in your product, not a generic guess.
 
-### What Gets Remembered
+<Frame caption="Figr learns your product before it generates any UI.">
+  <img
+    src="/images/01-03-learns-product-(1).png"
+    alt="Figr learns your product before generating UI"
+    lightAlt="Figr learns your product before generating UI"
+    darkAlt="Figr learns your product before generating UI"
+    className="dark:hidden"
+  />
+  <img
+    src="https://placehold.co/1600x900/EEEEEE/31343C?text=01-03-learns-product.png"
+    alt="Figr learns your product before generating UI"
+    lightAlt="Figr learns your product before generating UI"
+    darkAlt="Figr learns your product before generating UI"
+    className="hidden dark:block"
+  />
+</Frame>
 
-<AccordionGroup>
-  <Accordion title="Product Patterns">
-    - How your navigation actually works
-    - Where important actions are typically placed
-    - Your content hierarchy and information architecture
-    - Error handling and feedback patterns
-  </Accordion>
-  <Accordion title="User Behavior">
-    - Which layouts convert better
-    - Where users typically get stuck
-    - What information they look for first
-    - How they navigate between features
-  </Accordion>
-  <Accordion title="Technical Constraints">
-    - Component limitations in your codebase
-    - Performance requirements
-    - Browser support needs
-    - Accessibility requirements
-  </Accordion>
-  <Accordion title="Design Decisions">
-    - Why certain patterns were chosen
-    - What alternatives were considered
-    - Results from A/B tests
-    - Feedback from user testing
-  </Accordion>
-</AccordionGroup>
+<Frame caption="Output stays inside your existing design system.">
+  <img
+    src="/images/01-03-design-system-fit.png"
+    alt="Output respects your design system"
+    lightAlt="Output respects your design system"
+    darkAlt="Output respects your design system"
+    className="dark:hidden"
+  />
+  <img
+    src="https://placehold.co/1600x900/EEEEEE/31343C?text=01-03-design-system-fit.png"
+    alt="Output respects your design system"
+    lightAlt="Output respects your design system"
+    darkAlt="Output respects your design system"
+    className="hidden dark:block"
+  />
+</Frame>
 
-## Building Your Product Context
+## Next
 
-<Steps>
-  <Step title="Initial Product Tour">
-    Share your screen and give Figr a comprehensive tour of your product. Click through major flows, show different user types, demonstrate edge cases.
+<CardGroup cols={2}>
+  <Card title="Set up a Context Pod" href="/product-intelligence/context-pods">
+    The most important setup step, reused across every project.
+  </Card>
 
-    **Time investment:** 15-20 minutes once **Benefit:** Every future design understands your product deeply
-  </Step>
-  <Step title="Upload Core Assets">
-    Import your design system, brand guidelines, user research, and any technical documentation.
+  <Card title="See the workflow" href="/product-design-flow/workflow-order">
+    How context becomes flows, artifacts, and a finished design.
+  </Card>
+</CardGroup>
 
-    **What to include:**
-
-    - Design tokens (colors, typography, spacing)
-    - Component library or style guide
-    - User personas and research findings
-    - Analytics and conversion data
-  </Step>
-  <Step title="Define Constraints">
-    Tell Figr about your technical limitations, business requirements, and user needs.
-
-    **Examples:**
-
-    - "Mobile users are 70% of our traffic"
-    - "Enterprise features need approval workflows"
-    - "Page load times must stay under 2 seconds"
-  </Step>
-  <Step title="Iterate and Refine">
-    As Figr creates designs, provide feedback about what works and what doesn't. This builds even deeper product understanding.
-  </Step>
-</Steps>
-
----
-
-<Card title="Ready to build your product context?" icon="brain">
-  Start with a comprehensive product tour to establish the foundation for all future designs.
-
-  [Begin Account Setup →](/getting-started/setup/creating-your-account)
-</Card>
+{/* DOC PLAN, internal, remove before publishing
+  Page type: Concept / mental model  |  Priority: P0  |  Ownership: Self  |  Status: In Progress
+  Mintlify format: MDX overview page (hero <Frame> + 3-col <CardGroup>)
+  Graphics:
+  TODO     - Hero, product-aware output -> 01-03-product-aware-hero.png (source: figr.design figma-ready-hero.png)
+  TODO     - figma-ready-1.png (learns product) -> 01-03-learns-product.png
+  TODO     - figma-ready-3.png (design-system fit) -> 01-03-design-system-fit.png
+  REMOVED  - 01-03-product-aware-system-diagram (old SVG system diagram, replaced by product hero)
+  Reference links (from plan): 6.2 Context Pods, 6.1 Design System Intelligence, 4.1 Canvas Overview, 3.4 Review UX, workflow-order
+  Notes: Combines the three pillars into one mental model.
+  */}

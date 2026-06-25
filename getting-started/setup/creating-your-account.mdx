@@ -1,67 +1,83 @@
 ---
-title: "Creating Your Account"
-description: "Get started with Figr in under two minutes"
-icon: "user-plus"
-sidebarTitle: "Creating Your Account"
+title: "Quickstart"
+description: "Go from signup to your first Figr prototype in a few minutes."
+sidebarTitle: "Quickstart"
 ---
 
-## Sign up for free
+Quick path from signup to a generated prototype. For the full setup, see [Add product context](/design-intelligence/product-context).
 
-Creating your account is quick. **Really quick.** You'll be designing in less time than it takes to make coffee.
+<iframe src="https://www.youtube.com/embed/byk5EnwAgSg" title="Figr quickstart walkthrough" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-### Step 1: Choose how you want to log in
+<Steps>
+  <Step title="Create your account">
+    Sign up at [figr.design](https://figr.design) and create a new project.
 
-Head to [app.figr.design](https://app.figr.design) and you'll see two options:
+    <Frame caption="Signup and new project">
+      ![Signup and new project screen](/images/02-01-start-new-canvas-2.png)
+    </Frame>
+  </Step>
+  <Step title="Add a little product context">
+    Bring in one screen, recording, doc, or link so Figr understands your product. A single source already makes the output feel like your product instead of a blank-slate prompt. The full setup lives in [Add product context](/design-intelligence/product-context).
 
-- **Enter your email** – We'll send you a magic link
-- **Continue with Google** – One click and you're in
+    <Frame caption="Add one source to make Figr product-aware">
+      ![Adding product context to a project](/images/context-pod-create.png)
+    </Frame>
+  </Step>
+  <Step title="Describe what you want">
+    Write a short prompt for the screen or flow you need, and attach any context. Keep it simple here; for ready-made prompts see the [Prompt Library](/prompt-library).
 
-That's it. No passwords to remember.
+    <Frame caption="Prompt box with attachments">
+      ![Prompt box with attachment options](/images/canvas-chat-reference.png)
+    </Frame>
+  </Step>
+  <Step title="Let Figr design">
+    Figr reasons through the flow and generates a high-fidelity prototype that follows your design language.\
 
-<img
-  src="/images/createacocunt/create-account01.png"
-  alt="Create Account01 Pn"
-  title="Create Account01 Pn"
-  style={{ width:"69%" }}
-/>
+    <Frame caption="Generated prototype">
+      ![High Fidelity Prototype](/images/High-Fidelity-Prototype.png)
+    </Frame>
+  </Step>
+  <Step title="Review and refine">
+    Edit specific parts without regenerating the whole screen. See [Edit without regenerating](/designing/edits/click-to-refine).
 
-### Step 2: Check your inbox
+    <Frame caption="Ask for a change in chat and refine in place">
+      ![Reviewing and refining a generated screen](/images/03-04-review-ux.png)
+    </Frame>
+  </Step>
+  <Step title="Export or share">
+    Hand off to Figma, a shareable link, an image, or code. See [Export to Figma](/designing/export/one-click-figma).
 
-If you chose email, we've just sent you a login link. It usually arrives in seconds.
+    <Frame caption="Export and share options">
+      <img
+        src="/images/Export-Share-and-Publish.png"
+        alt="Export to Figma, link, image, or code"
+        lightAlt="Export to Figma, link, image, or code"
+        darkAlt="Export to Figma, link, image, or code"
+        className="dark:hidden"
+      />
+      <img
+        src="https://placehold.co/1600x900/EEEEEE/31343C?text=export-share.png"
+        alt="Export to Figma, link, image, or code"
+        lightAlt="Export to Figma, link, image, or code"
+        darkAlt="Export to Figma, link, image, or code"
+        className="hidden dark:block"
+      />
+    </Frame>
+  </Step>
+</Steps>
 
-<Warning>
-  **Can't find the email?**
+<Tip>
+  The more product context you add, the closer the output matches your product. Once you have run through this, set up your full product context and [design system](/design-intelligence/design-system).
+</Tip>
 
-  Check your spam folder. And if you're using Outlook, check your quarantine folder too – sometimes it ends up there. The email comes from Figr, so you can whitelist us to avoid this next time.
-</Warning>
+## Next
 
-<img
-  src="/images/createacocunt/create-account02.png"
-  alt="Create Account02 Pn"
-  title="Create Account02 Pn"
-  style={{ width:"71%" }}
-/>
+<CardGroup cols={2}>
+  <Card title="Add product context" href="/design-intelligence/product-context">
+    The full setup that makes Figr product-aware.
+  </Card>
 
-### Step 3: Click the magic link
-
-Open the email. Click the link. You're in.
-
----
-
-## Set up your workspace
-
-Before you start designing, you'll want to set up your context. This is where Figr learns about your product.
-
-During onboarding, we'll help you configure:
-
-- **Product Context** – Your flows, screens, and user journeys
-- **Design Language** – Your design system, tokens, and components
-- **Memories** – Key decisions and constraints that guide every design
-
-This happens on a quick call with our team. We'll walk you through it.
-
-<Card title="Book your onboarding call" icon="calendar" href="https://cal.com/moksh-figr/figr-ai-onboard">
-  Get your workspace configured in 30 minutes
-</Card>
-
-Once you're set up, Figr remembers everything. You never have to explain your product twice.
+  <Card title="Export to Figma" href="/designing/export/one-click-figma">
+    Take your prototype into Figma for handoff.
+  </Card>
+</CardGroup>
