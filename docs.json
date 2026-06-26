@@ -40,7 +40,6 @@
               {
                 "group": "Welcome to Figr",
                 "pages": [
-                  "getting-started/welcome/what-is-figr",
                   "getting-started/welcome/product-aware-designing",
                   "getting-started/welcome/who-should-use-figr"
                 ]
