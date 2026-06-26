@@ -1,0 +1,39 @@
+---
+title: "Map Edge Cases"
+---
+
+<Frame caption="Figr maps the happy path and every state around it.">
+  <img
+    src="/images/Map-Edge-Cases.avif"
+    alt="Happy path versus a full edge-case map"
+    lightAlt="Happy path versus a full edge-case map"
+    darkAlt="Happy path versus a full edge-case map"
+    className="dark:hidden"
+  />
+  <img
+    src="/images/03-05-edge-case-flow.png"
+    alt="Happy path versus a full edge-case map"
+    lightAlt="Happy path versus a full edge-case map"
+    darkAlt="Happy path versus a full edge-case map"
+    className="hidden dark:block"
+  />
+</Frame>
+
+The happy path is the easy part. Figr maps the states that actually break products:
+
+- **Input and data**: empty, loading, partial data, validation errors
+- **Access and session**: permission states, access changes, session expiry
+- **System and network**: error states, retries, network failures, offline or slow connections
+- **Money and destructive actions**: payment failures, confirmation steps, destructive actions
+
+## Example prompts
+
+- "Map the file upload flow, including file too large, unsupported type, network failure, storage limit, and access revoked."
+- "Map the billing upgrade flow, including payment failure, expired card, permission restriction, invoice loading, and downgrade impact."
+- "Map the password reset flow, including invalid email, expired link, used link, rate limit, and success."
+
+Edge cases are not nice to have. They are the product.
+
+When Figr maps the flow visually, your team aligns before any screen is polished. Designers see which states to build, engineers see the behavior to expect, and PMs get a sharper spec.
+
+{/* DIAGRAM: replace with the final SVG when ready. Confirm one filename: edge-case-flow vs edge-cases-map. */}

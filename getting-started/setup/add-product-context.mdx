@@ -1,0 +1,84 @@
+---
+title: "Add Product Context"
+---
+
+Your first setup decides the quality of everything Figr generates. Give it real product context, how your product works and how it looks, before you ask for a single screen.
+
+## 1. Setup Context Pods
+
+Context Pods and walkthroughs teach Figr how your product works.
+
+{/* WALKTHROUGH VIDEO (optional): YouTube hosts this, so no upload needed. Replace VIDEO_ID with your walkthrough video's ID. Delete this whole block if you don't want a video here. */}
+
+### Create context Pod
+
+Start with a Context Pod for the product or feature area you want Figr to understand. Good examples:
+
+- "Cal.com booking flow"
+- "Billing and plans"
+- "Admin permissions"
+- "Workspace onboarding"
+- "Analytics dashboard" Keep it focused. One Context Pod should cover a single product area, workflow, or feature set, so Figr can understand and reuse it later.
+
+{/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/getting-started/create-context-pod.png in your repo, then change src to "/images/getting-started/create-context-pod.png" */}
+
+<img
+  alt="Create Context Pod screen"
+  title="Create Context Pod screen"
+  style={{ width:"93%" }}
+  lightAlt="Create Context Pod screen"
+  darkAlt="Create Context Pod screen"
+  src="/images/context-pod-create.png"
+  className="dark:hidden"
+/>
+<img
+  alt="Create Context Pod screen"
+  title="Create Context Pod screen"
+  style={{ width:"93%" }}
+  lightAlt="Create Context Pod screen"
+  darkAlt="Create Context Pod screen"
+  src="https://placehold.co/1600x900/EEEEEE/31343C?text=create-context-pod.png"
+  className="hidden dark:block"
+/>
+
+### Add a walkthrough
+
+Add a screen recording or product walkthrough to the Context Pod. Walk through the area like you are explaining it to a teammate: what it does, who uses it, what they are trying to complete, where the friction is, what should not change, and which states matter. A recording beats a screenshot. Figr follows the real sequence, clicks, movement, dropdowns, and transitions.
+
+## 2. Setup Design Language
+
+This is where Figr learns how your product should look. Connect your Figma frames, add design tokens, upload CSS or JSON, or let Figr learn from your live product. The goal is for Figr to design inside your system, not approximate it. No design system yet? You can build one directly in Figr.
+
+{/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/getting-started/design-language-setup.png in your repo, then change src to "/images/getting-started/design-language-setup.png" */}
+
+<img
+  alt="Design language or Figma setup"
+  title="Design language or Figma setup"
+  style={{ width:"93%" }}
+  lightAlt="Design language or Figma setup"
+  darkAlt="Design language or Figma setup"
+  src="/images/design-language-setup.png"
+  className="dark:hidden"
+/>
+<img
+  alt="Design language or Figma setup"
+  title="Design language or Figma setup"
+  style={{ width:"93%" }}
+  lightAlt="Design language or Figma setup"
+  darkAlt="Design language or Figma setup"
+  src="https://placehold.co/1600x900/EEEEEE/31343C?text=design-language-setup.png"
+  className="hidden dark:block"
+/>
+
+## Start with lighter tasks
+
+With context and design language in place, do not jump straight to a high-fidelity design. Start with something lighter first: a review, a flow, an edge-case map, or a PRD breakdown. This lets Figr reason through the problem before it generates screens. Good first prompts:
+
+- "Review this onboarding flow and identify where users may get stuck."
+- "Map the edge cases for this billing upgrade flow."
+- "Create a user flow from this product walkthrough."
+- "Turn this rough PRD into a flow and key states."
+
+## Generate later
+
+Generate the design once the direction is clear. By now Figr knows how your product looks and behaves, the area you are working in, and the design language to follow.
