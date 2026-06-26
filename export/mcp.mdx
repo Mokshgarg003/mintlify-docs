@@ -126,21 +126,21 @@ Some editors register the server through a config file instead of a connectors p
     4. Paste this into `mcp.json` and save.
 
     ```json
-        {
-          "mcpServers": {
-            "figr": {
-              "type": "http",
-              "url": "https://mcp.figr.design/mcp"
+            {
+              "mcpServers": {
+                "figr": {
+                  "type": "http",
+                  "url": "https://mcp.figr.design/mcp"
+                }
+              }
             }
-          }
-        }
     ```
   </Tab>
   <Tab title="Claude Code">
     Open your terminal and run:
 
     ```bash
-        claude mcp add figr --transport http https://mcp.figr.design/mcp
+            claude mcp add figr --transport http https://mcp.figr.design/mcp
     ```
   </Tab>
   <Tab title="Google Antigravity">
@@ -149,29 +149,29 @@ Some editors register the server through a config file instead of a connectors p
     3. Add the Figr server to `mcp_config.json`.
 
     ```json
-        {
-          "mcpServers": {
-            "figr": {
-              "command": "npx",
-              "args": ["-y", "mcp-remote", "https://mcp.figr.design/mcp"],
-              "env": {}
+            {
+              "mcpServers": {
+                "figr": {
+                  "command": "npx",
+                  "args": ["-y", "mcp-remote", "https://mcp.figr.design/mcp"],
+                  "env": {}
+                }
+              }
             }
-          }
-        }
     ```
   </Tab>
   <Tab title="Other editors">
     Any editor with HTTP (StreamableHTTP) transport can connect. Confirm HTTP support in your editor's docs, then add the server manually:
 
     ```json
-        {
-          "mcpServers": {
-            "figr": {
-              "type": "http",
-              "url": "https://mcp.figr.design/mcp"
+            {
+              "mcpServers": {
+                "figr": {
+                  "type": "http",
+                  "url": "https://mcp.figr.design/mcp"
+                }
+              }
             }
-          }
-        }
     ```
   </Tab>
 </Tabs>
@@ -227,15 +227,11 @@ Handing a design to a developer usually means lossy translation: a screenshot, a
 ## Related
 
 <CardGroup cols={3}>
-  <Card title="Export options" href="/designing/export/one-click-figma">
+  <Card title="Export options" href="/export/options">
     Other ways to hand off a design.
   </Card>
 
-  <Card title="Download code" href="/designing/export/ship-ready-designs">
+  <Card title="Download code" href="/export/copy-download">
     A front-end starting point for implementation.
-  </Card>
-
-  <Card title="Roles and permissions" href="/designing/collaboration/permissions">
-    Who can access projects and exports.
   </Card>
 </CardGroup>

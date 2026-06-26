@@ -32,7 +32,7 @@
       {
         "tab": "Docs",
         "icon": "book",
-        "groups": [
+        "pages": [
           {
             "group": "How to Begin?",
             "expanded": true,
@@ -41,7 +41,7 @@
                 "group": "Welcome to Figr",
                 "pages": [
                   "getting-started/welcome/what-is-figr",
-                  "getting-started/welcome/difference",
+                  "what-makes-figr-different",
                   "getting-started/welcome/product-aware-designing",
                   "getting-started/welcome/who-should-use-figr"
                 ]
@@ -167,9 +167,7 @@
             "hidden": true,
             "pages": [
               "product-thinking/brainstorm",
-              "product-thinking/user-flow",
               "product-thinking/prototype",
-              "product-thinking/refine-design",
               "product-thinking/review-design"
             ]
           },
@@ -178,8 +176,7 @@
             "hidden": true,
             "pages": [
               "research/web-search",
-              "research/design-inspiration",
-              "research/understand-url"
+              "research/design-inspiration"
             ]
           },
           {
@@ -187,10 +184,10 @@
             "hidden": true,
             "pages": [
               "account/credits-usage",
-              "account/team-management",
               "getting-started/setup/team-invitations"
             ]
-          }
+          },
+          "prompt-library"
         ]
       },
       {
@@ -265,5 +262,10 @@
   },
   "appearance": {
     "default": "light"
+  },
+  "errors": {
+    "404": {
+      "redirect": true
+    }
   }
 }
