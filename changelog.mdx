@@ -4,7 +4,147 @@ description: "Latest updates, new features, and improvements to the Figr platfor
 icon: "clock"
 ---
 
+## July 2026
+
+### Version 3.6.2 - Jul 3, 2026
+
+**Features**
+
+- **New Starter plan.** A lower entry point to go paid — the Starter tier now starts at \$19/month, so you can unlock the paid experience without a bigger upfront commitment.
+- **Redesigned pricing page.** A cleaner, clearer pricing page that lays out what each plan includes and makes it easier to pick the right one, with checkout handled through Stripe.
+
+**Improvements**
+
+- **Better design-system adherence.** When a design system is attached to your project, new designs now stick to it far more reliably — reaching for your published components and design tokens instead of hand-rolling one-off styles. The building agent resolves your component catalog more accurately, so what it generates looks like it belongs to your system.
+- **Steadier long sessions.** Extended, multi-step generations hold up better across long conversations — smarter handling of history and step limits means the agent winds down gracefully and finishes the job instead of stalling out on a large task.
+
+**Fixes**
+
+- Fixed errors that could interrupt submitting a query.
+- Fixed preview rendering and loading states so results appear reliably.
+- Fixed remote export so exports complete as expected.
+
+## June 2026
+
+### Version 3.6.0 - Jun 16, 2026
+
+**Features**
+
+- **Choose where your data lives.** Figr now supports EU data residency, so teams with regional requirements can keep their data in-region. Pick your region right where you work - no separate setup.
+  - **Region-aware Figma plugin.** New and signed-out users get a US/EU selector; your choice is remembered after you sign in and reused on every run.
+- **Reference another chat with** `@`**.** Type `@` in the canvas composer to pull in another chat by name — it drops in as a tidy, removable chip, so the agent has that project's context without you copy-pasting anything. Multi-word names and search-as-you-type make the right chat easy to find.
+- **See what the agent will act on before you send.** A new card above the chat composer shows the canvas edits you've made since your last message — the exact changes the agent will pick up on its next turn. Sanity-check your context first, then send with confidence.
+
+**Improvements**
+
+- **Version-aware artifact cards.** Prototype, doc, and diagram cards now show which version they are and open that exact version instead of always jumping to the latest — so revisiting an earlier result lands you where you expect.
+
+**Fixes**
+
+- Cleaned up prototype node behavior on the canvas, including the delete-prototype confirmation and chip UI.
+- Fixed connector rendering between canvas nodes.
+- Improved handling of Markdown and `.mmd` diagram files.
+
+### Version 3.5.5 - Jun 8, 2026
+
+**Features**
+
+- **New connector integrations: Slack, Linear, and Mobbin.** Connect the tools your team already lives in so Figr's agent designs with your real context. Pull conversations and decisions from Slack, tickets and specs from Linear, and reference real shipped-product screens from Mobbin — all feeding the agent's understanding of what you're building.
+  - **Connect with an API key.** Providers that don't support one-click sign-in can now be linked with a personal access token or API key, so more tools are reachable.
+  - **Add and use in one place.** Connectors you enable in settings now show up in the canvas assets menu right away, with a clear entry point to add your first one.
+- **Auto app updates.** Figr now updates itself in the background — you get the latest version without manually refreshing, and an interrupted session can pick up where it left off instead of starting over.
+- **Duplicate Nodes.** You can now duplicate and copy nodes across canvases. Just copy and paste into another canvas. Much easier to 
+
+**Improvements**
+
+- **Security hardening.** A round of hardening across sign-in and sharing — stricter session handling, secure response headers, tightened redirects, and refreshed rate limits — to keep your account and shared projects safer.
+- **Smoother Figma export.** Saving a design to Figma is more reliable, and the export now carries design tokens and richer styling through to the plugin for a cleaner result.
+- **Faster, more reliable copying.** Copying and duplicating canvas nodes — including images and other media — is quicker, works consistently across browsers, and no longer races against the clipboard.
+
+**Fixes**
+
+- Fixed a duplicate/remix issue where copying a project could pull in content from the wrong project.
+- Fixed SVGs not rendering in prototypes and several Figma import glitches, including frame fills, ring shadows, and spacing gaps.
+- Fixed duplicated projects occasionally saving under the wrong ID.
+- The browser tab title now updates as you move between projects.
+
+## May 2026
+
+### Version 3.5.0 - May 28, 2026
+
+<Card title="Major Release" icon="atom-simple" iconType="regular">
+  The New Canvas. Your whole project is now one infinite, full-screen canvas — your first prompt becomes a live project with no reload.
+</Card>
+
+<video src="/videos/Infinite-Canvas.mp4" controls />
+
+**Features**
+
+- **The New Canvas.** Your project is now one infinite, full-screen canvas instead of separate pages. Your first prompt turns into a live project with no reload, and your drawings, stickies, and dropped media are versioned per project — they're no longer wiped when you retry a query.
+- **New node types.** Drop in links (with live previews) and PDFs (first-page thumbnail, selectable text), group nodes into Sections, and add annotations — mark a region inside an image and the agent gets a crop of just that area plus your note.
+- **Click-to-use prototypes.** Select a prototype and it's instantly live: drag to interact, hold Space to pan, scroll to zoom, resize to fit. No separate "Interact" toggle.
+- **Live cursors and follow mode.** See teammates' named cursors on the canvas and click an avatar to follow their view, Figma-style.
+- **Edit and re-run queries in place.** Return to earlier results and re-select them, with smoother gestures and deeper zoom.
+
+**Improvements**
+
+- **Smarter design agent, now on Opus 4.8.** Sharper, more on-brief generations that follow your intent more faithfully and break far less mid-build, with the agent's internal guidelines and tool instructions rewritten for fewer wasted steps.
+- **Version history that reads like a story.** The Activity panel now groups edits under the prompt that made them, and deleted or retried queries no longer clutter the timeline. Docs, Mermaid diagrams, and freshly-pasted content now version correctly.
+
+**Fixes**
+
+- Shared links now render read-only for logged-in outsiders, guests, and anonymous visitors — no more 403. Sign in from a shared view and you land back on the same project.
+- Legacy-engine projects publish, render, and show history without errors.
+- The app detects a new version, prompts a refresh, and stops serving stale chunks — no blank screens after a deploy. Plus fixes for shared image thumbnails, project renaming, and new-user sign-up.
+
+### Version 3.4.0 - May 14, 2026
+
+**Features**
+
+- **Version history for every artifact.** Each prototype, doc, and flow now keeps its own timeline of versions. Open the version dropdown in the fullscreen header to look back at any earlier state of a single artifact, without touching the rest of your canvas.
+- **Version-pinned publishing.** When you publish, the shared link is now frozen to the exact version you published — later edits no longer leak into a live link. The publish panel shows which version is public and flags when a newer one is available, with a one-click "Update to latest."
+  - **Reliable builds behind every share.** Published prototypes are compiled into their own standalone build per version, so a shared link always renders the frozen snapshot. If a build fails, the publish panel surfaces it and lets you retry, and unpublishing fully tears the live link down.
+
+**Improvements**
+
+- **Smoother upgrades and plan changes.** Upgrading now runs through a new checkout flow, and moving between plans (including converting to Stripe billing) is handled more cleanly end to end.
+- **Slimmer iPhone prototype frame.** The device frame around mobile prototypes is tighter and truer to the real thing.
+
+**Fixes**
+
+- Fixed top-ups being blocked in some billing states.
+- Fixed credits being drained incorrectly from a seat.
+- Fixed image and asset uploads failing in some cases.
+- Fixed prototypes occasionally rendering blurry.
+- Fixed connection issues with the MCP server for tools that connect without auth.
+
 ## April 2026
+
+### Version 3.3.0 - Apr 22, 2026
+
+**Features**
+
+- **Share and remix any project.** Projects can now stand on their own. Make one public and anyone can open it, then click Duplicate to spin up their own copy, no account required to view. Signed-out visitors keep their remix intent through sign-up so the project lands in their new workspace.
+  - **Remix a single query.** Instead of cloning a whole project, you can fork just one query and its result into a fresh canvas to explore a variation without touching the original.
+- **Design System over MCP.** Connect your Figr design system to external AI tools like Claude Code and Cursor through our MCP server, so those agents can read your real components and tokens and build against them directly. Richer tool descriptions and server-level guidance mean connected agents understand what your project holds without a discovery round-trip.
+- **Personal workspaces.** Create your own personal workspace to work solo, with smarter handling of team invites and auto-join so you land in the right place instead of a shared org by default.
+- **See who did what.** Projects and queries now show user attribution, so on shared work you can tell at a glance who created or ran each thing.
+
+**Improvements**
+
+- **Figma export with auto-layout and variables.** Exports to Figma now come through with proper auto-layout and mapped variables, so the result is a real editable Figma structure instead of a flat, static frame.
+- **Sharper design-to-code from Figma.** The Figma plugin now extracts real assets — images and vectors — when you pull a frame, so generated code renders with your actual artwork instead of broken images or placeholders.
+- **Stronger design system agent.** The design system agent gained import-tokens and query tooling and clearer craft guidance, so it pulls from your system more reliably and drifts off-brand less often.
+- **Self-serve migration to the new agent.** Projects still on the old agent now show a banner and a one-click button to migrate to the current agent, and you can upload `.html` files directly into a project.
+- **Video frames inline in chat.** Video output now renders directly inside the chat instead of forcing you elsewhere to view it.
+
+**Fixes**
+
+- Duplicating and remixing projects is more reliable, including longer-running clones that previously timed out and cases outside a single organization.
+- Fixed a duplicate-streaming glitch where a response could render twice.
+- Fixed the share dialog and several publish-mode styling issues.
+- Fixed editing document nodes on the canvas.
+- Removed the paste-from-Figma path in favor of the plugin flow, cleaning up a confusing duplicate way in.
 
 ### Version 3.2.4 - Apr 17, 2026
 
@@ -33,9 +173,9 @@ icon: "clock"
 
 **Features**
 
-- **Design System Agent.** A new agent that understands your design system as structured, connected context, not a flattened markdown file. 
+- **Design System Agent.** A new agent that understands your design system as structured, connected context, not a flattened markdown file.
   - **Import from Figma.** Open the Figr Sync plugin and the agent maps your design tokens, usage guidelines, and component variants exactly the way you've documented them.
-  - I**mport from your live product.** No documented design system? Use the Chrome extension to capture your live web app or upload docs. Figr builds your design system with semantic tokens, linked and structured properly. 
+  - I**mport from your live product.** No documented design system? Use the Chrome extension to capture your live web app or upload docs. Figr builds your design system with semantic tokens, linked and structured properly.
   - **Talk to it.** Ask where a token should be used. Ask which component fits a pattern. Your design system becomes a conversation, not a reference doc you never open. When needed, the agent can edit and update the design system with your permission.
   - _Existing users: Your current design system has been migrated to the new format automatically._
 - **Agent 2.0 general availability.** Agent 2.0 is now fully available to all users. It reads your Context Pod, your design system, your flows, and works across 40-50\+ screens in a single prototype. \
