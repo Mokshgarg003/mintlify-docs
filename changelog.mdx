@@ -4,7 +4,29 @@ description: "Latest updates, new features, and improvements to the Figr platfor
 icon: "clock"
 ---
 
-## July 2026
+### Version 3.6.5 - Jul 17, 2026
+
+**Features**
+
+- **Unified @ mentions.** Reference canvas nodes, sections, chats, Context Pod attachments, and product-context files from one mention system. References are resolved before execution, with relevant product context retrieved automatically.
+- **Context-aware canvas creation.** Choose a searchable Context Pod and Design System before creating a canvas, so the agent starts with the right product knowledge and component context.
+- **Redesigned Context Pods & Design Systems.** New card-based pages with ownership filters, file and canvas counts, usage visibility, dark-mode component previews, and inline documentation.
+- **Position-pinned prototype comments.** Leave comments directly on published prototypes. Pins stay anchored to the same screen position while reviewers pan and zoom.
+- **Query-scoped file attachments.** Attach files directly to a query without automatically adding them to the canvas. Files can still be added to the canvas when needed.
+
+**Improvements:**
+
+- **More resilient sessions.** Automatic socket reconnection and larger payload limits make longer generations and heavier sessions more reliable.
+- **Improved Claude and MCP hand-off.** One-click Claude plugin installation, hand-off marks, and more reliable context transfer between Figr and MCP-compatible tools.
+- **Browser notifications.** Opt in to receive a notification when the agent finishes generating a response.
+- **Annual pricing at usage limits.** Annual plan options now appear directly in the usage-limit modal, making lower-cost billing options easier to access.
+
+**Fixes:**
+
+- Failed streams now surface errors. Interrupted or failed generations show a clear error state instead of leaving the conversation silent.
+- @ mentions resolve the correct resource. References now open the actual chat, canvas node, or document instead of falling back to guessed paths or incorrect resources.
+- MCP communication is more reliable. Fixed issues that could cause hand-offs or context transfer to fail intermittently.
+- Smoother plugin rename and open flow. Fixed stuttering and unnecessary transitions when renaming a plugin and opening it immediately afterward.
 
 ### Version 3.6.2 - Jul 3, 2026
 
@@ -167,8 +189,7 @@ icon: "clock"
 ### Version 3.2.3 - Apr 10, 2026
 
 <Card title="Major Release" icon="atom-simple" iconType="regular">
-  Figr Launch Week begins. Five major features over five days. \
-  Each built from what 50 PMs told us slows them down most.
+  Figr Launch Week begins. Five major features over five days. <br />Each built from what 50 PMs told us slows them down most.
 </Card>
 
 **Features**
@@ -178,10 +199,7 @@ icon: "clock"
   - I**mport from your live product.** No documented design system? Use the Chrome extension to capture your live web app or upload docs. Figr builds your design system with semantic tokens, linked and structured properly.
   - **Talk to it.** Ask where a token should be used. Ask which component fits a pattern. Your design system becomes a conversation, not a reference doc you never open. When needed, the agent can edit and update the design system with your permission.
   - _Existing users: Your current design system has been migrated to the new format automatically._
-- **Agent 2.0 general availability.** Agent 2.0 is now fully available to all users. It reads your Context Pod, your design system, your flows, and works across 40-50\+ screens in a single prototype. \
-  **Bigger builds.** Give it a complex product problem. Complete flows, not fragments you stitch together yourself. The agent builds a file system for your project and works through it screen by screen, state by state. \
-  **More precise.** The agent reads smarter, knows when to pull from your Context Pod, when to reference your design system, and how much context it actually needs. Edits stay surgical. \
-  **Lower cost.** Optimized context handling means fewer unnecessary reads and smarter context fetch. Better outputs while using fewer credits.
+- **Agent 2.0 general availability.** Agent 2.0 is now fully available to all users. It reads your Context Pod, your design system, your flows, and works across 40-50\+ screens in a single prototype. <br />**Bigger builds.** Give it a complex product problem. Complete flows, not fragments you stitch together yourself. The agent builds a file system for your project and works through it screen by screen, state by state. <br />**More precise.** The agent reads smarter, knows when to pull from your Context Pod, when to reference your design system, and how much context it actually needs. Edits stay surgical. <br />**Lower cost.** Optimized context handling means fewer unnecessary reads and smarter context fetch. Better outputs while using fewer credits.
 
 **Improvements**
 
@@ -190,15 +208,13 @@ icon: "clock"
 ### Version 3.2.2 - Apr 8, 2026
 
 <Card title="Major Release" icon="atom-simple" iconType="regular">
-  Figr Launch Week begins. Five major features over five days. \
-  Each built from what 50 PMs told us slows them down most.
+  Figr Launch Week begins. Five major features over five days. <br />Each built from what 50 PMs told us slows them down most.
 </Card>
 
 **Features**
 
 - **Context Pods with Connectors.** Context Pod is where Figr learns everything about your product. With Connectors, your context flows in automatically from Notion, Atlassian, Mixpanel, Amplitude, Google Workspace, Granola, Miro, and any tool that supports MCP. No copy-pasting between tools. Every new input makes Figr smarter about your product. This isn't retrieval. It's a context graph that compounds.
-- **Refreshed Infinite Canvas.** Your brainstorms, user flows, edge cases, and high-fidelity prototypes now live in one connected workspace. Rearrange artifacts. Hide what you don't need. Comment directly on designs. Export what's ready. Canvas is your product thinking space, not a chat log. \
-  _Note: The updated Canvas works in new projects and with Agent 2.0 only._
+- **Refreshed Infinite Canvas.** Your brainstorms, user flows, edge cases, and high-fidelity prototypes now live in one connected workspace. Rearrange artifacts. Hide what you don't need. Comment directly on designs. Export what's ready. Canvas is your product thinking space, not a chat log. <br />_Note: The updated Canvas works in new projects and with Agent 2.0 only._
 
 **Improvements**
 
@@ -213,8 +229,7 @@ icon: "clock"
 ### Version 3.2.1 - Apr 6, 2026
 
 <Card title="Major Release" icon="atom-simple" iconType="regular">
-  Figr Launch Week begins. Five major features over five days. \
-  Each built from what 50 PMs told us slows them down most.
+  Figr Launch Week begins. Five major features over five days. <br />Each built from what 50 PMs told us slows them down most.
 </Card>
 
 **Features**
@@ -349,8 +364,7 @@ icon: "clock"
 
 **Features**
 
-- **Visual UX reviews with annotations.** Upload a screen, flow, share your screen, add Figma frames, or capture via Chrome extension. **Figr marks up your actual design with pinpointed annotations identifying UX clarity issues**, accessibility violations, UX copy problems, or conversion drop-off risks. \
-  _UX Reviews evaluate whether the built design meets the original requirement's goal. Works across full flows, not just individual screens._
+- **Visual UX reviews with annotations.** Upload a screen, flow, share your screen, add Figma frames, or capture via Chrome extension. **Figr marks up your actual design with pinpointed annotations identifying UX clarity issues**, accessibility violations, UX copy problems, or conversion drop-off risks. <br />_UX Reviews evaluate whether the built design meets the original requirement's goal. Works across full flows, not just individual screens._
   <img
     src="/images/unnamed.png"
     alt="Unnamed"
@@ -360,8 +374,7 @@ icon: "clock"
 
 **Fixes**
 
-- **Figma export overhaul.** Resolved 11 issues affecting export fidelity.\
-  Fixed text distortion, centering, and bold element spacing. Auto-layout now transfers correctly. Gradients, border radius, and SVG colors export as defined. Images, icons, and input components (range sliders, etc.) render properly. Resolved overflow clipping issues.
+- **Figma export overhaul.** Resolved 11 issues affecting export fidelity.<br />Fixed text distortion, centering, and bold element spacing. Auto-layout now transfers correctly. Gradients, border radius, and SVG colors export as defined. Images, icons, and input components (range sliders, etc.) render properly. Resolved overflow clipping issues.
 
 ### Version 2.9.5 - Jan 12, 2026
 
@@ -810,7 +823,5 @@ icon: "clock"
 <Tip>
   **Have feedback or feature requests?**
 
-  \
-  We'd love to hear from you! \
-  Email us at [moksh@figr.design](mailto:moksh@figr.design) or [contact us here ↗](https://figr.design/contact)
+  <br />We'd love to hear from you! <br />Email us at [moksh@figr.design](mailto:moksh@figr.design) or [contact us here ↗](https://figr.design/contact)
 </Tip>
