@@ -4,6 +4,57 @@ description: "Latest updates, new features, and improvements to the Figr platfor
 icon: "clock"
 ---
 
+### Version 3.7.0 - Aug 3, 2026
+
+**Features**
+
+- **Screens for prototypes.** View every route and UI state on one flow board. Loading, empty, error, and success states appear as separate frames with labelled sections and transition edges.
+  - Export multiple screens to Figma in one run, with progress and errors shown per screen.
+  - Use Generate screens to let the agent propose and build missing states.
+- **Queued messages.** Send follow-ups while the agent works. Figr runs them in order once the current task finishes.
+  - Edit, remove, or clear queued messages.
+  - Queues pause after errors or when credits run out, and resume when ready.
+  - Also works in Design System chats.
+- **Organize canvas.** Group canvas nodes by creation date or type, including Prototypes, Documents, Flows, Images, and Stickies.
+  - Manually created sections stay unchanged.
+  - Sections now behave more like Figma frames.
+  - Stickies, text, and documents now resize with live previews.
+- **Context from past chats.** New chats can pull relevant decisions from earlier chats in the same Context Pod and show where they came from.
+  - Screenshots and attachments help find the right past context.
+  - Figr stays quiet when nothing relevant exists.
+- **Comments on shared projects.** Signed-in viewers can comment and reply through public project links without joining the workspace. Only workspace members can resolve or delete threads.
+
+**Improvements:**
+
+- **Workspace join requests.** Users with a matching work email can find and request access to their team’s workspace.
+  - Admins can approve requests from email or Settings → Members.
+  - Workspaces can allow instant domain-based access or require approval.
+
+- **More reliable Design Systems.**
+  - Attached or switched Design Systems now apply to the next query.
+  - Removing one clears it across the project and agent context.
+  - Older Design Systems now open the upgrade flow instead of failing.
+  - Newer projects now use the same token, component, and lint checks as older projects.
+
+- **Faster canvas opening.**
+  - Canvas content loads before full history and project files.
+  - Duplicated prototypes reuse their existing previews.
+
+- **Updated design agent.** The agent now uses Claude Opus 5, with Sonnet 5 for subagents. More steps now run in parallel.
+  - The agent makes fewer repeated edit calls and unnecessary follow-up questions. Failed steps report clearly.
+  - Video summaries use a newer, faster model.
+
+- **Starter pricing.** The Starter plan is back to \$39 with 200 credits per month
+
+**Fixes:**
+
+- **Clearer Figma plugin errors.** The plugin now detects when Figma is in the background and asks you to bring it forward.
+  - Design System scans explain why capture paused.
+  - Chat responses stay active when Figma stops responding.
+- Improved Mermaid diagram rendering, including fullscreen.
+- Deleted projects now leave the sidebar immediately.
+- Fixed several canvas, loading, and interaction issues.
+
 ### Version 3.6.5 - Jul 17, 2026
 
 **Features**
@@ -75,7 +126,7 @@ icon: "clock"
   - **Connect with an API key.** Providers that don't support one-click sign-in can now be linked with a personal access token or API key, so more tools are reachable.
   - **Add and use in one place.** Connectors you enable in settings now show up in the canvas assets menu right away, with a clear entry point to add your first one.
 - **Auto app updates.** Figr now updates itself in the background — you get the latest version without manually refreshing, and an interrupted session can pick up where it left off instead of starting over.
-- **Duplicate Nodes.** You can now duplicate and copy nodes across canvases. Just copy and paste into another canvas. Much easier to 
+- **Duplicate Nodes.** You can now duplicate and copy nodes across canvases. Just copy and paste into another canvas. Much easier to
 
 **Improvements**
 
