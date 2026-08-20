@@ -4,6 +4,56 @@ description: "Latest updates, new features, and improvements to the Figr platfor
 icon: "clock"
 ---
 
+### **Version 3.8.0 - Aug 19, 2026**
+
+**Features**
+
+- **Wireframes on canvas.** Wireframes created in chat now appear as canvas nodes alongside prototypes and other project work.
+  - Edit parts of a wireframe without generating the whole thing again.
+  - Add wireframes from older chats back onto the canvas.
+  - Resize, view fullscreen, copy as an image, use version history, and Select & Edit.
+- **Multiple chats in one project.** Explore different directions without duplicating the whole project.
+  - Switch between separate conversations while keeping the same canvas, files, and version history.
+  - Fork any completed turn to try another direction without changing the original chat.
+  - Each chat can generate independently.
+- **Custom Skills.** Add standing instructions for how Figr should work with your team.
+  - Keep a Skill always on or let Figr use it only when relevant.
+  - Type `/` in chat to bring in a specific Skill.
+  - Team members can view shared Skills, while owners and admins manage them.
+- **In-app feedback.** Rate your experience directly from chat and add more context when something is not working.
+  - Negative feedback can include reason tags and free text.
+  - Responses save as you fill them in.
+  - A book-a-call option appears when more help is useful.
+- **Enterprise credit reshuffling.** Admins can move unused AI credits from one team seat to another.
+  - Remaining credits now appear in Members & Seats.
+  - Credit transfers stay within the same organization.
+  - Enterprise shared-credit handling was also added to the project-sharing flow.
+
+**Improvements**
+
+- **More reliable usage tracking.** Settings → Activity now uses a real-time usage ledger instead of waiting on slower project scans.
+  - A loading state appears while older organization history is indexed.
+- **More reliable Design System indexing.**
+  - Failed indexing jobs now retry instead of getting stuck.
+  - Runs that index zero projects are no longer marked as complete.
+- **More reliable code generation.** Subagents now run an automatic lint check while generating code.
+  - Exploration and code tasks moved to a newer model.
+  - Stability work reduced crashes and hangs introduced by the linting flow.
+- **Onboarding form polish.**
+  - Questions now have clearer visual grouping.
+  - Required fields show their indicators correctly again.
+  - Spacing, icons, and Contact Sales tracking were also improved.
+- **Better Figma export debugging.** Bulk Figma exports now record the same debugging information available for single-screen exports.
+
+**Fixes**
+
+- Fixed a typography-panel overlap issue.
+- Fixed Figma frames attached through the plugin not appearing as visible attachment chips.
+- Fixed Design System publishing failures caused by hardcoded package names in prototype imports.
+- Fixed Design System republishing that could overwrite hand-written agent guidance.
+- Fixed vendored Design Systems, including MUI-based systems, not rendering correctly in previews.
+- Fixed several crashes and hangs in the code-generation flow.
+
 ### Version 3.7.0 - Aug 3, 2026
 
 **Features**
