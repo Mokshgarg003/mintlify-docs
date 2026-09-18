@@ -98,6 +98,7 @@
           {
             "group": "Export and Share",
             "pages": [
+              "export/direct-editing",
               "export/options",
               "export/figma",
               "export/mcp",
