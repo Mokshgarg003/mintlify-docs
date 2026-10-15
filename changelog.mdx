@@ -1,3 +1,31 @@
+### Version 3.11.0 - Oct 14, 2026
+
+**Features**
+
+- **New Figma plugin for Design System setup.** Build your Figr Design System directly from Figma by choosing which variables, styles, fonts, components, reference screens, icons, logos, and images to bring in.
+- **More Design System sources.** Add Figma, uploaded code, GitHub, Storybook, npm packages, connectors, and brand assets to the same Design System.
+- **Export Design System components to Figma.** Matching elements can now export as instances of your Figma library components instead of plain frames. Anything that cannot be linked stays as a frame with a clear reason why.
+- **Memory for canvases and Context Pods.** Figr can remember product decisions, constraints, and preferences across your work, and show which memories or sources it used for a query.
+- **Asana connector.** Bring Asana tasks and projects into prompts as product context.
+
+**Improvements**
+
+- **Faster Design System imports.** Icons and assets now upload in parallel batches instead of one at a time.
+- **Faster Context Pod workflows.** Start a canvas directly from a Context Pod with its product context already attached.
+- **Safer Direct Editing.** Figr warns you about unapplied changes before leaving Edit mode, and shared component edits now apply wherever that component appears.
+- **More reliable publishing.** Prototype builds can finish in the background while the existing live link stays available.
+- **Prototype theme controls.** Preview supported prototypes in System, Light, or Dark mode without changing your device theme.
+- **Faster long chats.** Follow-up turns, deep chat links, image-heavy histories, and version lists now load more efficiently.
+
+**Fixes**
+
+- Fixed Direct Editing issues with duplicate element IDs, selection flicker, dragged values, and shared components.
+- Fixed prototype Screens not building automatically for shared viewers.
+- Fixed failed or stuck publish jobs showing unclear states.
+- Fixed screen recordings failing without a useful explanation.
+- Fixed expired connector registrations blocking reconnection.
+- Fixed Team customers hitting an error when opening the billing portal.
+
 ### Version 3.10.0 - Sep 25, 2026
 
 **Features**
