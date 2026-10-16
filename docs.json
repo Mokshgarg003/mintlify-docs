@@ -264,7 +264,67 @@
   },
   "errors": {
     "404": {
-      "redirect": true
+      "redirect": false,
+      "title": "This page has moved or no longer exists",
+      "description": "Try [What is Figr](/), the [Quickstart](/getting-started/setup/creating-your-account), or [Export options](/export/options). You can also search the docs with ⌘K."
     }
-  }
+  },
+  "redirects": [
+    {
+      "source": "/designing/export/one-click-figma",
+      "destination": "/export/figma"
+    },
+    {
+      "source": "/designing/export/ship-ready-designs",
+      "destination": "/export/copy-download"
+    },
+    {
+      "source": "/designing/export/high-res-images",
+      "destination": "/export/copy-download"
+    },
+    {
+      "source": "/docs/design-intelligence/figr-mcp",
+      "destination": "/export/mcp"
+    },
+    {
+      "source": "/designing/canvas/infinite-workspace",
+      "destination": "/canvas/canvas-overview"
+    },
+    {
+      "source": "/designing/collaboration/share-links",
+      "destination": "/export/publish"
+    },
+    {
+      "source": "/designing/edits/click-to-refine",
+      "destination": "/getting-started/tutorial/untitled-page-5"
+    },
+    {
+      "source": "/design-intelligence/design-system",
+      "destination": "/product-intelligence/design-system"
+    },
+    {
+      "source": "/design-intelligence/product-context",
+      "destination": "/product-intelligence/context-pods"
+    },
+    {
+      "source": "/inputs/upload-from-computer",
+      "destination": "/input-research/files-research"
+    },
+    {
+      "source": "/inputs/chrome-extension",
+      "destination": "/input-research/chrome-extension"
+    },
+    {
+      "source": "/inputs/screen-recording",
+      "destination": "/input-research/screen-recording"
+    },
+    {
+      "source": "/inputs/figma-input",
+      "destination": "/input-research/figma-input"
+    },
+    {
+      "source": "/product-thinking/prototype",
+      "destination": "/getting-started/tutorial/prototypes"
+    }
+  ]
 }
