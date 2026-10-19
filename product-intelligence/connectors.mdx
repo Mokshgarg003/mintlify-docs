@@ -6,7 +6,7 @@ sidebarTitle: "Setting up connectors"
 
 A Connector links Figr to an external tool through the Model Context Protocol (MCP). Once connected, the agent can call that tool live during a canvas query, fetching funnel data, reading a doc, or pulling tickets, and design directly from what it finds.
 
-Where a Design Language defines how things look and a Context Pod captures what your product is, Connectors bring in what is true right now: your live, changing data.
+Where a Design System defines how things look and a Context Pod captures what your product is, Connectors bring in what is true right now: your live, changing data.
 
 ## Available connectors
 
@@ -14,22 +14,21 @@ The Connectors page lists ready-to-use integrations:
 
 - **Analytics**: Mixpanel, Amplitude
 - **Docs and knowledge**: Notion, Confluence, Google Workspace
-- **Product and planning**: Linear, Miro, Mobbin
+- **Product and planning**: Linear, Asana, Miro, Mobbin
+- **Code**: GitHub. Choose exactly which repositories Figr can read
 - **Communication**: Slack, Granola
+
+Tools that don't support one-click sign-in can be connected with a personal access token or API key.
 
 Each shows its name, category, and connection status. Anything not listed can be added as a custom connector.
 
 ## Open the Connectors page
 
-Reach it two ways: from the canvas, click the database icon in the chat console, then **Manage connectors**. Or open **Connectors** in workspace settings.
+Reach it two ways: from the canvas, click **Add context** in the chat box, then **Connectors → Manage connectors**. Or open **Connectors** in workspace settings.
 
-{/* SCREENSHOT: canvas chat console, database icon revealing Manage connectors */}
-
-<Frame caption="From the canvas, the database icon opens Manage connectors.">
+<Frame caption="From the canvas, Add context opens Manage connectors.">
   <img
-    alt="Canvas chat console with the Manage connectors option"
-    lightAlt="Canvas chat console with the Manage connectors option"
-    darkAlt="Canvas chat console with the Manage connectors option"
+    alt="Canvas chat box with the Manage connectors option"
     src="/images/connectors-console.png"
   />
 </Frame>
@@ -76,7 +75,7 @@ Any MCP-compatible tool can be added manually.
     Top right of the Connectors page.
   </Step>
   <Step title="Fill in the details">
-    Name (a label, like Figr MCP), MCP Server URL (the endpoint, like [https://mcp.figr.design/mcp](https://mcp.figr.design/mcp)), and Transport type (the connection method).
+    Name (a label, like Internal wiki), MCP Server URL (the tool's MCP endpoint, like `https://mcp.example.com/mcp`), and Transport type (the connection method).
   </Step>
   <Step title="Add the connector">
     Click **Add connector**. It saves with a yellow **Requires authentication** badge.
@@ -175,31 +174,7 @@ Static inputs go stale. A screenshot of last quarter's dashboard is wrong the mo
     Bundle static product knowledge for a project.
   </Card>
 
-  <Card title="Setting up Design Language" href="/product-intelligence/design-system">
+  <Card title="Design System" href="/product-intelligence/design-system">
     Teach Figr how your product should look.
   </Card>
 </CardGroup>
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0 | Ownership: Self (Product verify) | Status: In Progress
-  Assets (placeholders, capture pending, from Connector_UI_flow.pdf):
-  - connectors-console.png, canvas chat console with Manage connectors
-  - connectors-list.png, Connectors page list with + Add custom
-  - connectors-custom.png, Add custom connector modal
-  - connectors-in-use.png, canvas query pulling live Mixpanel data
-  - optional: connectors-mixpanel-modal.png (Mixpanel Add connector modal), connectors-connected-banner.png (Connected banner + green badge), connectors-custom-registered.png (yellow Requires authentication badge)
-  VERIFY: exact connector list and categories, transport-type options, default OAuth scopes per provider.
-  Reference links: Figr MCP, Context Pods, Setting up Design Language
-  */}
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0 | Ownership: Self (Product verify) | Status: In Progress
-  Assets (placeholders, capture pending, from Connector_UI_flow.pdf):
-  - connectors-console.png, canvas chat console with Manage connectors
-  - connectors-list.png, Connectors page list with + Add custom
-  - connectors-custom.png, Add custom connector modal
-  - connectors-in-use.png, canvas query pulling live Mixpanel data
-  - optional: connectors-mixpanel-modal.png (Mixpanel Add connector modal), connectors-connected-banner.png (Connected banner + green badge), connectors-custom-registered.png (yellow Requires authentication badge)
-  VERIFY: exact connector list and categories, transport-type options, default OAuth scopes per provider.
-  Reference links: Figr MCP, Context Pods, Setting up Design Language
-  */}
