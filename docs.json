@@ -69,6 +69,26 @@
             ]
           },
           {
+            "group": "Add your product context",
+            "pages": [
+              "context/capture-public-page",
+              "context/share-pod",
+              "context/org-wide-context"
+            ]
+          },
+          {
+            "group": "Set up your design system",
+            "pages": []
+          },
+          {
+            "group": "Create with Figr",
+            "pages": []
+          },
+          {
+            "group": "Work on the canvas",
+            "pages": []
+          },
+          {
             "group": "Canvas",
             "pages": [
               "canvas/canvas-overview",

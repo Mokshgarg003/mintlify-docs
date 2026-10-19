@@ -1,67 +1,46 @@
 ---
-title: "Figr Capture (Chrome extension)"
-description: "Capture any page you can see in Chrome, including logged-in product, staging or localhost, with its layout and assets, then paste it into Figr."
-sidebarTitle: "Figr Capture"
+title: "Capture a page behind a login"
+description: "Use the Figr Capture Chrome extension to capture any page you can see, including your logged-in product, staging or localhost, and paste it into Figr."
+sidebarTitle: "Capture a page behind a login"
 ---
 
-Most of your product lives behind a login, where a link can't reach. **Figr Capture** captures exactly what's on your screen, with its HTML structure, layout and assets like images, icons and vectors, so Figr builds on the real thing instead of a screenshot.
+_Capture any page you can see in Chrome, including your logged-in product, staging or localhost._
 
-## Install
-
-1. Add **Figr Capture** from the [Chrome Web Store](https://chromewebstore.google.com/detail/figr-capture/bejnddahceggaeogmedenhaccoiikjmj).
-2. Pin it to your toolbar.
-3. Click the extension and sign in with your Figr account.
-
-## Capture a whole page
-
-<iframe src="https://www.youtube.com/embed/-RgWMfLZIMI" title="Capture a whole page with Figr Capture" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+Most of your product lives behind a login, where a link can't reach. The Figr Capture extension captures exactly what's on your screen, with its layout and visuals, so Figr can build on the real thing.
 
 <Steps>
+  <Step title="Install the extension">
+    Add **Figr Capture** from the [Chrome Web Store](https://chromewebstore.google.com/detail/figr-capture/bejnddahceggaeogmedenhaccoiikjmj), pin it to your toolbar, and sign in with your Figr account.
+  </Step>
   <Step title="Open the page">
     Log in to your product and go to the page you want Figr to see.
   </Step>
   <Step title="Capture it">
-    Click the extension and choose **Capture This Page**. The capture is copied to your clipboard.
+    Click the extension and choose **Capture This Page**. To capture only part of the page, choose **Make selection** and drag over the area.
   </Step>
-  <Step title="Paste it into Figr">
-    Paste into the chat box in your Figr project.
+  <Step title="Add it to Figr">
+    Copy the capture and paste it into the chat box in your Figr project.
   </Step>
 </Steps>
 
+<iframe src="https://www.youtube.com/embed/-RgWMfLZIMI" title="Capture a page with Figr Capture" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+
+<Info>
+  **Capturing several pages?** Keep your Figr project open and capture each page in turn. Every capture lands in the same project.
+</Info>
+
 <Tip>
-  Capture works on production, staging and localhost. Use whichever has the most realistic data.
+  Capture the states that matter, like an empty dashboard or an error screen, not just the happy path.
 </Tip>
 
-## Capture part of a page
+## Next
 
-<iframe src="https://www.youtube.com/embed/POQmqspcgIs" title="Capture a selection with Figr Capture" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+<CardGroup cols={2}>
+  <Card title="Add files to a pod" href="/input-research/files-research">
+    Give Figr your PRDs, research and screenshots.
+  </Card>
 
-1. Click the extension and choose **Make selection**.
-2. Drag over the area you want.
-3. Paste the capture into Figr. Repeat for as many areas as you need.
-
-## Capture several pages or sites
-
-Keep your Figr project open, capture each page in turn, and paste each one into the chat. Use it to gather the states of one flow, or to compare how several products handle the same problem.
-
-Capture the states that matter, like an empty dashboard or an error screen, not just the happy path.
-
-## Using captures
-
-Reference captures in your prompt:
-
-- "Design a settings page that matches the navigation in my dashboard capture."
-- "Create a form using the same validation approach as the checkout capture."
-
-To reuse a capture across projects, add it to a [Context Pod](/product-intelligence/context-pods).
-
-## Link or capture?
-
-A [website link in a Context Pod](/product-intelligence/context-pods) gives Figr a public page's text. A capture gives Figr a page's layout and visuals, including pages behind a login.
-
-## Troubleshooting
-
-| Issue | Fix |
-| --- | --- |
-| Nothing pastes into Figr | Capture again, then paste straight away before copying anything else |
-| The extension asks you to sign in | Sign in with the same account you use in Figr |
+  <Card title="Connect your tools" href="/product-intelligence/connectors">
+    Let Figr read live context from your tools.
+  </Card>
+</CardGroup>

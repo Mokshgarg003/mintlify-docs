@@ -1,62 +1,44 @@
 ---
-title: "Screen recordings"
-description: "Record a product walkthrough inside Figr with narration, or upload an MP4, MOV, MKV or WebM file up to 100 MB, so Figr learns how a flow works."
-sidebarTitle: "Screen recordings"
+title: "Record a product walkthrough"
+description: "Record a flow inside Figr with optional narration, or upload an MP4, MOV, MKV or WebM up to 100 MB, so Figr learns how your product works."
+sidebarTitle: "Record a walkthrough"
 ---
 
-<iframe src="https://www.youtube.com/embed/h2dpxr8Fpbw" title="Screen recording walkthrough" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+_Show Figr how your product works by recording a flow, so it designs on top of what you already have._
 
-A recording shows Figr the whole journey, not just one screen: where people click, what changes and what comes next. Use one when a screenshot can't carry the experience, like a flow, a transition or a state change.
-
-## Record inside Figr
+A recording shows Figr the whole journey, not just one screen: where people click, what changes and what comes next. Figr studies each step and keeps it in your Context Pod, so you only record a flow once.
 
 <Steps>
-  <Step title="Start a recording">
-    Choose **Record a walkthrough**, either from the chat box or from **Show us your product** in a Context Pod.
+  <Step title="Open your Context Pod">
+    Go to **Product intelligence**, open a pod, switch to the **Sources** tab and click **Add a new source**.
   </Step>
-  <Step title="Set it up">
+  <Step title="Set up your recording">
     Choose the screen or window to share, and turn on your mic if you want to talk through what you're doing.
   </Step>
   <Step title="Record one flow">
-    Walk through the flow from start to finish, the way a user would. Recordings stop automatically after 30 minutes.
+    Click **Start recording** and walk through the flow from start to finish, the way a user would. Recordings stop automatically after 30 minutes.
   </Step>
   <Step title="Stop and save">
-    Stop the recording. Figr adds it to your message or your pod and studies each step.
+    Stop the recording. Figr adds it to your pod and studies each screen and step.
   </Step>
 </Steps>
 
-## Upload a recording
-
-Already have one? Drag it into the chat box or into **Show us your product** in a Context Pod.
-
-| Formats | Size limit |
-| --- | --- |
-| .mp4, .mov, .mkv, .webm | 100 MB per file |
+<Info>
+  **Already have a recording?** Drag it into **Show us your product** instead. Figr accepts .mp4, .mov, .mkv and .webm files up to 100 MB.
+</Info>
 
 <Tip>
-  Add a recording to a [Context Pod](/product-intelligence/context-pods) to record a flow once and reuse it in every project.
+  Record one flow per video and say what you're doing and why. Use realistic data, and show the states that matter, like empty, loading or error screens.
 </Tip>
 
-## What to record
+## Next
 
-- How a user upgrades their plan
-- The current onboarding flow
-- Where users get stuck in setup
-- How admins manage permissions
+<CardGroup cols={2}>
+  <Card title="Bring in Figma frames" href="/input-research/figma-input">
+    Send frames from Figma to Figr.
+  </Card>
 
-Record one flow per video, and say what you're doing and why. Use realistic data, and show the states that matter, like empty, loading or error screens.
-
-## Ask Figr to reason first
-
-Have Figr understand the flow before it designs anything:
-
-```text
-Use this recording to understand the current onboarding flow. Identify UX friction, missing states and unclear moments. Then suggest a better flow before designing screens.
-```
-
-## Troubleshooting
-
-| Issue | Fix |
-| --- | --- |
-| Upload fails | Check the format and that the file is under 100 MB |
-| Recording stopped early | Recordings stop at 30 minutes. Split long sessions into one flow per video |
+  <Card title="Add files to a pod" href="/input-research/files-research">
+    Give Figr your PRDs, research and screenshots.
+  </Card>
+</CardGroup>

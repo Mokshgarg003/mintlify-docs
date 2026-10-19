@@ -1,156 +1,58 @@
 ---
-title: "Figma Input"
-description: "Connect Figma to Figr with the Figma Sync plugin: pull real frames, tokens, and components into your prompts, and push finished designs back."
-sidebarTitle: "Figma input"
+title: "Bring in Figma frames"
+description: "Connect the Figr AI Figma Sync plugin once, then select frames in Figma and they're added to your Figr chat with their layout and design values."
+sidebarTitle: "Bring in Figma frames"
 ---
 
-Figr's Figma integration runs through one community plugin, Figr AI Figma Sync. Install it once and it works both ways:
+_Connect your Figma file once, then send any frame to Figr to build on._
 
-- **Figma to Figr**: select frames in Figma and reference them live in Figr's chat.
-- **Figr to Figma**: push a Figr prototype back into Figma as editable frames.
-
-This replaces the old "paste a frame link" flow. Selection now happens inside Figma, and Figr reads it automatically.
-
-## First-time setup
-
-You do this once per account.
+When Figr sees your real Figma frames, it builds on your layouts, components and design values instead of starting from scratch. You connect through the Figr plugin once. After that, picking frames takes a few clicks.
 
 <Steps>
-  <Step title="Open Figma Sync in Figr">
-    Click **Figma Sync** in the top-right of the nav bar. This opens the Figr AI Figma Sync page on the Figma Community.
+  <Step title="Open Figma Sync">
+    Click **Figma Sync** in the top-right of the nav bar. This opens the **Figr AI Figma Sync** plugin page.
   </Step>
-  <Step title="Load the plugin">
-    Click **Open in** and load the plugin into any Figma file, then run it. A panel appears with a **Connect to Figr** button.
+  <Step title="Connect the plugin">
+    Click **Open in**, run the plugin in your Figma file, then click **Connect to Figr** and approve access in your browser. The plugin shows **Connected** with your email.
+
+    <Frame>
+      <img
+        alt="Figr AI Figma Sync plugin showing Connected"
+        src="/images/Figma-plugin.png"
+      />
+    </Frame>
   </Step>
-  <Step title="Authorize">
-    Click **Connect to Figr**. A browser tab opens for a quick authorization. When you see "Plugin connected successfully," return to Figma.
+  <Step title="Select your frames">
+    In Figma, click the frames you want Figr to use. The plugin shows how many are selected.
+  </Step>
+  <Step title="Send them to Figr">
+    Back in Figr, the frames you selected are added to the chat box automatically. Figr brings in each frame's layout, a screenshot and its design values.
+
+    <Frame>
+      <img
+        alt="Figma frames attached in the Figr chat box"
+        src="/images/figma-source-connected.png"
+      />
+    </Frame>
   </Step>
 </Steps>
 
-Once connected, the plugin shows a persistent status: Connected, Online, your email, and a Logout option.
-
-<Frame caption="The connected Figr AI Figma Sync plugin panel in Figma.">
-  <img
-    alt="Figr AI Figma Sync plugin panel showing a connected status"
-    lightAlt="Figr AI Figma Sync plugin panel showing a connected status"
-    darkAlt="Figr AI Figma Sync plugin panel showing a connected status"
-    src="/images/Figma-plugin.png"
-  />
-</Frame>
-
-## What Figr can access
-
-Figr can read the frames, tokens, and components you select, process that selection as design input, and paste frames you export from Figr back into Figma.
-
-Figr cannot edit or delete your existing Figma work, and cannot access files you have not opened the plugin in. You control the connection from the plugin and can log out anytime.
-
-## Bring designs in
-
-<Steps>
-  <Step title="Select frames in Figma">
-    Click one or more frames on the canvas. The plugin updates live to show how many are tracked, for example "12 Selected for sync."
-  </Step>
-  <Step title="Check the chat box in Figr">
-    Your selected frames are added to the chat box automatically, with no copying or links.
-  </Step>
-  <Step title="Write your prompt and submit">
-    Figr imports the layout, captures a screenshot of each frame, and reads the real design values behind them.
-  </Step>
-</Steps>
-
-The selection is live: change what is selected in Figma and the count updates instantly. Select one frame to refine a single screen, or a dozen to give Figr a full surface to work from.
-
-<Frame caption="The Figma connector in the Figr composer references your live Figma selection.">
-  <img
-    alt="Figma connector toggled on in the Figr prompt composer"
-    lightAlt="Figma connector toggled on in the Figr prompt composer"
-    darkAlt="Figma connector toggled on in the Figr prompt composer"
-    src="/images/figma-source-connected.png"
-  />
-</Frame>
-
-When you pull frames in, Figr reads more than the picture:
-
-- **Frames and layout**: structure, hierarchy, and arrangement
-- **Tokens and variables**: exact colors, spacing, and type values
-- **Components and variants**: your real building blocks, not lookalikes
-
-## Push designs back
-
-Select a prototype, open **Export**, and choose **Export screens** or **Export all screens**. Frames land in Figma with auto layout, your variables mapped, and your library components as instances where Figr can match them. See [Export to Figma](/export/figma) for the full flow.
-
-## Set up a design system from Figma
-
-The same plugin builds your Figr design system. Choose which variables, styles, fonts, components, reference screens, icons, logos and images to bring in. See [Design System](/product-intelligence/design-system).
-
-## Why Figma input beats a screenshot
-
-When Figr analyzes an image, it estimates colors, guesses spacing, and approximates radius. Figma frames give it the real values instead.
-
-| Screenshot input | Figma frame input |
-| --- | --- |
-| Colors estimated from pixels | Exact values, like #6366F1 |
-| Spacing approximated visually | Precise spacing, like 24px |
-| Border radius guessed | Actual radius, like 8px |
-| Typography inferred | Real typography settings |
-| Font weights assumed | Correct weights and sizes |
-
-## When to use which
-
-| Use Figma frames | A screenshot is fine |
-| --- | --- |
-| Your own product designs | Competitor analysis, since you lack their Figma |
-| Design system components | Quick inspiration |
-| Screens you want to match exactly | External reference designs |
-| Building on or maintaining existing work | Live product captures |
-
-## Best practices
+<Info>
+  **Have a Figma link instead?** Paste it into the chat box as an attachment.
+</Info>
 
 <Tip>
-  - Select the relevant frames, not the whole file. A tighter selection is a clearer signal.
-  - Always pair frames with a prompt. The selection tells Figr what to look at; the prompt tells it what to do.
-  - Set up your design system with high-value frames: a style guide or tokens page, component library frames, pattern docs and recent approved designs.
+  If the plugin shows "0 selected", click a frame directly on the Figma canvas, not in the layers panel.
 </Tip>
 
-Example prompts:
+## Next
 
-```text
-Match this dashboard style but create a settings page with these sections.
-```
-
-```text
-Use the card component from this frame for a feature announcement layout.
-```
-
-```text
-Keep this navigation pattern but redesign the content area for data viz.
-```
-
-## Manage your connection
-
-Your status lives in the plugin window in Figma. Click **Logout** to revoke access immediately. To switch accounts, log out and reconnect with a different account. To reconnect, run the plugin and click **Connect to Figr** again anytime.
-
-## Troubleshooting
-
-| Issue | Fix |
-| --- | --- |
-| Plugin shows "0 Selected for sync" | Click directly on a frame on the Figma canvas, not in the layers panel |
-| Figr won't reference your frames | Check the plugin shows Connected, then reselect the frames |
-| The plugin says Figma is in the background | Bring the Figma window to the front. Figr continues once it's active |
-| Asked to choose a region | Pick US or EU to match your Figr workspace. Figr remembers it after you sign in |
-
-## Related
-
-<CardGroup cols={3}>
-  <Card title="Context Pods" href="/product-intelligence/context-pods">
-    Attach synced frames so Figr reuses them across the project.
+<CardGroup cols={2}>
+  <Card title="Capture a public page" href="/context/capture-public-page">
+    Add your site's content to a pod.
   </Card>
 
-  <Card title="Export to Figma" href="/export/figma">
-    More on sending finished designs back to your Figma workflow.
-  </Card>
-
-  <Card title="Item Actions" href="/canvas/action-items">
-    Where the export dropdown lives on a selected prototype.
+  <Card title="Add files to a pod" href="/input-research/files-research">
+    Give Figr your PRDs, research and screenshots.
   </Card>
 </CardGroup>
