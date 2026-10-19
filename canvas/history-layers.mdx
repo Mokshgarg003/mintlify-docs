@@ -1,39 +1,35 @@
 ---
-title: "History, layers and activity"
-description: "Go back to an earlier version of one item, find anything on a crowded canvas with Layers, and restore the whole canvas from Activity."
-sidebarTitle: "History and layers"
+title: "Version control in Figr"
+description: "Restore an earlier version of a screen or prototype, find items with Layers, and roll back the whole canvas from Activity."
+sidebarTitle: "Version control"
 ---
 
-Figr keeps two kinds of history. Each item has its own versions, and the whole canvas has a timeline in **Activity**.
+_Undo a change that didn't work out._
 
-## Item version history
+Figr saves versions as you work. If a change takes a screen in the wrong direction, look back through earlier versions and restore the one you want.
 
-Every prototype, doc and flow keeps its own versions. Open the item in **Full screen** and use the version dropdown in the header to look at any earlier state. This changes only that item, not the rest of your canvas.
+<Steps>
+  <Step title="Open version history">
+    Double-click a screen or prototype to open full screen, then open its version history.
+  </Step>
+  <Step title="Browse earlier versions">
+    Click through the list to preview each version.
+  </Step>
+  <Step title="Restore the one you want">
+    Choose **Restore** on the version you want to go back to. It becomes the current version.
+  </Step>
+  <Step title="Keep going">
+    Continue editing by hand or in chat. Later changes are saved as new versions, so you can always go back again.
+  </Step>
+</Steps>
 
-Use it when:
+<Tip>
+  Not sure you want to lose the current version? [Duplicate the chat and canvas](/canvas/duplicate-fork) first, then restore in the copy.
+</Tip>
 
-- A new edit changed too much
-- You preferred an earlier direction
-- You want to compare two versions
+## Roll back the whole canvas
 
-For example, you generate a dashboard, then ask Figr to make it more compact. If the new version feels worse, open the version dropdown and go back to the earlier one.
-
-## Layers
-
-Layers lists everything on the canvas: prototypes, notes, screenshots, flows and sections. Use it to find a specific item, see what belongs inside a section, and move around a crowded canvas faster.
-
-<Frame caption="The Layers panel">
-  <img
-    alt="Layers panel listing the items on a canvas"
-    src="/images/Layers.avif"
-  />
-</Frame>
-
-## Activity
-
-Activity is the version history for the whole canvas. Changes are grouped by day and by the prompt that made them, so you can see how the project moved.
-
-To go back, pick a point in the timeline and click **Restore this version**. The canvas returns to how it was at that point.
+Each screen keeps its own versions. To undo a whole round of changes across the canvas, open **Activity**. Changes are grouped by day and by the prompt that made them. Pick a point and click **Restore this version**.
 
 <Frame caption="The Activity panel">
   <img
@@ -42,22 +38,25 @@ To go back, pick a point in the timeline and click **Restore this version**. The
   />
 </Frame>
 
-<Tip>
-  To undo one item, use its version dropdown. To undo a whole round of changes across the canvas, use Activity.
-</Tip>
+## Find anything with Layers
 
-## Related
+Layers lists everything on the canvas: prototypes, notes, screenshots, flows and sections. Use it to find an item or move around a crowded canvas.
 
-<CardGroup cols={3}>
-  <Card title="Item actions" icon="square-mouse-pointer" href="/canvas/action-items">
-    What you can do with a selected item.
+<Frame caption="The Layers panel">
+  <img
+    alt="Layers panel listing the items on a canvas"
+    src="/images/Layers.avif"
+  />
+</Frame>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Duplicate or fork a chat" href="/canvas/duplicate-fork">
+    Try a new direction without losing what you have.
   </Card>
 
-  <Card title="Organize the canvas" icon="layer-group" href="/canvas/organize">
-    Sticky notes, comments and sections.
-  </Card>
-
-  <Card title="Edit without regenerating" icon="wand-magic-sparkles" href="/getting-started/tutorial/untitled-page-5">
-    Change one part without redoing the whole screen.
+  <Card title="Publish and share" href="/export/publish">
+    Share a project with your team.
   </Card>
 </CardGroup>

@@ -1,32 +1,40 @@
 ---
 title: "Export to Figma"
-description: "Send one screen or every screen of a prototype to Figma with auto layout, mapped variables and your library components."
+description: "Set up the Figr AI Figma Sync plugin, export one screen or a full flow to Figma as editable frames, and let the Figr agent keep editing them."
 sidebarTitle: "Export to Figma"
 ---
 
-Export to Figma sends your Figr prototype into Figma as editable layers. Frames arrive with auto layout and your variables mapped, and elements that match your design system come in as instances of your Figma library components. Designers pick up the work in Figma without rebuilding it.
+_Send your Figr screens to Figma as editable frames._
 
-## Before you start
+The **Figr AI Figma Sync** plugin connects Figr and Figma. Set it up once, then export screens from Figr into Figma whenever you need to polish them or hand them off. You can also ask the Figr agent to keep editing a frame after it's in Figma.
 
-You need the **Figr AI Figma Sync** plugin installed and connected. If you set it up for [Figma input](/input-research/figma-input), you're ready.
+## Set up the plugin
 
-## Export a prototype
+You only need to do this once.
 
 <Steps>
-  <Step title="Select the prototype">
-    Click the prototype on the canvas. Its toolbar shows **Interact**, **Edit**, **Full screen**, **Context**, **Export** and **More**.
+  <Step title="Find the plugin in Figma">
+    In Figma, open the Community and search for **Figr AI Figma Sync**.
   </Step>
-  <Step title="Choose what to export">
-    Open **Export**. Choose **Export screens** to pick specific screens, or **Export all screens** to send the whole flow in one run.
+  <Step title="Run it in a design file">
+    Open any Figma design file, go to **Plugins**, and run **Figr AI Figma Sync**.
   </Step>
-  <Step title="Run the plugin in your target Figma file">
-    Open the plugin in the Figma file where the design should land. Keep Figma in the foreground while the export runs.
+  <Step title="Sign in to Figr">
+    Use the same account you use in Figr, so the plugin can see your projects.
   </Step>
-  <Step title="Follow the progress">
-    Figr shows progress for each screen. If one screen fails, the others still complete and the error is shown against that screen.
+</Steps>
+
+## Export frames
+
+<Steps>
+  <Step title="Select the screens in Figr">
+    Select a prototype on your canvas.
   </Step>
-  <Step title="Pick it up in Figma">
-    When Figr confirms the design was sent, your frames are on the Figma canvas, ready to refine.
+  <Step title="Send them to Figma">
+    Open **Export** and choose **Export screens** to send one screen, or **Export all screens** to send the full flow.
+  </Step>
+  <Step title="Open them in Figma">
+    Run the plugin in the Figma file where you want the screens. They arrive as editable frames with layers, text and auto layout.
   </Step>
 </Steps>
 
@@ -34,57 +42,44 @@ You need the **Figr AI Figma Sync** plugin installed and connected. If you set i
 
 | What | How it arrives in Figma |
 | --- | --- |
-| Layout | Frames with auto layout, so they resize like a real Figma design |
-| Design values | Mapped to your Figma variables, not flattened into one-off styles |
+| Layout | Frames with auto layout |
+| Design values | Mapped to your Figma variables |
 | Design system components | Instances of your Figma library components, where Figr can match them |
-| Anything Figr can't match | A regular frame, with a note explaining why it wasn't linked |
+| Anything Figr can't match | A regular frame, with a note explaining why |
 
-Change a variable in Figma and the exported design updates with it.
+## Let the agent edit an exported frame
 
-<Note>
-  Component instances need a design system set up from Figma. See [Design System](/product-intelligence/design-system).
-</Note>
+Your frame doesn't stop being editable by Figr once it's in Figma.
 
-## Good to know
+<Steps>
+  <Step title="Select the frame in Figma">
+    Select the frame and open the plugin.
+  </Step>
+  <Step title="Describe the change">
+    For example: "Add an empty state to this list."
+  </Step>
+  <Step title="Review the update">
+    The Figr agent edits the frame in place, keeping your design system styles.
+  </Step>
+</Steps>
 
-- **Each export is a copy.** Edits you make in Figr later don't update the Figma copy. Export again to send the new version.
-- **Large exports retry on their own.** Image-heavy screens and slow connections are handled with retries instead of failing the whole run.
-
-## Other ways to hand off
-
-The **Export** menu has more options for when the work goes somewhere other than Figma:
-
-| Option | Best for |
-| --- | --- |
-| Export screens / Export all screens | Handing off to a designer in Figma |
-| Copy code | Pasting the component code into your project |
-| Download PNG, PDF or Markdown | Dropping a visual or doc into a deck, ticket or message |
-| Copy as text | Pasting the content of a doc or screen |
-| Add to Context Pod | Reusing this design as context in future work |
-| Open in coding agent | Building it in Claude Code, Cursor, VS Code or Codex through [Figr MCP](/export/mcp) |
+<Tip>
+  Export once your structure is settled. Small polish is quicker in Figma, but big layout changes are faster in Figr.
+</Tip>
 
 ## Troubleshooting
 
 | Issue | Fix |
 | --- | --- |
-| Figr can't find the plugin | Run Figr AI Figma Sync in your target Figma file and check it shows **Connected**, then retry |
-| The plugin says Figma is in the background | Bring the Figma window to the front. The export continues |
-| One screen failed | Check the error shown for that screen, then export just that screen again |
-| An element came across as a frame, not a component | Read the note on the frame. Usually the component isn't in the design system Figr used |
+| Figr can't find the plugin | Run Figr AI Figma Sync in your target file and check you're signed in |
+| The plugin says Figma is in the background | Bring the Figma window to the front |
+| One screen failed | Check the error shown for that screen, then export it again |
 
-## Related
+## Next
 
 <CardGroup cols={2}>
-  <Card title="Figma input" href="/input-research/figma-input">
-    Bring Figma frames into Figr.
-  </Card>
-
-  <Card title="Design System" href="/product-intelligence/design-system">
-    How Figr learns your tokens and components.
-  </Card>
-
-  <Card title="Figr MCP" href="/export/mcp">
-    Hand a design to a coding agent.
+  <Card title="Publish and share" href="/export/publish">
+    Share a project or a prototype link.
   </Card>
 
   <Card title="Copy and download" href="/export/copy-download">
