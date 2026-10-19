@@ -67,6 +67,7 @@
           {
             "group": "Add your product context",
             "pages": [
+              "input-research/input-guide",
               "product-intelligence/context-pods",
               "input-research/screen-recording",
               "input-research/figma-input",
@@ -117,23 +118,8 @@
             ]
           },
           {
-            "group": "Canvas",
-            "pages": []
-          },
-          {
-            "group": "Inputs and Research",
-            "pages": [
-              "input-research/input-guide"
-            ]
-          },
-          {
-            "group": "Product Intelligence",
-            "pages": []
-          },
-          {
             "group": "Export and Share",
             "pages": [
-              "export/direct-editing",
               "export/options",
               "export/figma",
               "export/mcp",
@@ -183,7 +169,8 @@
             "hidden": true,
             "pages": [
               "yes",
-              "inputs/screen-recording"
+              "inputs/screen-recording",
+              "export/direct-editing"
             ]
           },
           {
