@@ -1,207 +1,172 @@
 ---
 title: "Context Pods"
-description: "Reusable product knowledge Figr can understand across projects, prompts, and tasks."
-sidebarTitle: "Context pods"
+description: "Build reusable product knowledge from recordings, files, notes, links and instructions, share it with your team, and attach it to any canvas."
+sidebarTitle: "Context Pods"
 ---
 
-A Context Pod is the most flexible way to teach Figr about your product. Where a Design Language defines how things look, a Context Pod captures what your product is and how it behaves: flows, terminology, user needs, and constraints.
+A Context Pod holds everything Figr knows about your product: how it works, how it looks in use, and the words your team uses. Where your [Design System](/product-intelligence/design-system) defines how things look, a Context Pod captures what your product is and how it behaves: flows, terminology, user needs and constraints.
 
-Build it once, attach it to any project, and reference it as a chip on any prompt.
+Build it once, share it with your team, and attach it to any canvas.
 
 ## Create a Context Pod
 
 <Steps>
-  <Step title="Open Context Pod">
-    From the sidebar, under **Product intelligence**.
+  <Step title="Open Product intelligence">
+    In the sidebar, open **Product intelligence**.
   </Step>
   <Step title="Create a new pod">
-    Click **Create new Context Pod** (top right). Give it a name (required) and an optional description.
+    Click **Create new Context Pod** in the top right. Name it after one product area, like _Checkout_ or _Admin dashboard_, and add a one-line description.
   </Step>
-  <Step title="Continue to setup">
-    This opens the **Add your product details** screen, where you connect your sources.
+  <Step title="Add at least one source">
+    On **Add your product details**, choose how to show Figr your product. See the source types below.
+  </Step>
+  <Step title="Build the pod">
+    Click **Start Building**. Figr reads your sources and shows a summary of what it learned.
   </Step>
 </Steps>
 
 ## Add your sources
 
-A Context Pod accepts five source types. Use as many as you like; the more you add, the deeper Figr's understanding.
+Use as many source types as you like. The more you add, the deeper Figr's understanding.
 
 ### Show us your product (recommended)
 
-The richest source. Show Figr your product in motion.
-
-- Record a walkthrough directly, with optional microphone narration and full-screen capture
-- Or drag and drop an existing screen recording
-
-A recorded flow tells Figr how screens connect and how users move through them, context a static screenshot cannot carry.
+Record a walkthrough of a flow, with optional mic narration, or drop in an existing recording (.mp4, .mov, .mkv or .webm, up to 100 MB). A recording tells Figr how screens connect and how people move through them, which a screenshot can't. See [Screen recordings](/input-research/screen-recording).
 
 ### Upload files
 
-Drag and drop supporting material: PDFs and design specs, screenshots and images, documents, and other product files.
+Add PRDs, specs, research and screenshots. See [Files and research](/input-research/files-research) for supported types.
 
 ### Paste text
 
-Open the note editor, give it a title, and write in the rich-text area. Useful for product overviews, terminology, or notes that do not live in a file.
+Open the note editor, give it a title and write. Useful for product overviews, terminology or notes that don't live in a file.
 
 ### Link website
 
-Paste a URL, like your product or marketing site. Figr validates the link and fetches the page so it can read your live content.
+Paste the URL of a public page, like your marketing site or help center. Figr reads the page's content. To capture a page behind a login, use [Figr Capture](/input-research/chrome-extension) instead.
 
 ### Add instructions
 
-Free-form guidance that shapes how the agent responds:
+Rules that shape how Figr responds:
 
 ```text
-Be concise
+We call customers "members", never "users".
 ```
 
 ```text
-Always use our terminology: Workspaces, not Projects
+Prioritize mobile patterns.
 ```
-
-```text
-Prioritize mobile patterns
-```
-
-When your sources are in, click **Start Building** to save the pod.
 
 ## The pod summary
 
-After building, you land on the pod's summary dashboard. A right-side drawer lists everything linked to the pod, every recording, file, note, link, and instruction, alongside its generated context status. Return here anytime to review what the pod knows or to add and remove sources.
+After building, you land on the pod's summary. A drawer on the right lists every source linked to the pod, with its status. Come back anytime to review what the pod knows, or to add and remove sources from the **Sources** tab.
 
-<Frame caption="The Context Pod summary, with all linked sources in the right drawer.">
+<Frame caption="The Context Pod summary, with linked sources in the right drawer.">
   <img
-    alt="Context Pod summary dashboard listing linked sources"
-    lightAlt="Context Pod summary dashboard listing linked sources"
-    darkAlt="Context Pod summary dashboard listing linked sources"
+    alt="Context Pod summary listing linked sources"
     src="/images/context-pod-summary.png"
   />
 </Frame>
 
 ## Use a Context Pod
 
-A Context Pod only shapes output once you attach it to a prompt.
+<Tabs>
+  <Tab title="Start a canvas from a pod">
+    Open a pod and start a new canvas from it. The pod is already attached, so your first message has the product context.
 
-<Steps>
-  <Step title="Start a new chat">
-    In a project, start a **New chat** on the canvas.
-  </Step>
-  <Step title="Open the attachment menu">
-    In the prompt box, open the attachment menu and select **Context Pod**.
+    You can also pick a pod when you create a canvas with **New canvas**.
+  </Tab>
+  <Tab title="Attach it in a chat">
+    1. In the chat box, open the attachment menu and choose **Context Pod**.
+    2. Pick your pod. It appears as a chip above your message.
 
-    <Frame caption="Context Pod Button">
+    <Frame caption="Choose Context Pod from the attachment menu">
       <img
-        alt="Context Pod Menu"
-        title="Context Pod Menu"
-        lightAlt="Context Pod Menu"
-        darkAlt="Context Pod Menu"
+        alt="Attachment menu with the Context Pod option"
         src="/images/context-pod-button.png"
         className="dark:hidden"
       />
       <img
-        alt="Context Pod Menu"
-        title="Context Pod Menu"
-        lightAlt="Context Pod Menu"
-        darkAlt="Context Pod Menu"
+        alt="Attachment menu with the Context Pod option"
         src="/images/context-pod-menu.png"
         className="hidden dark:block"
       />
     </Frame>
-  </Step>
-  <Step title="Choose your pod">
-    Pick the pod you want. It appears as an active chip on the prompt.
 
-    <Frame>
+    <Frame caption="Pick a pod">
       <img
-        alt="Context Pod Menu 1"
-        title="Context Pod Menu 1"
-        lightAlt="Context Pod Menu 1"
-        darkAlt="Context Pod Menu 1"
+        alt="Context Pod picker"
         src="/images/context-pod-menu-(3).png"
         className="dark:hidden"
       />
       <img
-        alt="Context Pod Menu 1"
-        title="Context Pod Menu 1"
-        lightAlt="Context Pod Menu 1"
-        darkAlt="Context Pod Menu 1"
+        alt="Context Pod picker"
         src="/images/context-pod-menu-1.png"
         className="hidden dark:block"
       />
     </Frame>
-  </Step>
-</Steps>
+  </Tab>
+</Tabs>
 
-Submit your query and Figr grounds its response in the pod's sources, referencing your real flows, files, and terminology instead of generic assumptions. Attach the same pod across many projects, so product knowledge follows you everywhere.
+<Note>
+  Attach the pod before you send your message. Figr only uses it for messages sent after it's attached.
+</Note>
 
-## Context Pod vs Design Language
+## What a pod remembers
 
-The two design-intelligence sources do different jobs, and most teams use both.
+A pod gets better as you work with it.
 
-|  | Context Pod | Design Language |
+- **Past chats.** New chats can pull relevant decisions from earlier chats that used the same pod, and show where they came from. If nothing relevant exists, Figr doesn't add anything.
+- **Memory.** Figr remembers product decisions, constraints and preferences across your work in a pod, and shows which memories or sources it used for a message.
+
+## Share a pod with your team
+
+When your team shares one pod, everyone starts from the same understanding of your product. Nobody records the same flow or uploads the same PRD again.
+
+1. Open the pod in **Product intelligence** and click **Share** in the top right.
+2. Teammates attach it from the **Context Pod** picker in any project.
+3. When your product changes, replace old recordings and links in the **Sources** tab so everyone works from what's real.
+
+## Context Pod vs Design System
+
+Most teams use both.
+
+|  | Context Pod | Design System |
 | --- | --- | --- |
 | Captures | What your product is and how it works | How your product looks |
-| Sources | Recordings, files, text, links, instructions | Figma frames, tokens, component files |
-| Shapes | Flows, terminology, behavior, content | Colors, typography, spacing, components |
-| Output | Designs that fit your product's logic | Designs that match your visual system |
-
-## Why it matters
-
-Without product context, Figr designs from generic assumptions: plausible screens that do not reflect your actual flows, naming, or user needs, and you re-explain your product in every prompt.
-
-With a Context Pod attached, that knowledge is always present. Figr already knows your onboarding flow, your terminology, and your constraints, so it designs for your product, not a generic version of it.
+| Sources | Recordings, files, text, links, instructions | Figma, Storybook, npm, code, brand assets |
+| Shapes | Flows, terminology, behavior, content | Colours, typography, spacing, components |
 
 ## Best practices
 
 <Tip>
-  - Lead with a recording. A walkthrough conveys flow and behavior that files alone cannot.
-  - Mix source types: a recording for flow, files for detail, instructions for tone.
-  - Keep instructions specific. Concrete rules like "use our terms" or "mobile-first" steer output more than vague ones.
-  - Reuse across projects. Build one strong pod and attach it everywhere instead of re-uploading per project.
-  - Keep it current. Refresh recordings and links when your product changes so context does not drift.
+  - Make one pod per product area. A focused pod gives sharper results than one pod for everything.
+  - Lead with a recording. A walkthrough shows flow and behavior that files alone can't.
+  - Keep instructions specific. "Use our terms" or "mobile-first" steers output more than vague guidance.
+  - Name pods so teammates can tell them apart, like "Web app – Checkout" and "Mobile app – Onboarding".
 </Tip>
 
 ## Troubleshooting
 
 | Issue | Fix |
 | --- | --- |
-| Website link will not attach | Confirm the URL is valid and public, and wait for the validation check to pass |
-| Pod does not influence a response | Make sure it is attached as a chip on the prompt before submitting |
-| Recording upload fails | Check the file is a supported video format and within the size limit |
-| Output ignores your terminology | Add an explicit instruction spelling out the terms to use |
+| Website link won't attach | Check the URL is valid and public |
+| Pod doesn't influence a response | Attach it as a chip before you send the message |
+| Recording upload fails | Check it's .mp4, .mov, .mkv or .webm and under 100 MB |
+| Output ignores your terminology | Add an instruction spelling out the terms to use |
 
 ## Related
 
 <CardGroup cols={3}>
-  <Card title="Context Pods" href="/product-intelligence/context-pods">
-    What a Context Pod is and how it grounds a project.
-  </Card>
-
-  <Card title="Setting up Design Language" href="/product-intelligence/design-system">
+  <Card title="Design System" href="/product-intelligence/design-system">
     Teach Figr how your product should look.
   </Card>
 
-  <Card title="Screen Recordings" href="/input-research/screen-recording">
-    Capture a flow to drop into a pod.
+  <Card title="Connectors" href="/product-intelligence/connectors">
+    Let Figr read live context from your tools.
+  </Card>
+
+  <Card title="Screen recordings" href="/input-research/screen-recording">
+    Capture a flow to add to a pod.
   </Card>
 </CardGroup>
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0 | Ownership: Self (Product verify) | Status: In Progress
-  Assets (placeholders, capture pending):
-  - context-pod-create.png, the Add your product details setup screen (already produced)
-  - context-pod-summary.png, summary dashboard with the sources drawer
-  - context-pod-chip.png, the pod attached as a chip in the prompt box
-  VERIFY: exact button labels (Create new Context Pod, Start Building), supported video formats and size limit, link validation behavior.
-  Reference links: Context Pods, Setting up Design Language, Screen Recordings
-  */}
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0 | Ownership: Self (Product verify) | Status: In Progress
-  Assets (placeholders, capture pending):
-  - context-pod-create.png, the Add your product details setup screen (already produced)
-  - context-pod-summary.png, summary dashboard with the sources drawer
-  - context-pod-chip.png, the pod attached as a chip in the prompt box
-  VERIFY: exact button labels (Create new Context Pod, Start Building), supported video formats and size limit, link validation behavior.
-  Reference links: Context Pods, Setting up Design Language, Screen Recordings
-  */}
