@@ -1,23 +1,55 @@
 ---
-title: "High Fidelity Prototypes "
+title: "High-fidelity prototypes"
+description: "Build clickable React or Angular prototypes in your design system, check every screen and state, preview themes, and publish or hand off."
+sidebarTitle: "Prototypes"
 ---
 
-Prototype turns a clear product direction into a high-fidelity screen in your design system. Because Figr already holds your product context and design language, the output uses your existing patterns, components, spacing, typography, and interaction rules. It is Figma-ready and product-native, not a generic mockup you have to clean up.
-
-{/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/product-design-flow/03-07-high-fidelity-prototype.png then change src to "/images/product-design-flow/03-07-high-fidelity-prototype.png" */}
+A prototype turns a clear product direction into working, high-fidelity screens in your design system. Because Figr holds your product context and design system, the output uses your existing patterns, components, spacing and typography. It's real front-end code, not a mockup you have to clean up.
 
 <img
-  alt="Generated high-fidelity prototype node on the canvas"
-  title="Generated prototype on the canvas"
+  alt="Generated high-fidelity prototype on the canvas"
   style={{ width:"93%" }}
-  lightAlt="Generated high-fidelity prototype node on the canvas"
-  darkAlt="Generated high-fidelity prototype node on the canvas"
   src="/images/prototypes.png"
 />
 
-{/* @aryan refer to the deck and use examples and images from deck — actioned: added the deck's prototype examples and gallery link below; swap the card hrefs for specific prototype URLs when you have them */}
+## Build a prototype
 
-Real high-fidelity prototypes built with Figr, each in the product's own design system:
+<Steps>
+  <Step title="Add your context">
+    Attach your Context Pod and design system, plus any screenshots, recordings or Figma frames that show where this fits in your product.
+  </Step>
+  <Step title="Describe what to build">
+    Say who it's for, what they need to do and where it fits. Figr may ask a few questions first. Answer them, or tell it to go ahead with its best guess.
+  </Step>
+  <Step title="Click through it">
+    Select the prototype and click **Interact** to try it on the canvas, or **Full screen** to see it at device size.
+  </Step>
+  <Step title="Check every state">
+    Switch to the **Screens** view to see every route and state on one board. Use **Generate screens** to build the states that are missing.
+  </Step>
+  <Step title="Refine it">
+    Ask for changes in chat, or click **Edit** to change one part without regenerating the rest. See [Edit without regenerating](/getting-started/tutorial/untitled-page-5).
+  </Step>
+</Steps>
+
+## What you get
+
+- **React or Angular.** Prototypes are built in React by default, or Angular with Angular Material, with the same design system support.
+- **Your design system.** Components and tokens come from the design system you attach.
+- **Theme preview.** Preview supported prototypes in System, Light or Dark mode from full screen.
+- **Versions.** Every prototype keeps its own version history.
+
+## Good prompts
+
+- "Design a customer success dashboard showing account health, open risks, upcoming renewals and expansion opportunities. Use the attached design system and product context."
+- "Generate a billing settings page with plan details, invoices, payment method and team usage. Follow the existing settings layout and component patterns."
+- "Create the empty, loading and error states for this activity feed."
+
+Build a prototype when the problem is clear, the key flow is mapped and the important states are known. If they aren't, [brainstorm](/getting-started/tutorial/brainstorm) or [map the flow](/getting-started/tutorial/map-edge-cases) first.
+
+## Examples
+
+Real prototypes built with Figr, each in the product's own design system:
 
 <CardGroup cols={3}>
   <Card title="Linear" href="https://app.figr.design/artifacts/b335e350-401c-4b76-8dc3-fb645a594908">
@@ -33,21 +65,6 @@ Real high-fidelity prototypes built with Figr, each in the product's own design 
   </Card>
 </CardGroup>
 
-Show it internally, test it externally, hand off to engineering. Days, not weeks. Use Prototype when:
+## Share and hand off
 
-- The product problem is clear
-- The key flow is mapped
-- Important states are known
-- Product context is available
-- Design language is added
-- Your team needs a visual direction to review Good prototype prompts:
-  - "Design a customer success dashboard showing account health, open risks, upcoming renewals, and expansion opportunities. Use the attached design system and product context."
-  - "Generate a billing settings page with plan details, invoices, payment method, and team usage. Follow the existing settings layout and component patterns."
-  - "Create the empty, loading, and error states for this activity feed using the current product design language."
-
-{/* VIDEO: YouTube hosts this, no upload needed. Replace VIDEO_ID with your video's ID. Delete this block if unused. */}
-
-{/*
-  <iframe src="https://www.youtube.com/embed/VIDEO_ID" title="Product problem to design-system-aware prototype" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen /> */}
-
-{/* VERIFY (remove before publishing): confirm how Figr handles missing components when the design system does not contain the requested pattern. Owner: Product. */}
+[Publish](/export/publish) a link for review, [export to Figma](/export/figma), or [open it in a coding agent](/export/mcp).

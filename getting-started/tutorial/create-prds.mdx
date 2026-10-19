@@ -1,36 +1,57 @@
 ---
 title: "Create PRDs"
+description: "Turn a rough problem into a PRD, user stories, acceptance criteria, test cases and a flow on the canvas, then edit, share or download them."
+sidebarTitle: "Create PRDs"
 ---
 
-PM handoff isn't only a doc, and it isn't only a screen. From one rough problem, Figr generates the full chain of artifacts a real handoff needs, and keeps them connected on a single canvas.
-
-{/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/product-design-flow/03-06-create-prds.png then change src to "/images/product-design-flow/03-06-create-prds.png" */}
+A PM handoff isn't only a doc, and it isn't only a screen. From one rough problem, Figr builds the chain of artifacts a real handoff needs, and keeps them connected on one canvas.
 
 <img
-  alt="PRD, user stories, acceptance criteria, test cases, flow, and prototype connected on the canvas"
-  title="PRD chain on the canvas"
+  alt="PRD, user stories, flow and prototype connected on the canvas"
   style={{ width:"93%" }}
-  lightAlt="PRD, user stories, acceptance criteria, test cases, flow, and prototype connected on the canvas"
-  darkAlt="PRD, user stories, acceptance criteria, test cases, flow, and prototype connected on the canvas"
   src="/images/PRD.avif"
 />
 
-{/* @aryan shorten (technical value first, what all type of documents can I make) — actioned: led with the value line above and replaced the prose restatement with the artifact list below */}
-
 From a single problem, Figr can produce:
 
-- PRD and requirements
+- A PRD and requirements
 - User stories and acceptance criteria
-- Edge case maps and key states
+- Edge-case maps and key states
 - Test cases
-- User flow
+- A user flow
+- A high-fidelity prototype
 
-High-fidelity prototype and design direction Start with a rough problem statement. It does not need to be polished. Include:
+## Write a PRD
 
-- What you want to improve
-- Who it is for
-- Which constraints matter
-- Which product context Figr should use Then ask for the first artifact:
-  - "Turn this rough product problem into a structured PRD. Use the attached product context, existing screens, design system, analytics notes, and previous decisions, then flag missing requirements and edge cases." From there, generate the rest of the chain: user stories, acceptance criteria, test cases, a user flow, key states, and a prototype. The PRD should not sit alone in a doc. It is the base for your UX work, and the chain stays live: if the flow reveals a missing state, update the PRD; if the prototype exposes a confusing interaction, update the flow.
+<Steps>
+  <Step title="Attach your context">
+    Attach your [Context Pod](/product-intelligence/context-pods), plus any research, feedback or a page from a connected tool like Notion or Linear.
+  </Step>
+  <Step title="Describe the problem">
+    It doesn't need to be polished. Say what you want to improve, who it's for, which constraints matter, and what's out of scope.
 
-{/* VIDEO: YouTube hosts this, no upload needed. Replace VIDEO_ID with your video's ID. Delete this block if unused. */}
+    ```text
+    Turn this rough product problem into a structured PRD. Use the attached product context, existing screens, analytics notes and previous decisions, then flag missing requirements and edge cases.
+    ```
+  </Step>
+  <Step title="Review the draft on the canvas">
+    The PRD lands on your canvas as a doc. Edit it in place, or open it in full screen for more room.
+  </Step>
+  <Step title="Build the rest of the chain">
+    Ask for user stories, acceptance criteria, test cases, the user flow, key states and the prototype.
+  </Step>
+</Steps>
+
+## Keep the chain live
+
+The PRD isn't meant to sit alone. If the flow reveals a missing state, update the PRD. If the prototype exposes a confusing interaction, update the flow.
+
+## Share it
+
+- **Download** the PRD as PDF or Markdown, or **Copy as text**, from the Export menu.
+- **Share the project** so teammates see the PRD next to the flow and prototype. See [Publish and share](/export/publish).
+- **Add to Context Pod** so future work starts from the decisions in it.
+
+<Tip>
+  Tell Figr what's out of scope. A clear "not doing" list keeps the draft focused.
+</Tip>

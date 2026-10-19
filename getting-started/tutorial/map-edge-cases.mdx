@@ -1,20 +1,18 @@
 ---
-title: "Map Edge Cases"
+title: "Map flows and edge cases"
+description: "Map a user flow and every state around it, then turn it into screens: loading, empty, error and success states on the Screens board."
+sidebarTitle: "Map edge cases"
 ---
 
 <Frame caption="Figr maps the happy path and every state around it.">
   <img
-    src="/images/Map-Edge-Cases.avif"
     alt="Happy path versus a full edge-case map"
-    lightAlt="Happy path versus a full edge-case map"
-    darkAlt="Happy path versus a full edge-case map"
+    src="/images/Map-Edge-Cases.avif"
     className="dark:hidden"
   />
   <img
-    src="/images/03-05-edge-case-flow.png"
     alt="Happy path versus a full edge-case map"
-    lightAlt="Happy path versus a full edge-case map"
-    darkAlt="Happy path versus a full edge-case map"
+    src="/images/03-05-edge-case-flow.png"
     className="hidden dark:block"
   />
 </Frame>
@@ -23,17 +21,35 @@ The happy path is the easy part. Figr maps the states that actually break produc
 
 - **Input and data**: empty, loading, partial data, validation errors
 - **Access and session**: permission states, access changes, session expiry
-- **System and network**: error states, retries, network failures, offline or slow connections
-- **Money and destructive actions**: payment failures, confirmation steps, destructive actions
+- **System and network**: error states, retries, network failures, slow connections
+- **Money and destructive actions**: payment failures, confirmation steps, deletes
+
+## Map a flow
+
+<Steps>
+  <Step title="Describe the journey">
+    Say who the user is, where they start and what they're trying to do. Attach your [Context Pod](/product-intelligence/context-pods) so the flow follows how your product works today.
+  </Step>
+  <Step title="Review the flow on the canvas">
+    Figr draws the flow as an editable diagram with steps, decisions and branches. Check the happy path first, then the branches.
+  </Step>
+  <Step title="Refine it">
+    Ask for a missing step or another branch, like "Add what happens when the invite email bounces." You can also edit the diagram directly.
+  </Step>
+</Steps>
 
 ## Example prompts
 
-- "Map the file upload flow, including file too large, unsupported type, network failure, storage limit, and access revoked."
-- "Map the billing upgrade flow, including payment failure, expired card, permission restriction, invoice loading, and downgrade impact."
-- "Map the password reset flow, including invalid email, expired link, used link, rate limit, and success."
+- "Map the file upload flow, including file too large, unsupported type, network failure, storage limit and access revoked."
+- "Map the billing upgrade flow, including payment failure, expired card, permission restriction and downgrade impact."
+- "Map the password reset flow, including invalid email, expired link, used link, rate limit and success."
 
-Edge cases are not nice to have. They are the product.
+## Turn states into screens
 
-When Figr maps the flow visually, your team aligns before any screen is polished. Designers see which states to build, engineers see the behavior to expect, and PMs get a sharper spec.
+Once a prototype exists, open its **Screens** view to see every route and state on one board, with loading, empty, error and success states as separate frames. Click **Generate screens** and Figr proposes and builds the states that are missing.
 
-{/* DIAGRAM: replace with the final SVG when ready. Confirm one filename: edge-case-flow vs edge-cases-map. */}
+Export the whole board to Figma in one run with **Export all screens**.
+
+## Why it matters
+
+Edge cases aren't a nice-to-have. They're the product. When the flow is mapped before any screen is polished, designers see which states to build, engineers see the behavior to expect, and PMs get a sharper spec.
