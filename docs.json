@@ -195,7 +195,18 @@
           {
             "group": "What Figr does",
             "icon": "compass",
-            "pages": []
+            "pages": [
+              "what-figr-does/overview",
+              "what-figr-does/research-to-flows",
+              "what-figr-does/audit-and-redesign",
+              "what-figr-does/change-impact",
+              "what-figr-does/add-to-existing-journey",
+              "what-figr-does/explore-and-sign-off",
+              "what-figr-does/mock-to-figma",
+              "what-figr-does/handoff-to-engineering",
+              "what-figr-does/ai-ready-design-system",
+              "what-figr-does/design-system-from-screens"
+            ]
           }
         ]
       },

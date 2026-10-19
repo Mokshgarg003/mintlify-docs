@@ -1,0 +1,84 @@
+---
+title: "Make your design system AI-ready"
+sidebarTitle: "AI-ready design system"
+description: "Line up Figma and code so every AI tool your team uses follows the same system."
+icon: "robot"
+---
+
+{/* REVIEW NOTES, remove before publishing
+  Sales-led: CTA is "Book a setup call" near the top and at the end. No self-serve Try it. Destination TBD.
+  Go-further link: Figr MCP (where the AI-ready system gets used). 
+  VERIFY with eng: discrepancy report (Figma vs code) and generated usage guidelines are what the guided setup delivers. */}
+
+Most teams have two design systems that are supposed to be one: the library in Figma and the components in code. They drift. One team found the same grey in Figma was black in Storybook. Another had to patch every AI prompt with a line telling it not to invent local components.
+
+AI tools make the drift worse, because they copy whatever they see. Figr gets both sides to agree, then makes the system usable by every AI tool your team works with.
+
+<Note>
+  **The short version:** Figr compares your Figma library with your coded components, lists every mismatch, and writes usage guidelines for each component. The result is one system that Figr, your designers and your engineers' coding agents all follow.
+</Note>
+
+{/* CTA placeholder: "Book a setup call" button here, high on the page. Destination TBD. */}
+
+## How it works
+
+<Steps>
+  <Step title="Connect both sides">
+    Figr connects to your Figma library and your component code. In the Ledgerly example: the Ledgerly UI kit in Figma and its React component library.
+
+    <Info>
+      **Asset needed · 8.1**: Screenshot of the setup screen showing the Ledgerly Figma library and code repo both connected.
+    </Info>
+  </Step>
+  <Step title="Figr finds the mismatches">
+    You get a list of every place Figma and code disagree: colors, spacing, variants and components that exist on only one side.
+  </Step>
+  <Step title="Figr writes the guidelines">
+    For each component, Figr writes when to use it, which variants exist and what not to do, in a form AI tools can follow.
+
+    <Info>
+      **Asset needed · 8.2**: Screenshot of the generated usage guidelines for one Ledgerly component (for example, Button), with variants and do/don't rules.
+    </Info>
+  </Step>
+  <Step title="We set it up with you">
+    A Figr engineer works through the setup with your team, so the system is right from day one.
+  </Step>
+</Steps>
+
+## See it work
+
+The moment that matters: one report that shows exactly where your Figma and code disagree, next to the guidelines that fix it.
+
+<Info>
+  **Asset needed · 8.3 (proof moment)**: Before/after. Left: the Figma-vs-code discrepancy list for Ledgerly (for example, "neutral-700 is #4A4A4A in Figma, #000000 in code"). Right: the usage guidelines that resolve it.
+</Info>
+
+## What changes for your team
+
+- **Design system teams** see drift in one report instead of finding it in production.
+- **AI tools** stop inventing components, without prompt patches.
+- **Every screen Figr makes** uses the system your engineers actually ship.
+
+## Go further
+
+Put the AI-ready system to work in engineering. See how coding agents read it through Figr MCP.
+
+<Card title="Figr MCP" icon="arrow-right" horizontal href="/export/mcp">
+</Card>
+
+## Get started
+
+Setup is guided by a Figr engineer. Book a call and we'll walk through your library and code with you.
+
+{/* CTA placeholder: "Book a setup call" button. Destination TBD. */}
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Design system" href="/product-intelligence/design-system">
+    How Figr learns and applies your tokens and components.
+  </Card>
+  <Card title="Build a design system from your screens" href="/what-figr-does/design-system-from-screens">
+    No system yet? Start from what you ship.
+  </Card>
+</CardGroup>

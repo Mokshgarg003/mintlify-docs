@@ -1,0 +1,85 @@
+---
+title: "Audit and redesign a flow from a screen recording"
+sidebarTitle: "Audit and redesign"
+description: "Record a flow once. Get an audit pinned to each screen and a redesign in your system."
+icon: "magnifying-glass"
+---
+
+{/* REVIEW NOTES, remove before publishing
+  Go-further link: Screen recordings. Try-it button destination TBD.
+  VERIFY with eng: audit findings are pinned to the specific screen/frame in the recording. */}
+
+A flow can pass every design review and still break once it ships. One team had designs approved, built and released, and only then found that real users couldn't get through the flow. By then, fixing it meant another sprint.
+
+Figr lets you check the flow as people actually use it, then fix it in the same place.
+
+<Note>
+  **The short version:** Record a walkthrough of any flow in your product. Figr breaks it into screens, audits each one, pins every issue to the screen it happens on, and redesigns the flow in your design system.
+</Note>
+
+## How it works
+
+<Steps>
+  <Step title="Record the flow">
+    Share your screen and walk through the flow, or upload a recording you already have. In the Ledgerly example: submitting and approving an expense.
+
+    <Info>
+      **Asset needed · 2.1**: Screenshot of the screen recording option in the composer, with a Ledgerly recording attached.
+    </Info>
+  </Step>
+  <Step title="Figr breaks it into screens">
+    Figr pulls out each screen and step from the recording, so you don't have to screenshot anything.
+  </Step>
+  <Step title="Figr audits every screen">
+    You get a UX audit with each finding pinned to the exact screen, covering usability, clarity, accessibility and consistency.
+
+    <Info>
+      **Asset needed · 2.2**: Screenshot of the audit on the canvas, with findings pinned to three or four Ledgerly screens.
+    </Info>
+  </Step>
+  <Step title="Figr redesigns what's broken">
+    Pick the findings that matter, and Figr redesigns those screens in your design system, next to the originals.
+  </Step>
+</Steps>
+
+## See it work
+
+The moment that matters: the same Ledgerly screen before and after, with the audit findings that drove each change.
+
+<Info>
+  **Asset needed · 2.3 (proof moment)**: Before/after image. Left: the original Ledgerly approval screen with numbered findings pinned on it. Right: the redesigned screen with the same numbers showing what changed.
+</Info>
+
+## What changes for your team
+
+- **Designers** catch usability issues before engineering builds them.
+- **PMs** get a ranked list of what to fix, tied to real screens.
+- **Everyone** reviews the flow people use, not the one in the spec.
+
+## Go further
+
+Get more out of every recording. See how to record walkthroughs Figr learns the most from.
+
+<Card title="Screen recordings" icon="arrow-right" horizontal href="/input-research/screen-recording">
+</Card>
+
+## Try it
+
+Copy this prompt into Figr with a recording of your own flow:
+
+```text
+Here's a recording of Ledgerly's expense approval flow. Run a UX audit, pin each issue to the screen it happens on, then redesign the screens with the top three issues.
+```
+
+{/* CTA placeholder: "Try this in Figr" button, opens the prompt as an editable template in the composer (never auto-sent). Destination TBD. */}
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="UX review" href="/getting-started/tutorial/review">
+    How Figr reviews a design.
+  </Card>
+  <Card title="See what a change touches" href="/what-figr-does/change-impact">
+    Next step: trace a fix across the product.
+  </Card>
+</CardGroup>

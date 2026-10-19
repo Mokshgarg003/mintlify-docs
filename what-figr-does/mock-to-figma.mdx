@@ -1,0 +1,85 @@
+---
+title: "Take a PM's mock into Figma without rebuilding it"
+sidebarTitle: "Mock to Figma"
+description: "Send a PM's mock to Figma as editable design instead of rebuilding it by hand."
+icon: "figma"
+---
+
+{/* REVIEW NOTES, remove before publishing
+  Go-further link: Design system (that's where "real components need a mapped library" gets solved). Try-it button destination TBD.
+  CONFLICT: the live Export to Figma page says frames arrive without Auto Layout. The insight bank says auto layout, variables and nesting stay intact. This page only claims editable layers with variables attached. Confirm with eng, then add Auto Layout back to step 4 and asset 6.3 if it's shipped. */}
+
+PMs can now mock up an idea in minutes. Then a designer spends a day or two rebuilding it in Figma so the team can actually use it. Two product teams told us this rebuild cost them one to two days on every handoff.
+
+Figr removes the rebuild. The mock goes to Figma as real, editable design.
+
+<Note>
+  **The short version:** A PM brings a rough mock, sketch or screenshot. Figr turns it into a prototype in your design system, and one click sends it to Figma as editable layers with your variables attached. Designers refine instead of redraw.
+</Note>
+
+## How it works
+
+<Steps>
+  <Step title="Bring the mock">
+    Upload a screenshot, a sketch or an AI-generated mock. In the Ledgerly example: a PM's rough mock of a new approvals screen.
+
+    <Info>
+      **Asset needed · 6.1**: The PM's rough Ledgerly approvals mock (screenshot or sketch) attached in the composer.
+    </Info>
+  </Step>
+  <Step title="Figr rebuilds it in your system">
+    Figr turns the mock into a prototype that uses your tokens and components, not the mock's one-off styles.
+  </Step>
+  <Step title="Export to Figma">
+    Select the prototype and choose **Export to Figma**. It runs through the Figr Figma plugin you already use for Figma input.
+  </Step>
+  <Step title="Pick up in Figma">
+    The design lands in your Figma file as editable layers with your variables attached, ready for a designer to refine and hand off.
+
+    <Info>
+      **Asset needed · 6.2**: Screenshot of the Ledgerly approvals screen in Figma with the layers panel and variables panel open.
+    </Info>
+  </Step>
+</Steps>
+
+## See it work
+
+The moment that matters: open the Figma layers panel and see a real, structured design, not a flat image.
+
+<Info>
+  **Asset needed · 6.3 (proof moment)**: 20–30s video. Left: the PM's rough mock. Then the Figr prototype, Export to Figma, and the final shot inside Figma with the layers panel expanded and variables bound to the design.
+</Info>
+
+## What changes for your team
+
+- **PMs** share ideas designers can use, not ideas they have to redraw.
+- **Designers** get back the days spent rebuilding.
+- **Handoffs** keep your variables, so the design stays on system.
+
+## Go further
+
+Want exports that use your real components? Connect your design system once and every export uses it.
+
+<Card title="Design system" icon="arrow-right" horizontal href="/product-intelligence/design-system">
+</Card>
+
+## Try it
+
+Copy this prompt into Figr with a mock of your own:
+
+```text
+Turn this mock of Ledgerly's approvals screen into a prototype using our design system, ready to export to Figma.
+```
+
+{/* CTA placeholder: "Try this in Figr" button, opens the prompt as an editable template in the composer (never auto-sent). Destination TBD. */}
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Export to Figma" href="/export/figma">
+    Step-by-step export and what comes across.
+  </Card>
+  <Card title="Hand off in your team's code" href="/what-figr-does/handoff-to-engineering">
+    Next step: take the design straight to engineering.
+  </Card>
+</CardGroup>

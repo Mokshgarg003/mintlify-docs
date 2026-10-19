@@ -1,0 +1,85 @@
+---
+title: "See every screen a change touches before you scope it"
+sidebarTitle: "See what a change touches"
+description: "Trace one change across every screen it touches before you scope it."
+icon: "diagram-project"
+---
+
+{/* REVIEW NOTES, remove before publishing
+  Go-further link: Context Pods. Try-it button destination TBD.
+  VERIFY with eng: impact tracing across code files needs a code/repo connection. If that's not generally available, drop "and code" from step 3 and the proof moment. */}
+
+Small changes rarely stay small. One team had three PMs working on the same payments page, each with their own change. Nobody saw the conflicts until development, when they cost the most to fix.
+
+Figr shows you everything a change touches before anyone scopes it.
+
+<Note>
+  **The short version:** Describe a change, like a new field or a new rule. Figr traces it across every screen and flow in your product that it affects, and shows what needs to change on each, so conflicts surface in planning instead of in development.
+</Note>
+
+## How it works
+
+<Steps>
+  <Step title="Describe the change">
+    One line is enough. In the Ledgerly example: adding a required cost center field to every expense.
+  </Step>
+  <Step title="Figr checks what it knows about your product">
+    Figr uses your Context Pod, the product knowledge it keeps for your team, to find every place the change shows up.
+
+    <Info>
+      **Asset needed · 3.1**: Screenshot of the Ledgerly Context Pod being used in the chat, with the prompt and the pod chip visible in the composer.
+    </Info>
+  </Step>
+  <Step title="Figr maps the impact">
+    You get every affected screen and component, side by side, with what needs to change on each and where changes overlap.
+
+    <Info>
+      **Asset needed · 3.2**: Screenshot of the impact map on the canvas: the cost center change linked to five or six Ledgerly screens (submit expense, approvals, reports, export, admin settings), with notes on each.
+    </Info>
+  </Step>
+  <Step title="Figr designs the updates">
+    Ask Figr to update the affected screens, and it designs them together so they stay consistent.
+  </Step>
+</Steps>
+
+## See it work
+
+The moment that matters: one field change, traced to every screen it touches, before a single ticket is written.
+
+<Info>
+  **Asset needed · 3.3 (proof moment)**: 20–30s video. The cost center prompt is sent, and the affected Ledgerly screens appear one by one on the canvas, linked to the change, ending on the full map.
+</Info>
+
+## What changes for your team
+
+- **PMs** scope with the full picture, not a guess.
+- **Several PMs on one area** see each other's changes before they collide.
+- **Engineers** stop finding missed screens mid-sprint.
+
+## Go further
+
+The more Figr knows about your product, the more it can trace. See how to build your team's Context Pod.
+
+<Card title="Context Pods" icon="arrow-right" horizontal href="/product-intelligence/context-pods">
+</Card>
+
+## Try it
+
+Copy this prompt into Figr and swap in your own change:
+
+```text
+We're adding a required cost center field to every expense in Ledgerly. Show every screen and component this change touches, and what needs to change on each.
+```
+
+{/* CTA placeholder: "Try this in Figr" button, opens the prompt as an editable template in the composer (never auto-sent). Destination TBD. */}
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Context Pods" href="/product-intelligence/context-pods">
+    Give Figr reusable knowledge of your product.
+  </Card>
+  <Card title="Add a feature to an existing journey" href="/what-figr-does/add-to-existing-journey">
+    Next step: design the change into the journey.
+  </Card>
+</CardGroup>
