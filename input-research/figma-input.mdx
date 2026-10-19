@@ -77,21 +77,11 @@ When you pull frames in, Figr reads more than the picture:
 
 ## Push designs back
 
-<Steps>
-  <Step title="Export from Figr">
-    On a Figr prototype, open the export dropdown and choose **Export to Figma**. This copies the frame data to your clipboard.
-  </Step>
-  <Step title="Run the plugin in Figma">
-    Open the Figr AI Figma Sync plugin in the file you want the frame in.
-  </Step>
-  <Step title="Paste">
-    The frame materializes on your Figma canvas as editable layers, ready to refine.
-  </Step>
-</Steps>
+Select a prototype, open **Export**, and choose **Export screens** or **Export all screens**. Frames land in Figma with auto layout, your variables mapped, and your library components as instances where Figr can match them. See [Export to Figma](/export/figma) for the full flow.
 
-<Warning>
-  The export direction has two limits today. Each export carries only the one frame you triggered it from, so move multiple frames one at a time. Pasted frames arrive as plain groups, so reapply Figma Auto Layout manually. Both are in active development; the handoff is one-shot in each direction, not a live round-trip.
-</Warning>
+## Set up a design system from Figma
+
+The same plugin builds your Figr design system. Choose which variables, styles, fonts, components, reference screens, icons, logos and images to bring in. See [Design System](/product-intelligence/design-system).
 
 ## Why Figma input beats a screenshot
 
@@ -119,7 +109,7 @@ When Figr analyzes an image, it estimates colors, guesses spacing, and approxima
 <Tip>
   - Select the relevant frames, not the whole file. A tighter selection is a clearer signal.
   - Always pair frames with a prompt. The selection tells Figr what to look at; the prompt tells it what to do.
-  - Set your design language with high-value frames: a style guide or tokens page, component library frames, pattern docs, and recent approved designs.
+  - Set up your design system with high-value frames: a style guide or tokens page, component library frames, pattern docs and recent approved designs.
 </Tip>
 
 Example prompts:
@@ -144,10 +134,10 @@ Your status lives in the plugin window in Figma. Click **Logout** to revoke acce
 
 | Issue | Fix |
 | --- | --- |
-| Plugin shows "0 Selected for sync" | Click directly on a frame in Figma; the count updates live |
-| Figr connector will not reference frames | Confirm the plugin shows Connected, then re-toggle the Figma connector |
-| Exported frame has no Auto Layout | Expected; reapply Auto Layout in Figma |
-| Only one frame came through on export | Expected; export each frame separately |
+| Plugin shows "0 Selected for sync" | Click directly on a frame on the Figma canvas, not in the layers panel |
+| Figr won't reference your frames | Check the plugin shows Connected, then reselect the frames |
+| The plugin says Figma is in the background | Bring the Figma window to the front. Figr continues once it's active |
+| Asked to choose a region | Pick US or EU to match your Figr workspace. Figr remembers it after you sign in |
 
 ## Related
 
@@ -164,23 +154,3 @@ Your status lives in the plugin window in Figma. Click **Logout** to revoke acce
     Where the export dropdown lives on a selected prototype.
   </Card>
 </CardGroup>
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0/P1 | Ownership: Self (Product verify) | Status: In Progress
-  Assets (placeholders, capture pending):
-  - figma-input-plugin.png, connected plugin panel in Figma
-  - figma-input-connector.png, Figma connector toggled on in the Figr composer
-  - figma-input-export.png (optional), Export to Figma from the prototype dropdown
-  VERIFY: plugin name string, exact connector label, whether multi-frame export or Auto Layout has shipped since this doc.
-  Reference links: Context Pods, Export to Figma, Item Actions
-  */}
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0/P1 | Ownership: Self (Product verify) | Status: In Progress
-  Assets (placeholders, capture pending):
-  - figma-input-plugin.png, connected plugin panel in Figma
-  - figma-input-connector.png, Figma connector toggled on in the Figr composer
-  - figma-input-export.png (optional), Export to Figma from the prototype dropdown
-  VERIFY: plugin name string, exact connector label, whether multi-frame export or Auto Layout has shipped since this doc.
-  Reference links: Context Pods, Export to Figma, Item Actions
-  */}

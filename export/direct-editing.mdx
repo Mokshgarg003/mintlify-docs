@@ -1,84 +1,53 @@
 ---
-title: "Direct Editing"
-description: "Inspect and edit text, colour, spacing, size, and layout directly on your design."
+title: "Direct editing"
+description: "Select an element in a prototype and change its text, colour, font, size, spacing, borders and radius, using your design system's values."
 sidebarTitle: "Direct editing"
 ---
 
-{/* GIF — replace with final Direct Editing GIF */}
-
-<Frame caption="Select an element to inspect its properties and edit it directly.">
+<Frame caption="Select an element to see and edit its properties.">
   <img
-    alt="Direct Editing in Figr"
-    lightAlt="Direct Editing in Figr"
-    darkAlt="Direct Editing in Figr"
+    alt="Direct editing panel showing the properties of a selected element"
     src="/direct-edit.png"
   />
 </Frame>
 
-Direct Editing lets you inspect and change individual elements on the canvas without sending a new prompt for every edit.
+Direct editing lets you change individual elements in a prototype without sending a new prompt for every edit.
 
-Select an element to view its properties, edit them directly, or prompt that element when the change needs more context.
+## Open it
 
-## Inspect an element
+Select the prototype and click **Edit** in its toolbar, or open it in **Full screen** and switch to the **Edit** tab. Then click the element you want to change.
 
-When you select an element, Figr shows the properties currently applied to it, including:
+## What you can change
 
-- Font
-- Colour
-- Size
-- Line height
-- Spacing
-- Position and alignment
+| Property | Examples |
+| --- | --- |
+| Text | Labels, headings, body copy |
+| Colour | Text, background, border |
+| Font | Family, weight, size, line height |
+| Size | Width and height |
+| Spacing | Padding and gaps |
+| Borders and radius | Border width and corner radius |
 
-This makes it easier to check the exact values behind the design instead of relying only on how it looks on the canvas.
+Changes preview live. Make several, then apply them together. Figr warns you if you try to leave Edit mode with changes you haven't applied.
 
-## Check design system usage
+## Your design system stays connected
 
-Direct Editing also shows how the selected element connects to your design system.
+When a design system is attached, the panel offers its values, so you pick a colour or spacing token instead of creating a one-off style. Edits to a shared component apply everywhere that component appears.
 
-You can see whether a value comes from an attached design system variable or uses a custom value. You can also check whether an element is tied to an existing component.
+## Prompt the selected element
 
-If a value sits outside your design system, Figr shows a warning. You can still use the value if you want to.
+When a change needs more context, type a prompt for the selected element instead. Figr changes only that element.
 
-## Edit properties directly
+Use a chat prompt when the change affects several elements or needs Figr to reason through the UX.
 
-You can change the selected element without starting another prompt.
-
-For example, you can:
-
-- Edit text
-- Change colour
-- Adjust spacing
-- Resize an element
-- Move or align an element
-- Switch to another value or variable
-
-This works well for precise changes where you already know the value or layout you want.
-
-## Variables and components stay connected
-
-Direct Editing works with the design system already attached to your project.
-
-When you edit an element, Figr applies the change back to the source with your design system and code context.
-
-If the element already uses an attached variable or component, Figr keeps that connection unless you choose to override it.
+## Related
 
 <CardGroup cols={2}>
-  <Card title="Design System" href="/product-intelligence/design-system">
-    Learn how Figr uses your components, variables, tokens, and visual rules.
+  <Card title="Edit without regenerating" href="/getting-started/tutorial/untitled-page-5">
+    When to edit and when to regenerate.
   </Card>
 
-  <Card title="Canvas" href="/canvas/canvas-overview">
-    Learn how screens, flows, reviews, and edits work together on the canvas.
+  <Card title="Design System" href="/product-intelligence/design-system">
+    How Figr uses your components and tokens.
   </Card>
 </CardGroup>
-
-## Use a prompt when needed
-
-Direct Editing does not replace prompting.
-
-Use direct editing when you know the exact change you want to make.
-
-Use a prompt when the change needs more context, affects several elements, or requires Figr to reason through the UX.
-
-You can prompt the selected element without leaving the editing flow.

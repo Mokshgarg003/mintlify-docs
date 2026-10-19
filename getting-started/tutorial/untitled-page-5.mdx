@@ -1,21 +1,60 @@
 ---
-title: "Edit Without Regenerating"
+title: "Edit without regenerating"
+description: "Change one part of a prototype or wireframe without regenerating the rest: edit values directly, or prompt just the selected element."
+sidebarTitle: "Edit without regenerating"
 ---
 
-{/* @aryan make it concise — actioned: led with the action, kept the problem and the decision rule as guidance, added the how-to step, dropped the marketing close */}
+Most AI tools regenerate the whole screen for one small change, so fixing a button shifts the layout and improving the copy breaks the spacing. In Figr, you change one part and the rest stays exactly as it was.
 
-Select & Edit changes one part of a screen, a section, component, layout area, or piece of copy, and leaves the rest exactly as it was. Most AI tools regenerate the whole screen for one small change, so fixing the button shifts the layout and improving the copy breaks the spacing. To use it, select the part you want to change on the canvas, then describe the edit. Figr applies it to that selection only. Reach for full regeneration when the direction itself is wrong, and Select & Edit when the direction is right but the details need work.
+Regenerate when the direction is wrong. Edit when the direction is right but the details need work.
 
-{/* VIDEO: Select and Edit demo */}
+<iframe src="https://www.youtube.com/embed/CPOe0DJfmyk?si=kKv3nfMBG1tFtXvt" title="Editing part of a design, before and after" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-<iframe src="https://www.youtube.com/embed/CPOe0DJfmyk?si=kKv3nfMBG1tFtXvt" title="Select and Edit demo with before and after" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+## Edit a prototype
 
-Good refinement prompts:
+<Steps>
+  <Step title="Enter Edit mode">
+    Select the prototype and click **Edit** in its toolbar, or open it in **Full screen** and switch to the **Edit** tab.
+  </Step>
+  <Step title="Select an element">
+    Click the text, button, card or section you want to change.
+  </Step>
+  <Step title="Change it directly or with a prompt">
+    Change its text, colour, font, size, spacing, borders or radius in the panel, or type a prompt for just that element. See [Direct editing](/export/direct-editing) for what you can change.
+  </Step>
+  <Step title="Preview, then apply">
+    Changes preview live. Make several edits, then apply them together. If you try to leave Edit mode with unapplied changes, Figr warns you first.
+  </Step>
+</Steps>
+
+<Note>
+  Editing a shared component applies the change everywhere that component appears in the prototype.
+</Note>
+
+## Edit a wireframe
+
+Wireframes support the same idea: change one part of a wireframe without generating the whole thing again.
+
+## Good prompts for a selected element
 
 - "Make this warning clearer."
 - "Use the side panel pattern from this reference."
 - "Add the empty state for users with no integrations."
-- "Make only this table section more compact."
+- "Make only this table more compact."
 - "Change the hierarchy in this card without changing the rest of the page."
 
-{/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/product-design-flow/03-08-multi-select-controls.png then change src to "/images/product-design-flow/03-08-multi-select-controls.png" */}
+## When to prompt instead
+
+Use a chat prompt when the change affects several screens, needs new content, or needs Figr to reason through the UX.
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Direct editing" href="/export/direct-editing">
+    What you can change and how design system values stay connected.
+  </Card>
+
+  <Card title="Item actions" href="/canvas/action-items">
+    The full prototype toolbar.
+  </Card>
+</CardGroup>

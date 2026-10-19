@@ -1,35 +1,51 @@
 ---
-title: "Files and Research"
-description: "Use context that lives outside the product screen: PRDs, CSVs, research, and the web."
+title: "Files and research"
+description: "Supported file types and size limits, attaching files to a message or the canvas, pasting links, and asking Figr to research the web and design inspiration."
 sidebarTitle: "Files and research"
 ---
 
-{/* DOC PLAN — remove before publishing
-  Format (K): MDX how-to with <Steps>
-  Priority (H): P1 | Ownership (F): Self (Product verify) | Status (G): In Progress
-  Assets (J): sheet tracks one "Screenshot Set" (05-05-files-research); doc shows two shots, split here:
-  - /images/inputs-and-research/05-05-files-research-upload.png — file upload inside the prompt box
-  - /images/inputs-and-research/05-05-files-research-output.png — research output beside a generated design direction
-  Reference links (L): 3.6 Create PRDs, 11 Prompt Library
-  VERIFY (M, I): supported file types, file-size limits, CSV expectations, web research behavior, how sources are surfaced
-  */}
+Use files and research when your context lives outside the product screen: PRDs, specs, research notes, analytics exports, customer feedback and references.
 
-Use files and research when your context lives outside the product screen. You can upload files such as screenshots, PDFs, PRDs, product specs, research docs, CSVs, analytics exports, customer feedback, and design references. Good file examples:
+## Add files
+
+In the chat box, open **Add files and more**, or drag files in.
 
 - Upload a PRD and ask Figr to find missing requirements
-- Upload an analytics CSV and ask Figr to identify UX opportunities
+- Upload an analytics CSV and ask Figr to find UX opportunities
 - Upload screenshots and ask Figr to audit the current flow
-- Upload research notes and ask Figr to suggest product directions
+- Upload research notes and ask Figr to suggest directions
 
-{/* SCREENSHOT — replace src with /images/inputs-and-research/05-05-files-research-upload.png once captured 
+## Supported files and limits
 
-  {/*<Frame caption="Upload a file directly in the prompt box">
-  ![File upload inside the Figr prompt box](https://placehold.co/1600x900/EEEEEE/31343C?text=05-05-files-research-upload.png) 
-  </Frame> */}
+| Type | Formats |
+| --- | --- |
+| Images | PNG, JPG, WebP, GIF, SVG |
+| Video | MP4, MOV, MKV, WebM |
+| Documents | PDF, Markdown (.md, .mdx), plain text |
+| Data and code | CSV, JSON, CSS, HTML, Mermaid |
+
+| Limit | Value |
+| --- | --- |
+| Per file | 100 MB |
+| All files in one message | 100 MB |
+| PDF pages read per message | 75 |
+| PDF in a Context Pod | 50 MB |
+
+<Warning>
+  Word (.docx), Excel (.xlsx) and PowerPoint (.pptx) files aren't supported. Export them to PDF, or paste the text, before adding them.
+</Warning>
+
+## Message or canvas?
+
+Files you attach in the chat box apply to that message only and don't land on the canvas. Add a file to the canvas when you want it visible next to the work, or to a [Context Pod](/product-intelligence/context-pods) to reuse it in every project.
+
+## Paste a link
+
+Paste a URL into your message and Figr reads the page. For pages behind a login, use [Figr Capture](/input-research/chrome-extension).
 
 ## Research before designing
 
-You can also ask Figr to use research and web context when you want to study patterns before designing. Use research to compare product patterns, study competitors, understand common UX approaches, ground a design in proven patterns, and explore options before generating screens. Good research prompts:
+Ask Figr to search the web and its design inspiration library when you want to study patterns before designing: compare competitors, understand common approaches, or ground a design in proven patterns.
 
 ```text
 Research how top B2B SaaS tools handle team permissions, then suggest a better IA for our permissions page.
@@ -43,13 +59,9 @@ Compare onboarding flows from similar products and suggest what we should learn 
 Find common patterns for analytics dashboards and turn them into a design direction for our product.
 ```
 
-{/* SCREENSHOT — replace src with /images/inputs-and-research/05-05-files-research-output.png once captured */}
-
-<Frame caption="Research output beside a generated design direction">
+<Frame caption="Research output next to a design direction">
   <img
     alt="Research output shown next to a generated design direction"
-    lightAlt="Research output shown next to a generated design direction"
-    darkAlt="Research output shown next to a generated design direction"
     src="/images/Research.avif"
   />
 </Frame>
