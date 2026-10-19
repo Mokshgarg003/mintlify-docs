@@ -1,101 +1,71 @@
 ---
-title: "Publish and Share"
-description: "Share one artifact publicly, or give your team access to the full project."
+title: "Publish and share"
+description: "Publish a prototype as a live link pinned to one version, or share the whole project with view or edit access."
 sidebarTitle: "Publish and share"
 ---
 
-{/* DOC PLAN — remove before publishing
-  Format (K): MDX how-to with <Steps>
-  Priority (H): P1 | Ownership (F): Product verify | Status (G): In Progress
-  Assets (J): sheet tracks one "Screenshot Set" (07-04-publish-share); doc shows three shots, split here:
-  - /images/export-and-share/07-04-publish-panel.png — publish panel with URL, status, and password option
-  - /images/export-and-share/07-04-published-page.png — published artifact page
-  - /images/export-and-share/07-04-project-share.png — Project Share modal with access settings and roles
-  Reference links (L): 7.1 Export Options, 8.4 Members and roles, 9.1 Canonical roles and permissions
-  VERIFY (M, I): publish URL behavior, password protection, unpublish behavior, project roles, and access settings
-  */}
+Publish and share is how people see your work outside your canvas. Publish one prototype as a live link, or share the whole project with your team.
 
-Publish and Share is how people see your work outside your Canvas. Publish one artifact as a public page, or share the whole project with your team.
+## Publish a prototype
 
-{/* SCREENSHOT — replace src with /images/export-and-share/07-04-publish-panel.png once captured */}
-
-<Frame caption="Publish panel with URL, status, and password option">
+<Frame caption="The publish panel">
   <img
-    alt="Publish panel showing public URL, status, and password option"
-    lightAlt="Publish panel showing public URL, status, and password option"
-    darkAlt="Publish panel showing public URL, status, and password option"
+    alt="Publish panel showing the public link, the published version and its status"
     src="/images/Publish-1.avif"
   />
 </Frame>
 
-## Publish an artifact
+Publishing turns one prototype into a link people can open without seeing the rest of your canvas. Use it to send a direction to a stakeholder, or to put a prototype in front of users.
 
-Turn one item into a public page so someone can review a single prototype, design direction, or artifact without seeing the full Canvas. For example: share a prototype with a stakeholder, send a direction to a client, or post a public review link. Published artifacts open through a public URL. Depending on your settings, you may also be able to add password protection.
+- **The link is pinned to a version.** It shows the exact version you published. Later edits don't change it.
+- **Update when you're ready.** The publish panel shows which version is live and flags when a newer one exists. Click **Update to latest** to move the link forward.
+- **The live link stays up while you update.** The new build finishes in the background, and the current link keeps working until it's done.
+- **Failed builds are visible.** If a build fails, the panel says so and lets you retry.
+- **Unpublish takes the link down.** The page stops loading for anyone who has it.
+- **Reviewers can comment on it.** Comments on a published prototype are pinned to a spot on the screen and stay there as reviewers pan and zoom.
 
-{/* SCREENSHOT — replace src with /images/export-and-share/07-04-published-page.png once captured */}
+<Note>
+  Password protection for shared links is available on the Max plan. Members with view-only access can't publish.
+</Note>
 
-{/* SCREENSHOT — replace src with /images/export-and-share/07-04-published-page.png once captured */}
-
-<Frame caption="A published artifact page">
+<Frame caption="A published prototype">
   <img
-    alt="A published artifact page opened through its public URL"
-    lightAlt="A published artifact page opened through its public URL"
-    darkAlt="A published artifact page opened through its public URL"
+    alt="A published prototype opened through its public link"
     src="/images/abc3.png"
   />
 </Frame>
 
 ## Share a project
 
-Give someone access to the full project, not just one public artifact. Use it when a teammate needs to view, edit, or collaborate on the whole Canvas: a designer refining outputs, a PM reviewing flows and PRDs, or an engineer inspecting implementation context.
+Share the whole project when someone needs the canvas, not just one prototype: a designer refining outputs, a PM reviewing flows and PRDs, or an engineer checking implementation context.
 
-{/* SCREENSHOT — replace src with /images/export-and-share/07-04-project-share.png once captured */}
-
-{/* SCREENSHOT — replace src with /images/export-and-share/07-04-project-share.png once captured */}
-
-<Frame caption="Project Share modal with access settings and roles">
+<Frame caption="Project share settings">
   <img
-    alt="Project Share modal showing access settings and roles"
-    lightAlt="Project Share modal showing access settings and roles"
-    darkAlt="Project Share modal showing access settings and roles"
+    alt="Project share modal showing who has access and their access level"
     src="/images/Share-1.avif"
-    className="dark:hidden"
-  />
-  <img
-    alt="Project Share modal showing access settings and roles"
-    lightAlt="Project Share modal showing access settings and roles"
-    darkAlt="Project Share modal showing access settings and roles"
-    src="https://placehold.co/1600x900/EEEEEE/31343C?text=07-04-project-share.png"
-    className="hidden dark:block"
   />
 </Frame>
 
+Choose who can open the project:
+
+| Access | Who it covers |
+| --- | --- |
+| Only invited people | People you add by email |
+| Everyone in your workspace | All members of your workspace |
+| Anyone with the link | Anyone who has the URL |
+
+Each option can be set to **Can view** or **Can edit**.
+
+People who open a shared project without joining your workspace can still comment and reply once they sign in. Only workspace members can resolve or delete comment threads.
+
 ## Related
 
-<CardGroup cols={1}>
-  <Card title="Export Options" href="/designing/export/one-click-figma">
+<CardGroup cols={2}>
+  <Card title="Export options" href="/export/options">
     Choose the right handoff path.
   </Card>
 
-  {/*<Card title="Members and roles" href="/account/team-management">
-    Who can access a shared project.
+  <Card title="Export to Figma" href="/export/figma">
+    Send screens to Figma with auto layout and your components.
   </Card>
-
-  <Card title="Roles and permissions" href="/designing/collaboration/permissions">
-    The full permission model.
-  </Card>*/}
-</CardGroup>
-
-<CardGroup cols={1}>
-  <Card title="Export Options" href="/designing/export/one-click-figma">
-    Choose the right handoff path.
-  </Card>
-
-  {/*<Card title="Members and roles" href="/account/team-management">
-    Who can access a shared project.
-  </Card>
-
-  <Card title="Roles and permissions" href="/designing/collaboration/permissions">
-    The full permission model.
-  </Card>*/}
 </CardGroup>
