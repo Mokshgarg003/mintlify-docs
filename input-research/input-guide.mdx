@@ -1,45 +1,48 @@
 ---
-title: "Input Guide"
-description: "Choose the right input based on what you want Figr to understand."
+title: "Input guide"
+description: "Choose the right input for what you want Figr to understand: recordings, Figr Capture, Figma, files, links, connectors or Context Pods."
 sidebarTitle: "Input guide"
 ---
 
-{/* DOC PLAN — remove before publishing
-  Format (K): MDX tabs/cards + comparison table
-  Priority (H): P0 | Ownership (F): Self | Status (G): In Progress
-  Assets (J):
-  - No graphic required (use the table + cards below)
-  - Doc references an optional decision-tree graphic ("What are you trying to do?" → recommended input); not in the Graphics Checklist
-  Reference links (L): 5.2 Screen recordings, 5.3 Chrome extension, 5.4 Figma input, 5.5 Files and Research
-  VERIFY (M, I): none
-  */}
-
-Pick inputs that match what you want Figr to understand. The closer the match, the less generic the output.
+Pick inputs that match what you want Figr to understand. The closer the match, the less generic the output. Add any of them from **Add files and more** in the chat box.
 
 | Goal | Use these inputs | Best for |
 | --- | --- | --- |
-| Understand an existing product | Screen recordings, Chrome extension, screenshots, Figma frames | Redesigns, UX audits, existing product improvements |
-| Follow your design system | Figma input, design files, component examples, tokens | Matching visual language, creating Figma-ready outputs |
-| Understand requirements | PRDs, docs, PDFs, pasted text, product briefs | PRD-to-design workflows, feature planning, requirements review |
-| Reason from user behavior | Analytics, CSVs, support tickets, research notes, user feedback | Funnel improvement, activation flows, product discovery |
-| Study a live page or competitor | Chrome extension, URL input, website capture, screenshots | Landing page analysis, competitor research, web app audits |
+| Understand an existing product | Screen recordings, Figr Capture, screenshots, Figma frames | Redesigns, UX audits, improving what exists |
+| Follow your design system | A [Design System](/product-intelligence/design-system) from Figma, Storybook, npm or code | On-brand screens and Figma-ready output |
+| Understand requirements | PRDs, PDFs, pasted text, product briefs | PRD-to-design, feature planning, requirements review |
+| Reason from user behavior | Analytics CSVs, research notes, feedback, or a connected Mixpanel or Amplitude | Funnel fixes, activation flows, discovery |
+| Use live team context | [Connectors](/product-intelligence/connectors) like Notion, Linear, Asana, Slack or GitHub | Designing from current specs, tickets and code |
+| Study a live page or competitor | Figr Capture, a pasted URL, screenshots | Landing page analysis, competitor research |
+
+<Tip>
+  Inputs you add to a message apply to that message. To reuse them in every project, put them in a [Context Pod](/product-intelligence/context-pods).
+</Tip>
 
 ## Pick an input
 
 <CardGroup cols={2}>
   <Card title="Screen recordings" href="/input-research/screen-recording">
-    Teach Figr a flow that one screenshot cannot explain.
+    Teach Figr a flow that one screenshot can't explain.
   </Card>
 
-  <Card title="Chrome extension" href="/input-research/chrome-extension">
-    Capture live product pages with structure, not just a flat image.
+  <Card title="Figr Capture" href="/input-research/chrome-extension">
+    Capture live pages, including behind a login, with their structure.
   </Card>
 
   <Card title="Figma input" href="/input-research/figma-input">
-    Bring in components, layout, and variants from existing design work.
+    Bring in frames, components and values from Figma.
   </Card>
 
-  <Card title="Files and Research" href="/input-research/files-research">
-    Use PRDs, CSVs, research, and web context that live outside the screen.
+  <Card title="Files and research" href="/input-research/files-research">
+    Supported files, limits, links and web research.
+  </Card>
+
+  <Card title="Context Pods" href="/product-intelligence/context-pods">
+    Reusable product knowledge for every project.
+  </Card>
+
+  <Card title="Connectors" href="/product-intelligence/connectors">
+    Live context from the tools your team uses.
   </Card>
 </CardGroup>
