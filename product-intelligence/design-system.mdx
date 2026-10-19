@@ -1,78 +1,131 @@
 ---
 title: "Design System"
-description: "Import your design system once and Figr designs with your actual components, tokens, and patterns, not generic UI."
-sidebarTitle: "Design system"
+description: "Set up your design system from Figma, Storybook, npm, GitHub, code files or brand assets, so every screen Figr builds uses your real tokens and components."
+sidebarTitle: "Design System"
 ---
 
-## Setting up your Design Language
+With your design system in Figr, every screen uses your real colours, type and components from the first message. You spend less time fixing off-brand drafts and more time on the design itself.
 
-<iframe src="https://www.youtube.com/embed/1au0OBqrfl4" title="Setting up your Design Language" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+A design system can pull from several sources at once: Figma, Storybook, an npm package, a GitHub repo, uploaded code files, connectors and brand assets.
 
-### Open Design Language
+## Create a design system
 
-From the sidebar, click **Design Language**. The setup screen has two sections: sources and instructions.
+<Steps>
+  <Step title="Start a new design system">
+    In the sidebar, open **Design System** and create a new one. Give it a name and choose who can use it: just you, everyone in your workspace to view, or everyone to edit.
+  </Step>
+  <Step title="Add one or more sources">
+    Under **Sources**, pick where your design system lives. See the options below.
+  </Step>
+  <Step title="Set it up">
+    Click **Setup design system**. Figr reads your sources and builds the design system, with your tokens, components, assets and guidance on when to use each component.
+  </Step>
+</Steps>
 
-### Upload product screenshots
+## Choose your sources
 
-The first section takes screenshots and files. Upload your existing product screens, Figma frames exported as images, UI mockups, component examples, and CSS or style files. Drag and drop into the upload area, or click to browse.
+<Tabs>
+  <Tab title="Figma">
+    Bring in your Figma variables, styles and components with the **Figr AI Figma Sync** plugin.
+
+    1. Under **Sources**, choose **Figma**, then click **Open Figma plugin**.
+    2. Run **Figr AI Figma Sync** in your design system file and check it shows **Connected**.
+    3. Select what Figr should learn from: variables, styles, fonts, components, reference screens, icons, logos and images.
+    4. Click **Setup design system**.
+
+    <Note>
+      Your colours, type and spacing need to be set up as variables or styles in Figma. Figr can't pick up values that only live on individual layers.
+    </Note>
+
+    Include a few reference screens with your components. They show Figr how components are used together, not just what they look like.
+  </Tab>
+  <Tab title="Storybook">
+    Point Figr at your published Storybook, so it designs with the components your engineers already ship.
+
+    1. Under **Sources**, choose **Storybook**.
+    2. Paste the URL of your published Storybook.
+    3. Click **Setup design system**. Figr reads your components, their variants and states.
+
+    Make sure each component has stories for its main variants and states, like default, hover, disabled and error. Figr can only use what your stories show.
+  </Tab>
+  <Tab title="npm package">
+    Use your published component library directly.
+
+    1. Under **Sources**, choose **npm package**.
+    2. Enter the package name, like `@yourcompany/design-system`, and the version you want.
+    3. Click **Setup design system**.
+
+    When you publish a new version of your package, update the version in Figr so new designs use your latest components.
+  </Tab>
+  <Tab title="GitHub or code files">
+    Build your design system from your codebase, so designs line up with what's actually built.
+
+    1. Under **Sources**, choose **GitHub**, select the repo, and the folder where your design system lives if it isn't at the root.
+    2. Click **Setup design system**.
+
+    Not on GitHub? Upload your theme or style files, like CSS or token files, as a source instead.
+
+    Point Figr at the folder that holds your tokens and shared components, not the whole app. A focused source gives cleaner results.
+  </Tab>
+  <Tab title="Brand assets">
+    No full design system yet? A few brand assets are enough for Figr to match your look.
+
+    1. Under **Sources**, choose **Brand assets**.
+    2. Upload your logo, brand colours, fonts, icons and a few screenshots of your product or site. Add a short note for any rules, like "Use our primary blue only for buttons."
+    3. Click **Setup design system**.
+
+    Five screenshots give Figr a basic read of your style. Around 20 give it a much deeper one.
+  </Tab>
+</Tabs>
 
 <Tip>
-  **The more you upload, the better.** Figr analyzes every image to learn your visual patterns. Five screenshots give a basic read; twenty give deep pattern recognition.
+  No design system attached at all? Figr can pick up your colours, fonts and logo from your website automatically.
 </Tip>
 
-### Add design instructions
+## Use it in a project
 
-The second section lets you describe your design language in text:
+Pick a design system when you create a canvas, or switch at any time from the chat box.
 
-- Style ("minimal, lots of whitespace")
-- Color ("primary is purple #6366f1")
-- Typography ("Inter for UI, system fonts for body")
-- Spacing ("8px base unit")
-- Components ("rounded buttons, subtle shadows")
-- Any specific rules or constraints
+<Steps>
+  <Step title="Open the design system picker">
+    In the chat box, click the design system chip to see every design system you can use.
+  </Step>
+  <Step title="Find the one you want">
+    Search by name. Your workspace default and most-used design systems are marked so they're easy to spot.
+  </Step>
+  <Step title="Select it and send">
+    Figr uses the selected design system for your next message and the ones after it, until you switch again.
+  </Step>
+</Steps>
 
-You can also attach files for CSS, tokens, or documentation, add Figma frames to import directly, or use voice input to describe your style out loud.
+Want the same screen in two styles? Ask for it once, switch design systems, then ask again. You'll get both side by side on the canvas.
 
-### Complete setup
+## Set a default for your workspace
 
-Click **Setup design language**. Figr analyzes the uploads, extracts color, typography, and spacing, identifies component patterns, combines them with your written instructions, and generates your design language profile.
+Admins can set a default design system that new projects attach automatically. If there's no default, Figr recommends the most-used one in the picker.
 
-## Editing your Design Language
+## Hand off with your design system
 
-After setup, Figr generates a structured CSS tokens document with your design language.
-
-<iframe src="https://www.youtube.com/embed/XMysFmnuE1Y" title="Editing your Design Language" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
-
-### View your tokens
-
-Open **Design Language** in the sidebar to see your tokens organized by category: Typography, Colors Brand, Colors Neutrals, and Colors Icons. Each token carries a usage comment, like `/* Card titles */` or `/* Primary text */`.
-
-### Edit tokens
-
-Click **Edit** (bottom right), make changes directly in the document, and use the toolbar for headings, bold, italic, links, and lists. Click **Save changes** to apply, or **Discard** to cancel.
-
-### Regenerate tokens
-
-Click **Regenerate** to have Figr re-analyze your uploads, review the new document, edit if needed, then save.
+- **Export to Figma.** Elements that match your Figma library export as instances of your components. See [Export to Figma](/export/figma).
+- **Coding agents.** Agents connected through [Figr MCP](/export/mcp) can read your components and tokens and build against them.
 
 ## Why it matters
 
-Generic AI output looks generic: wrong colors, wrong spacing, wrong button styles. You spend more time fixing than you saved.
-
-With a design system imported, every design that follows uses your exact tokens, your component variants, and your spacing scale. The output looks like it belongs in your product because it uses your product's building blocks.
-
-| Without Design System | With Design System |
+| Without a design system | With your design system |
 | --- | --- |
-| Generic components that need restyling | Your actual components with correct variants |
-| Colors that miss your brand | Your exact color tokens, applied automatically |
-| Spacing that feels off | Your spacing scale enforced throughout |
-| Typography that needs manual fixing | Your type hierarchy respected |
-| Components that are not in your library | Designs that match your Figma library |
+| Generic components that need restyling | Your actual components with the right variants |
+| Colours that miss your brand | Your colour tokens, applied automatically |
+| Spacing that feels off | Your spacing scale throughout |
+| Typography that needs fixing | Your type hierarchy respected |
 
-For "Design a settings page," that is the difference between a template with arbitrary colors and default styles, and a page using your accent color, your Inter typography, your 8px grid, your button style, and your card shadows, one that looks like your product.
+## Related
 
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0 | Ownership: Self | Status: In Progress
-  Videos kept: 1au0OBqrfl4 (setup), XMysFmnuE1Y (editing)
-  VERIFY: exact button labels (Setup design language, Edit, Regenerate), token category names.
-  */}
+<CardGroup cols={2}>
+  <Card title="Context Pods" href="/product-intelligence/context-pods">
+    Teach Figr what your product is and how it works.
+  </Card>
+
+  <Card title="Figma input" href="/input-research/figma-input">
+    Bring Figma frames into a project.
+  </Card>
+</CardGroup>
