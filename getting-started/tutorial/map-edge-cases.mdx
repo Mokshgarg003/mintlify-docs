@@ -1,55 +1,56 @@
 ---
-title: "Map flows and edge cases"
-description: "Map a user flow and every state around it, then turn it into screens: loading, empty, error and success states on the Screens board."
+title: "Map edge cases"
+description: "Find the empty states, errors, permission and data-limit cases a screen or flow needs, then design the ones that matter."
 sidebarTitle: "Map edge cases"
 ---
 
-<Frame caption="Figr maps the happy path and every state around it.">
-  <img
-    alt="Happy path versus a full edge-case map"
-    src="/images/Map-Edge-Cases.avif"
-    className="dark:hidden"
-  />
-  <img
-    alt="Happy path versus a full edge-case map"
-    src="/images/03-05-edge-case-flow.png"
-    className="hidden dark:block"
-  />
-</Frame>
+_Find what can go wrong before your users do._
 
-The happy path is the easy part. Figr maps the states that actually break products:
-
-- **Input and data**: empty, loading, partial data, validation errors
-- **Access and session**: permission states, access changes, session expiry
-- **System and network**: error states, retries, network failures, slow connections
-- **Money and destructive actions**: payment failures, confirmation steps, deletes
-
-## Map a flow
+Edge cases are the situations a happy-path design misses: empty states, errors, slow connections, permissions, long names, and users who do things in an unexpected order. Figr looks at your screen or flow and lists the cases worth designing for.
 
 <Steps>
-  <Step title="Describe the journey">
-    Say who the user is, where they start and what they're trying to do. Attach your [Context Pod](/product-intelligence/context-pods) so the flow follows how your product works today.
+  <Step title="Bring in what you want to check">
+    Select a screen, flow or prototype on your canvas, or upload a screenshot of a live screen.
   </Step>
-  <Step title="Review the flow on the canvas">
-    Figr draws the flow as an editable diagram with steps, decisions and branches. Check the happy path first, then the branches.
+  <Step title="Attach your Context Pod">
+    Select your pod in the chat so Figr knows your users, roles and product rules.
   </Step>
-  <Step title="Refine it">
-    Ask for a missing step or another branch, like "Add what happens when the invite email bounces." You can also edit the diagram directly.
+  <Step title="Ask Figr to map the edge cases">
+    For example: "What edge cases should we design for on this checkout flow?"
+  </Step>
+  <Step title="Review the list">
+    Figr groups the cases by type, such as empty states, errors, permissions and data limits. Decide which ones need a design.
+
+    <Frame caption="Figr maps the happy path and every state around it.">
+      <img
+        alt="Happy path versus a full edge-case map"
+        src="/images/Map-Edge-Cases.avif"
+        className="dark:hidden"
+      />
+      <img
+        alt="Happy path versus a full edge-case map"
+        src="/images/03-05-edge-case-flow.png"
+        className="hidden dark:block"
+      />
+    </Frame>
+  </Step>
+  <Step title="Design the ones that matter">
+    Ask Figr to design the screens or states for the cases you picked. For example: "Design the payment failed and expired card states."
   </Step>
 </Steps>
 
-## Example prompts
+<Tip>
+  Map edge cases before handoff, not after. It's cheaper to design an error state now than to fix it once it ships.
+</Tip>
 
-- "Map the file upload flow, including file too large, unsupported type, network failure, storage limit and access revoked."
-- "Map the billing upgrade flow, including payment failure, expired card, permission restriction and downgrade impact."
-- "Map the password reset flow, including invalid email, expired link, used link, rate limit and success."
+## Next
 
-## Turn states into screens
+<CardGroup cols={2}>
+  <Card title="Generate test cases" href="/create/test-cases">
+    Turn each edge case into a test.
+  </Card>
 
-Once a prototype exists, open its **Screens** view to see every route and state on one board, with loading, empty, error and success states as separate frames. Click **Generate screens** and Figr proposes and builds the states that are missing.
-
-Export the whole board to Figma in one run with **Export all screens**.
-
-## Why it matters
-
-Edge cases aren't a nice-to-have. They're the product. When the flow is mapped before any screen is polished, designers see which states to build, engineers see the behavior to expect, and PMs get a sharper spec.
+  <Card title="Build a prototype" href="/getting-started/tutorial/prototypes">
+    Design the states that matter.
+  </Card>
+</CardGroup>

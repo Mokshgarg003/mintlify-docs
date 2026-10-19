@@ -1,131 +1,48 @@
 ---
-title: "Design System"
-description: "Set up your design system from Figma, Storybook, npm, GitHub, code files or brand assets, so every screen Figr builds uses your real tokens and components."
-sidebarTitle: "Design System"
+title: "Set up your design system from Figma"
+description: "Bring your Figma variables, styles, components, icons and reference screens into Figr with the Figr AI Figma Sync plugin."
+sidebarTitle: "From Figma"
 ---
 
+_Bring your Figma variables, styles and components into Figr, so every screen it makes looks like your product._
+
 With your design system in Figr, every screen uses your real colours, type and components from the first message. You spend less time fixing off-brand drafts and more time on the design itself.
-
-A design system can pull from several sources at once: Figma, Storybook, an npm package, a GitHub repo, uploaded code files, connectors and brand assets.
-
-## Create a design system
 
 <Steps>
   <Step title="Start a new design system">
     In the sidebar, open **Design System** and create a new one. Give it a name and choose who can use it: just you, everyone in your workspace to view, or everyone to edit.
   </Step>
-  <Step title="Add one or more sources">
-    Under **Sources**, pick where your design system lives. See the options below.
+  <Step title="Open the Figma plugin">
+    Under **Sources**, choose **Figma**, then click **Open Figma plugin**. Run **Figr AI Figma Sync** in your design system file and check that it shows **Connected**.
+  </Step>
+  <Step title="Choose what to bring in">
+    Select what Figr should learn from: variables, styles, fonts, components, reference screens, icons, logos and images.
   </Step>
   <Step title="Set it up">
-    Click **Setup design system**. Figr reads your sources and builds the design system, with your tokens, components, assets and guidance on when to use each component.
+    Click **Setup design system**. Figr reads your selection and builds your design system.
   </Step>
 </Steps>
 
-## Choose your sources
-
-<Tabs>
-  <Tab title="Figma">
-    Bring in your Figma variables, styles and components with the **Figr AI Figma Sync** plugin.
-
-    1. Under **Sources**, choose **Figma**, then click **Open Figma plugin**.
-    2. Run **Figr AI Figma Sync** in your design system file and check it shows **Connected**.
-    3. Select what Figr should learn from: variables, styles, fonts, components, reference screens, icons, logos and images.
-    4. Click **Setup design system**.
-
-    <Note>
-      Your colours, type and spacing need to be set up as variables or styles in Figma. Figr can't pick up values that only live on individual layers.
-    </Note>
-
-    Include a few reference screens with your components. They show Figr how components are used together, not just what they look like.
-  </Tab>
-  <Tab title="Storybook">
-    Point Figr at your published Storybook, so it designs with the components your engineers already ship.
-
-    1. Under **Sources**, choose **Storybook**.
-    2. Paste the URL of your published Storybook.
-    3. Click **Setup design system**. Figr reads your components, their variants and states.
-
-    Make sure each component has stories for its main variants and states, like default, hover, disabled and error. Figr can only use what your stories show.
-  </Tab>
-  <Tab title="npm package">
-    Use your published component library directly.
-
-    1. Under **Sources**, choose **npm package**.
-    2. Enter the package name, like `@yourcompany/design-system`, and the version you want.
-    3. Click **Setup design system**.
-
-    When you publish a new version of your package, update the version in Figr so new designs use your latest components.
-  </Tab>
-  <Tab title="GitHub or code files">
-    Build your design system from your codebase, so designs line up with what's actually built.
-
-    1. Under **Sources**, choose **GitHub**, select the repo, and the folder where your design system lives if it isn't at the root.
-    2. Click **Setup design system**.
-
-    Not on GitHub? Upload your theme or style files, like CSS or token files, as a source instead.
-
-    Point Figr at the folder that holds your tokens and shared components, not the whole app. A focused source gives cleaner results.
-  </Tab>
-  <Tab title="Brand assets">
-    No full design system yet? A few brand assets are enough for Figr to match your look.
-
-    1. Under **Sources**, choose **Brand assets**.
-    2. Upload your logo, brand colours, fonts, icons and a few screenshots of your product or site. Add a short note for any rules, like "Use our primary blue only for buttons."
-    3. Click **Setup design system**.
-
-    Five screenshots give Figr a basic read of your style. Around 20 give it a much deeper one.
-  </Tab>
-</Tabs>
+<Warning>
+  **Before you start:** your colours, type and spacing need to be set up as variables or styles in Figma. Figr can't pick up values that only live on individual layers.
+</Warning>
 
 <Tip>
-  No design system attached at all? Figr can pick up your colours, fonts and logo from your website automatically.
+  Include a few reference screens along with your components. They show Figr how your components are used together, not just what they look like.
 </Tip>
 
-## Use it in a project
+## Other sources
 
-Pick a design system when you create a canvas, or switch at any time from the chat box.
+Your design system can also come from [Storybook](/design-system/storybook), an [npm package](/design-system/npm-package), your [code repo](/design-system/code-repo) or [brand assets](/design-system/brand-assets). You can combine several sources in one design system.
 
-<Steps>
-  <Step title="Open the design system picker">
-    In the chat box, click the design system chip to see every design system you can use.
-  </Step>
-  <Step title="Find the one you want">
-    Search by name. Your workspace default and most-used design systems are marked so they're easy to spot.
-  </Step>
-  <Step title="Select it and send">
-    Figr uses the selected design system for your next message and the ones after it, until you switch again.
-  </Step>
-</Steps>
-
-Want the same screen in two styles? Ask for it once, switch design systems, then ask again. You'll get both side by side on the canvas.
-
-## Set a default for your workspace
-
-Admins can set a default design system that new projects attach automatically. If there's no default, Figr recommends the most-used one in the picker.
-
-## Hand off with your design system
-
-- **Export to Figma.** Elements that match your Figma library export as instances of your components. See [Export to Figma](/export/figma).
-- **Coding agents.** Agents connected through [Figr MCP](/export/mcp) can read your components and tokens and build against them.
-
-## Why it matters
-
-| Without a design system | With your design system |
-| --- | --- |
-| Generic components that need restyling | Your actual components with the right variants |
-| Colours that miss your brand | Your colour tokens, applied automatically |
-| Spacing that feels off | Your spacing scale throughout |
-| Typography that needs fixing | Your type hierarchy respected |
-
-## Related
+## Next
 
 <CardGroup cols={2}>
-  <Card title="Context Pods" href="/product-intelligence/context-pods">
-    Teach Figr what your product is and how it works.
+  <Card title="Import from your code repo" href="/design-system/code-repo">
+    Build your design system from code.
   </Card>
 
-  <Card title="Figma input" href="/input-research/figma-input">
-    Bring Figma frames into a project.
+  <Card title="Add brand assets" href="/design-system/brand-assets">
+    No full design system yet? Start here.
   </Card>
 </CardGroup>

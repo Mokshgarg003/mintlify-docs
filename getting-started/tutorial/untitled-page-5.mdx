@@ -1,60 +1,50 @@
 ---
-title: "Edit without regenerating"
-description: "Change one part of a prototype or wireframe without regenerating the rest: edit values directly, or prompt just the selected element."
-sidebarTitle: "Edit without regenerating"
+title: "Manual edit"
+description: "Change text, colours, spacing and layout on a screen yourself in Edit mode, or prompt a selected element, without regenerating the rest."
+sidebarTitle: "Manual edit"
 ---
 
-Most AI tools regenerate the whole screen for one small change, so fixing a button shifts the layout and improving the copy breaks the spacing. In Figr, you change one part and the rest stays exactly as it was.
+_Make small changes yourself, without writing a prompt._
 
-Regenerate when the direction is wrong. Edit when the direction is right but the details need work.
-
-<iframe src="https://www.youtube.com/embed/CPOe0DJfmyk?si=kKv3nfMBG1tFtXvt" title="Editing part of a design, before and after" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
-
-## Edit a prototype
+Some changes are faster to make than to describe. Edit text, colours, spacing and layout directly on the canvas, and use chat for bigger changes like new sections or a different layout.
 
 <Steps>
-  <Step title="Enter Edit mode">
-    Select the prototype and click **Edit** in its toolbar, or open it in **Full screen** and switch to the **Edit** tab.
+  <Step title="Open the screen">
+    Find the screen on your canvas and double-click it to open full screen. Switch to the **Edit** tab.
   </Step>
-  <Step title="Select an element">
-    Click the text, button, card or section you want to change.
+  <Step title="Click the element you want to change">
+    Select any text, button, image or container on the screen. Its properties appear in the panel.
+
+    <Frame>
+      <img
+        alt="Edit panel showing the properties of a selected element"
+        src="/direct-edit.png"
+      />
+    </Frame>
   </Step>
-  <Step title="Change it directly or with a prompt">
-    Change its text, colour, font, size, spacing, borders or radius in the panel, or type a prompt for just that element. See [Direct editing](/export/direct-editing) for what you can change.
+  <Step title="Make your change">
+    Type to update text, or change colour, size, spacing and alignment in the properties panel.
   </Step>
-  <Step title="Preview, then apply">
-    Changes preview live. Make several edits, then apply them together. If you try to leave Edit mode with unapplied changes, Figr warns you first.
+  <Step title="Prompt the changes">
+    Select a component, type the edit you want in the prompt box, and send it with your other queued changes.
+  </Step>
+  <Step title="Check the result">
+    Your change shows on the screen right away. Click another element to keep editing, or close the editor when you're done. If you try to leave with changes you haven't applied, Figr warns you first.
   </Step>
 </Steps>
 
-<Note>
-  Editing a shared component applies the change everywhere that component appears in the prototype.
-</Note>
+<Tip>
+  Edit by hand for quick fixes like copy, colour and spacing. Ask Figr in chat when the change affects the whole screen or several screens at once.
+</Tip>
 
-## Edit a wireframe
-
-Wireframes support the same idea: change one part of a wireframe without generating the whole thing again.
-
-## Good prompts for a selected element
-
-- "Make this warning clearer."
-- "Use the side panel pattern from this reference."
-- "Add the empty state for users with no integrations."
-- "Make only this table more compact."
-- "Change the hierarchy in this card without changing the rest of the page."
-
-## When to prompt instead
-
-Use a chat prompt when the change affects several screens, needs new content, or needs Figr to reason through the UX.
-
-## Related
+## Next
 
 <CardGroup cols={2}>
-  <Card title="Direct editing" href="/export/direct-editing">
-    What you can change and how design system values stay connected.
+  <Card title="Build a prototype" href="/getting-started/tutorial/prototypes">
+    Create a new prototype.
   </Card>
 
-  <Card title="Item actions" href="/canvas/action-items">
-    The full prototype toolbar.
+  <Card title="Run multiple chats on one canvas" href="/canvas/multiple-chats">
+    Work on several ideas in parallel.
   </Card>
 </CardGroup>

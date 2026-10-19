@@ -1,55 +1,46 @@
 ---
-title: "High-fidelity prototypes"
-description: "Build clickable React or Angular prototypes in your design system, check every screen and state, preview themes, and publish or hand off."
-sidebarTitle: "Prototypes"
+title: "Build a prototype"
+description: "Describe what you want and get a clickable, high-fidelity prototype in your design system, with the states it needs."
+sidebarTitle: "Build a prototype"
 ---
 
-A prototype turns a clear product direction into working, high-fidelity screens in your design system. Because Figr holds your product context and design system, the output uses your existing patterns, components, spacing and typography. It's real front-end code, not a mockup you have to clean up.
+_Describe what you want to build and get a clickable, high-fidelity prototype you can test and share._
 
-<img
-  alt="Generated high-fidelity prototype on the canvas"
-  style={{ width:"93%" }}
-  src="/images/prototypes.png"
-/>
-
-## Build a prototype
+Figr turns a short description into a working prototype on your canvas: real screens, real interactions and your design system, not a static mockup. You can click through it, show it to stakeholders, and keep refining it in chat.
 
 <Steps>
   <Step title="Add your context">
-    Attach your Context Pod and design system, plus any screenshots, recordings or Figma frames that show where this fits in your product.
+    In the chat box, attach your Context Pod and design system, plus any screenshots, recordings or Figma frames that show where this fits in your product.
   </Step>
   <Step title="Describe what to build">
-    Say who it's for, what they need to do and where it fits. Figr may ask a few questions first. Answer them, or tell it to go ahead with its best guess.
+    Say who it's for, what they need to do, and where it fits. For example: "Build a mobile checkout for returning customers. They should be able to pay with a saved card in two taps."
   </Step>
-  <Step title="Click through it">
-    Select the prototype and click **Interact** to try it on the canvas, or **Full screen** to see it at device size.
+  <Step title="Answer any questions">
+    Figr may ask a few questions to fill gaps before it starts. Answer them, or tell it to go ahead with its best guess.
   </Step>
-  <Step title="Check every state">
-    Switch to the **Screens** view to see every route and state on one board. Use **Generate screens** to build the states that are missing.
+  <Step title="Click through your prototype">
+    The prototype appears on your canvas. Click **Interact** to try it, or **Full screen** to see it at device size.
+
+    <Frame>
+      <img
+        alt="A generated prototype on the canvas"
+        src="/images/prototypes.png"
+      />
+    </Frame>
+  </Step>
+  <Step title="Ask for the states">
+    Ask Figr to design the states a screen needs. For example: "Add empty, loading, error and success states for the order history screen."
   </Step>
   <Step title="Refine it">
-    Ask for changes in chat, or click **Edit** to change one part without regenerating the rest. See [Edit without regenerating](/getting-started/tutorial/untitled-page-5).
+    Ask for changes in chat, or [edit manually](/getting-started/tutorial/untitled-page-5) to change just one part without regenerating the rest.
   </Step>
 </Steps>
 
-## What you get
-
-- **React or Angular.** Prototypes are built in React by default, or Angular with Angular Material, with the same design system support.
-- **Your design system.** Components and tokens come from the design system you attach.
-- **Theme preview.** Preview supported prototypes in System, Light or Dark mode from full screen.
-- **Versions.** Every prototype keeps its own version history.
-
-## Good prompts
-
-- "Design a customer success dashboard showing account health, open risks, upcoming renewals and expansion opportunities. Use the attached design system and product context."
-- "Generate a billing settings page with plan details, invoices, payment method and team usage. Follow the existing settings layout and component patterns."
-- "Create the empty, loading and error states for this activity feed."
-
-Build a prototype when the problem is clear, the key flow is mapped and the important states are known. If they aren't, [brainstorm](/getting-started/tutorial/brainstorm) or [map the flow](/getting-started/tutorial/map-edge-cases) first.
+<Tip>
+  The more specific your first message, the better the first version. Mention the user, the goal and the states that matter, like empty, loading or error.
+</Tip>
 
 ## Examples
-
-Real prototypes built with Figr, each in the product's own design system:
 
 <CardGroup cols={3}>
   <Card title="Linear" href="https://app.figr.design/artifacts/b335e350-401c-4b76-8dc3-fb645a594908">
@@ -65,6 +56,14 @@ Real prototypes built with Figr, each in the product's own design system:
   </Card>
 </CardGroup>
 
-## Share and hand off
+## Next
 
-[Publish](/export/publish) a link for review, [export to Figma](/export/figma), or [open it in a coding agent](/export/mcp).
+<CardGroup cols={2}>
+  <Card title="Redesign an existing screen" href="/create/redesign">
+    Improve a screen you already have.
+  </Card>
+
+  <Card title="Map edge cases" href="/getting-started/tutorial/map-edge-cases">
+    Find what can go wrong before users do.
+  </Card>
+</CardGroup>

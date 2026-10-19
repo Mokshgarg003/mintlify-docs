@@ -1,0 +1,39 @@
+---
+title: "Set up your design system from Storybook"
+sidebarTitle: "From Storybook"
+description: "Point Figr at your published Storybook so it designs with the components, variants and states your engineers already ship."
+---
+
+*Point Figr at your Storybook, so it designs with the components your engineers already ship.*
+
+If your components live in Storybook, that's the most accurate picture of your design system: real components, real props and real states. Figr reads it, so what it designs maps to what your team can build.
+
+<Steps>
+  <Step title="Start a new design system">
+    Open **Design System** in the sidebar and create a new one, or open an existing one to add a source.
+  </Step>
+  <Step title="Choose Storybook as a source">
+    Under **Sources**, choose **Storybook**.
+  </Step>
+  <Step title="Add your Storybook link">
+    Paste the URL of your published Storybook.
+  </Step>
+  <Step title="Set it up">
+    Click **Setup design system**. Figr reads your components, their variants and states, and adds them to your design system.
+  </Step>
+</Steps>
+
+<Tip>
+  Make sure each component has stories for its main variants and states, like default, hover, disabled and error. Figr can only use what your stories show.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Import from an npm package" href="/design-system/npm-package">
+    Use your published component library.
+  </Card>
+  <Card title="Import from your code repo" href="/design-system/code-repo">
+    Build your design system from code.
+  </Card>
+</CardGroup>

@@ -59,11 +59,7 @@
                   "getting-started/tutorial/understanding-workflow",
                   "getting-started/tutorial/what-figr-creates",
                   "getting-started/tutorial/brainstorm",
-                  "getting-started/tutorial/review",
-                  "getting-started/tutorial/map-edge-cases",
-                  "getting-started/tutorial/create-prds",
-                  "getting-started/tutorial/prototypes",
-                  "getting-started/tutorial/untitled-page-5"
+                  "getting-started/tutorial/review"
                 ]
               }
             ]
@@ -71,49 +67,68 @@
           {
             "group": "Add your product context",
             "pages": [
+              "product-intelligence/context-pods",
+              "input-research/screen-recording",
+              "input-research/figma-input",
               "context/capture-public-page",
+              "input-research/chrome-extension",
+              "input-research/files-research",
+              "product-intelligence/connectors",
               "context/share-pod",
               "context/org-wide-context"
             ]
           },
           {
             "group": "Set up your design system",
-            "pages": []
+            "pages": [
+              "product-intelligence/design-system",
+              "design-system/storybook",
+              "design-system/npm-package",
+              "design-system/code-repo",
+              "design-system/brand-assets",
+              "design-system/switch-design-systems",
+              "design-system/update-figma-components"
+            ]
           },
           {
             "group": "Create with Figr",
-            "pages": []
+            "pages": [
+              "getting-started/tutorial/prototypes",
+              "create/redesign",
+              "create/map-user-flow",
+              "create/wireframes",
+              "getting-started/tutorial/create-prds",
+              "getting-started/tutorial/map-edge-cases",
+              "create/test-cases"
+            ]
           },
           {
             "group": "Work on the canvas",
-            "pages": []
-          },
-          {
-            "group": "Canvas",
             "pages": [
               "canvas/canvas-overview",
-              "canvas/action-items",
+              "getting-started/tutorial/untitled-page-5",
+              "canvas/multiple-chats",
               "canvas/organize",
+              "canvas/comments",
+              "canvas/annotations",
+              "canvas/duplicate-fork",
+              "canvas/action-items",
               "canvas/history-layers"
             ]
           },
           {
+            "group": "Canvas",
+            "pages": []
+          },
+          {
             "group": "Inputs and Research",
             "pages": [
-              "input-research/input-guide",
-              "input-research/screen-recording",
-              "input-research/chrome-extension",
-              "input-research/figma-input",
-              "input-research/files-research"
+              "input-research/input-guide"
             ]
           },
           {
             "group": "Product Intelligence",
-            "pages": [
-              "product-intelligence/design-system",
-              "product-intelligence/context-pods",
-              "product-intelligence/connectors"
-            ]
+            "pages": []
           },
           {
             "group": "Export and Share",

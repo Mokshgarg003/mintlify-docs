@@ -1,57 +1,53 @@
 ---
-title: "Create PRDs"
-description: "Turn a rough problem into a PRD, user stories, acceptance criteria, test cases and a flow on the canvas, then edit, share or download them."
-sidebarTitle: "Create PRDs"
+title: "Write PRDs and docs"
+description: "Draft PRDs, specs and other product docs from your Context Pod, refine them on the canvas, then map the flow."
+sidebarTitle: "Write PRDs and docs"
 ---
 
-A PM handoff isn't only a doc, and it isn't only a screen. From one rough problem, Figr builds the chain of artifacts a real handoff needs, and keeps them connected on one canvas.
+_Write product docs that already know your product._
 
-<img
-  alt="PRD, user stories, flow and prototype connected on the canvas"
-  style={{ width:"93%" }}
-  src="/images/PRD.avif"
-/>
-
-From a single problem, Figr can produce:
-
-- A PRD and requirements
-- User stories and acceptance criteria
-- Edge-case maps and key states
-- Test cases
-- A user flow
-- A high-fidelity prototype
-
-## Write a PRD
+Figr can draft PRDs, feature specs and other product docs using what's in your Context Pod. Because it knows your product, the first draft starts closer to what you'd write yourself, and you spend your time sharpening it instead of filling a blank page.
 
 <Steps>
-  <Step title="Attach your context">
-    Attach your [Context Pod](/product-intelligence/context-pods), plus any research, feedback or a page from a connected tool like Notion or Linear.
+  <Step title="Attach your Context Pod">
+    Select your pod in the chat so the doc reflects how your product works today.
   </Step>
-  <Step title="Describe the problem">
-    It doesn't need to be polished. Say what you want to improve, who it's for, which constraints matter, and what's out of scope.
+  <Step title="Describe what you need">
+    Say what the doc is for, who it's for, and what you already know. For example: "Write a PRD for bulk-inviting teammates. The goal is to cut onboarding time for teams of 10 or more."
+  </Step>
+  <Step title="Add supporting material">
+    Attach research notes, customer feedback, or a link from a connected tool like Notion or Linear so the doc builds on real inputs.
+  </Step>
+  <Step title="Review the draft">
+    Figr creates the doc on the canvas with sections like problem, goals, user stories and requirements.
 
-    ```text
-    Turn this rough product problem into a structured PRD. Use the attached product context, existing screens, analytics notes and previous decisions, then flag missing requirements and edge cases.
-    ```
+    <Frame>
+      <img
+        alt="A PRD connected to its flow and prototype on the canvas"
+        src="/images/PRD.avif"
+      />
+    </Frame>
   </Step>
-  <Step title="Review the draft on the canvas">
-    The PRD lands on your canvas as a doc. Edit it in place, or open it in full screen for more room.
+  <Step title="Refine it">
+    Edit the doc directly, or ask Figr to expand a section, tighten the scope, or add open questions.
   </Step>
-  <Step title="Build the rest of the chain">
-    Ask for user stories, acceptance criteria, test cases, the user flow, key states and the prototype.
+  <Step title="Ask Figr to map the flow">
+    For example: "Map the user flow for this PRD, including what happens when something goes wrong."
   </Step>
 </Steps>
-
-## Keep the chain live
-
-The PRD isn't meant to sit alone. If the flow reveals a missing state, update the PRD. If the prototype exposes a confusing interaction, update the flow.
-
-## Share it
-
-- **Download** the PRD as PDF or Markdown, or **Copy as text**, from the Export menu.
-- **Share the project** so teammates see the PRD next to the flow and prototype. See [Publish and share](/export/publish).
-- **Add to Context Pod** so future work starts from the decisions in it.
 
 <Tip>
   Tell Figr what's out of scope. A clear "not doing" list keeps the draft focused.
 </Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Map a user flow" href="/create/map-user-flow">
+    Turn the PRD into a flow.
+  </Card>
+
+  <Card title="Generate test cases" href="/create/test-cases">
+    Give QA a ready list of what to test.
+  </Card>
+</CardGroup>
