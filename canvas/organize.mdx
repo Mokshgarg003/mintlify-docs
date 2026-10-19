@@ -1,71 +1,80 @@
 ---
-title: "Organize Canvas Work"
-description: "Keep a crowded project scannable with sticky notes, comments, sections, and connector lines."
-sidebarTitle: "Organize canvas work"
+title: "Organize the canvas"
+description: "Keep a crowded canvas scannable with sticky notes, comments, annotations, sections and connector lines. Figr reads them as context in your next message."
+sidebarTitle: "Organize the canvas"
 ---
 
-As a project fills up with screenshots, references, UX reviews, flows, PRDs, and prototypes, it gets harder to scan. Sticky notes, comments, sections, and connector lines keep it organized.
+As a project fills up with screenshots, reviews, flows, PRDs and prototypes, it gets harder to scan. Sticky notes, comments, annotations, sections and connector lines keep it organized.
 
-{/* SCREENSHOT — replace src with /images/canvas/04-03-organized-canvas.png once captured */}
+They also guide Figr. On its next turn, Figr reads the sticky notes, comments, annotations and connector lines on your canvas, so what you mark up becomes context for the next design.
 
 <img
-  alt="Canvas organized with sections, sticky notes, comments, and connector lines"
-  lightAlt="Canvas organized with sections, sticky notes, comments, and connector lines"
-  darkAlt="Canvas organized with sections, sticky notes, comments, and connector lines"
+  alt="Canvas organized with sections, sticky notes, comments and connector lines"
   src="/images/Canvas-Organize.avif"
 />
 
+## See what Figr will pick up
+
+A card above the chat box lists the canvas changes you've made since your last message. These are the changes Figr will act on next. Check it before you send.
+
 ## Sticky notes
 
-Quick context beside the work: "Need PM input," "Check empty state," "Final direction," "Needs edge cases," "Engineering constraint," or "Use this reference pattern."
+Quick context beside the work: "Need PM input", "Check empty state", "Final direction", "Engineering constraint".
 
 ## Comments
 
-Feedback tied to a specific item on the Canvas:
+Feedback tied to a specific item:
 
-- Ask a PM to confirm a requirement
-- Leave design feedback on a screen
-- Ask engineering to check feasibility
-- Mark something for founder review
-- Add handoff clarification before export
+- **@mention** a teammate to pull them in.
+- **Resolve** a thread when it's done. Only workspace members can resolve or delete threads.
+- **Guests can comment.** People who open a shared project link can comment and reply after signing in, without joining your workspace.
+- **Pin comments on prototypes.** On a published prototype, comments stay anchored to a spot on the screen.
+
+## Annotations
+
+Mark a region inside an image and add a note. Figr gets a crop of just that area along with your note, so you can point at exactly what to change.
 
 ## Sections
 
-Group related work into named stages: Research inputs, UX review, User flow, Design explorations, Final direction, Ready for review, Ready for export.
+Group related work into named stages, like Research inputs, User flow, Design explorations or Ready for review. Sections behave like Figma frames.
 
 ## Connector lines
 
-Show relationships between items, such as a PRD connected to its prototype, or a user flow connected to the screens it produced.
+Show relationships between items, like a PRD connected to its prototype, or a flow connected to the screens it produced.
 
-## Organize a crowded canvas
+## Organize canvas automatically
+
+Use **Organize canvas** to group items by creation date or by type: prototypes, documents, flows, images and stickies. Sections you made yourself stay as they are.
+
+## Organize a crowded canvas by hand
 
 <Steps>
   <Step title="Add a sticky note">
     Drop a sticky note beside an item to capture quick context or a decision.
   </Step>
   <Step title="Add a comment">
-    Attach a comment to a specific item when feedback belongs to that artifact.
+    Attach a comment to an item when the feedback belongs to it.
   </Step>
   <Step title="Group into a section">
-    Select related items and group them into a named section so the stage is clear at a glance.
+    Select related items and group them into a named section.
   </Step>
   <Step title="Link your artifacts">
-    Link artifacts to each others with connectors and give Figr relational context
+    Connect related items with connector lines to give Figr the relationship between them.
   </Step>
 </Steps>
 
 ## Related
 
 <CardGroup cols={3}>
-  <Card title="Canvas Overview" href="/canvas/canvas-overview">
-    The visual workspace, end to end.
+  <Card title="Canvas overview" href="/canvas/canvas-overview">
+    The canvas, end to end.
   </Card>
 
-  <Card title="Item Actions" href="/canvas/action-items">
+  <Card title="Item actions" href="/canvas/action-items">
     What you can do with a selected item.
   </Card>
 
-  <Card title="History and Layers" href="/canvas/history-layers">
+  <Card title="History and layers" href="/canvas/history-layers">
     Find and restore earlier versions.
   </Card>
 </CardGroup>

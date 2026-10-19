@@ -1,36 +1,65 @@
 ---
 title: "Canvas overview"
 sidebarTitle: "Canvas overview"
-description: "The canvas is your visual workspace where context, artifacts, and prototypes live together."
+description: "The infinite canvas where chats, prototypes, flows, docs and references live together, with live cursors, multiple chats and version history."
 ---
 
-It is not a blank chat. It is where everything Figr does comes together.
-
-{/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/canvas/04-01-canvas-overview.png then change src to "/images/canvas/04-01-canvas-overview.png" */}
+Every Figr project is one infinite canvas. Your chat on the side does the work; the canvas is where the results land, next to the context that shaped them.
 
 <img
-  alt="A working canvas with screens, references, a UX review, a flow, notes, and a prototype"
-  title="A full Figr canvas"
+  alt="A working canvas with screens, references, a UX review, a flow, notes and a prototype"
   style={{ width:"93%" }}
-  lightAlt="A working canvas with screens, references, a UX review, a flow, notes, and a prototype"
-  darkAlt="A working canvas with screens, references, a UX review, a flow, notes, and a prototype"
   src="/images/04-01-canvas-overview.png"
 />
 
-On the canvas you can:
-
-- Add screens and references
-- Keep docs and prototypes side by side
-- Annotate with notes and comments
-- Reason from visible context, not just text
-- Compare directions next to each other
-- Interact with generated prototypes
-- Track versions of any item
-- Organize work into sections
-- Collaborate with your team
-
-{/* VIDEO: YouTube hosts this, no upload needed. Replace VIDEO_ID with your video's ID. Delete this block if unused. */}
-
-{/* VIDEO: canvas walkthrough */}
-
 <iframe src="https://www.youtube.com/embed/2u3-H3pn1Go?si=q2rw6csg75VIGZtr" title="Figr canvas walkthrough" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+
+## What lives on the canvas
+
+| Item | What it is |
+| --- | --- |
+| Prototypes | Clickable, high-fidelity screens in your design system |
+| Screens | A board of every route and state of a prototype, including loading, empty, error and success |
+| Wireframes | Low-fidelity layouts you can edit part by part |
+| Flows | User flow diagrams you can edit and export |
+| Docs | PRDs, specs and other documents you can edit in place |
+| Images, PDFs and videos | Screenshots, references and recordings you add |
+| Links | Web pages, with a live preview |
+| Sticky notes, comments and annotations | Your notes, which Figr reads on its next turn |
+| Sections | Named groups that keep related work together |
+
+## Chat and the canvas
+
+- **Multiple chats.** Run separate conversations in one project, sharing the same canvas, files and history. Fork any finished turn to try another direction without changing the original.
+- **Queued messages.** Send follow-ups while Figr works. They run in order when the current task finishes.
+- **@ mentions.** Type `@` to reference a canvas item, a section, another chat or a file in your message.
+
+## Working together
+
+- **Live cursors.** See teammates' named cursors, and click an avatar to follow their view.
+- **Comments.** Leave feedback on any item and @mention teammates. See [Organize the canvas](/canvas/organize).
+- **History.** Every item keeps its own versions, and Activity can restore the whole canvas. See [History and layers](/canvas/history-layers).
+
+## Moving around
+
+Drag to pan, scroll to zoom, and hold Space to pan while a prototype is selected. Open **Help → Shortcuts** for the full list.
+
+## Learn more
+
+<CardGroup cols={2}>
+  <Card title="Item actions" href="/canvas/action-items">
+    The toolbar, Export menu and full-screen controls.
+  </Card>
+
+  <Card title="Organize the canvas" href="/canvas/organize">
+    Notes, comments, sections and Organize canvas.
+  </Card>
+
+  <Card title="History and layers" href="/canvas/history-layers">
+    Item versions, Layers and Activity.
+  </Card>
+
+  <Card title="Edit without regenerating" href="/getting-started/tutorial/untitled-page-5">
+    Change one part of a design in place.
+  </Card>
+</CardGroup>

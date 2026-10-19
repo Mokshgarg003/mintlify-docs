@@ -1,63 +1,63 @@
 ---
-title: "History and Layers"
-description: "Find, review, or return to anything on the Canvas with version history, Layers, and Activity."
+title: "History, layers and activity"
+description: "Go back to an earlier version of one item, find anything on a crowded canvas with Layers, and restore the whole canvas from Activity."
 sidebarTitle: "History and layers"
 ---
 
-## Version history
+Figr keeps two kinds of history. Each item has its own versions, and the whole canvas has a timeline in **Activity**.
 
-Use version history to go back to earlier versions of a generated output. It helps when:
+## Item version history
+
+Every prototype, doc and flow keeps its own versions. Open the item in **Full screen** and use the version dropdown in the header to look at any earlier state. This changes only that item, not the rest of your canvas.
+
+Use it when:
 
 - A new edit changed too much
 - You preferred an earlier direction
 - You want to compare two versions
-- You need to restore a previous output
-- You want to see how the design evolved For example, you generate a dashboard, then ask Figr to make it more compact. If the new version feels worse, open version history and return to the earlier one.
+
+For example, you generate a dashboard, then ask Figr to make it more compact. If the new version feels worse, open the version dropdown and go back to the earlier one.
 
 ## Layers
 
-Use Layers to see what exists on the Canvas. This helps when your Canvas has many prototypes, notes, screenshots, flows, and sections. Use Layers to find a specific item, understand Canvas structure, check what belongs inside a section, and navigate a crowded Canvas faster.
+Layers lists everything on the canvas: prototypes, notes, screenshots, flows and sections. Use it to find a specific item, see what belongs inside a section, and move around a crowded canvas faster.
 
-{/* SCREENSHOT — replace src with /images/canvas/04-04-history-layers.png once captured */}
-
-<Frame caption="Version history, Layers">
+<Frame caption="The Layers panel">
   <img
-    alt="Version dropdown, Layers panel, and Activity panel"
-    lightAlt="Version dropdown, Layers panel, and Activity panel"
-    darkAlt="Version dropdown, Layers panel, and Activity panel"
+    alt="Layers panel listing the items on a canvas"
     src="/images/Layers.avif"
   />
 </Frame>
 
 ## Activity
 
-Revert to a previous version Use Activity to review what changed recently. It helps when you are collaborating with others or returning to a project after some time. Use Activity to check what was added, what was edited, what was moved, who made a change, and when it happened.
+Activity is the version history for the whole canvas. Changes are grouped by day and by the prompt that made them, so you can see how the project moved.
 
-{/* SCREENSHOT — replace src with /images/canvas/04-04-history-layers.png once captured */}
+To go back, pick a point in the timeline and click **Restore this version**. The canvas returns to how it was at that point.
 
-{/* SCREENSHOT — replace src with /images/canvas/04-04-history-layers.png once captured */}
-
-<Frame caption="Version history, Layers, and Activity panels">
+<Frame caption="The Activity panel">
   <img
-    alt="Version dropdown, Layers panel, and Activity panel"
-    lightAlt="Version dropdown, Layers panel, and Activity panel"
-    darkAlt="Version dropdown, Layers panel, and Activity panel"
+    alt="Activity panel showing canvas versions grouped by day and prompt"
     src="/images/Activity.avif"
   />
 </Frame>
 
+<Tip>
+  To undo one item, use its version dropdown. To undo a whole round of changes across the canvas, use Activity.
+</Tip>
+
 ## Related
 
 <CardGroup cols={3}>
-  <Card title="Item Actions" icon="square-mouse-pointer" href="/canvas/action-items">
+  <Card title="Item actions" icon="square-mouse-pointer" href="/canvas/action-items">
     What you can do with a selected item.
   </Card>
 
-  <Card title="Organize Canvas Work" icon="layer-group" href="/canvas/organize">
-    Sticky notes, comments, and sections.
+  <Card title="Organize the canvas" icon="layer-group" href="/canvas/organize">
+    Sticky notes, comments and sections.
   </Card>
 
-  <Card title="Edit Without Regenerating" icon="wand-magic-sparkles" href="/getting-started/tutorial/untitled-page-5">
-    Refine a part without redoing the whole screen.
+  <Card title="Edit without regenerating" icon="wand-magic-sparkles" href="/getting-started/tutorial/untitled-page-5">
+    Change one part without redoing the whole screen.
   </Card>
 </CardGroup>
