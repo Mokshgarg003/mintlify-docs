@@ -190,6 +190,16 @@
         ]
       },
       {
+        "tab": "What Figr does",
+        "groups": [
+          {
+            "group": "What Figr does",
+            "icon": "compass",
+            "pages": []
+          }
+        ]
+      },
+      {
         "tab": "FAQs",
         "icon": "question",
         "groups": [
