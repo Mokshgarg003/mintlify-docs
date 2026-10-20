@@ -1,0 +1,79 @@
+---
+title: "Hand off to engineering in their code and their agent"
+sidebarTitle: "Hand off to engineering"
+description: "Engineers pull the real design into their own coding agent instead of rebuilding from screenshots."
+icon: "code"
+---
+
+A screenshot or an HTML export isn’t a handoff. Engineers still have to work out the structure, guess the spacing and swap in their own components. Teams end up reworking about half of what they receive by hand before it can ship.
+
+Figr hands the real design to engineering, inside the tools they already use.
+
+<Tip>
+  **The short version:** Engineers connect their coding agent (Cursor, Claude Code, VS Code and others) to Figr once. From then on, the agent reads the actual design, its structure, values and the reasoning behind it, and builds from that instead of a picture.
+</Tip>
+
+**Example on this page:** FreshFold, a laundry pickup and delivery app. Customers book a pickup in the app, a rider collects the bag, and clean clothes come back within 24 hours.
+
+## How it works
+
+<Steps>
+  <Step title="Pick the design">
+    Select a prototype on the canvas and choose **Export**, then **Use MCP server**. In the FreshFold example: the approved pickup confirmation screen.
+
+    {/* Asset 7.1: The Use MCP server dialog for the FreshFold pickup confirmation screen, with the Project link and Board node link buttons visible. */}
+  </Step>
+  <Step title="Connect the coding agent">
+    Paste the link into the agent’s MCP setup, or register the Figr MCP server once for the whole workspace.
+  </Step>
+  <Step title="The agent reads the real design">
+    The agent sees the layout, values and structure, plus the decisions from your conversations with Figr.
+  </Step>
+  <Step title="The agent builds in your code">
+    The agent builds the screen in your codebase with your components, starting from the design instead of a guess.
+  </Step>
+</Steps>
+
+## What changes for your team
+
+- **Engineers** build from the design, not a screenshot.
+- **Designers** stop answering “what’s the spacing here?”
+- **Rework** after handoff drops, because nothing gets lost in translation.
+
+## Go further
+
+Want the agent to build with your own components every time? Connect your design system so every handoff uses it.
+
+<div className="dark:hidden">
+  <Card title="Design system" icon="palette" color="#695BE8" horizontal href="/product-intelligence/design-system" arrow>
+    Connect your components so every handoff uses them.
+  </Card>
+</div>
+<div className="hidden dark:block">
+  <Card title="Design system" icon="palette" color="#ACA3FF" horizontal href="/product-intelligence/design-system" arrow>
+    Connect your components so every handoff uses them.
+  </Card>
+</div>
+
+## Related
+
+<div className="dark:hidden">
+  <CardGroup cols={2}>
+    <Card title="Figr MCP" icon="server" color="#695BE8" href="/export/mcp">
+      Setup for every supported coding agent.
+    </Card>
+    <Card title="Make your design system AI-ready" icon="robot" color="#695BE8" href="/what-figr-does/ai-ready-design-system">
+      Next step: get Figma and code to agree.
+    </Card>
+  </CardGroup>
+</div>
+<div className="hidden dark:block">
+  <CardGroup cols={2}>
+    <Card title="Figr MCP" icon="server" color="#ACA3FF" href="/export/mcp">
+      Setup for every supported coding agent.
+    </Card>
+    <Card title="Make your design system AI-ready" icon="robot" color="#ACA3FF" href="/what-figr-does/ai-ready-design-system">
+      Next step: get Figma and code to agree.
+    </Card>
+  </CardGroup>
+</div>
