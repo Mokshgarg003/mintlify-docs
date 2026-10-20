@@ -1,1 +1,96 @@
+---
+title: "Make your design system AI-ready"
+sidebarTitle: "AI-ready design system"
+description: "Line up Figma and code so every AI tool your team uses follows the same system."
+icon: "robot"
+---
 
+Most teams have two design systems that are supposed to be one: the library in Figma and the components in code. They drift. The same grey in Figma turns out to be black in Storybook, and teams patch every AI prompt with a line telling it not to invent local components.
+
+AI tools make the drift worse, because they copy whatever they see. Figr gets both sides to agree, then makes the system usable by every AI tool your team works with.
+
+<Tip>
+  **The short version:** Figr compares your Figma library with your coded components, lists every mismatch, and writes usage guidelines for each component. The result is one system that Figr, your designers and your engineers’ coding agents all follow.
+</Tip>
+
+**Example on this page:** FreshFold, a laundry pickup and delivery app. Customers book a pickup in the app, a rider collects the bag, and clean clothes come back within 24 hours.
+
+## How it works
+
+<Steps>
+  <Step title="Connect both sides">
+    Figr connects to your Figma library and your component code. In the FreshFold example: the FreshFold UI kit in Figma and its component library in code.
+
+    {/* Asset 8.1: The setup screen showing the FreshFold Figma library and code repo both connected. */}
+  </Step>
+  <Step title="Figr finds the mismatches">
+    You get a list of every place Figma and code disagree: colors, spacing, variants, and components that exist on only one side.
+  </Step>
+  <Step title="Figr writes the guidelines">
+    For each component, Figr writes when to use it, which variants exist and what not to do, in a form AI tools can follow.
+
+    {/* Asset 8.2: The generated usage guidelines for one FreshFold component (for example, the Book pickup button), with variants and do/don't rules. */}
+  </Step>
+  <Step title="We set it up with you">
+    A Figr engineer works through the setup with your team, so the system is right from day one.
+  </Step>
+</Steps>
+
+## What changes for your team
+
+- **Design system teams** see drift in one report instead of finding it in production.
+- **AI tools** stop inventing components, without prompt patches.
+- **Every screen Figr makes** uses the system your engineers actually ship.
+
+## Go further
+
+Put the AI-ready system to work in engineering. See how coding agents read it through Figr MCP.
+
+<div className="dark:hidden">
+  <Card title="Figr MCP" icon="server" color="#695BE8" horizontal href="/export/mcp" arrow>
+    Let coding agents read your design system and designs.
+  </Card>
+</div>
+<div className="hidden dark:block">
+  <Card title="Figr MCP" icon="server" color="#ACA3FF" horizontal href="/export/mcp" arrow>
+    Let coding agents read your design system and designs.
+  </Card>
+</div>
+
+## Get started
+
+A Figr engineer guides the setup. Book a call and we’ll walk through your library and code with you.
+
+<div className="dark:hidden">
+  <Card title="Book a setup call" icon="calendar" color="#695BE8" horizontal href="https://figr.design/contact" arrow>
+    Plan your design system setup with a Figr engineer.
+  </Card>
+</div>
+<div className="hidden dark:block">
+  <Card title="Book a setup call" icon="calendar" color="#ACA3FF" horizontal href="https://figr.design/contact" arrow>
+    Plan your design system setup with a Figr engineer.
+  </Card>
+</div>
+
+## Related
+
+<div className="dark:hidden">
+  <CardGroup cols={2}>
+    <Card title="Design system" icon="palette" color="#695BE8" href="/product-intelligence/design-system">
+      How Figr learns and applies your tokens and components.
+    </Card>
+    <Card title="Build a design system from your screens" icon="cubes" color="#695BE8" href="/what-figr-does/design-system-from-screens">
+      No system yet? Start from what you already ship.
+    </Card>
+  </CardGroup>
+</div>
+<div className="hidden dark:block">
+  <CardGroup cols={2}>
+    <Card title="Design system" icon="palette" color="#ACA3FF" href="/product-intelligence/design-system">
+      How Figr learns and applies your tokens and components.
+    </Card>
+    <Card title="Build a design system from your screens" icon="cubes" color="#ACA3FF" href="/what-figr-does/design-system-from-screens">
+      No system yet? Start from what you already ship.
+    </Card>
+  </CardGroup>
+</div>
