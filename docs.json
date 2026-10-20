@@ -34,6 +34,12 @@
         "icon": "book",
         "pages": [
           {
+            "group": "Welcome to Figr",
+            "pages": [
+              "getting-started/welcome/introduction"
+            ]
+          },
+          {
             "group": "How to Begin?",
             "expanded": true,
             "pages": [
