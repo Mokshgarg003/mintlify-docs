@@ -102,7 +102,8 @@
               "input-research/files-research",
               "product-intelligence/connectors",
               "context/share-pod",
-              "context/org-wide-context"
+              "context/org-wide-context",
+              "context/skills-guardrails"
             ]
           },
           {

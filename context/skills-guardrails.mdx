@@ -1,0 +1,81 @@
+---
+title: "Add skills and guardrails"
+sidebarTitle: "Skills and guardrails"
+description: "Set rules Figr follows on every design, or only when they apply."
+icon: "shield-halved"
+---
+
+Skills are instructions Figr follows while it designs. Use them for compliance rules, accessibility standards, anti-dark-pattern guidelines, or your team’s own way of working. Turn a skill on for your whole organisation and every project follows it, whoever is designing.
+
+## Always on or when relevant
+
+Each skill has a mode that decides when Figr uses it.
+
+- **Always on:** Figr applies the skill to every request. Use it for rules that never bend.
+  - “All text must meet WCAG AA contrast.”
+  - “Never pre-select consent or marketing checkboxes.”
+  - “Show fees before the confirm button, never after.”
+- **When relevant:** Figr applies the skill only when the request matches it. Use it for rules that belong to one area of your product.
+  - “When designing checkout, show the order total on every step.”
+  - “When designing onboarding, keep it to three steps or fewer.”
+  - “When designing for mobile, use bottom sheets instead of modals.”
+
+## Create a skill
+
+<Steps>
+  <Step title="Open Skills and create a new skill">
+    Give it a clear name, like **Payments compliance**, and a short description of what it covers.
+
+    {/* Screenshot: new skill form with name and description */}
+  </Step>
+  <Step title="Write the rules">
+    List each rule as a short, specific statement Figr can check a design against.
+
+    {/* Screenshot: skill rules being written */}
+  </Step>
+  <Step title="Choose the mode">
+    Pick **Always on** or **When relevant**.
+
+    {/* Screenshot: mode selector showing Always on and When relevant */}
+  </Step>
+  <Step title="Turn it on for your organisation">
+    Enable the skill org-wide so it applies to every project and every teammate.
+  </Step>
+</Steps>
+
+<Tip>
+  Write rules you could check with a yes or no. “Fees are visible before confirm” works better than “be transparent about fees”.
+</Tip>
+
+## Example: anti-dark-pattern rules for payments
+
+A fintech team wanted every payment flow to be clear and honest, no matter who designed it. They added these rules as an **Always on** skill, enabled for the whole organisation:
+
+- Payment details, fees and exchange rates always have strong visual hierarchy. They are never hidden behind a toggle, an accordion or small text.
+- Every payment has an explicit confirmation step that shows the final amount.
+- Toggles and defaults never pre-select the option that costs the user more.
+
+Now every design Figr creates for the team follows these rules, without anyone having to repeat them in a prompt.
+
+## Next
+
+<div className="dark:hidden">
+  <CardGroup cols={2}>
+    <Card title="Set up your design system" icon="palette" color="#695BE8" href="/product-intelligence/design-system">
+      Connect your tokens and components so every design matches your product.
+    </Card>
+    <Card title="Set up org-wide context" icon="building" color="#695BE8" href="/context/org-wide-context">
+      Share product knowledge with every teammate and project.
+    </Card>
+  </CardGroup>
+</div>
+<div className="hidden dark:block">
+  <CardGroup cols={2}>
+    <Card title="Set up your design system" icon="palette" color="#ACA3FF" href="/product-intelligence/design-system">
+      Connect your tokens and components so every design matches your product.
+    </Card>
+    <Card title="Set up org-wide context" icon="building" color="#ACA3FF" href="/context/org-wide-context">
+      Share product knowledge with every teammate and project.
+    </Card>
+  </CardGroup>
+</div>
