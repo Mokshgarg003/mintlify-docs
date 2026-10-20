@@ -42,7 +42,9 @@
           },
           {
             "group": "What Figr does",
-            "pages": []
+            "pages": [
+              "what-figr-does/overview"
+            ]
           },
           {
             "group": "How to Begin?",
@@ -53,7 +55,8 @@
                 "pages": [
                   "getting-started/welcome/product-aware-designing",
                   "getting-started/welcome/who-should-use-figr"
-                ]
+                ],
+                "hidden": true
               },
               {
                 "group": "Getting Started",
@@ -61,7 +64,8 @@
                   "getting-started/setup/add-product-context",
                   "getting-started/setup/invite-team",
                   "getting-started/setup/referral"
-                ]
+                ],
+                "hidden": true
               },
               {
                 "group": "Product Design Flow",
@@ -70,7 +74,8 @@
                   "getting-started/tutorial/what-figr-creates",
                   "getting-started/tutorial/brainstorm",
                   "getting-started/tutorial/review"
-                ]
+                ],
+                "hidden": true
               }
             ],
             "hidden": true
