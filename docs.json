@@ -365,5 +365,8 @@
       "source": "/product-thinking/prototype",
       "destination": "/getting-started/tutorial/prototypes"
     }
-  ]
+  ],
+  "background": {
+    "decoration": "windows"
+  }
 }
