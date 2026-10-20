@@ -68,7 +68,8 @@
                   "getting-started/tutorial/review"
                 ]
               }
-            ]
+            ],
+            "hidden": true
           },
           {
             "group": "Add your product context",
