@@ -118,13 +118,24 @@
             "group": "Add your product context",
             "pages": [
               "input-research/input-guide",
-              "product-intelligence/context-pods",
               "input-research/screen-recording",
-              "input-research/figma-input",
-              "context/capture-public-page",
-              "input-research/chrome-extension",
               "input-research/files-research",
-              "product-intelligence/connectors",
+              "input-research/figma-input",
+              {
+                "group": "Capture a webpage",
+                "icon": "globe",
+                "pages": [
+                  "context/capture-public-page",
+                  "input-research/chrome-extension"
+                ]
+              },
+              "product-intelligence/connectors"
+            ]
+          },
+          {
+            "group": "Set up team context",
+            "pages": [
+              "product-intelligence/context-pods",
               "context/share-pod",
               "context/org-wide-context",
               "context/skills-guardrails"
