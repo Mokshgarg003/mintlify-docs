@@ -151,7 +151,8 @@
               "export/figma",
               "export/mcp",
               "export/copy-download",
-              "export/publish"
+              "export/publish",
+              "export/share-project"
             ]
           },
           {
