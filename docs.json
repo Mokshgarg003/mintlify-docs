@@ -44,16 +44,40 @@
             "group": "What Figr does",
             "pages": [
               "what-figr-does/overview",
-              "what-figr-does/add-to-existing-journey",
-              "what-figr-does/research-to-flows",
-              "what-figr-does/explore-and-sign-off",
-              "what-figr-does/change-impact",
-              "what-figr-does/audit-and-redesign",
-              "what-figr-does/ai-ready-design-system",
-              "what-figr-does/design-system-from-screens",
-              "what-figr-does/ds-compliant-prototypes",
-              "what-figr-does/mock-to-figma",
-              "what-figr-does/handoff-to-engineering"
+              {
+                "group": "Design new work",
+                "icon": "pen-nib",
+                "pages": [
+                  "what-figr-does/add-to-existing-journey",
+                  "what-figr-does/research-to-flows",
+                  "what-figr-does/explore-and-sign-off"
+                ]
+              },
+              {
+                "group": "Improve what you have",
+                "icon": "wrench",
+                "pages": [
+                  "what-figr-does/change-impact",
+                  "what-figr-does/audit-and-redesign"
+                ]
+              },
+              {
+                "group": "Design system",
+                "icon": "palette",
+                "pages": [
+                  "what-figr-does/ai-ready-design-system",
+                  "what-figr-does/design-system-from-screens",
+                  "what-figr-does/ds-compliant-prototypes"
+                ]
+              },
+              {
+                "group": "Hand off",
+                "icon": "paper-plane",
+                "pages": [
+                  "what-figr-does/mock-to-figma",
+                  "what-figr-does/handoff-to-engineering"
+                ]
+              }
             ]
           },
           {
