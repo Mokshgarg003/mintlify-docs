@@ -1,0 +1,69 @@
+---
+title: "Add skills and guardrails"
+sidebarTitle: "Skills and guardrails"
+icon: "shield-halved"
+---
+
+Skills are instructions Figr follows while it designs. Use them for compliance rules, accessibility standards, anti-dark-pattern guidelines, or your team’s own way of working. Turn a skill on for your whole organisation and every project follows it, whoever is designing.
+
+## Always on or when relevant
+
+Each skill has a mode that decides when Figr uses it.
+
+- **Always on:** Figr applies the skill to every request. Use it for rules that never bend.
+  - “All text must meet WCAG AA contrast.”
+  - “Never pre-select consent or marketing checkboxes.”
+  - “Show fees before the confirm button, never after.”
+- **When relevant:** Figr applies the skill only when the request matches it. Use it for rules that belong to one area of your product.
+  - “When designing checkout, show the order total on every step.”
+  - “When designing onboarding, keep it to three steps or fewer.”
+  - “When designing for mobile, use bottom sheets instead of modals.”
+
+## Create a skill
+
+<Steps>
+  <Step title="Open Skills and create a new skill">
+    Give it a clear name, like **Payments compliance**, and a short description of what it covers.
+
+    <Frame>
+      ![Screenshot 2026 10 21 At 2 41 58 AM](/images/Screenshot-2026-10-21-at-2.41.58-AM.png "Screenshot 2026 10 21 At 2 41 58 AM")
+    </Frame>
+
+    {/* Screenshot: new skill form with name and description */}
+  </Step>
+  <Step title="Write the rules">
+    List each rule as a short, specific statement Figr can check a design against.
+
+    <Tip>
+      Write rules you could check with a yes or no. “Fees are visible before confirm” works better than “be transparent about fees”.
+    </Tip>
+
+    {/* Screenshot: skill rules being written */}
+  </Step>
+  <Step title="Choose the mode">
+    Pick **Always on** or **When relevant**.
+
+    <Frame>
+      ![Screenshot 2026 10 21 At 2 42 47 AM](/images/Screenshot-2026-10-21-at-2.42.47-AM.png "Screenshot 2026 10 21 At 2 42 47 AM")
+    </Frame>
+
+    {/* Screenshot: mode selector showing Always on and When relevant */}
+  </Step>
+  <Step title="Turn it on for your organisation">
+    Skills are enabled automatically org-wide, every team member can use or apply the skills you've created to their respective projects.
+  </Step>
+</Steps>
+
+## Example: anti-dark-pattern rules for payments
+
+A fintech team wanted every payment flow to be clear and honest, no matter who designed it. They added these rules as an **Always on** skill, enabled for the whole organisation:
+
+- Payment details, fees and exchange rates always have strong visual hierarchy. They are never hidden behind a toggle, an accordion or small text.
+- Every payment has an explicit confirmation step that shows the final amount.
+- Toggles and defaults never pre-select the option that costs the user more.
+
+<Frame>
+  ![Image](/images/image-32.png "Image")
+</Frame>
+
+Now every design Figr creates for the team follows these rules, without anyone having to repeat them in a prompt.

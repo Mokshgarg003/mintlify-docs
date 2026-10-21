@@ -1,205 +1,52 @@
 ---
-title: "Setting up Connectors"
-description: "Connect live tools like Mixpanel, Notion, and Linear so Figr pulls real data into your designs at query time."
-sidebarTitle: "Setting up connectors"
+title: "Connect your tools"
+sidebarTitle: "Connect your tools"
+icon: "plug"
 ---
 
-A Connector links Figr to an external tool through the Model Context Protocol (MCP). Once connected, the agent can call that tool live during a canvas query, fetching funnel data, reading a doc, or pulling tickets, and design directly from what it finds.
+_Let Figr read live context from the tools your team already uses._
 
-Where a Design Language defines how things look and a Context Pod captures what your product is, Connectors bring in what is true right now: your live, changing data.
-
-## Available connectors
-
-The Connectors page lists ready-to-use integrations:
-
-- **Analytics**: Mixpanel, Amplitude
-- **Docs and knowledge**: Notion, Confluence, Google Workspace
-- **Product and planning**: Linear, Miro, Mobbin
-- **Communication**: Slack, Granola
-
-Each shows its name, category, and connection status. Anything not listed can be added as a custom connector.
-
-## Open the Connectors page
-
-Reach it two ways: from the canvas, click the database icon in the chat console, then **Manage connectors**. Or open **Connectors** in workspace settings.
-
-{/* SCREENSHOT: canvas chat console, database icon revealing Manage connectors */}
-
-<Frame caption="From the canvas, the database icon opens Manage connectors.">
-  <img
-    alt="Canvas chat console with the Manage connectors option"
-    lightAlt="Canvas chat console with the Manage connectors option"
-    darkAlt="Canvas chat console with the Manage connectors option"
-    src="/images/connectors-console.png"
-  />
-</Frame>
-
-## Connect a standard tool
-
-Using Mixpanel as the example:
+Your specs live in Notion, your tickets in Linear, your numbers in Mixpanel. Connect them and Figr can read what it needs while it works, instead of you copying and pasting it in.
 
 <Steps>
-  <Step title="Click Connect">
-    Find the tool on the Connectors page and click **Connect**.
+  <Step title="Open your connectors">
+    In a project, click **Add context** in the chat box, then **Connectors → Manage connectors**. You can also find **Connectors** in workspace settings.
+
+    <Frame>
+      <img
+        alt="Manage connectors in the chat box"
+        src="/images/connectors-console.png"
+      />
+    </Frame>
   </Step>
-  <Step title="Review the setup modal">
-    A modal opens, like "Mixpanel, Add connector," with instructions and a warning that you will be redirected to authenticate.
+  <Step title="Pick a tool">
+    Choose the tool you want to connect, such as Notion, Confluence, Google Workspace, Linear, Asana, GitHub, Slack, Miro, Mixpanel, Amplitude, Granola or Mobbin.
+
+    <Frame>
+      <img
+        alt="List of available connectors"
+        src="/images/connectors-list.png"
+      />
+    </Frame>
+
+    <Tip>
+      For GitHub, choose only the repos Figr should read. Connect only the tools you'll actually use.
+    </Tip>
   </Step>
-  <Step title="Authorize with OAuth">
-    Click **Connect with OAuth**. Your browser opens the provider's authorization page. Review the requested access, like tracking, metrics, and funnel queries, then click **Authorize**.
+  <Step title="Sign in and allow access">
+    Click **Connect**, sign in to the tool, and click **Authorize**. A green **Connected** badge appears.
   </Step>
-  <Step title="Return to Figr">
-    You land back with a "Connected to Mixpanel" banner. The tool now shows a green **Connected** badge and a toggle.
+  <Step title="Turn it on or off">
+    Use the toggle next to each connector to choose which ones Figr can use in your chats.
+
+    <Frame>
+      ![Screenshot 2026 10 21 At 1 35 53 PM](/images/Screenshot-2026-10-21-at-1.35.53-PM.png "Screenshot 2026 10 21 At 1 35 53 PM")
+    </Frame>
   </Step>
 </Steps>
 
-Toggle a connector off anytime to stop the agent from using it, without disconnecting.
+<Info>
+  **Using a tool that isn't listed?** Click **Add custom**, enter its name, MCP server URL and transport type, then click **Add connector** and **Connect**.
+</Info>
 
-{/* SCREENSHOT: Connectors page list with + Add custom */}
-
-<Frame caption="The Connectors page, with available integrations and Add custom.">
-  <img
-    alt="Connectors page listing integrations like Notion, Mixpanel, and Linear"
-    lightAlt="Connectors page listing integrations like Notion, Mixpanel, and Linear"
-    darkAlt="Connectors page listing integrations like Notion, Mixpanel, and Linear"
-    src="/images/connectors-list.png"
-    style={{ width:"98%" }}
-  />
-</Frame>
-
-## Add a custom connector
-
-Any MCP-compatible tool can be added manually.
-
-<Steps>
-  <Step title="Click Add custom">
-    Top right of the Connectors page.
-  </Step>
-  <Step title="Fill in the details">
-    Name (a label, like Figr MCP), MCP Server URL (the endpoint, like [https://mcp.figr.design/mcp](https://mcp.figr.design/mcp)), and Transport type (the connection method).
-  </Step>
-  <Step title="Add the connector">
-    Click **Add connector**. It saves with a yellow **Requires authentication** badge.
-  </Step>
-  <Step title="Authenticate">
-    Click **Connect** to run the OAuth handshake, then **Allow access** on the consent screen. The badge turns green and the connector is live.
-  </Step>
-</Steps>
-
-{/* SCREENSHOT: Add custom connector modal (Name, MCP Server URL, Transport type) */}
-
-<Frame caption="The Add custom connector modal.">
-  <img
-    alt="Add custom connector modal with Name, MCP Server URL, and Transport type"
-    lightAlt="Add custom connector modal with Name, MCP Server URL, and Transport type"
-    darkAlt="Add custom connector modal with Name, MCP Server URL, and Transport type"
-    src="/images/connectors-custom-(1).png"
-  />
-</Frame>
-
-### Connection states
-
-| State | Badge | Meaning |
-| --- | --- | --- |
-| Not connected | None | Available but not linked |
-| Requires authentication | Yellow | Registered, needs OAuth to activate |
-| Connected | Green | Live, the agent can query it |
-
-## Using connectors in a design
-
-Once a tool is connected, ask for what you need on the canvas. The agent decides when to call the connector and pulls the data in mid-task.
-
-```text
-Find the biggest onboarding drop-off step, and brainstorm how to fix it.
-```
-
-```text
-Pull our active Linear bugs and design a triage board.
-```
-
-```text
-Use last month's funnel data to design an analytics summary.
-```
-
-For the first one, Figr queries the connected Mixpanel source for live funnel data, finds the weakest step, and designs against the real numbers. No export, no copy-paste.
-
-{/* SCREENSHOT: canvas query pulling live Mixpanel funnel data */}
-
-<Frame caption="A canvas query pulling live funnel data from a connected source.">
-  <img
-    alt="Canvas chat querying live Mixpanel funnel data to generate insights"
-    lightAlt="Canvas chat querying live Mixpanel funnel data to generate insights"
-    darkAlt="Canvas chat querying live Mixpanel funnel data to generate insights"
-    src="/images/connectors-in-use.png"
-  />
-</Frame>
-
-## Why it matters
-
-Static inputs go stale. A screenshot of last quarter's dashboard is wrong the moment the data moves. Connectors keep Figr current: every query fetches fresh data, so designs reflect reality at the moment you ask.
-
-| Without connectors | With connectors |
-| --- | --- |
-| Paste data into every prompt | The agent fetches it live, on demand |
-| Numbers go stale between updates | Always the current data |
-| Design from assumed metrics | Design from real metrics |
-| Switch tools to look things up | The agent looks it up for you |
-
-## Best practices
-
-<Tip>
-  - Connect only what you will use. Each active connector is a tool the agent may call, and a focused set keeps queries fast and predictable.
-  - Toggle off rather than disconnect when pausing a tool you will return to.
-  - Name custom connectors clearly so you can tell them apart.
-  - Be specific in prompts. Name the data you want, like "last 30 days of signup funnel," so the agent queries precisely.
-  - Review OAuth scopes before authorizing, so you know exactly what access you are granting.
-</Tip>
-
-## Troubleshooting
-
-| Issue | Fix |
-| --- | --- |
-| Custom connector stuck on "Requires authentication" | Click Connect and complete the OAuth consent flow |
-| Agent is not pulling live data | Confirm a green Connected badge and that the toggle is on |
-| OAuth redirect fails | Log into the provider in the same browser, then retry |
-| Connector returns no data | Verify your account has access to that data in the source tool |
-
-## Related
-
-<CardGroup cols={3}>
-  <Card title="Figr MCP" href="/export/mcp">
-    Expose your own project context to AI coding assistants over MCP.
-  </Card>
-
-  <Card title="Context Pods" href="/product-intelligence/context-pods">
-    Bundle static product knowledge for a project.
-  </Card>
-
-  <Card title="Setting up Design Language" href="/product-intelligence/design-system">
-    Teach Figr how your product should look.
-  </Card>
-</CardGroup>
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0 | Ownership: Self (Product verify) | Status: In Progress
-  Assets (placeholders, capture pending, from Connector_UI_flow.pdf):
-  - connectors-console.png, canvas chat console with Manage connectors
-  - connectors-list.png, Connectors page list with + Add custom
-  - connectors-custom.png, Add custom connector modal
-  - connectors-in-use.png, canvas query pulling live Mixpanel data
-  - optional: connectors-mixpanel-modal.png (Mixpanel Add connector modal), connectors-connected-banner.png (Connected banner + green badge), connectors-custom-registered.png (yellow Requires authentication badge)
-  VERIFY: exact connector list and categories, transport-type options, default OAuth scopes per provider.
-  Reference links: Figr MCP, Context Pods, Setting up Design Language
-  */}
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0 | Ownership: Self (Product verify) | Status: In Progress
-  Assets (placeholders, capture pending, from Connector_UI_flow.pdf):
-  - connectors-console.png, canvas chat console with Manage connectors
-  - connectors-list.png, Connectors page list with + Add custom
-  - connectors-custom.png, Add custom connector modal
-  - connectors-in-use.png, canvas query pulling live Mixpanel data
-  - optional: connectors-mixpanel-modal.png (Mixpanel Add connector modal), connectors-connected-banner.png (Connected banner + green badge), connectors-custom-registered.png (yellow Requires authentication badge)
-  VERIFY: exact connector list and categories, transport-type options, default OAuth scopes per provider.
-  Reference links: Figr MCP, Context Pods, Setting up Design Language
-  */}
+> **Stuck?** If the sign-in page doesn't come back to Figr, log in to the tool in the same browser first, then try again.

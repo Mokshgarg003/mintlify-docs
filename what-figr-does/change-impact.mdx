@@ -1,0 +1,67 @@
+---
+title: "See every screen a change touches before you scope it"
+sidebarTitle: "See what a change touches"
+---
+
+Small changes rarely stay small. Teams have several people working on the same payments page, each with their own focus. Nobody sees the conflicts until development, when they cost the most to fix.
+
+Figr shows you everything a change touches before anyone scopes it.
+
+![Image](/images/image-22.png "Image")
+
+<Tip>
+  **The short version:** Describe a change, like a new option or a new rule. Figr traces it across every screen and flow in your product that it affects, and shows what needs to change on each, so conflicts surface in planning instead of in development.
+</Tip>
+
+**Example on this page:** FreshFold, a laundry pickup and delivery app. Customers book a pickup in the app, a rider collects the bag, and clean clothes come back within 24 hours.
+
+## How it works
+
+<Steps>
+  <Step title="Describe the change">
+    One line is enough. In the FreshFold example: letting customers set up a recurring weekly pickup.
+  </Step>
+  <Step title="Figr checks what it knows about your product">
+    Figr uses your Context Pod, the product knowledge it keeps for your team, to find every place the change shows up.
+
+    ![Image](/images/image-20.png "Image")
+
+    {/* Asset 3.1: The FreshFold Context Pod in use in the chat, with the prompt and the pod chip visible in the composer. */}
+  </Step>
+  <Step title="Figr maps the impact">
+    You get every affected screen, with what needs to change on each and where changes overlap.
+
+    {/* Asset 3.2: The impact map doc on the canvas: express delivery linked to 5–6 FreshFold screens (time slot picker, pricing, checkout, order tracking, rider app, receipts). */}
+  </Step>
+  <Step title="Figr designs the updates">
+    Ask Figr to update the affected screens, and it designs them together so they stay consistent.
+
+    ![Image](/images/image-21.png "Image")
+  </Step>
+</Steps>
+
+## What changes for your team
+
+- **PMs** scope with the full picture, not a guess.
+- **Several PMs on one area** see each other’s changes before they collide.
+- **Engineers** stop finding missed screens mid-sprint.
+
+## Go further
+
+The more Figr knows about your product, the more it can trace. See how to build your team’s Context Pod.
+
+<Card title="Context Pods" color="#695BE8" icon="box-archive" horizontal href="/product-intelligence/context-pods" arrow>
+  Build the product knowledge Figr uses on every project.
+</Card>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Context Pods" color="#695BE8" icon="box-archive" href="/product-intelligence/context-pods">
+    Give Figr reusable knowledge of your product.
+  </Card>
+
+  <Card title="Audit and redesign" color="#695BE8" icon="magnifying-glass" href="/what-figr-does/audit-and-redesign">
+    Next step: audit a flow from a recording and redesign what’s broken.
+  </Card>
+</CardGroup>

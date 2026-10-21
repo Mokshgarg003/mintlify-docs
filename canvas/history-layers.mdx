@@ -1,63 +1,88 @@
 ---
-title: "History and Layers"
-description: "Find, review, or return to anything on the Canvas with version history, Layers, and Activity."
-sidebarTitle: "History and layers"
+title: "Version control in Figr"
+sidebarTitle: "Version control"
+icon: "clock-rotate-left"
 ---
 
-## Version history
+_Undo a change that didn't work out, for one screen or the whole canvas._
 
-Use version history to go back to earlier versions of a generated output. It helps when:
+Figr saves versions as you work, on two levels. Each artifact, like a screen, prototype or doc, has its own versions. The canvas also keeps a timeline of every change made across the project. Go back one artifact when a single change goes wrong, or go back the whole canvas when you want to return to an earlier point in the project.
 
-- A new edit changed too much
-- You preferred an earlier direction
-- You want to compare two versions
-- You need to restore a previous output
-- You want to see how the design evolved For example, you generate a dashboard, then ask Figr to make it more compact. If the new version feels worse, open version history and return to the earlier one.
+## Go back one artifact
 
-## Layers
+Use this when one screen, prototype or doc has gone in the wrong direction and the rest of the canvas is fine.
 
-Use Layers to see what exists on the Canvas. This helps when your Canvas has many prototypes, notes, screenshots, flows, and sections. Use Layers to find a specific item, understand Canvas structure, check what belongs inside a section, and navigate a crowded Canvas faster.
+<Steps>
+  <Step title="Open version history">
+    Double-click a screen or prototype to open full screen, then open its version history.
 
-{/* SCREENSHOT — replace src with /images/canvas/04-04-history-layers.png once captured */}
+    ![Screenshot 2026 10 21 At 3 24 01 AM](/images/Screenshot-2026-10-21-at-3.24.01-AM.png "Screenshot 2026 10 21 At 3 24 01 AM")
+  </Step>
+  <Step title="Browse earlier versions">
+    Click through the list to preview each version.
+  </Step>
+  <Step title="Restore the one you want">
+    Choose **Restore** on the version you want to go back to. It becomes the current version.
 
-<Frame caption="Version history, Layers">
+    <Frame>
+      ![Screenshot 2026 10 21 At 3 24 33 AM](/images/Screenshot-2026-10-21-at-3.24.33-AM.png "Screenshot 2026 10 21 At 3 24 33 AM")
+    </Frame>
+  </Step>
+  <Step title="Keep going">
+    Continue editing by hand or in chat. Later changes are saved as new versions, so you can always go back again.
+  </Step>
+</Steps>
+
+## Go back the whole canvas
+
+Use this when you want to return the whole project to an earlier point, for example before a round of changes across several screens.
+
+<Steps>
+  <Step title="**Open the canvas timeline**">
+    Open version history for the canvas to see every change made in the project, in order.
+
+    ![Screenshot 2026 10 21 At 3 21 50 AM](/images/Screenshot-2026-10-21-at-3.21.50-AM.png "Screenshot 2026 10 21 At 3 21 50 AM")
+  </Step>
+  <Step title="**Find the point you want**">
+    Each entry shows what changed and when, so you can find the moment before things went wrong.
+  </Step>
+  <Step title="Restore the one you want">
+    Choose **Restore** on the version you want to go back to. It becomes the current version.
+
+    <Frame>
+      <img
+        alt="Restore control on an earlier entry in the Activity panel"
+        src="/images/docs/ver-03-restore.png"
+      />
+    </Frame>
+  </Step>
+  <Step title="Keep going">
+    Continue editing by hand or in chat. Later changes are saved as new versions, so you can always go back again.
+  </Step>
+</Steps>
+
+<Tip>
+  Not sure you want to lose the current version? [Duplicate the chat and canvas](/canvas/duplicate-fork) first, then restore in the copy.
+</Tip>
+
+## Roll back the whole canvas
+
+Each screen keeps its own versions. To undo a whole round of changes across the canvas, open **Activity**. Changes are grouped by day and by the prompt that made them. Pick a point and click **Restore this version**.
+
+<Frame caption="The Activity panel">
   <img
-    alt="Version dropdown, Layers panel, and Activity panel"
-    lightAlt="Version dropdown, Layers panel, and Activity panel"
-    darkAlt="Version dropdown, Layers panel, and Activity panel"
-    src="/images/Layers.avif"
-  />
-</Frame>
-
-## Activity
-
-Revert to a previous version Use Activity to review what changed recently. It helps when you are collaborating with others or returning to a project after some time. Use Activity to check what was added, what was edited, what was moved, who made a change, and when it happened.
-
-{/* SCREENSHOT — replace src with /images/canvas/04-04-history-layers.png once captured */}
-
-{/* SCREENSHOT — replace src with /images/canvas/04-04-history-layers.png once captured */}
-
-<Frame caption="Version history, Layers, and Activity panels">
-  <img
-    alt="Version dropdown, Layers panel, and Activity panel"
-    lightAlt="Version dropdown, Layers panel, and Activity panel"
-    darkAlt="Version dropdown, Layers panel, and Activity panel"
+    alt="Activity panel showing canvas versions grouped by day and prompt"
     src="/images/Activity.avif"
   />
 </Frame>
 
-## Related
+## Find anything with Layers
 
-<CardGroup cols={3}>
-  <Card title="Item Actions" icon="square-mouse-pointer" href="/canvas/action-items">
-    What you can do with a selected item.
-  </Card>
+Layers lists everything on the canvas: prototypes, notes, screenshots, flows and sections. Use it to find an item or move around a crowded canvas.
 
-  <Card title="Organize Canvas Work" icon="layer-group" href="/canvas/organize">
-    Sticky notes, comments, and sections.
-  </Card>
-
-  <Card title="Edit Without Regenerating" icon="wand-magic-sparkles" href="/getting-started/tutorial/untitled-page-5">
-    Refine a part without redoing the whole screen.
-  </Card>
-</CardGroup>
+<Frame caption="The Layers panel">
+  <img
+    alt="Layers panel listing the items on a canvas"
+    src="/images/Layers.avif"
+  />
+</Frame>

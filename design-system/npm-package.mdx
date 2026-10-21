@@ -1,0 +1,43 @@
+---
+title: "Set up your design system from an npm package"
+sidebarTitle: "From an npm package"
+icon: "npm"
+iconType: "brands"
+---
+
+*Use your published component library, so Figr designs with the same components your app is built from.*
+
+If your team publishes its design system as an npm package, Figr can read it directly. Your components, tokens and styles come straight from the source your engineers use, so designs stay in sync with code.
+
+<Steps>
+  <Step title="Start a new design system">
+    Open **Design System** in the sidebar and create a new one, or open an existing one to add a source.
+  </Step>
+  <Step title="Choose npm package as a source">
+    Under **Sources**, choose **npm package**.
+
+    <Frame>
+      <img
+        alt="Sources list with npm Package selected"
+        src="/images/docs/npm-02-source.png"
+      />
+    </Frame>
+  </Step>
+  <Step title="Enter your package name">
+    Type the package name, like `@yourcompany/design-system`, and the version you want.
+
+    <Frame>
+      <img
+        alt="Add an npm package dialog with the package name filled in"
+        src="/images/docs/npm-03-fields.png"
+      />
+    </Frame>
+  </Step>
+  <Step title="Set it up">
+    Click **Setup design system**. Figr reads the package and adds its components and tokens to your design system.
+
+    <Tip>
+      When you publish a new version of your package, update the version in Figr so new designs use your latest components.
+    </Tip>
+  </Step>
+</Steps>

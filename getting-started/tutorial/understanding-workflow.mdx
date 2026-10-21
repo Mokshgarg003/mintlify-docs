@@ -1,22 +1,61 @@
 ---
-title: "Understanding Workflow"
+title: "Understanding the workflow"
+description: "The order that gets the best results in Figr: context, design system, review, flows and edge cases, PRD, prototype, edit, hand off."
+sidebarTitle: "Understanding workflow"
+hidden: true
 ---
 
-Go straight to screens and you get surface-level design. \
-Think through the product first and the design has a reason to exist.
+Go straight to screens and you get surface-level design. Think through the product first and the design has a reason to exist.
 
-{/* DIAGRAM: placeholder so the page renders now. Upload your diagram to images/product-design-flow/03-01-workflow-order.svg then change src to "/images/product-design-flow/03-01-workflow-order.svg" */}
+A strong Figr workflow, especially inside an existing product, looks like this:
 
-A strong Figr workflow usually looks like this:
+```mermaid
+flowchart LR
+  A["Set up<br/>Context Pod, design system"] --> B["Think<br/>Review, flows, edge cases, PRD"]
+  B --> C["Design<br/>Prototype, refine"]
+  C --> D["Hand off<br/>Figma, link, code"]
+```
 
-1. [Set up product context](/product-intelligence/context-pods)
-2. [Add product inputs](/input-research/input-guide)
-3. [Set up design language](/product-intelligence/design-system)
-4. [Ask for a UX review](/getting-started/tutorial/review)
-5. [Map user flows and edge cases](/getting-started/tutorial/map-edge-cases)
-6. [Create product artifacts](/getting-started/tutorial/create-prds)
-7. [Generate the prototype](/getting-started/tutorial/prototypes)
-8. [Refine with Select & Edit](/getting-started/tutorial/untitled-page-5)
-9. [Export, publish, or hand off](/export/options)
+<Steps>
+  <Step title="Set up product context">
+    Build a [Context Pod](/product-intelligence/context-pods) with a walkthrough of the area you're working on.
+  </Step>
+  <Step title="Set up your design system">
+    Add your [Design System](/product-intelligence/design-system) so every screen uses your components and tokens.
+  </Step>
+  <Step title="Add inputs for this task">
+    Attach screenshots, Figma frames, PRDs or data. See the [input guide](/input-research/input-guide).
+  </Step>
+  <Step title="Explore and review">
+    [Brainstorm](/getting-started/tutorial/brainstorm) approaches, or ask for a [UX review](/getting-started/tutorial/review) of what exists today.
+  </Step>
+  <Step title="Map flows and edge cases">
+    [Map the flow and its edge cases](/getting-started/tutorial/map-edge-cases) before any screen is built.
+  </Step>
+  <Step title="Write the PRD">
+    [Create a PRD](/getting-started/tutorial/create-prds) that captures the decisions.
+  </Step>
+  <Step title="Build the prototype">
+    [Generate the prototype](/getting-started/tutorial/prototypes) with all its states.
+  </Step>
+  <Step title="Refine it">
+    Use [manual edit](/getting-started/tutorial/untitled-page-5) to fix details in place.
+  </Step>
+  <Step title="Hand off">
+    [Export, publish or hand off](/export/options) to Figma, a link or a coding agent.
+  </Step>
+</Steps>
 
-Use this workflow especially when working inside an existing product.
+You don't need every step every time. For a small change, go from context straight to the prototype and refine it.
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="What Figr creates" href="/getting-started/tutorial/what-figr-creates">
+    Every artifact Figr can make on the canvas.
+  </Card>
+
+  <Card title="Build a prototype" href="/getting-started/tutorial/prototypes">
+    Go from a product problem to a prototype.
+  </Card>
+</CardGroup>

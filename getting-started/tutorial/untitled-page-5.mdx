@@ -1,21 +1,67 @@
 ---
-title: "Edit Without Regenerating"
+title: "Manual edit"
+sidebarTitle: "Manual edit"
+icon: "pen"
 ---
 
-{/* @aryan make it concise — actioned: led with the action, kept the problem and the decision rule as guidance, added the how-to step, dropped the marketing close */}
+_Change your prototype yourself, or describe the change and let Figr make it._
 
-Select & Edit changes one part of a screen, a section, component, layout area, or piece of copy, and leaves the rest exactly as it was. Most AI tools regenerate the whole screen for one small change, so fixing the button shifts the layout and improving the copy breaks the spacing. To use it, select the part you want to change on the canvas, then describe the edit. Figr applies it to that selection only. Reach for full regeneration when the direction itself is wrong, and Select & Edit when the direction is right but the details need work.
+<iframe src="https://www.youtube.com/embed/WvjteOi7cAo" title="Edit AI designs without regenerating the whole screen" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-{/* VIDEO: Select and Edit demo */}
+There are two ways to edit a prototype in Figr. Edit by hand for quick fixes you can see, like copy, colour and spacing. Edit with a prompt for changes to how the prototype works or how it's laid out, especially when they affect more than one screen.
 
-<iframe src="https://www.youtube.com/embed/CPOe0DJfmyk?si=kKv3nfMBG1tFtXvt" title="Select and Edit demo with before and after" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
+## Edit by Hand:
 
-Good refinement prompts:
+<Steps>
+  <Step title="Open a prototype in full screen by double clicking on it.">
+    Find the screen on your canvas and double-click it to open full screen. Switch to the **Edit** tab.
 
-- "Make this warning clearer."
-- "Use the side panel pattern from this reference."
-- "Add the empty state for users with no integrations."
-- "Make only this table section more compact."
-- "Change the hierarchy in this card without changing the rest of the page."
+    <Frame>
+      <img
+        alt="Interact, Edit and Comment tabs with Edit selected"
+        src="/images/docs/edit-01-tab.png"
+      />
+    </Frame>
+  </Step>
+  <Step title="Click the element you want to change">
+    Select any text, button, image or container on the screen. Its properties appear in the panel.
 
-{/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/product-design-flow/03-08-multi-select-controls.png then change src to "/images/product-design-flow/03-08-multi-select-controls.png" */}
+    <Frame>
+      ![Screenshot 2026 10 21 At 3 40 06 PM](/images/Screenshot-2026-10-21-at-3.40.06-PM.png "Screenshot 2026 10 21 At 3 40 06 PM")
+    </Frame>
+  </Step>
+  <Step title="Make your change">
+    Type to update text, or change colour, size, spacing and alignment with respect to your design system in the properties panel.
+
+    <Frame>
+      ![Screenshot 2026 10 21 At 3 40 39 PM](/images/Screenshot-2026-10-21-at-3.40.39-PM.png "Screenshot 2026 10 21 At 3 40 39 PM")
+    </Frame>
+  </Step>
+  <Step title="Prompt the changes">
+    Select a component, type the edit you want in the prompt box, and send it with your other queued changes.
+
+    <Frame>
+      ![Screenshot 2026 10 21 At 3 41 56 PM](/images/Screenshot-2026-10-21-at-3.41.56-PM.png "Screenshot 2026 10 21 At 3 41 56 PM")
+    </Frame>
+  </Step>
+  <Step title="Check the result">
+    Your change shows on the screen right away. Click another element to keep editing, or close the editor when you're done. If you try to leave with changes you haven't applied, Figr warns you first.
+  </Step>
+</Steps>
+
+<Tip>
+  Edit by hand for quick fixes like copy, colour and spacing. Ask Figr in chat when the change affects the whole screen or several screens at once.
+</Tip>
+
+## Edit with Prompt:
+
+Describe the change in chat and Figr makes it for you. Use prompts for:
+
+- **New behaviour:** "When I click Delete, show a confirmation popup."
+- **New screens or states:** "Add an empty state for when there are no projects yet."
+- **Layout changes:** "Move the filters from the top bar into a left sidebar."
+- **Changes across screens:** "Rename 'Workspace' to 'Team' everywhere."
+
+![Screenshot 2026 10 21 At 3 06 33 AM](/images/Screenshot-2026-10-21-at-3.06.33-AM.png "Screenshot 2026 10 21 At 3 06 33 AM")
+
+When a change affects structure, like navigation or a layout pattern, Figr applies it everywhere it's used in the prototype, so every screen stays consistent. 

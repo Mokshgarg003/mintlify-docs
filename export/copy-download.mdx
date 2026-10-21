@@ -1,50 +1,44 @@
 ---
-title: "Copy and Download"
-description: "Copy a node as an image, export a high-resolution PNG, or download its front-end code."
+title: "Copy and download"
 sidebarTitle: "Copy and download"
+icon: "download"
 ---
 
-{/* DOC PLAN — remove before publishing
-  Format (K): MDX how-to, grouped by action (no Steps)
-  Priority (H): P1 | Ownership (F): Self | Status (G): In Progress
-  Assets (J):
-  - /images/export-and-share/07-05-download-code.png: screenshot, P1, the Download Code option on a generated node (ring the download option).
-  - Copy as Image: no screenshot, it only shows a "copied to clipboard" confirmation.
-  - High-res export: optional shot (07-06-hires-export.png) if a visual is wanted.
-  - Merge note: this page combines the former Download Code (7.5) and Copy as Image (7.6) pages. Retire the shared 07-03-copy-download.png.
-  Reference links (L): 7.1 Export Options, 7.3 Figr MCP, 7.4 Publish and Share
-  VERIFY (M, I): RESOLVED. Only Download Code exists (no separate Download Node). Clipboard copy and export are both PNG.
-  */}
+Select an item on the canvas and open **Export** to take its output out of Figr.
 
-Figr gives you a few ways to take a node's output out of the canvas. Copy it as an image, export a high-resolution image, or download its front-end code.
+| Option | What you get | Use it for |
+| --- | --- | --- |
+| Copy code | The prototype's code, on your clipboard | Pasting into your project or a coding agent |
+| Download PNG | An image of the design | Slack updates, decks, specs, reviews |
+| Download PDF | A PDF of the design or doc | Sharing a doc or a fixed snapshot |
+| Download Markdown | The text content as Markdown | PRDs and specs in your docs tool |
+| Copy as text | The content as plain text | Pasting copy into a doc or ticket |
 
-## Copy as Image
+## The code
 
-Copy as Image copies a rendered output to your clipboard and shows a confirmation once it is copied. The copy is a PNG. Use it for Slack updates, internal docs, presentations, quick review, or a static snapshot.
+Prototypes are real front-end code in React or Angular, built with your design system's components when one is attached. To read the code before you copy it, open the prototype in **Full screen** and switch on **Code**.
 
-## High-resolution image export
-
-High-resolution export gives you polished static assets as a PNG download. Use it when you need polished static assets for decks, specs, stakeholder updates, product reviews, documentation, or async design critique.
-
-## Download Code
-
-You can download a node's front-end output for implementation reference or prototyping.
-
-{/* SCREENSHOT — replace src with /images/export-and-share/07-05-download-code.png once captured */}
-
-<Frame caption="Download Code option">
+<Frame caption="Code options for a prototype">
   <img
     src="/images/Download-Code.avif"
-    alt="Download Code option on a generated node"
-    lightAlt="Download Code option on a generated node"
-    darkAlt="Download Code option on a generated node"
-  />
-  <img
-    alt="Download Code option on a generated node"
-    lightAlt="Download Code option on a generated node"
-    darkAlt="Download Code option on a generated node"
-    src="/images/Download-Code.avif"
+    alt="Code export option on a selected prototype"
   />
 </Frame>
 
-Use it when you need code as a starting point, you want to inspect structure, you want to hand off a prototype direction, or you are moving from Figr into development. Do not send vague ideas to engineering. Use Figr to clarify the flow, states, and design direction first, then hand off.
+To build with it in your own codebase, use **Open in coding agent** instead. Your agent reads the design, your components and the reasoning behind them through [Figr MCP](/export/mcp).
+
+<Tip>
+  Don't send a vague idea to engineering. Use Figr to settle the flow, states and design direction first, then hand off.
+</Tip>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Export options" color="#695BE8" icon="arrow-up-from-bracket" href="/export/options">
+    Choose the right handoff path.
+  </Card>
+
+  <Card title="Export to Figma" color="#695BE8" icon="figma" iconType="brands" href="/export/figma">
+    Send screens to Figma.
+  </Card>
+</CardGroup>

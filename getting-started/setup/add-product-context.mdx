@@ -1,64 +1,81 @@
 ---
-title: "Add Product Context"
+title: "Add product context"
+description: "Set up a Context Pod, a walkthrough, your design system and connectors before your first design, so Figr designs inside your product."
+sidebarTitle: "Add product context"
+hidden: true
 ---
 
 Your first setup decides the quality of everything Figr generates. Give it real product context, how your product works and how it looks, before you ask for a single screen.
 
-## 1. Setup Context Pods
+## 1. Set up a Context Pod
 
-Context Pods and walkthroughs teach Figr how your product works.
+A Context Pod teaches Figr how your product works.
 
-{/* WALKTHROUGH VIDEO (optional): YouTube hosts this, so no upload needed. Replace VIDEO_ID with your walkthrough video's ID. Delete this whole block if you don't want a video here. */}
+<Steps>
+  <Step title="Create the pod">
+    In the sidebar, open **Product intelligence** and click **Create new**. Name it after one product area, like "Billing and plans", "Admin permissions" or "Workspace onboarding".
+  </Step>
+  <Step title="Add a walkthrough">
+    Under **Show us your product**, record a walkthrough or drop in an existing recording. Explain the area like you would to a new teammate: what it does, who uses it, what they're trying to get done, where the friction is, and what shouldn't change.
+  </Step>
+  <Step title="Add anything else you have">
+    Upload PRDs or research, paste notes, link a public page, or add instructions like the terms your team uses.
+  </Step>
+  <Step title="Build it">
+    Click **Start Building**. Figr reads your sources and shows a summary of what it learned.
+  </Step>
+</Steps>
 
-### Create context Pod
+<Frame>
+  <img
+    alt="Add your product details screen with the five source options"
+    src="/images/docs/cp-03-sources.png"
+  />
+</Frame>
 
-Start with a Context Pod for the product or feature area you want Figr to understand. Good examples:
+Keep each pod focused on one product area, workflow or feature set. A recording beats a screenshot, because Figr follows the real sequence of clicks, menus and transitions. See [Context Pods](/product-intelligence/context-pods) for the details.
 
-- "Cal.com booking flow"
-- "Billing and plans"
-- "Admin permissions"
-- "Workspace onboarding"
-- "Analytics dashboard" Keep it focused. One Context Pod should cover a single product area, workflow, or feature set, so Figr can understand and reuse it later.
+<iframe src="https://www.youtube.com/embed/ABHB0Jp_k9k" title="Teach Figr your product with Context Pods" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-{/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/getting-started/create-context-pod.png in your repo, then change src to "/images/getting-started/create-context-pod.png" */}
+## 2. Set up your design system
 
-<img
-  alt="Create Context Pod screen"
-  title="Create Context Pod screen"
-  style={{ width:"93%" }}
-  lightAlt="Create Context Pod screen"
-  darkAlt="Create Context Pod screen"
-  src="/images/context-pod-create.png"
-/>
-
-### Add a walkthrough
-
-Add a screen recording or product walkthrough to the Context Pod. Walk through the area like you are explaining it to a teammate: what it does, who uses it, what they are trying to complete, where the friction is, what should not change, and which states matter. A recording beats a screenshot. Figr follows the real sequence, clicks, movement, dropdowns, and transitions.
-
-## 2. Setup Design Language
-
-This is where Figr learns how your product should look. Connect your Figma frames, add design tokens, upload CSS or JSON, or let Figr learn from your live product. The goal is for Figr to design inside your system, not approximate it. No design system yet? You can build one directly in Figr.
-
-{/* SCREENSHOT: placeholder so the page renders now. Upload the real file to images/getting-started/design-language-setup.png in your repo, then change src to "/images/getting-started/design-language-setup.png" */}
+This is where Figr learns how your product looks. Open **Design System** in the sidebar and add a source: Figma (through the Figr AI Figma Sync plugin), Storybook, an npm package, a GitHub repo, code files or brand assets. No design system yet? Start from brand assets, or let Figr pick up colours and fonts from your website.
 
 <img
-  alt="Design language or Figma setup"
-  title="Design language or Figma setup"
+  alt="Design system setup"
   style={{ width:"93%" }}
-  lightAlt="Design language or Figma setup"
-  darkAlt="Design language or Figma setup"
   src="/images/design-language-setup.png"
 />
 
+See [Design System](/product-intelligence/design-system) for each source.
+
+## 3. Connect your tools (optional)
+
+Connect Notion, Confluence, Linear, Asana, GitHub, Slack, Mixpanel and others so Figr can read live specs, tickets and data while it works. See [Connectors](/product-intelligence/connectors).
+
+## 4. Start a canvas with your context
+
+Open your pod and start a canvas from it, or click **New canvas** and pick your Context Pod and design system. Your first message already has your product's context.
+
 ## Start with lighter tasks
 
-With context and design language in place, do not jump straight to a high-fidelity design. Start with something lighter first: a review, a flow, an edge-case map, or a PRD breakdown. This lets Figr reason through the problem before it generates screens. Good first prompts:
+Don't jump straight to high fidelity. Start with a review, a flow, an edge-case map or a PRD breakdown, so Figr reasons through the problem before it builds screens:
 
 - "Review this onboarding flow and identify where users may get stuck."
 - "Map the edge cases for this billing upgrade flow."
 - "Create a user flow from this product walkthrough."
 - "Turn this rough PRD into a flow and key states."
 
-## Generate later
+Generate the design once the direction is clear. By then Figr knows how your product looks and behaves, and the area you're working in.
 
-Generate the design once the direction is clear. By now Figr knows how your product looks and behaves, the area you are working in, and the design language to follow.
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Understand the workflow" href="/getting-started/tutorial/understanding-workflow">
+    The order that gets the best results.
+  </Card>
+
+  <Card title="Build a prototype" href="/getting-started/tutorial/prototypes">
+    Put your context to work.
+  </Card>
+</CardGroup>

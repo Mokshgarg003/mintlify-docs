@@ -1,78 +1,68 @@
 ---
-title: "Design System"
-description: "Import your design system once and Figr designs with your actual components, tokens, and patterns, not generic UI."
-sidebarTitle: "Design system"
+title: "Set up your design system from Figma"
+sidebarTitle: "From Figma"
+icon: "palette"
 ---
 
-## Setting up your Design Language
+_Bring your Figma variables, styles and components into Figr, so every screen it makes looks like your product._
 
-<iframe src="https://www.youtube.com/embed/1au0OBqrfl4" title="Setting up your Design Language" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+With your design system in Figr, every screen uses your real colours, type and components from the first message. You spend less time fixing off-brand drafts and more time on the design itself.
 
-### Open Design Language
+<iframe src="https://www.youtube.com/embed/oGHOvoOuvqE" title="Introducing Figr's Design System Intelligence" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-From the sidebar, click **Design Language**. The setup screen has two sections: sources and instructions.
+> **Before you start:** this page is for components that already exist in Figr. Create the new component or make the change in Figr first, then follow these steps to bring it into your Figma file
 
-### Upload product screenshots
+<Steps>
+  <Step title="Start a new design system">
+    In the sidebar, open **Design System** and create a new one. Give it a name and choose who can use it: just you, everyone in your workspace to view, or everyone to edit.
 
-The first section takes screenshots and files. Upload your existing product screens, Figma frames exported as images, UI mockups, component examples, and CSS or style files. Drag and drop into the upload area, or click to browse.
+    <Frame>
+      <img
+        alt="Create Design System form with name and sharing options"
+        src="/images/docs/ds-01-new.png"
+      />
+    </Frame>
+  </Step>
+  <Step title="Open the Figma plugin">
+    Under **Sources**, choose **Figma**, then click **Open Figma plugin**. Run **Figr AI Figma Sync** in your design system file and check that it shows **Connected**.
+
+    <Frame>
+      <img
+        alt="Continue in the Figma plugin dialog naming the design system file"
+        src="/images/docs/ds-02-plugin.png"
+      />
+    </Frame>
+  </Step>
+  <Step title="Choose what to bring in">
+    Select what Figr should learn from: variables, styles, fonts, components, reference screens, icons, logos and images.
+
+    <Frame>
+      <img
+        alt="Plugin step for choosing reference screens to import"
+        src="/images/docs/ds-03-choose.png"
+      />
+    </Frame>
+
+    <Warning>
+      **Before you start:** your colours, type and spacing need to be set up as variables or styles in Figma. Figr can't pick up values that only live on individual layers.
+    </Warning>
+  </Step>
+  <Step title="Set it up">
+    Click **Setup design system**. Figr reads your selection and builds your design system.
+
+    <Frame>
+      <img
+        alt="Design system tokens after setup"
+        src="/images/docs/ds-04-result.png"
+      />
+    </Frame>
+  </Step>
+</Steps>
 
 <Tip>
-  **The more you upload, the better.** Figr analyzes every image to learn your visual patterns. Five screenshots give a basic read; twenty give deep pattern recognition.
+  Include a few reference screens along with your components. They show Figr how your components are used together, not just what they look like.
 </Tip>
 
-### Add design instructions
+## Other sources
 
-The second section lets you describe your design language in text:
-
-- Style ("minimal, lots of whitespace")
-- Color ("primary is purple #6366f1")
-- Typography ("Inter for UI, system fonts for body")
-- Spacing ("8px base unit")
-- Components ("rounded buttons, subtle shadows")
-- Any specific rules or constraints
-
-You can also attach files for CSS, tokens, or documentation, add Figma frames to import directly, or use voice input to describe your style out loud.
-
-### Complete setup
-
-Click **Setup design language**. Figr analyzes the uploads, extracts color, typography, and spacing, identifies component patterns, combines them with your written instructions, and generates your design language profile.
-
-## Editing your Design Language
-
-After setup, Figr generates a structured CSS tokens document with your design language.
-
-<iframe src="https://www.youtube.com/embed/XMysFmnuE1Y" title="Editing your Design Language" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
-
-### View your tokens
-
-Open **Design Language** in the sidebar to see your tokens organized by category: Typography, Colors Brand, Colors Neutrals, and Colors Icons. Each token carries a usage comment, like `/* Card titles */` or `/* Primary text */`.
-
-### Edit tokens
-
-Click **Edit** (bottom right), make changes directly in the document, and use the toolbar for headings, bold, italic, links, and lists. Click **Save changes** to apply, or **Discard** to cancel.
-
-### Regenerate tokens
-
-Click **Regenerate** to have Figr re-analyze your uploads, review the new document, edit if needed, then save.
-
-## Why it matters
-
-Generic AI output looks generic: wrong colors, wrong spacing, wrong button styles. You spend more time fixing than you saved.
-
-With a design system imported, every design that follows uses your exact tokens, your component variants, and your spacing scale. The output looks like it belongs in your product because it uses your product's building blocks.
-
-| Without Design System | With Design System |
-| --- | --- |
-| Generic components that need restyling | Your actual components with correct variants |
-| Colors that miss your brand | Your exact color tokens, applied automatically |
-| Spacing that feels off | Your spacing scale enforced throughout |
-| Typography that needs manual fixing | Your type hierarchy respected |
-| Components that are not in your library | Designs that match your Figma library |
-
-For "Design a settings page," that is the difference between a template with arbitrary colors and default styles, and a page using your accent color, your Inter typography, your 8px grid, your button style, and your card shadows, one that looks like your product.
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0 | Ownership: Self | Status: In Progress
-  Videos kept: 1au0OBqrfl4 (setup), XMysFmnuE1Y (editing)
-  VERIFY: exact button labels (Setup design language, Edit, Regenerate), token category names.
-  */}
+Figma is a great start, but you can also add your code: Storybook, an npm package or your code repo. Figr matches your Figma components with their code and combines them into one design system. Your design system can also come from [Storybook](/design-system/storybook), an [npm package](/design-system/npm-package), your [code repo](/design-system/code-repo) or [brand assets](/design-system/brand-assets). You can combine several sources in one design system.

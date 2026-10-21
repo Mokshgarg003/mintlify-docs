@@ -1,132 +1,102 @@
 ---
-title: "Frequently Asked Questions"
-description: "Common questions about Figr's features, pricing, and usage answered by our team."
+title: "Frequently asked questions"
+description: "Answers on what Figr does, setup, plans and credits, collaboration, handoff to Figma and code, connectors and security."
 icon: "question"
 ---
 
-
-## Getting Started
+## Getting started
 
 <AccordionGroup>
   <Accordion title="What makes Figr different from other AI design tools?">
-    Figr builds permanent product memory that learns your specific product, users, and constraints. Figr deeply understands your your design system, user research, and product patterns to create designs that feel native to your product from day one. Figr AI is built pecifically for teams to help build on top of their existing product.
+    Figr is built for teams designing on top of a product that already exists. It learns your product from Context Pods and your Design System, then designs inside them: your components, your tokens, your flows and your states. The output exports to Figma with auto layout and your library components, or goes to code through Figr MCP, so designers refine it instead of rebuilding it.
   </Accordion>
   <Accordion title="How long does it take to set up Figr for my product?">
-    For teams, working on a live product[ book a quick call with us](https://cal.com/moksh-figr/figr-ai-onboard) to get yourself onboarded. Initial setup takes 20 minutes. For complex products with multiple deeper context, setup may take up to an hour but delivers immediate value.\
-    \
-    You provide 4-5 product screenshots, your Figma tokens, CSS files or documented design system. Figr also auto-explores your product flows and sets up your design system from the backend. \
-    \
-    This one-time investment saves hours on every future design project as Figr applies your product knowledge automatically.\
-    \
-    While working on day-to day you can upload screenshots, share your screen to show your product, URLs, PDFs, CSVs and provide  context of your UX problem. 
+    A first useful setup takes minutes: one recording, a few screenshots or a Figma file. A full setup for a complex product, with a design system and several Context Pods, takes longer and pays off on every project after.
+
+    Enterprise teams get onboarding with the Figr team. [Talk to us](https://figr.design/contact) to set it up.
   </Accordion>
   <Accordion title="Do I need design experience to use Figr?">
-    No. Figr guides you through the design process with questions and recommendations, making design decisions accessible to anyone who understands user problems and business requirements. PMs actually use Figr more than designers because it solves higher-level problems like flow architecture and pattern selection.
+    No. Figr asks questions, explores directions and explains its reasoning. PMs use it for flows, edge cases and first passes. Designers use it to explore faster and hand off cleaner work.
   </Accordion>
-  <Accordion title="Can Figr work with my existing design tools?">
-    Yes. Figr exports to Figma. You can also export  code  that uses your existing design tokens and component library.
+  <Accordion title="Does Figr work with my existing tools?">
+    Yes. Figr takes Figma, Storybook, npm packages and GitHub as design system sources, and connects to tools like Notion, Confluence, Linear, Asana, Slack, Mixpanel and Amplitude. Output goes to Figma, to code, or to coding agents like Claude Code, Cursor, VS Code and Codex.
   </Accordion>
 </AccordionGroup>
 
-## Features & Capabilities
+## Features
 
 <AccordionGroup>
-  <Accordion title="How does Figr's memory system work?">
-    Figr builds a persistent understanding of your product through four context layers: your existing flows (auto-explored), design system (tokens and components), user feedback (from uploads), and industry benchmarks. Unlike chat-based tools that forget between sessions, Figr gets smarter about your organization over time and maintains context across conversations.
-
-    When you create new designs, Figr references this knowledge automatically. The memory builds over time, making designs increasingly accurate and context-aware.
+  <Accordion title="How does Figr remember my product?">
+    Context Pods hold what Figr knows about your product: recordings, files, notes, links and instructions. Figr also keeps memory of product decisions, constraints and preferences across your work, pulls relevant decisions from earlier chats in the same pod, and shows which memories or sources it used. See [Context Pods](/product-intelligence/context-pods).
   </Accordion>
-  <Accordion title="What types of data can I import into Figr?">
-    You can import user research (PDFs, videos), analytics data (CSV exports), design screenshots, and documentation (PRDs, email threads, screenshots). Figr also supports screen sharing to learn your product directly.
+  <Accordion title="What can I upload?">
+    Images (PNG, JPG, WebP, GIF, SVG), videos (MP4, MOV, MKV, WebM), PDFs, Markdown, text, CSV, JSON, CSS, HTML and Mermaid files. Word, Excel and PowerPoint files aren't supported, so export them to PDF first. You can also record a walkthrough inside Figr or capture pages with the Figr Capture Chrome extension.
   </Accordion>
-  <Accordion title="Can multiple team members collaborate in Figr?">
-    Yes. Figr supports real-time collaboration with role-based permissions. Team members can co-edit designs, create sub-teams and contribute to the shared product knowledge base.
+  <Accordion title="Can my team work together in Figr?">
+    Yes. Teammates see each other's live cursors on the canvas, comment on designs, and run separate chats in the same project. Share a project with view or edit access, and share Context Pods and design systems across the workspace.
   </Accordion>
   <Accordion title="Does Figr work for mobile app design?">
-    Absolutely. Figr creates responsive designs and can adapt patterns across platforms. 
+    Yes. Figr designs for web and mobile, and builds prototypes in React or Angular. 
+  </Accordion>
+  <Accordion title="How do I hand off to engineering?">
+    Export screens to Figma with auto layout and your components, download the code, or click **Open in coding agent** to connect Claude Code, Cursor, VS Code or Codex through [Figr MCP](/export/mcp).
   </Accordion>
 </AccordionGroup>
 
-## Pricing & Plans
+## Plans and credits
 
 <AccordionGroup>
-  <Accordion title="What does the free plan include?">
-    The free plan includes 20 one-time credits, basic memory system, standard exports, and community support. It's designed to help you evaluate if Figr fits your team's workflow before committing to a paid plan.
+  <Accordion title="What plans are there?">
+    | Plan | Credits | Seats |
+    | --- | --- | --- |
+    | Free | 10 credits | 1 |
+    | Starter, \$39/month | 200 credits a month | 1 |
+    | Max | 1,000 credits a month, shared | 3 |
+    | Enterprise | Custom | Per seat |
+
+    See current prices and annual options on the [pricing page](https://figr.design/pricing).
   </Accordion>
-  <Accordion title="How does Pro plan pricing work?">
-    Pro starts at \$99/month per team for 200 credits. We do not charge per seat, unlimited  team members can use Figr with the same work email. Everyone shares a common credit pool. You can upgrade your monthly credits allowance at any point. The monthly allocated credits rollover to next month.\
-    \
-    We focus on team-level licensing rather than per-user pricing to encourage collaboration and shared context building across your organizati
+  <Accordion title="How are credits used?">
+    Credits are used based on the work each message does. A large multi-screen prototype uses more than a quick question. You can see usage per member in Settings.
   </Accordion>
   <Accordion title="Do you offer enterprise plans?">
-    Yes. Enterprise plans include SSO, advanced security, private cloud options, custom integrations, dedicated support, and training. Contact [hi@figr.design](mailto:hi@figr.design) for custom pricing or [book a call with founder here](https://cal.com/moksh-figr/figr-ai-contact).
+    Yes. Enterprise includes SSO, roles and permissions, domain auto-join, onboarding with the Figr team, and admin controls for seats and credits. Admins can move unused credits between seats and request seats or top-ups inside Figr. Email [hi@figr.design](mailto:hi@figr.design) or [talk to us](https://figr.design/contact).
   </Accordion>
   <Accordion title="Can I cancel anytime?">
-    Yes, you can cancel your subscription anytime. You'll retain access until your current billing period ends. All your design data remains accessible for export.
+    Yes. You keep access until the end of your billing period.
   </Accordion>
 </AccordionGroup>
 
-## Technical Questions
+## Security and admin
 
 <AccordionGroup>
-  <Accordion title="What browsers does Figr support?">
-    Figr works in all modern browsers including Chrome, Firefox, Safari, and Edge. The web interface is optimized for desktop use given the collaborative nature of design work.
-  </Accordion>
   <Accordion title="How secure is my data in Figr?">
-    We use AES-256 encryption, SOC 2 compliance, and enterprise-grade security practices. You maintain complete ownership of your data and can export everything anytime.
-
-    Your design data, product screenshots, and context information are encrypted in transit and at rest. We don't share your proprietary information with other customers or use it to train models for competitors. Enterprise plans include additional security features like SSO integration and data residency options.
+    Figr is SOC 2 Type II compliant, and your data is encrypted in transit and at rest. Enterprise plans include SSO and EU data residency. See [Data protection](/legal/data-protection) for details.
   </Accordion>
-  <Accordion title="How does screen sharing work technically?">
-    Screen sharing uses secure browser-based technology (similar to Zoom or Meet) that lets our AI see your current design context in real-time. This helps Figr better understand complex problems you're explaining verbally.
+  <Accordion title="Does Figr support SSO?">
+    Yes, on Team and Enterprise plans. Figr supports SAML and OIDC, set up by a workspace owner or admin.
   </Accordion>
-</AccordionGroup>
-
-## Design Process
-
-<AccordionGroup>
-  <Accordion title="How accurate are Figr's AI-generated designs?">
-    Figr's accuracy depends on the context you provide. With proper design system setup and product context, teams report 50% less time fixing outputs compared to other AI tools. The designs respect your tokens, components, and existing patterns while suggesting improvements based on successful app benchmarks. 
-
-    Initial designs typically need minor adjustments, but after a few weeks of use, designs often ship with minimal changes. The more Figr knows about your product, the better the results.
-  </Accordion>
-  <Accordion title="Can I modify AI-generated designs?">
-    Yes. Figr provides both AI assistance and export to Figma. You can edit any element, adjust layouts, modify colors, and make detailed refinements to get exactly what you need.\
-    \
-    Figr outputs production-ready frames that your designers can refine, extend, or use as starting points.
-  </Accordion>
-  <Accordion title="How does Figr handle design systems?">
-    Figr reads your Figma tokens and maintains design system compliance across all outputs. It can switch between different product contexts  while applying the correct styles and components. For enterprise customers, we provide complete design system setup and auditing to ensure consistency across your organization.
-  </Accordion>
-  <Accordion title="What if Figr creates something I don't like?">
-    Simply provide feedback and ask for alternatives. Figr can generate multiple variations, explain its reasoning, or iterate based on your specific concerns. The more context you provide about what's not working, the better Figr becomes at understanding your preferences and organizational design standards.
+  <Accordion title="What can connectors access?">
+    A connector can read only what the account you connect it with can read. For GitHub, you choose exactly which repositories Figr can access. You can turn any connector off at any time.
   </Accordion>
 </AccordionGroup>
 
-## Support & Resources
+## Getting help
 
 <AccordionGroup>
   <Accordion title="How do I get help if I'm stuck?">
-    Check our documentation first, then email [hi@figr.design](mailto:hi@figr.design). \
-    (Less than 24 hours response time)\
-    \
-    Enterprise customers get priority support with dedicated success managers. We also provide screen sharing sessions where our team can walk through your specific use case and help optimize your setup for better results.
+    Check these docs first, then email [hi@figr.design](mailto:hi@figr.design). We reply within 24 hours. Enterprise customers get priority support.
   </Accordion>
-  <Accordion title="Do you provide onboarding or training?">
-    Yes. All users get access to tutorial videos and documentation. Pro Teams and Enterprise customers get dedicated training sessions for your team, best practices workshops, and ongoing success management to ensure you're getting maximum value from Figr.
+  <Accordion title="How often do you ship?">
+    Every week or two. See the [changelog](/changelog) for what's new.
   </Accordion>
-  <Accordion title="How often do you add new features?">
-    We ship new features weekly and major updates monthly. Follow our changelog and blog for the latest updates. User feedback heavily influences our development priorities.
-  </Accordion>
-  <Accordion title="Can I request specific features?">
-    Absolutely.[ Email us your feature requests](mailto:hi@figr.design). 
-
-    We prioritize feature requests from active customers, especially enterprise teams. Share your needs through email or during customer calls. Many of our current features like screen sharing and deep product context came directly from customer requests and collaborative development sessions.
+  <Accordion title="Can I request a feature?">
+    Yes. [Email us](mailto:hi@figr.design), or use the feedback option in the app.
   </Accordion>
 </AccordionGroup>
 
 ---
 
 <Card title="Still have questions?" icon="question" iconType="regular" href="https://figr.design/contact">
-  [Reach out to us](mailto:hi@figr.design) or [book a call](https://cal.com/moksh-figr/figr-ai-contact).
+  Reach out to us at [hi@figr.design](mailto:hi@figr.design) or through our contact page.
 </Card>

@@ -1,39 +1,41 @@
 ---
-title: "Map Edge Cases"
+title: "Map edge cases"
+sidebarTitle: "Map edge cases"
+icon: "triangle-exclamation"
 ---
 
-<Frame caption="Figr maps the happy path and every state around it.">
-  <img
-    src="/images/Map-Edge-Cases.avif"
-    alt="Happy path versus a full edge-case map"
-    lightAlt="Happy path versus a full edge-case map"
-    darkAlt="Happy path versus a full edge-case map"
-    className="dark:hidden"
-  />
-  <img
-    src="/images/03-05-edge-case-flow.png"
-    alt="Happy path versus a full edge-case map"
-    lightAlt="Happy path versus a full edge-case map"
-    darkAlt="Happy path versus a full edge-case map"
-    className="hidden dark:block"
-  />
-</Frame>
+_Find what can go wrong before your users do._
 
-The happy path is the easy part. Figr maps the states that actually break products:
+<iframe src="https://www.youtube.com/embed/1hAOPDLPCuU" title="Map UX edge cases and user flows with Figr AI" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-- **Input and data**: empty, loading, partial data, validation errors
-- **Access and session**: permission states, access changes, session expiry
-- **System and network**: error states, retries, network failures, offline or slow connections
-- **Money and destructive actions**: payment failures, confirmation steps, destructive actions
+Edge cases are the situations a happy-path design misses: empty states, errors, slow connections, permissions, long names, and users who do things in an unexpected order. Figr looks at your screen or flow and lists the cases worth designing for.
 
-## Example prompts
+<Steps>
+  <Step title="Bring in what you want to check">
+    Select a screen, flow or prototype on your canvas, or upload a screenshot of a live screen.
 
-- "Map the file upload flow, including file too large, unsupported type, network failure, storage limit, and access revoked."
-- "Map the billing upgrade flow, including payment failure, expired card, permission restriction, invoice loading, and downgrade impact."
-- "Map the password reset flow, including invalid email, expired link, used link, rate limit, and success."
+    <Frame>
+      ![Screenshot 2026 10 21 At 3 30 50 PM](/images/Screenshot-2026-10-21-at-3.30.50-PM.png "Screenshot 2026 10 21 At 3 30 50 PM")
+    </Frame>
+  </Step>
+  <Step title="Attach your Context Pod">
+    Select your pod in the chat so Figr knows your users, roles and product rules.
+  </Step>
+  <Step title="Ask Figr to map the edge cases">
+    For example: "What edge cases should we design for on this checkout flow?"
+  </Step>
+  <Step title="Review the list">
+    Figr groups the cases by type, such as empty states, errors, permissions and data limits. Decide which ones need a design.
 
-Edge cases are not nice to have. They are the product.
+    <Frame caption="Figr maps the happy path and every state around it.">
+      ![Screenshot 2026 10 21 At 3 34 58 PM](/images/Screenshot-2026-10-21-at-3.34.58-PM.png "Screenshot 2026 10 21 At 3 34 58 PM")
+    </Frame>
 
-When Figr maps the flow visually, your team aligns before any screen is polished. Designers see which states to build, engineers see the behavior to expect, and PMs get a sharper spec.
-
-{/* DIAGRAM: replace with the final SVG when ready. Confirm one filename: edge-case-flow vs edge-cases-map. */}
+    <Tip>
+      Map edge cases before handoff, not after. It's cheaper to design an error state now than to fix it once it ships.
+    </Tip>
+  </Step>
+  <Step title="Design the ones that matter">
+    Ask Figr to design the screens or states for the cases you picked. For example: "Design the payment failed and expired card states."
+  </Step>
+</Steps>

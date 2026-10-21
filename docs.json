@@ -1,10 +1,10 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "maple",
   "name": "Figr AI Docs",
   "colors": {
     "primary": "#695BE8",
-    "light": "#7C70EA",
+    "light": "#ACA3FF",
     "dark": "#5B50B9"
   },
   "favicon": "/favicon.svg",
@@ -34,6 +34,53 @@
         "icon": "book",
         "pages": [
           {
+            "group": "Welcome to Figr",
+            "pages": [
+              "getting-started/welcome/introduction",
+              "getting-started/setup/creating-your-account"
+            ]
+          },
+          {
+            "group": "What Figr does",
+            "pages": [
+              "what-figr-does/overview",
+              {
+                "group": "Design new work",
+                "icon": "pen-nib",
+                "pages": [
+                  "what-figr-does/add-to-existing-journey",
+                  "what-figr-does/research-to-flows",
+                  "what-figr-does/explore-and-sign-off"
+                ]
+              },
+              {
+                "group": "Improve what you have",
+                "icon": "wrench",
+                "pages": [
+                  "what-figr-does/change-impact",
+                  "what-figr-does/audit-and-redesign"
+                ]
+              },
+              {
+                "group": "Design system",
+                "icon": "palette",
+                "pages": [
+                  "what-figr-does/ai-ready-design-system",
+                  "what-figr-does/design-system-from-screens",
+                  "what-figr-does/ds-compliant-prototypes"
+                ]
+              },
+              {
+                "group": "Hand off",
+                "icon": "paper-plane",
+                "pages": [
+                  "what-figr-does/mock-to-figma",
+                  "what-figr-does/handoff-to-engineering"
+                ]
+              }
+            ]
+          },
+          {
             "group": "How to Begin?",
             "expanded": true,
             "pages": [
@@ -42,16 +89,17 @@
                 "pages": [
                   "getting-started/welcome/product-aware-designing",
                   "getting-started/welcome/who-should-use-figr"
-                ]
+                ],
+                "hidden": true
               },
               {
                 "group": "Getting Started",
                 "pages": [
-                  "getting-started/setup/creating-your-account",
                   "getting-started/setup/add-product-context",
                   "getting-started/setup/invite-team",
                   "getting-started/setup/referral"
-                ]
+                ],
+                "hidden": true
               },
               {
                 "group": "Product Design Flow",
@@ -59,51 +107,87 @@
                   "getting-started/tutorial/understanding-workflow",
                   "getting-started/tutorial/what-figr-creates",
                   "getting-started/tutorial/brainstorm",
-                  "getting-started/tutorial/review",
-                  "getting-started/tutorial/map-edge-cases",
-                  "getting-started/tutorial/create-prds",
-                  "getting-started/tutorial/prototypes",
-                  "getting-started/tutorial/untitled-page-5"
-                ]
+                  "getting-started/tutorial/review"
+                ],
+                "hidden": true
               }
-            ]
+            ],
+            "hidden": true
           },
           {
-            "group": "Canvas",
-            "pages": [
-              "canvas/canvas-overview",
-              "canvas/action-items",
-              "canvas/organize",
-              "canvas/history-layers"
-            ]
-          },
-          {
-            "group": "Inputs and Research",
+            "group": "Add your product context",
             "pages": [
               "input-research/input-guide",
+              "product-intelligence/context-pods",
               "input-research/screen-recording",
-              "input-research/chrome-extension",
+              "input-research/files-research",
               "input-research/figma-input",
-              "input-research/files-research"
+              {
+                "group": "Capture a webpage",
+                "icon": "globe",
+                "pages": [
+                  "context/capture-public-page",
+                  "input-research/chrome-extension"
+                ]
+              },
+              "product-intelligence/connectors"
             ]
           },
           {
-            "group": "Product Intelligence",
+            "group": "Set up team context",
+            "pages": [
+              "context/share-pod",
+              "context/org-wide-context",
+              "context/skills-guardrails"
+            ]
+          },
+          {
+            "group": "Set up your design system",
             "pages": [
               "product-intelligence/design-system",
-              "product-intelligence/context-pods",
-              "product-intelligence/connectors"
+              "design-system/storybook",
+              "design-system/npm-package",
+              "design-system/code-repo",
+              "design-system/brand-assets",
+              "design-system/switch-design-systems",
+              "design-system/update-figma-components"
+            ]
+          },
+          {
+            "group": "Create with Figr",
+            "pages": [
+              "getting-started/tutorial/prototypes",
+              "create/redesign",
+              "create/map-user-flow",
+              "create/wireframes",
+              "getting-started/tutorial/create-prds",
+              "getting-started/tutorial/map-edge-cases",
+              "create/test-cases"
+            ]
+          },
+          {
+            "group": "Work on the canvas",
+            "pages": [
+              "canvas/canvas-overview",
+              "getting-started/tutorial/untitled-page-5",
+              "canvas/multiple-chats",
+              "canvas/organize",
+              "canvas/comments",
+              "canvas/annotations",
+              "canvas/duplicate-fork",
+              "canvas/action-items",
+              "canvas/history-layers"
             ]
           },
           {
             "group": "Export and Share",
             "pages": [
-              "export/direct-editing",
               "export/options",
               "export/figma",
               "export/mcp",
               "export/copy-download",
-              "export/publish"
+              "export/publish",
+              "export/share-project"
             ]
           },
           {
@@ -148,7 +232,8 @@
             "hidden": true,
             "pages": [
               "yes",
-              "inputs/screen-recording"
+              "inputs/screen-recording",
+              "export/direct-editing"
             ]
           },
           {
@@ -326,5 +411,8 @@
       "source": "/product-thinking/prototype",
       "destination": "/getting-started/tutorial/prototypes"
     }
-  ]
+  ],
+  "background": {
+    "decoration": "gradient"
+  }
 }

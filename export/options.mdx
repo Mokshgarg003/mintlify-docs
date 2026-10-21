@@ -1,52 +1,50 @@
 ---
-title: "Export Options"
-description: "Export is a handoff decision, not one final button."
+title: "Export options"
 sidebarTitle: "Export options"
+icon: "arrow-up-from-bracket"
 ---
 
-{/* DOC PLAN — remove before publishing
-  Format (K): MDX overview page
-  Priority (H): P0 | Ownership (F): Self | Status (G): In Progress
-  Assets (J):
-  - /images/export-and-share/07-01-export-options.png — screenshot, P0 — full export dropdown/options
-  - Doc references an optional handoff decision-tree graphic (Figma / Publish / Code / MCP); not in the Graphics Checklist
-  Reference links (L): 7.2 Export to Figma, 7.4 Publish and Share, 7.5 Download code, 7.3 Figr MCP
-  VERIFY (M, I): none
-  */}
+Export is a handoff decision. Ask where the work goes next, then pick the path.
 
-{/* SCREENSHOT — replace src with /images/export-and-share/07-01-export-options.png once captured */}
+<iframe src="https://www.youtube.com/embed/8o1imTM6Lug" title="Export from Figr: Figma, share links and code" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-<Frame caption="The full export options menu">
+| Where it goes next | Use | Menu item |
+| --- | --- | --- |
+| A designer polishes it in Figma | [Export to Figma](/export/figma) | Export screens / Export all screens |
+| Stakeholders or users review it | [Publish a prototype](/export/publish) | Publish |
+| Your team keeps working on it | [Share a project](/export/share-project) | Share |
+| An engineer builds it with an AI agent | [Figr MCP](/export/mcp) | Open in coding agent |
+| An engineer wants the code | [Copy and download](/export/copy-download) | Copy code |
+| A deck, doc or ticket | [Copy and download](/export/copy-download) | Download PNG / PDF / Markdown, Copy as text |
+| Future work in Figr | [Context Pods](/product-intelligence/context-pods) | Add to Context Pod |
+
+<Frame caption="The Export menu on a selected prototype">
   <img
-    alt="The full export options menu in Figr"
-    lightAlt="The full export options menu in Figr"
-    darkAlt="The full export options menu in Figr"
+    alt="The Export menu in Figr"
     src="/images/export-menu.avif"
   />
 </Frame>
 
-Export is a handoff decision. Ask where the work goes next, design, review, engineering, or approval, then pick the path:
-
-- A designer needs to polish it, **export to Figma**.
-- Stakeholders need to review it, **publish or share a prototype URL**.
-- Engineering is ready to build, move toward **code or MCP**.
+Open **Export** from the toolbar on any selected prototype, or from full screen. See [Item actions](/canvas/action-items) for the full toolbar.
 
 <CardGroup cols={2}>
-  <Card title="Export to Figma" href="/export/figma">
-    Editable frames for a designer to continue.
+  <Card title="Export to Figma" color="#695BE8" icon="figma" iconType="brands" href="/export/figma">
+    Editable frames with auto layout and your components.
   </Card>
 
-  <Card title="Publish and Share" href="/export/publish">
-    A public link for review, or full project access.
+  <Card title="Publish a prototype" color="#695BE8" icon="link" href="/export/publish">
+    A live link anyone can click through.
   </Card>
 
-  <Card title="Download code" href="/export/copy-download">
-    A front-end starting point for implementation.
+  <Card title="Share a project" color="#695BE8" icon="user-plus" href="/export/share-project">
+    Bring your team into the canvas.
   </Card>
 
-  <Card title="Figr MCP" href="/export/mcp">
-    Project context for an AI coding assistant.
+  <Card title="Figr MCP" color="#695BE8" icon="server" href="/export/mcp">
+    Hand a design to Claude Code, Cursor, VS Code or Codex.
+  </Card>
+
+  <Card title="Copy and download" color="#695BE8" icon="download" href="/export/copy-download">
+    Code, images, PDFs and text.
   </Card>
 </CardGroup>
-
-Figr's job is to make sure what you hand off has real product context behind it, not just pixels.

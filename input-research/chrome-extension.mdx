@@ -1,94 +1,45 @@
 ---
-title: "Chrome Extension "
+title: "Capture a page behind a login"
+sidebarTitle: "Capture a page behind a login"
 ---
 
-## [​](#getting-started)Getting Started
+_Capture any page you can see in Chrome, including your logged-in product, staging or localhost._
 
-### Install the Extension
+Most of your product lives behind a login, where a link can't reach. The Figr Capture extension captures exactly what's on your screen, with its layout and visuals, so Figr can build on the real thing.
 
-1. Visit the [Chrome Web Store](https://chromewebstore.google.com/detail/figr-capture/bejnddahceggaeogmedenhaccoiikjmj) and search "Figr AI"
-2. Click **Add to Chrome**
-3. Pin the extension to your toolbar for quick access
+<iframe src="https://www.youtube.com/embed/-RgWMfLZIMI" title="Capture a page with Figr Capture" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-## [​](#capture-modes)Capture Modes
+<Steps>
+  <Step title="Install the extension">
+    Add **Figr Capture** from the [Chrome Web Store](https://chromewebstore.google.com/detail/figr-capture/bejnddahceggaeogmedenhaccoiikjmj), pin it to your toolbar, and sign in with your Figr account.
 
-### Entire Page Capture
+    <Frame>
+      ![Screenshot 2026 10 21 At 1 22 42 PM](/images/Screenshot-2026-10-21-at-1.22.42-PM.png "Screenshot 2026 10 21 At 1 22 42 PM")
+    </Frame>
+  </Step>
+  <Step title="Open the page">
+    Log in to your product and go to the page you want Figr to see.
 
-<iframe src="https://www.youtube.com/embed/-RgWMfLZIMI" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+    <Frame>
+      ![Image](/images/image-33.png "Image")
+    </Frame>
+  </Step>
+  <Step title="Capture it">
+    Click the extension and choose **Capture This Page**. To capture only part of the page, choose **Make selection** and drag over the area.
 
-1. Navigate to any page in your product
-2. Click the Figr extension icon
-3. Select "Capture This Page"
-4. Copy the captures
-5. Paste the capture directly into Figr to start using
+    <Frame>
+      ![Image](/images/image-34.png "Image")
+    </Frame>
 
-<Tip>
-  **Capture works on staging, production, or localhost. Use whatever environment has the most realistic data.**
-</Tip>
+    <Info>
+      **Capturing several pages?** Keep your Figr project open and capture each page in turn. Every capture lands in the same project.
+    </Info>
+  </Step>
+  <Step title="Add it to Figr">
+    Copy the capture and paste it into the chat box in your Figr project.
 
-### Capture selections
-
-<iframe src="https://www.youtube.com/embed/POQmqspcgIs" title="YouTube video player" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
-
-1. Navigate to any page in your product
-2. Click the Figr extension icon
-3. Select "Make selection"
-4. Select the area you want to capture
-5. Capture as many areas as required
-
-### Capture Across Multiple Websites
-
-Build context (sort of a moodboard) from multiple sources in a single session. Useful for competitor analysis, gathering inspiration, or combining patterns from best-in-class products. Multi-site workflow:
-
-1. Open your Figr project
-2. Navigate to first website → Capture
-3. Open new tab, navigate to second website → Capture
-4. Repeat for additional sites
-5. All captures feed into the same project context
-
----
-
-## Using Captures in Figr
-
-Once captured, your product context flows into every conversation.
-
-<AccordionGroup>
-  <Accordion title="Reference in Prompts">
-    Example prompts that leverage captures:
-
-    - "Design a settings page that matches the navigation pattern from my dashboard capture"
-    - "Create a form using the same validation approach I showed you in the checkout flow"
-    - "Build a table component following the patterns from my existing data views"
-  </Accordion>
-
-  <Accordion title="Build on Existing">
-    Figr uses captures to extend your product, not create something generic.
-
-    | **Design prompt** | **Without capture** | **With capture** |
-    | --- | --- | --- |
-    | "Add a notification center" | Generic notification dropdown | Notification center that matches your nav style, uses your button variants, follows your spacing system, and fits your IA |
-  </Accordion>
-
-  <Accordion title="Market & competitive research">
-    | **Competitor benchmarking** | **Pattern library building** | **Feature research** |
-    | --- | --- | --- |
-    | Capture checkout flows from Stripe, Shopify, and Square. Ask Figr to design yours incorporating the best patterns from each. | Capture dashboard designs from Linear, Notion, and Figma. Build a reference set Figr can draw from for your own dashboard work. | Capture how 5 different products handle user onboarding. Ask Figr to analyze patterns and recommend an approach for your product. |
-  </Accordion>
-</AccordionGroup>
-
----
-
-## Why Chrome Extension Works
-
-Most design AI asks you to describe your product. **Figr sees your actual product.**
-
-The Chrome extension captures the real HTML structure, component hierarchy, and visual layout of any web app. Not screenshots. Not descriptions. The actual thing.
-
-| **Traditional Input** | **Figr Chrome Extension** |
-| --- | --- |
-| Screenshot uploads lose interaction context | Captures live HTML structure and hierarchy |
-| Text descriptions miss visual patterns | Understands component relationships |
-| Manual specification takes hours | Reads styling patterns and tokens |
-| Context gets lost in translation | Sees what you actually built |
-
----
+    <Tip>
+      Capture the states that matter, like an empty dashboard or an error screen, not just the happy path.
+    </Tip>
+  </Step>
+</Steps>

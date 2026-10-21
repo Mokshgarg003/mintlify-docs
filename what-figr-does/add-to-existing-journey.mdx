@@ -1,0 +1,69 @@
+---
+title: "Add a feature to a journey you already ship"
+sidebarTitle: "Add to an existing journey"
+---
+
+Most AI design tools start from a blank page. Your work doesn’t. A new feature has to land in a journey that already ships, on screens your users already know, in a design system you already maintain.
+
+That’s where generic tools stall. Teams find their AI agent doesn’t know which screen to edit, and the states each screen needs only get defined when engineering asks for them.
+
+![Image](/images/image-18.png "Image")
+
+<Tip>
+  **The short version:** Tell Figr the feature. It finds the screens in your journey that the feature touches, designs the change with your components, then adds the empty, loading and error states around it. You review one connected flow instead of stitching screens together.
+</Tip>
+
+**Example on this page:** FreshFold, a laundry pickup and delivery app. Customers book a pickup in the app, a rider collects the bag, and clean clothes come back within 24 hours.
+
+## How it works
+
+<Steps>
+  <Step title="Describe the feature">
+    One or two lines about what you’re adding and who it’s for. In the FreshFold example: letting customers set up a recurring weekly pickup.
+
+    {/* Asset 4.1: The composer with the recurring-pickup prompt typed in and the FreshFold Context Pod and design system attached. */}
+
+    ![Screenshot 2026 10 21 At 12 18 20 AM](/images/Screenshot-2026-10-21-at-12.18.20-AM.png "Screenshot 2026 10 21 At 12 18 20 AM")
+  </Step>
+  <Step title="Figr finds where it belongs">
+    Figr uses what it knows about your product to find the screens in the journey the feature touches. You don’t point it at files.
+
+    ![Image](/images/image-19.png "Image")
+  </Step>
+  <Step title="Figr designs it in your system">
+    The new screens use your tokens, components and spacing, so they look like part of the product from the first pass.
+
+    ![Image](/images/image-6.png "Image")
+
+    {/* Asset 4.2: The existing FreshFold booking screens next to the new recurring-pickup screens, visibly using the same components. */}
+  </Step>
+  <Step title="Figr fills in every state">
+    A follow-up pass adds the empty, loading, error and edge states for each screen it changed.
+  </Step>
+</Steps>
+
+## What changes for your team
+
+- **Designers** start from your product, not a blank frame.
+- **PMs** see the full journey, states included, before scoping.
+- **Engineers** get the states they’d otherwise ask about mid-sprint.
+
+## Go further
+
+States are where products break. See how Figr maps every edge case in a flow.
+
+<Card title="Edge cases" color="#695BE8" icon="triangle-exclamation" horizontal href="/getting-started/tutorial/map-edge-cases" arrow>
+  Map every empty, error and edge state in a flow.
+</Card>
+
+## Related
+
+<CardGroup cols={2}>
+  <Card title="Design system" color="#695BE8" icon="palette" href="/product-intelligence/design-system">
+    Make every screen Figr creates use your system.
+  </Card>
+
+  <Card title="Research to flows" color="#695BE8" icon="route" href="/what-figr-does/research-to-flows">
+    Next step: turn interviews and walkthroughs into journeys and flows.
+  </Card>
+</CardGroup>

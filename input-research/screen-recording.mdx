@@ -1,46 +1,55 @@
 ---
-title: "Screen Recordings "
+title: "Record a product walkthrough"
+sidebarTitle: "Record a walkthrough"
+icon: "video"
 ---
 
-<iframe src="https://www.youtube.com/embed/h2dpxr8Fpbw" title="Screen recording walkthrough" frameborder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen />
+_Show Figr how your product works by recording a flow, so it designs on top of what you already have._
 
-Screen recordings teach Figr how your product actually works. Reach for one when a single screenshot cannot capture the experience: user flows, click paths, navigation, transitions, states, behavior, and your spoken context.
+A recording shows Figr the whole journey, not just one screen: where people click, what changes and what comes next. Figr studies each step and keeps it in your Context Pod, so you only record a flow once.
 
-<Tip>
-  **Best practices**
-
-  - Record one flow at a time and keep it focused
-  - Narrate what you are doing and why
-  - Use realistic data and show the states that matter
-  - Skip long, unrelated sessions
-</Tip>
-
-## What to record
-
-- "How a user upgrades their plan."
-- "The current onboarding flow."
-- "Where users get stuck in setup."
-- "How admins manage permissions."
+Add it in your respective Context Pod, or can be attached inside the canvas chat agent as an attachment as well.
 
 <Steps>
-  <Step title="Record one flow">
-    Capture a single flow end to end, narrating the user, the goal, and where the friction is.
-  </Step>
-  <Step title="Upload it to Figr">
-    Add the recording to your prompt, or attach it to a Context Pod so Figr can reuse it later.
-  </Step>
-  <Step title="Ask Figr to reason first">
-    Have Figr understand the flow before it designs anything.
+  <Step title="Open your Context Pod">
+    Go to **Product intelligence**, open a pod, switch to the **Sources** tab, click **Add sources** and choose **Capture your screen**.
 
-    ```text
-        Use this recording to understand the current onboarding flow. Identify UX friction, missing states, and unclear moments. Then suggest a better flow before designing screens.
-    ```
+    <Frame>
+      <img
+        alt="Add sources menu with Capture your screen selected"
+        src="/images/docs/rec-01-add-source.png"
+      />
+    </Frame>
+  </Step>
+  <Step title="Set up your recording">
+    Choose the screen or window to share, and turn on your mic if you want to talk through what you're doing.
+
+    <Frame>
+      <img
+        alt="Screen recording setup with screen and microphone options"
+        src="/images/docs/rec-02-setup.png"
+      />
+    </Frame>
+
+    <Info>
+      **Already have a recording?** Drag it into **Show us your product** instead. Figr accepts .mp4, .mov, .mkv and .webm files up to 100 MB.
+    </Info>
+  </Step>
+  <Step title="Record one flow">
+    Click **Start recording** and walk through the flow from start to finish, the way a user would. Recordings stop automatically after 30 minutes.
+  </Step>
+  <Step title="Stop and save">
+    Stop the recording. Figr adds it to your pod and studies each screen and step.
+
+    <Frame>
+      <img
+        alt="Saved recording listed in the pod's sources"
+        src="/images/docs/rec-04-saved.png"
+      />
+    </Frame>
+
+    <Tip>
+      Record one flow per video and say what you're doing and why. Use realistic data, and show the states that matter, like empty, loading or error screens.
+    </Tip>
   </Step>
 </Steps>
-
-{/* DOC PLAN, internal, remove before publishing
-  Priority: P0 | Ownership: Self (Product verify) | Status: In Progress
-  Asset: YouTube embed (h2dpxr8Fpbw), upload/record flow to Figr output
-  VERIFY: max recording duration, supported file formats, handling for long flows.
-  Reference links: Context Pods, Quickstart, Prompt Library
-  */}
