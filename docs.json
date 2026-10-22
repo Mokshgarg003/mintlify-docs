@@ -131,16 +131,11 @@
             ]
           },
           {
-            "group": "Context Pods",
+            "group": "Set up team context",
             "pages": [
               "product-intelligence/context-pods",
               "context/share-pod",
-              "context/org-wide-context"
-            ]
-          },
-          {
-            "group": "Set up team context",
-            "pages": [
+              "context/org-wide-context",
               "context/skills-guardrails"
             ]
           },
