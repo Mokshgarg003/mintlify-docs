@@ -270,7 +270,6 @@
           },
           {
             "group": "Credits & Billing",
-            "hidden": true,
             "pages": [
               "account/credits-usage",
               "getting-started/setup/team-invitations"
