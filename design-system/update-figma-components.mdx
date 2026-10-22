@@ -2,39 +2,65 @@
 title: "Update components in Figma"
 sidebarTitle: "Update components in Figma"
 icon: "arrows-rotate"
+description: "Connect Figma Sync, select components in Figma, and ask Figr in chat to change them in your Figma file using your existing variables."
 ---
 
 *Let Figr make changes to components in your Figma file, so your design system and your designs stay in sync.*
 
-When you refine a component in Figr, like a new button state or an updated card, you don't have to rebuild it by hand in Figma. Figr can update your Figma file directly, using your existing components and variables.
+When you refine a component, like a new button state or an updated card, you don't have to rebuild it by hand in Figma. With the plugin connected, Figr can edit your Figma file directly, using your existing components and variables.
 
 <Steps>
   <Step title="Connect Figma">
-    Click **Figma Sync** in the top-right nav bar and connect the [Figr AI Figma Sync](https://www.figma.com/community/plugin/1354402282325383952/figr-ai-figma-sync) plugin to your design system file.
+    In the chat box, click **Add context** and choose **Figma Sync**, then connect the [Figr AI Figma Sync](https://www.figma.com/community/plugin/1354402282325383952/figr-ai-figma-sync) plugin to your design system file.
   </Step>
   <Step title="Select the components to change">
     In Figma, select the components or frames you want Figr to update. They're added to the chat box automatically.
 
     <Frame>
-      ![Screenshot 2026 10 21 At 2 06 01 PM](/images/Screenshot-2026-10-21-at-2.06.01-PM.png "Screenshot 2026 10 21 At 2 06 01 PM")
+      <img
+        alt="Selected Figma components attached in the Figr chat box"
+        src="/images/Screenshot-2026-10-21-at-2.06.01-PM.png"
+      />
     </Frame>
   </Step>
-  <Step title="Describe the change">
-    Tell Figr what to update, for example: "Add a loading state to the primary button, using our spinner icon and existing colour variables."
+  <Step title="Describe the change and name Figma">
+    Tell Figr what to change and say it should happen in Figma. For example: "In Figma, add a loading state to the primary button, using our spinner icon and existing colour variables."
 
     <Frame>
-      ![Screenshot 2026 10 21 At 2 07 40 PM](/images/Screenshot-2026-10-21-at-2.07.40-PM.png "Screenshot 2026 10 21 At 2 07 40 PM")
+      <img
+        alt="A Figma change request typed in the Figr chat"
+        src="/images/Screenshot-2026-10-21-at-2.07.40-PM.png"
+      />
     </Frame>
+
+    <Note>
+      Figr only writes to Figma when your message asks for the change in Figma. Otherwise it makes the change in Figr.
+    </Note>
   </Step>
   <Step title="Check the result in Figma">
-    Figr updates the components in your file and links them to your existing variables. Anything it can't link stays a regular frame, with a note explaining why.
+    Figr updates the components in your file, using your existing variables.
 
     <Frame>
-      ![Screenshot 2026 10 21 At 2 09 20 PM](/images/Screenshot-2026-10-21-at-2.09.20-PM.png "Screenshot 2026 10 21 At 2 09 20 PM")
+      <img
+        alt="The updated component in the Figma file"
+        src="/images/Screenshot-2026-10-21-at-2.09.20-PM.png"
+      />
     </Frame>
-
-    <Tip>
-      Try changes in a branch or a copy of your design system file first, so your team's main library only changes once you're happy with it.
-    </Tip>
   </Step>
 </Steps>
+
+<Tip>
+  Try changes in a branch or a copy of your design system file first, so your team's main library only changes once you're happy with it.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Build a prototype" href="/getting-started/tutorial/prototypes">
+    Put your design system to work.
+  </Card>
+
+  <Card title="Export to Figma" href="/export/figma">
+    Send Figr screens to Figma.
+  </Card>
+</CardGroup>
