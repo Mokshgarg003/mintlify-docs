@@ -2,11 +2,12 @@
 title: "Version control in Figr"
 sidebarTitle: "Version control"
 icon: "clock-rotate-left"
+description: "Restore an earlier version of one screen or prototype, roll the whole canvas back from Activity, and find anything on the canvas with Layers."
 ---
 
 _Undo a change that didn't work out, for one screen or the whole canvas._
 
-Figr saves versions as you work, on two levels. Each artifact, like a screen, prototype or doc, has its own versions. The canvas also keeps a timeline of every change made across the project. Go back one artifact when a single change goes wrong, or go back the whole canvas when you want to return to an earlier point in the project.
+Figr saves versions as you work, on two levels. Each artifact, like a screen, prototype or doc, has its own versions. The canvas also keeps a timeline of every change made across the project in **Activity**. Go back one artifact when a single change goes wrong, or go back the whole canvas when you want to return to an earlier point in the project.
 
 ## Go back one artifact
 
@@ -16,7 +17,13 @@ Use this when one screen, prototype or doc has gone in the wrong direction and t
   <Step title="Open version history">
     Double-click a screen or prototype to open full screen, then open its version history.
 
-    ![Screenshot 2026 10 21 At 3 24 01 AM](/images/Screenshot-2026-10-21-at-3.24.01-AM.png "Screenshot 2026 10 21 At 3 24 01 AM")
+    <Frame>
+      <img
+        alt="Version history open for a prototype in full screen in Figr"
+        title="Open a prototype's version history"
+        src="/images/Screenshot-2026-10-21-at-3.24.01-AM.png"
+      />
+    </Frame>
   </Step>
   <Step title="Browse earlier versions">
     Click through the list to preview each version.
@@ -25,7 +32,11 @@ Use this when one screen, prototype or doc has gone in the wrong direction and t
     Choose **Restore** on the version you want to go back to. It becomes the current version.
 
     <Frame>
-      ![Screenshot 2026 10 21 At 3 24 33 AM](/images/Screenshot-2026-10-21-at-3.24.33-AM.png "Screenshot 2026 10 21 At 3 24 33 AM")
+      <img
+        alt="Restore button on an earlier version of a prototype in Figr"
+        title="Restore an earlier version of a screen"
+        src="/images/Screenshot-2026-10-21-at-3.24.33-AM.png"
+      />
     </Frame>
   </Step>
   <Step title="Keep going">
@@ -38,26 +49,30 @@ Use this when one screen, prototype or doc has gone in the wrong direction and t
 Use this when you want to return the whole project to an earlier point, for example before a round of changes across several screens.
 
 <Steps>
-  <Step title="**Open the canvas timeline**">
-    Open version history for the canvas to see every change made in the project, in order.
-
-    ![Screenshot 2026 10 21 At 3 21 50 AM](/images/Screenshot-2026-10-21-at-3.21.50-AM.png "Screenshot 2026 10 21 At 3 21 50 AM")
-  </Step>
-  <Step title="**Find the point you want**">
-    Each entry shows what changed and when, so you can find the moment before things went wrong.
-  </Step>
-  <Step title="Restore the one you want">
-    Choose **Restore** on the version you want to go back to. It becomes the current version.
+  <Step title="Open Activity">
+    Open **Activity** to see every change made in the project. Changes are grouped by day and by the prompt that made them.
 
     <Frame>
       <img
-        alt="Restore control on an earlier entry in the Activity panel"
-        src="/images/docs/ver-03-restore.png"
+        alt="Activity panel showing canvas versions grouped by day and prompt"
+        title="The Figr canvas Activity timeline"
+        src="/images/Screenshot-2026-10-21-at-3.21.50-AM.png"
       />
     </Frame>
   </Step>
-  <Step title="Keep going">
-    Continue editing by hand or in chat. Later changes are saved as new versions, so you can always go back again.
+  <Step title="Find the point you want">
+    Each entry shows what changed and when, so you can find the moment before things went wrong.
+  </Step>
+  <Step title="Restore it">
+    Click **Restore this version**. The whole canvas returns to how it was at that point.
+
+    <Frame>
+      <img
+        alt="Restore this version control on an earlier entry in the Activity panel"
+        title="Restore the whole canvas from Activity"
+        src="/images/docs/ver-03-restore.png"
+      />
+    </Frame>
   </Step>
 </Steps>
 
@@ -65,24 +80,26 @@ Use this when you want to return the whole project to an earlier point, for exam
   Not sure you want to lose the current version? [Duplicate the chat and canvas](/canvas/duplicate-fork) first, then restore in the copy.
 </Tip>
 
-## Roll back the whole canvas
-
-Each screen keeps its own versions. To undo a whole round of changes across the canvas, open **Activity**. Changes are grouped by day and by the prompt that made them. Pick a point and click **Restore this version**.
-
-<Frame caption="The Activity panel">
-  <img
-    alt="Activity panel showing canvas versions grouped by day and prompt"
-    src="/images/Activity.avif"
-  />
-</Frame>
-
 ## Find anything with Layers
 
 Layers lists everything on the canvas: prototypes, notes, screenshots, flows and sections. Use it to find an item or move around a crowded canvas.
 
 <Frame caption="The Layers panel">
   <img
-    alt="Layers panel listing the items on a canvas"
+    alt="Layers panel listing prototypes, notes, flows and sections on a Figr canvas"
+    title="The Figr Layers panel"
     src="/images/Layers.avif"
   />
 </Frame>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Duplicate or fork a chat" href="/canvas/duplicate-fork">
+    Try a new direction without losing what you have.
+  </Card>
+
+  <Card title="Share a project" href="/export/share-project">
+    Bring your team into the canvas.
+  </Card>
+</CardGroup>

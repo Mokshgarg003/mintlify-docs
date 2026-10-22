@@ -1,16 +1,23 @@
 ---
 title: "Hand off to engineering in their code and their agent"
 sidebarTitle: "Hand off to engineering"
+description: "Engineers connect Claude Code, Cursor, VS Code or Codex to Figr through Figr MCP and build from the real design, its values and reasoning, not a screenshot."
 ---
 
-A screenshot or an HTML export isn’t a handoff. Engineers still have to work out the structure, guess the spacing and swap in their own components. Teams end up reworking about half of what they receive by hand before it can ship.
+A screenshot or an HTML export isn't a handoff. Engineers still have to work out the structure, guess the spacing and swap in their own components. Teams end up reworking about half of what they receive by hand before it can ship.
 
 Figr hands the real design to engineering, inside the tools they already use.
 
-![Image](/images/image-31.png "Image")
+<Frame>
+  <img
+    alt="A Figr design handed to a coding agent through Figr MCP"
+    title="Hand off a Figr design to engineering"
+    src="/images/image-31.png"
+  />
+</Frame>
 
 <Tip>
-  **The short version:** Engineers connect their coding agent (Cursor, Claude Code, VS Code and others) to Figr once. From then on, the agent reads the actual design, its structure, values and the reasoning behind it, and builds from that instead of a picture.
+  **The short version:** Engineers connect their coding agent (Claude Code, Cursor, VS Code, Codex and others) to Figr once. From then on, the agent reads the actual design, its structure, values and the reasoning behind it, and builds from that instead of a picture.
 </Tip>
 
 **Example on this page:** FreshFold, a laundry pickup and delivery app. Customers book a pickup in the app, a rider collects the bag, and clean clothes come back within 24 hours.
@@ -21,14 +28,24 @@ Figr hands the real design to engineering, inside the tools they already use.
   <Step title="Pick the design">
     Select a prototype on the canvas and choose **Export**, then **Open in coding agent**. In the FreshFold example: the approved pickup confirmation screen.
 
-    ![Screenshot 2026 10 21 At 2 20 45 AM](/images/Screenshot-2026-10-21-at-2.20.45-AM.png "Screenshot 2026 10 21 At 2 20 45 AM")
-
-    {/* Asset 7.1: The Use MCP server dialog for the FreshFold pickup confirmation screen, with the Project link and Board node link buttons visible. */}
+    <Frame>
+      <img
+        alt="Open in coding agent option in the Export menu of a selected Figr prototype"
+        title="Open a Figr design in a coding agent"
+        src="/images/Screenshot-2026-10-21-at-2.20.45-AM.png"
+      />
+    </Frame>
   </Step>
   <Step title="Connect the coding agent">
-    Paste the link into the agent’s MCP setup, or register the Figr MCP server once for the whole workspace.
+    Follow the steps in the **Connect with coding agent** window for your agent, or add the Figr MCP server to your editor once so it can reach every project you have access to.
 
-    ![Screenshot 2026 10 21 At 2 21 03 AM](/images/Screenshot-2026-10-21-at-2.21.03-AM.png "Screenshot 2026 10 21 At 2 21 03 AM")
+    <Frame>
+      <img
+        alt="Connect with coding agent window with setup for Claude Code, Cursor, VS Code and Codex"
+        title="Connect a coding agent to Figr MCP"
+        src="/images/Screenshot-2026-10-21-at-2.21.03-AM.png"
+      />
+    </Frame>
   </Step>
   <Step title="The agent reads the real design">
     The agent sees the layout, values and structure, plus the decisions from your conversations with Figr.
@@ -41,7 +58,7 @@ Figr hands the real design to engineering, inside the tools they already use.
 ## What changes for your team
 
 - **Engineers** build from the design, not a screenshot.
-- **Designers** stop answering “what’s the spacing here?”
+- **Designers** stop answering "what's the spacing here?"
 - **Rework** after handoff drops, because nothing gets lost in translation.
 
 ## Go further
@@ -56,10 +73,10 @@ Want the agent to build with your own components every time? Connect your design
 
 <CardGroup cols={2}>
   <Card title="Figr MCP" color="#695BE8" icon="server" href="/export/mcp">
-    Setup for every supported coding agent.<br />
+    Setup for every supported coding agent.
   </Card>
 
   <Card title="What Figr does" color="#695BE8" icon="compass" href="/what-figr-does/overview">
-    Back to all ten jobs Figr takes on, from research to handoff.
+    Back to everything Figr takes on, from research to handoff.
   </Card>
 </CardGroup>

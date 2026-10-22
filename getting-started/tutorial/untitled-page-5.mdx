@@ -2,6 +2,7 @@
 title: "Manual edit"
 sidebarTitle: "Manual edit"
 icon: "pen"
+description: "Edit a prototype by hand in the Edit tab using your design system's values, queue changes and apply them, or describe a change in chat and let Figr make it."
 ---
 
 _Change your prototype yourself, or describe the change and let Figr make it._
@@ -10,11 +11,11 @@ _Change your prototype yourself, or describe the change and let Figr make it._
 
 There are two ways to edit a prototype in Figr. Edit by hand for quick fixes you can see, like copy, colour and spacing. Edit with a prompt for changes to how the prototype works or how it's laid out, especially when they affect more than one screen.
 
-## Edit by Hand:
+## Edit by hand
 
 <Steps>
-  <Step title="Open a prototype in full screen by double clicking on it.">
-    Find the screen on your canvas and double-click it to open full screen. Switch to the **Edit** tab.
+  <Step title="Open the prototype in full screen">
+    Double-click the prototype on your canvas to open full screen, then switch to the **Edit** tab.
 
     <Frame>
       <img
@@ -27,25 +28,34 @@ There are two ways to edit a prototype in Figr. Edit by hand for quick fixes you
     Select any text, button, image or container on the screen. Its properties appear in the panel.
 
     <Frame>
-      ![Screenshot 2026 10 21 At 3 40 06 PM](/images/Screenshot-2026-10-21-at-3.40.06-PM.png "Screenshot 2026 10 21 At 3 40 06 PM")
+      <img
+        alt="Selected element with its properties panel open"
+        src="/images/Screenshot-2026-10-21-at-3.40.06-PM.png"
+      />
     </Frame>
   </Step>
   <Step title="Make your change">
-    Type to update text, or change colour, size, spacing and alignment with respect to your design system in the properties panel.
+    Type to update text, or change colour, size, spacing and alignment in the properties panel. When a design system is attached, pick its tokens instead of typing one-off values, so the change stays on-system.
 
     <Frame>
-      ![Screenshot 2026 10 21 At 3 40 39 PM](/images/Screenshot-2026-10-21-at-3.40.39-PM.png "Screenshot 2026 10 21 At 3 40 39 PM")
+      <img
+        alt="Properties panel with a design token being picked"
+        src="/images/Screenshot-2026-10-21-at-3.40.39-PM.png"
+      />
     </Frame>
   </Step>
-  <Step title="Prompt the changes">
-    Select a component, type the edit you want in the prompt box, and send it with your other queued changes.
+  <Step title="Or prompt the selected element">
+    Select a component and type the edit you want in the prompt box. It joins your other queued changes.
 
     <Frame>
-      ![Screenshot 2026 10 21 At 3 41 56 PM](/images/Screenshot-2026-10-21-at-3.41.56-PM.png "Screenshot 2026 10 21 At 3 41 56 PM")
+      <img
+        alt="Prompt typed for a selected component in Edit mode"
+        src="/images/Screenshot-2026-10-21-at-3.41.56-PM.png"
+      />
     </Frame>
   </Step>
-  <Step title="Check the result">
-    Your change shows on the screen right away. Click another element to keep editing, or close the editor when you're done. If you try to leave with changes you haven't applied, Figr warns you first.
+  <Step title="Apply your changes">
+    Edits queue up as you make them. Click **Apply changes** to apply them all at once. If you try to leave Edit mode with changes you haven't applied, Figr warns you first.
   </Step>
 </Steps>
 
@@ -53,7 +63,7 @@ There are two ways to edit a prototype in Figr. Edit by hand for quick fixes you
   Edit by hand for quick fixes like copy, colour and spacing. Ask Figr in chat when the change affects the whole screen or several screens at once.
 </Tip>
 
-## Edit with Prompt:
+## Edit with a prompt
 
 Describe the change in chat and Figr makes it for you. Use prompts for:
 
@@ -62,6 +72,23 @@ Describe the change in chat and Figr makes it for you. Use prompts for:
 - **Layout changes:** "Move the filters from the top bar into a left sidebar."
 - **Changes across screens:** "Rename 'Workspace' to 'Team' everywhere."
 
-![Screenshot 2026 10 21 At 3 06 33 AM](/images/Screenshot-2026-10-21-at-3.06.33-AM.png "Screenshot 2026 10 21 At 3 06 33 AM")
+<Frame>
+  <img
+    alt="A change described in chat and applied to the prototype"
+    src="/images/Screenshot-2026-10-21-at-3.06.33-AM.png"
+  />
+</Frame>
 
 When a change affects structure, like navigation or a layout pattern, Figr applies it everywhere it's used in the prototype, so every screen stays consistent. 
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Run multiple chats" href="/canvas/multiple-chats">
+    Work on several ideas in parallel.
+  </Card>
+
+  <Card title="Version control in Figr" href="/canvas/history-layers">
+    Go back to an earlier version.
+  </Card>
+</CardGroup>

@@ -65,9 +65,7 @@
                 "group": "Design system",
                 "icon": "palette",
                 "pages": [
-                  "what-figr-does/ai-ready-design-system",
-                  "what-figr-does/design-system-from-screens",
-                  "what-figr-does/ds-compliant-prototypes"
+                  "what-figr-does/ai-ready-design-system"
                 ]
               },
               {
@@ -115,10 +113,9 @@
             "hidden": true
           },
           {
-            "group": "Add your product context",
+            "group": "Add context",
             "pages": [
               "input-research/input-guide",
-              "product-intelligence/context-pods",
               "input-research/screen-recording",
               "input-research/files-research",
               "input-research/figma-input",
@@ -136,6 +133,7 @@
           {
             "group": "Set up team context",
             "pages": [
+              "product-intelligence/context-pods",
               "context/share-pod",
               "context/org-wide-context",
               "context/skills-guardrails"
@@ -192,7 +190,6 @@
           },
           {
             "group": "Account and Settings",
-            "hidden": true,
             "pages": [
               "page1",
               "page2",
@@ -233,7 +230,8 @@
             "pages": [
               "yes",
               "inputs/screen-recording",
-              "export/direct-editing"
+              "export/direct-editing",
+              "prompt-library"
             ]
           },
           {
@@ -243,7 +241,9 @@
               "docs/design-intelligence/figr-mcp",
               "design-intelligence/design-system",
               "design-intelligence/product-context",
-              "design-intelligence/product-memory"
+              "design-intelligence/product-memory",
+              "what-figr-does/design-system-from-screens",
+              "what-figr-does/ds-compliant-prototypes"
             ]
           },
           {
@@ -265,13 +265,11 @@
           },
           {
             "group": "Credits & Billing",
-            "hidden": true,
             "pages": [
               "account/credits-usage",
               "getting-started/setup/team-invitations"
             ]
-          },
-          "prompt-library"
+          }
         ]
       },
       {
@@ -333,10 +331,13 @@
     }
   },
   "seo": {
-    "indexing": "all",
+    "indexing": "navigable",
     "metatags": {
       "og:type": "website",
-      "og:site_name": "Figr AI Docs"
+      "og:site_name": "Figr AI Docs",
+      "og:image": "https://docs.figr.design/images/04-01-canvas-overview.png",
+      "twitter:card": "summary_large_image",
+      "twitter:image": "https://docs.figr.design/images/04-01-canvas-overview.png"
     }
   },
   "integrations": {
@@ -410,9 +411,15 @@
     {
       "source": "/product-thinking/prototype",
       "destination": "/getting-started/tutorial/prototypes"
+    },
+    {
+      "source": "/",
+      "destination": "/getting-started/welcome/introduction",
+      "permanent": false
     }
   ],
   "background": {
     "decoration": "gradient"
-  }
+  },
+  "description": "Figr is an AI product design agent for teams building on an existing product. These docs cover adding context, setting up your design system, creating prototypes, flows and PRDs, working on the canvas, and handing off to Figma and code."
 }

@@ -1,13 +1,20 @@
 ---
 title: "See every screen a change touches before you scope it"
 sidebarTitle: "See what a change touches"
+description: "Describe one product change and Figr traces it across every affected screen and flow, shows what needs to change on each, then designs the updates together."
 ---
 
 Small changes rarely stay small. Teams have several people working on the same payments page, each with their own focus. Nobody sees the conflicts until development, when they cost the most to fix.
 
 Figr shows you everything a change touches before anyone scopes it.
 
-![Image](/images/image-22.png "Image")
+<Frame>
+  <img
+    alt="One product change traced across every affected screen on the Figr canvas"
+    title="See what a change touches with Figr"
+    src="/images/image-22.png"
+  />
+</Frame>
 
 <Tip>
   **The short version:** Describe a change, like a new option or a new rule. Figr traces it across every screen and flow in your product that it affects, and shows what needs to change on each, so conflicts surface in planning instead of in development.
@@ -19,36 +26,44 @@ Figr shows you everything a change touches before anyone scopes it.
 
 <Steps>
   <Step title="Describe the change">
-    One line is enough. In the FreshFold example: letting customers set up a recurring weekly pickup.
+    One line is enough. In the FreshFold example: adding express 6-hour delivery as an option on every order.
   </Step>
   <Step title="Figr checks what it knows about your product">
-    Figr uses your Context Pod, the product knowledge it keeps for your team, to find every place the change shows up.
+    Figr uses what it knows about your product, from your [Context Pod](/product-intelligence/context-pods) and the context you've added, to find every place the change shows up.
 
-    ![Image](/images/image-20.png "Image")
-
-    {/* Asset 3.1: The FreshFold Context Pod in use in the chat, with the prompt and the pod chip visible in the composer. */}
+    <Frame>
+      <img
+        alt="Express delivery change request in the Figr chat box with product context attached"
+        title="Describe a product change to Figr"
+        src="/images/image-20.png"
+      />
+    </Frame>
   </Step>
   <Step title="Figr maps the impact">
     You get every affected screen, with what needs to change on each and where changes overlap.
-
-    {/* Asset 3.2: The impact map doc on the canvas: express delivery linked to 5–6 FreshFold screens (time slot picker, pricing, checkout, order tracking, rider app, receipts). */}
   </Step>
   <Step title="Figr designs the updates">
     Ask Figr to update the affected screens, and it designs them together so they stay consistent.
 
-    ![Image](/images/image-21.png "Image")
+    <Frame>
+      <img
+        alt="Affected screens updated together for express delivery on the Figr canvas"
+        title="Design every affected screen together"
+        src="/images/image-21.png"
+      />
+    </Frame>
   </Step>
 </Steps>
 
 ## What changes for your team
 
 - **PMs** scope with the full picture, not a guess.
-- **Several PMs on one area** see each other’s changes before they collide.
+- **Several PMs on one area** see where their changes overlap while they plan.
 - **Engineers** stop finding missed screens mid-sprint.
 
 ## Go further
 
-The more Figr knows about your product, the more it can trace. See how to build your team’s Context Pod.
+The more Figr knows about your product, the more it can trace.
 
 <Card title="Context Pods" color="#695BE8" icon="box-archive" horizontal href="/product-intelligence/context-pods" arrow>
   Build the product knowledge Figr uses on every project.
@@ -57,11 +72,11 @@ The more Figr knows about your product, the more it can trace. See how to build 
 ## Related
 
 <CardGroup cols={2}>
-  <Card title="Context Pods" color="#695BE8" icon="box-archive" href="/product-intelligence/context-pods">
-    Give Figr reusable knowledge of your product.
+  <Card title="Add context" color="#695BE8" icon="map" href="/input-research/input-guide">
+    Choose the right context for a single request.
   </Card>
 
   <Card title="Audit and redesign" color="#695BE8" icon="magnifying-glass" href="/what-figr-does/audit-and-redesign">
-    Next step: audit a flow from a recording and redesign what’s broken.
+    Next step: audit a flow from a recording and redesign what's broken.
   </Card>
 </CardGroup>

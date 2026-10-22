@@ -2,6 +2,7 @@
 title: "Set up your design system from Figma"
 sidebarTitle: "From Figma"
 icon: "palette"
+description: "Bring your Figma variables, styles, components, icons and reference screens into Figr with the Figr AI Figma Sync plugin, so every screen uses your real design system."
 ---
 
 _Bring your Figma variables, styles and components into Figr, so every screen it makes looks like your product._
@@ -10,11 +11,13 @@ With your design system in Figr, every screen uses your real colours, type and c
 
 <iframe src="https://www.youtube.com/embed/oGHOvoOuvqE" title="Introducing Figr's Design System Intelligence" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-> **Before you start:** this page is for components that already exist in Figr. Create the new component or make the change in Figr first, then follow these steps to bring it into your Figma file
+<Warning>
+  **Before you start:** your colours, type and spacing need to be set up as variables or styles in Figma. Figr can't pick up values that only live on individual layers.
+</Warning>
 
 <Steps>
   <Step title="Start a new design system">
-    In the sidebar, open **Design System** and create a new one. Give it a name and choose who can use it: just you, everyone in your workspace to view, or everyone to edit.
+    In the sidebar, open **Design System** and create a new one. Give it a name and choose whether it's just for you or shared with your workspace.
 
     <Frame>
       <img
@@ -24,7 +27,7 @@ With your design system in Figr, every screen uses your real colours, type and c
     </Frame>
   </Step>
   <Step title="Open the Figma plugin">
-    Under **Sources**, choose **Figma**, then click **Open Figma plugin**. Run **Figr AI Figma Sync** in your design system file and check that it shows **Connected**.
+    Under **Sources**, choose **Figma**, then click **Open plugin**. Run **Figr AI Figma Sync** in your design system file and check that it shows **Connected**.
 
     <Frame>
       <img
@@ -42,13 +45,9 @@ With your design system in Figr, every screen uses your real colours, type and c
         src="/images/docs/ds-03-choose.png"
       />
     </Frame>
-
-    <Warning>
-      **Before you start:** your colours, type and spacing need to be set up as variables or styles in Figma. Figr can't pick up values that only live on individual layers.
-    </Warning>
   </Step>
-  <Step title="Set it up">
-    Click **Setup design system**. Figr reads your selection and builds your design system.
+  <Step title="Set it up with Figr">
+    Click **Setup design system**. Setup runs as a chat with Figr: it reads your selection, asks you a few questions about how your system is used, then builds your design system. Answer them, or tell it to go ahead with its best guess.
 
     <Frame>
       <img
@@ -65,4 +64,16 @@ With your design system in Figr, every screen uses your real colours, type and c
 
 ## Other sources
 
-Figma is a great start, but you can also add your code: Storybook, an npm package or your code repo. Figr matches your Figma components with their code and combines them into one design system. Your design system can also come from [Storybook](/design-system/storybook), an [npm package](/design-system/npm-package), your [code repo](/design-system/code-repo) or [brand assets](/design-system/brand-assets). You can combine several sources in one design system.
+You can also build your design system from [Storybook](/design-system/storybook), an [npm package](/design-system/npm-package), your [code repo](/design-system/code-repo) or [brand assets](/design-system/brand-assets). Combine Figma with a code source and Figr matches your Figma components with their code in one design system.
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="From your code repo" href="/design-system/code-repo">
+    Build your design system from code.
+  </Card>
+
+  <Card title="Switch design systems in chat" href="/design-system/switch-design-systems">
+    Pick which design system Figr uses.
+  </Card>
+</CardGroup>

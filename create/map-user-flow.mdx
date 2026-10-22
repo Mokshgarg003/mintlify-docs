@@ -2,6 +2,7 @@
 title: "Map a user flow"
 sidebarTitle: "Map a user flow"
 icon: "route"
+description: "Describe a user journey and Figr maps it as a flow diagram with steps, decisions and branches on the canvas, then designs the screens in the same order."
 ---
 
 *See every step and decision in a journey before you design screens.*
@@ -18,26 +19,54 @@ A user flow shows how someone moves through your product to reach a goal: each s
       Start with one goal per flow. "Invite a teammate" and "change billing plan" are easier to review as two flows than one.
     </Tip>
   </Step>
-  <Step title="Attach your Context Pod">
-    Select your pod in the chat so the flow follows how your product works today, not a generic pattern.
+  <Step title="Add your context">
+    Click **Add context** in the chat box and add what shows how your product works today, like a [walkthrough recording](/input-research/screen-recording), screenshots or [Figma frames](/input-research/figma-input). The flow then follows your real product, not a generic pattern.
   </Step>
   <Step title="Review the flow on the canvas">
     Figr draws the flow as a diagram with steps, decisions and branches. Check the happy path first, then the branches.
 
-    ![Image](/images/image-39.png "Image")
+    <Frame>
+      <img
+        alt="User flow diagram on the Figr canvas with steps, decisions and branches"
+        title="A user flow mapped by Figr"
+        src="/images/image-39.png"
+      />
+    </Frame>
   </Step>
   <Step title="Refine it">
     Ask Figr to add a missing step, split a branch, or cover a different entry point. For example: "Add what happens when the invite email bounces."
 
-    To fix one point in the flow, use select and edit: select the node on the canvas, then tell Figr what to change there. For example: "Ask for the teammate's role at this step." Figr focuses the change on that node instead of redrawing the whole flow.
+    To fix one point in the flow, ask Figr in chat and name the step. For example: "At the invite step, also ask for the teammate's role." Figr focuses the change on that step instead of redrawing the whole flow.
 
     <Frame>
-      ![Screenshot 2026 10 21 At 3 20 10 PM](/images/Screenshot-2026-10-21-at-3.20.10-PM.png "Screenshot 2026 10 21 At 3 20 10 PM")
+      <img
+        alt="Updated user flow with a new branch added by Figr"
+        title="Refine a user flow in chat"
+        src="/images/Screenshot-2026-10-21-at-3.20.10-PM.png"
+      />
     </Frame>
   </Step>
   <Step title="Ask Figr to design the screens">
     For example: "Design the screens for this flow, including the error states." Figr places the screens on the canvas in the same order as the flow.
 
-    ![Screenshot 2026 10 21 At 3 21 43 PM](/images/Screenshot-2026-10-21-at-3.21.43-PM.png "Screenshot 2026 10 21 At 3 21 43 PM")
+    <Frame>
+      <img
+        alt="Screens designed from a user flow, laid out in flow order on the Figr canvas"
+        title="Turn a user flow into screens"
+        src="/images/Screenshot-2026-10-21-at-3.21.43-PM.png"
+      />
+    </Frame>
   </Step>
 </Steps>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Sketch wireframes" href="/create/wireframes">
+    Explore layouts before visual design.
+  </Card>
+
+  <Card title="Map edge cases" href="/getting-started/tutorial/map-edge-cases">
+    Find what can go wrong before users do.
+  </Card>
+</CardGroup>

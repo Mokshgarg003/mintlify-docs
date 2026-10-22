@@ -2,26 +2,29 @@
 title: "Copy and download"
 sidebarTitle: "Copy and download"
 icon: "download"
+description: "Download a prototype's code, copy a screen, export flow diagrams as PNG or code, and download docs as PDF or Markdown."
 ---
 
-Select an item on the canvas and open **Export** to take its output out of Figr.
+Select an item on the canvas and open **Export** to take its output out of Figr. The options depend on the item type.
 
-| Option | What you get | Use it for |
+| Item | Option | Use it for |
 | --- | --- | --- |
-| Copy code | The prototype's code, on your clipboard | Pasting into your project or a coding agent |
-| Download PNG | An image of the design | Slack updates, decks, specs, reviews |
-| Download PDF | A PDF of the design or doc | Sharing a doc or a fixed snapshot |
-| Download Markdown | The text content as Markdown | PRDs and specs in your docs tool |
-| Copy as text | The content as plain text | Pasting copy into a doc or ticket |
+| Prototype | Download code | Handing off to developers, running it locally, or starting from it in your codebase |
+| Prototype | Copy this screen | Pasting the current screen somewhere else |
+| Flow diagram | Copy code | Pasting the flow into a doc or tool that reads its code |
+| Flow diagram | Download PNG | Slack updates, decks, specs, reviews |
+| Doc | Download PDF | Sharing a fixed snapshot |
+| Doc | Download Markdown | PRDs and specs in your docs tool |
+| Doc | Copy as text | Pasting the content into a doc or ticket |
 
 ## The code
 
-Prototypes are real front-end code in React or Angular, built with your design system's components when one is attached. To read the code before you copy it, open the prototype in **Full screen** and switch on **Code**.
+Prototypes are real front-end code in React or Angular, built with your design system's components when one is attached. To read the code first, open the prototype in **Full screen** and switch on **Code**.
 
 <Frame caption="Code options for a prototype">
   <img
     src="/images/Download-Code.avif"
-    alt="Code export option on a selected prototype"
+    alt="Download code option on a selected prototype"
   />
 </Frame>
 
@@ -31,14 +34,14 @@ To build with it in your own codebase, use **Open in coding agent** instead. You
   Don't send a vague idea to engineering. Use Figr to settle the flow, states and design direction first, then hand off.
 </Tip>
 
-## Related
+## Next
 
 <CardGroup cols={2}>
-  <Card title="Export options" color="#695BE8" icon="arrow-up-from-bracket" href="/export/options">
-    Choose the right handoff path.
+  <Card title="Figr MCP" href="/export/mcp">
+    Hand a design to a coding agent.
   </Card>
 
-  <Card title="Export to Figma" color="#695BE8" icon="figma" iconType="brands" href="/export/figma">
+  <Card title="Export to Figma" href="/export/figma">
     Send screens to Figma.
   </Card>
 </CardGroup>

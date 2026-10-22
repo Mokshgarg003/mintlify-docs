@@ -2,47 +2,60 @@
 title: "Add annotations"
 sidebarTitle: "Add annotations"
 icon: "highlighter"
+description: "Mark a region on a screen or image and attach a note thread. Figr reads the marked area and your note on its next turn. Sticky notes add quick context beside the work."
 ---
 
-*Explain your design decisions right on the canvas.*
+*Point at exactly what you mean, right on the canvas.*
 
 <iframe src="https://www.youtube.com/embed/ZZHGlkyyJgc" title="Figr Canvas: show, point, annotate, then design" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
-Annotations are notes that stay visible next to your work. Use them to explain why a design looks the way it does, call out behaviour that isn't obvious from a static screen, or leave notes for developers before handoff. Unlike comments, annotations aren't conversations and don't get resolved.
+An annotation marks a region on a screen or image and attaches a note thread to it. Figr reads the marked area together with your note on its next turn, so you can point at the exact spot to change instead of describing where it is.
 
 <Steps>
-  <Step title="Add an annotation">
-    Choose the **Sticky Note** tool in the canvas toolbar and click where you want the note to appear.
-
-    <Frame>
-      <img
-        alt="The Sticky Note tool in the canvas toolbar"
-        src="/images/docs/ann-01-tool.png"
-      />
-    </Frame>
+  <Step title="Choose the annotation tool">
+    Pick the annotation tool in the canvas toolbar.
+  </Step>
+  <Step title="Mark the region">
+    Drag over the part of the screen or image you want to talk about.
   </Step>
   <Step title="Write the note">
-    Keep it short and specific. For example: "Button stays disabled until all required fields are filled."
-
-    <Frame>
-      <img
-        alt="A sticky note on the canvas with its formatting toolbar"
-        src="/images/docs/ann-02-note.png"
-      />
-    </Frame>
-
-    <Info>
-      Figr reads annotations on its next turn, so a note on the canvas also guides the next design.
-    </Info>
+    Keep it short and specific. For example: "This button should stay disabled until all required fields are filled."
   </Step>
-  <Step title="Point it at what it describes">
-    Place the annotation beside the screen or element it refers to, or connect it with a line so it's clear what it's about.
-  </Step>
-  <Step title="Update it as the design changes">
-    Edit or delete annotations when the design moves on, so they never describe an old version.
-
-    <Tip>
-      Annotate the things a developer would otherwise have to ask about: what happens on hover, loading, errors and empty states.
-    </Tip>
+  <Step title="Ask Figr to act on it">
+    Send a message like "Apply the annotated changes." Figr uses the marked area and your note as context.
   </Step>
 </Steps>
+
+## Sticky notes
+
+For quick context that isn't tied to one spot, use the **Sticky Note** tool instead. Drop a note beside the work, like "Need PM input" or "Final direction". Figr reads sticky notes on its next turn too.
+
+<Frame>
+  <img
+    alt="The Sticky Note tool in the canvas toolbar"
+    src="/images/docs/ann-01-tool.png"
+  />
+</Frame>
+
+<Frame>
+  <img
+    alt="A sticky note on the canvas with its formatting toolbar"
+    src="/images/docs/ann-02-note.png"
+  />
+</Frame>
+
+<Tip>
+  Annotate the things a developer would otherwise have to ask about: what happens on hover, loading, errors and empty states.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Comments" href="/canvas/comments">
+    Discuss a design with your team.
+  </Card>
+
+  <Card title="Arrange and connect nodes" href="/canvas/organize">
+    Lay out your canvas so the work tells a story.
+  </Card>
+</CardGroup>

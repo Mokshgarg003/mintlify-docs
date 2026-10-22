@@ -1,6 +1,7 @@
 ---
 title: "Capture a page behind a login"
 sidebarTitle: "Capture a page behind a login"
+description: "Use the Figr Capture Chrome extension to capture any page you can see, including your logged-in product, staging or localhost, and paste it into the Figr chat."
 ---
 
 _Capture any page you can see in Chrome, including your logged-in product, staging or localhost._
@@ -10,36 +11,71 @@ Most of your product lives behind a login, where a link can't reach. The Figr Ca
 <iframe src="https://www.youtube.com/embed/-RgWMfLZIMI" title="Capture a page with Figr Capture" frameBorder="0" className="w-full aspect-video rounded-xl" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullScreen />
 
 <Steps>
-  <Step title="Install the extension">
+  <Step title="Open Capture a webpage from the chat box">
+    In your project, click **Add context** in the chat box and choose **Capture a webpage**. This takes you to the Figr Capture extension page.
+
+    <Frame>
+      <img
+        alt="Figr chat box Add context menu with the Capture a webpage option"
+        title="Open Figr Capture from the Figr chat box"
+        src="/images/Screenshot-2026-10-22-at-12.53.35-PM.png"
+      />
+    </Frame>
+  </Step>
+  <Step title="Install the extension ">
     Add **Figr Capture** from the [Chrome Web Store](https://chromewebstore.google.com/detail/figr-capture/bejnddahceggaeogmedenhaccoiikjmj), pin it to your toolbar, and sign in with your Figr account.
 
     <Frame>
-      ![Screenshot 2026 10 21 At 1 22 42 PM](/images/Screenshot-2026-10-21-at-1.22.42-PM.png "Screenshot 2026 10 21 At 1 22 42 PM")
+      <img
+        alt="Figr Capture Chrome extension listing in the Chrome Web Store"
+        title="Install the Figr Capture Chrome extension"
+        src="/images/Screenshot-2026-10-21-at-1.22.42-PM.png"
+      />
     </Frame>
   </Step>
   <Step title="Open the page">
     Log in to your product and go to the page you want Figr to see.
 
     <Frame>
-      ![Image](/images/image-33.png "Image")
+      <img
+        alt="Logged-in product page open in Chrome with the Figr Capture extension pinned"
+        title="Open the logged-in page to capture"
+        src="/images/Screenshot-2026-10-22-at-1.03.29-PM.png"
+      />
     </Frame>
   </Step>
   <Step title="Capture it">
-    Click the extension and choose **Capture This Page**. To capture only part of the page, choose **Make selection** and drag over the area.
+    Click the extension, choose **Entire screen** or **Make selection**, then click **Capture**. You can also right-click the page and choose **Capture This Page**.
 
     <Frame>
-      ![Image](/images/image-34.png "Image")
+      <img
+        alt="Figr Capture extension panel with Entire screen, Make selection and Capture"
+        title="Capture a page behind a login with Figr Capture"
+        src="/images/Screenshot-2026-10-22-at-12.58.49-PM.png"
+      />
     </Frame>
-
-    <Info>
-      **Capturing several pages?** Keep your Figr project open and capture each page in turn. Every capture lands in the same project.
-    </Info>
   </Step>
-  <Step title="Add it to Figr">
-    Copy the capture and paste it into the chat box in your Figr project.
+  <Step title="Paste it into Figr">
+    Click **Copy all captures**, then paste into the chat box in your Figr project.
 
     <Tip>
       Capture the states that matter, like an empty dashboard or an error screen, not just the happy path.
     </Tip>
   </Step>
 </Steps>
+
+<Info>
+  **Capturing several pages?** Captures queue up in the extension. Capture each page in turn, then copy them all at once and paste them into one message.
+</Info>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Capture a public page" href="/context/capture-public-page">
+    Paste a link into the chat instead.
+  </Card>
+
+  <Card title="Connect your tools" href="/product-intelligence/connectors">
+    Let Figr read live context from your tools.
+  </Card>
+</CardGroup>
