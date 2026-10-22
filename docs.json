@@ -115,10 +115,9 @@
             "hidden": true
           },
           {
-            "group": "Add your product context",
+            "group": "Add context",
             "pages": [
               "input-research/input-guide",
-              "product-intelligence/context-pods",
               "input-research/screen-recording",
               "input-research/files-research",
               "input-research/figma-input",
@@ -134,10 +133,16 @@
             ]
           },
           {
+            "group": "Context Pods",
+            "pages": [
+              "product-intelligence/context-pods",
+              "context/share-pod",
+              "context/org-wide-context"
+            ]
+          },
+          {
             "group": "Set up team context",
             "pages": [
-              "context/share-pod",
-              "context/org-wide-context",
               "context/skills-guardrails"
             ]
           },
@@ -233,7 +238,8 @@
             "pages": [
               "yes",
               "inputs/screen-recording",
-              "export/direct-editing"
+              "export/direct-editing",
+              "prompt-library"
             ]
           },
           {

@@ -1,75 +1,64 @@
 ---
-title: "Add files to a pod"
+title: "Add files to your chat"
+description: "Attach PRDs, research, screenshots and data to a message from the chat box. Supported file types and size limits."
 sidebarTitle: "Add files and references"
 icon: "file-arrow-up"
 ---
 
-_Give Figr your PRDs, research and screenshots once, and use them in every project._
+_Give Figr your PRDs, research and screenshots right in the chat, so it works from your real inputs._
 
-Files you add to a Context Pod become part of what Figr knows about your product. Every time you attach the pod, Figr uses them, so you don't have to upload the same PRD again in each chat.
+Attach files to a message and Figr reads them before it responds. Use them to ground a design, check a PRD for gaps, or audit a flow from screenshots.
 
 <Steps>
-  <Step title="Open your Context Pod">
-    Go to **Product intelligence**, open a pod, switch to the **Sources** tab and click **Add sources**.
-
-    <Frame>
-      <img
-        alt="Add sources menu with Upload from computer selected"
-        src="/images/docs/files-01-upload.png"
-      />
-    </Frame>
+  <Step title="Open Add context in the chat box">
+    In your project, click **Add context** in the chat box and choose **Upload from computer**. You can also drag files straight into the chat box.
   </Step>
-  <Step title="Upload your files">
-    Choose **Upload from computer** and pick PDFs, Markdown or text files, screenshots, CSVs or HTML files. Images can be JPG, PNG, WebP or GIF. Files upload as soon as you select them.
+  <Step title="Pick your files">
+    Choose PDFs, Markdown or text files, screenshots, CSVs or HTML files. They appear as attachments above your message.
 
-    <Frame>
-      <img
-        alt="Uploaded files listed in the pod's sources"
-        src="/images/docs/files-02-added.png"
-      />
-
-      <Warning>
-        Word (.docx), Excel (.xlsx) and PowerPoint (.pptx) files aren't supported. Export them to PDF, or paste the text.
-      </Warning>
-    </Frame>
+    <Warning>
+      Word (.docx), Excel (.xlsx) and PowerPoint (.pptx) files aren't supported. Export them to PDF, or paste the text.
+    </Warning>
   </Step>
-  <Step title="Or paste text">
-    Choose **Paste text** to add notes or requirements. In the **Create note** panel, give the note a title so it's easy to find later.
-
-    <Frame>
-      <img
-        alt="Create note panel with a title and note content"
-        src="/images/docs/files-03-text.png"
-      />
-    </Frame>
+  <Step title="Say what to do with them">
+    Tell Figr how to use the files. For example: "Use this PRD and these screenshots to design the new billing settings page."
   </Step>
-  <Step title="Check your sources">
-    Every file is listed in the **Sources** tab with its type and size. Remove anything that's out of date.
-
-    <Frame>
-      <img
-        alt="Sources tab listing every file in the pod"
-        src="/images/docs/files-04-status.png"
-      />
-    </Frame>
-
-    <Tip>
-      Add a short instruction for words Figr gets wrong, like "We call customers 'members', never 'users'."
-    </Tip>
+  <Step title="Send">
+    Figr reads every attachment before it responds.
   </Step>
 </Steps>
 
 <Info>
-  **Pod or chat?** Files you attach in a chat apply to that message only. Files in a pod are used every time you attach the pod.
+  Files you attach in the chat apply to that message. They don't land on the canvas unless you add them there.
 </Info>
+
+<Tip>
+  Paste text straight into your message for short notes or requirements that don't live in a file.
+</Tip>
 
 ## Supported files and limits
 
 | Type | Formats |
 | --- | --- |
 | Images | PNG, JPG, WebP, GIF, SVG |
-| Video | MP4, MOV, MKV, WebM |
-| Documents | PDF, Markdown (.md, .mdx), plain text |
-| Data and code | CSV, JSON, CSS, HTML, Mermaid |
+| Video | MP4, MOV, WebM |
+| Documents | PDF, Markdown, plain text |
+| Data and code | CSV, JSON, CSS, HTML |
 
-Files can be up to 100 MB each. PDFs in a pod can be up to 50 MB.
+| Limit | Value |
+| --- | --- |
+| Per file | 100 MB |
+| All files in one message | 100 MB |
+| PDF pages read per message | 75 |
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Bring in Figma frames" href="/input-research/figma-input">
+    Send frames from Figma to Figr.
+  </Card>
+
+  <Card title="Capture a public page" href="/context/capture-public-page">
+    Paste a link into the chat.
+  </Card>
+</CardGroup>
