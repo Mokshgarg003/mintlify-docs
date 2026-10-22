@@ -334,7 +334,10 @@
     "indexing": "navigable",
     "metatags": {
       "og:type": "website",
-      "og:site_name": "Figr AI Docs"
+      "og:site_name": "Figr AI Docs",
+      "og:image": "https://docs.figr.design/images/04-01-canvas-overview.png",
+      "twitter:card": "summary_large_image",
+      "twitter:image": "https://docs.figr.design/images/04-01-canvas-overview.png"
     }
   },
   "integrations": {
