@@ -195,7 +195,6 @@
           },
           {
             "group": "Account and Settings",
-            "hidden": true,
             "pages": [
               "page1",
               "page2",
