@@ -270,8 +270,7 @@
               "account/credits-usage",
               "getting-started/setup/team-invitations"
             ]
-          },
-          "prompt-library"
+          }
         ]
       },
       {
@@ -333,7 +332,7 @@
     }
   },
   "seo": {
-    "indexing": "all",
+    "indexing": "navigable",
     "metatags": {
       "og:type": "website",
       "og:site_name": "Figr AI Docs"
@@ -410,9 +409,15 @@
     {
       "source": "/product-thinking/prototype",
       "destination": "/getting-started/tutorial/prototypes"
+    },
+    {
+      "source": "/",
+      "destination": "/getting-started/welcome/introduction",
+      "permanent": false
     }
   ],
   "background": {
     "decoration": "gradient"
-  }
+  },
+  "description": "Figr is an AI product design agent for teams building on an existing product. These docs cover adding context, setting up your design system, creating prototypes, flows and PRDs, working on the canvas, and handing off to Figma and code."
 }
