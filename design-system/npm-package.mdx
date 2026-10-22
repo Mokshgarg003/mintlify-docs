@@ -3,11 +3,16 @@ title: "Set up your design system from an npm package"
 sidebarTitle: "From an npm package"
 icon: "npm"
 iconType: "brands"
+description: "Set up your Figr design system from a public npm component library, so designs use the same components and tokens as your app."
 ---
 
 *Use your published component library, so Figr designs with the same components your app is built from.*
 
-If your team publishes its design system as an npm package, Figr can read it directly. Your components, tokens and styles come straight from the source your engineers use, so designs stay in sync with code.
+If your team publishes its design system as a public npm package, Figr can read it directly. Your components, tokens and styles come straight from the source your engineers use, so designs stay in sync with code.
+
+<Note>
+  Only public npm packages are supported. For a private package, use [your code repo](/design-system/code-repo) instead.
+</Note>
 
 <Steps>
   <Step title="Start a new design system">
@@ -24,7 +29,7 @@ If your team publishes its design system as an npm package, Figr can read it dir
     </Frame>
   </Step>
   <Step title="Enter your package name">
-    Type the package name, like `@yourcompany/design-system`, and the version you want.
+    Type the package name, like `@yourcompany/design-system`.
 
     <Frame>
       <img
@@ -35,9 +40,17 @@ If your team publishes its design system as an npm package, Figr can read it dir
   </Step>
   <Step title="Set it up">
     Click **Setup design system**. Figr reads the package and adds its components and tokens to your design system.
-
-    <Tip>
-      When you publish a new version of your package, update the version in Figr so new designs use your latest components.
-    </Tip>
   </Step>
 </Steps>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="From your code repo" href="/design-system/code-repo">
+    Build your design system from code.
+  </Card>
+
+  <Card title="Add brand assets" href="/design-system/brand-assets">
+    No full design system yet? Start here.
+  </Card>
+</CardGroup>

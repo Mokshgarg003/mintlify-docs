@@ -2,15 +2,16 @@
 title: "Connect your tools"
 sidebarTitle: "Connect your tools"
 icon: "plug"
+description: "Connect Notion, Linear, GitHub, Slack, Mixpanel and more from the chat box so Figr can use live context while it works. Each member connects their own accounts."
 ---
 
-_Let Figr read live context from the tools your team already uses._
+_Bring live context from the tools your team already uses._
 
-Your specs live in Notion, your tickets in Linear, your numbers in Mixpanel. Connect them and Figr can read what it needs while it works, instead of you copying and pasting it in.
+Your specs live in Notion, your tickets in Linear, your numbers in Mixpanel. Connect them and Figr can pull what it needs while it works, instead of you copying and pasting it in.
 
 <Steps>
   <Step title="Open your connectors">
-    In a project, click **Add context** in the chat box, then **Connectors → Manage connectors**. You can also find **Connectors** in workspace settings.
+    In a project, click **Add context** in the chat box, then **Connectors → Manage connectors**.
 
     <Frame>
       <img
@@ -28,25 +29,48 @@ Your specs live in Notion, your tickets in Linear, your numbers in Mixpanel. Con
         src="/images/connectors-list.png"
       />
     </Frame>
-
-    <Tip>
-      For GitHub, choose only the repos Figr should read. Connect only the tools you'll actually use.
-    </Tip>
   </Step>
   <Step title="Sign in and allow access">
-    Click **Connect**, sign in to the tool, and click **Authorize**. A green **Connected** badge appears.
+    Click **Connect**, sign in to the tool, review the permissions it asks for, and click **Authorize**. A green **Connected** badge appears.
   </Step>
   <Step title="Turn it on or off">
     Use the toggle next to each connector to choose which ones Figr can use in your chats.
 
     <Frame>
-      ![Screenshot 2026 10 21 At 1 35 53 PM](/images/Screenshot-2026-10-21-at-1.35.53-PM.png "Screenshot 2026 10 21 At 1 35 53 PM")
+      <img
+        alt="Connector toggles in the chat box"
+        src="/images/Screenshot-2026-10-21-at-1.35.53-PM.png"
+      />
     </Frame>
   </Step>
 </Steps>
+
+<Note>
+  **Each member connects their own accounts.** Connecting a tool gives Figr access with your account only, not your teammates'.
+</Note>
+
+<Warning>
+  **Check the permissions.** Some connectors ask for write access as well as read, for example to Notion pages, Slack messages and canvases, or Miro boards. Review what each tool asks for before you authorize it.
+</Warning>
 
 <Info>
   **Using a tool that isn't listed?** Click **Add custom**, enter its name, MCP server URL and transport type, then click **Add connector** and **Connect**.
 </Info>
 
-> **Stuck?** If the sign-in page doesn't come back to Figr, log in to the tool in the same browser first, then try again.
+<Tip>
+  For GitHub, choose only the repos Figr should read. Connect only the tools you'll actually use.
+</Tip>
+
+**Stuck?** If the sign-in page doesn't come back to Figr, log in to the tool in the same browser first, then try again.
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="Set up a Context Pod" href="/product-intelligence/context-pods">
+    Reusable product knowledge for every project.
+  </Card>
+
+  <Card title="Set up your design system" href="/product-intelligence/design-system">
+    Teach Figr how your product looks.
+  </Card>
+</CardGroup>

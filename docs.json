@@ -65,9 +65,7 @@
                 "group": "Design system",
                 "icon": "palette",
                 "pages": [
-                  "what-figr-does/ai-ready-design-system",
-                  "what-figr-does/design-system-from-screens",
-                  "what-figr-does/ds-compliant-prototypes"
+                  "what-figr-does/ai-ready-design-system"
                 ]
               },
               {
@@ -249,7 +247,9 @@
               "docs/design-intelligence/figr-mcp",
               "design-intelligence/design-system",
               "design-intelligence/product-context",
-              "design-intelligence/product-memory"
+              "design-intelligence/product-memory",
+              "what-figr-does/design-system-from-screens",
+              "what-figr-does/ds-compliant-prototypes"
             ]
           },
           {

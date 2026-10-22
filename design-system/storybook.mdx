@@ -1,12 +1,13 @@
 ---
 title: "Set up your design system from Storybook"
+description: "Connect your published Storybook MCP server so Figr designs with the components, variants and states your engineers already ship."
 sidebarTitle: "From Storybook"
 icon: "book"
 ---
 
-*Point Figr at your Storybook, so it designs with the components your engineers already ship.*
+_Point Figr at your Storybook, so it designs with the components your engineers already ship._
 
-If your components live in Storybook, that's the most accurate picture of your design system: real components, real props and real states. Figr reads it, so what it designs maps to what your team can build.
+If your components live in Storybook, that's the most accurate picture of your design system: real components, real props and real states. Figr connects to it through your published Storybook MCP server, so what it designs maps to what your team can build.
 
 <Steps>
   <Step title="Start a new design system">
@@ -22,21 +23,37 @@ If your components live in Storybook, that's the most accurate picture of your d
       />
     </Frame>
   </Step>
-  <Step title="Add your Storybook link">
-    Paste the URL of your published Storybook.
+  <Step title="Add your Storybook MCP server URL">
+    Paste the URL of your published Storybook MCP server, then click **Add connector**.
 
     <Frame>
       <img
-        alt="Connect Storybook dialog with the server URL field"
+        alt="Connect Storybook dialog with the MCP server URL field"
         src="/images/docs/sb-03-url.png"
       />
     </Frame>
 
-    <Tip>
-      Make sure each component has stories for its main variants and states, like default, hover, disabled and error. Figr can only use what your stories show.
-    </Tip>
+    <Note>
+      Only a published Storybook MCP server works here. A regular Storybook site URL won't connect.
+    </Note>
   </Step>
   <Step title="Set it up">
     Click **Setup design system**. Figr reads your components, their variants and states, and adds them to your design system.
   </Step>
 </Steps>
+
+<Tip>
+  Make sure each component has stories for its main variants and states, like default, hover, disabled and error. Figr can only use what your stories show.
+</Tip>
+
+## Next
+
+<CardGroup cols={2}>
+  <Card title="From an npm package" href="/design-system/npm-package">
+    Use your published component library.
+  </Card>
+
+  <Card title="From your code repo" href="/design-system/code-repo">
+    Build your design system from code.
+  </Card>
+</CardGroup>
