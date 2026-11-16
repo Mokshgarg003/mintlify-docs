@@ -1,4 +1,61 @@
+---
+title: "Changelog"
+---
+
+### Version 3.14.0 - Nov 13, 2026
+
+**Features**
+
+- **Design System adherence checks.** Enterprise teams can audit a prototype against the attached Design System, review issues by impact, and choose which fixes Figr should apply.
+- **Screens on published prototypes.** Shared prototype links can now show every screen on a pannable board, so reviewers can inspect the full flow without clicking through it.
+- **Microsoft 365 connector.** Bring SharePoint, OneDrive, and OneNote context into Figr from your existing work account.
+- **More file types in Figr.** Attach `.fig` files, fonts, `.xlsx` spreadsheets, source code, and config files directly in chat or on the canvas.
+
+**Improvements**
+
+- **Rebuilt Design System setup.** A new Sources → Explain → Build flow makes it easier to combine Figma, Git repositories, npm, Storybook, screenshots, connectors, brand assets, and instructions.
+- **Safer Design System changes.** When a canvas chat wants to change the shared Design System, Figr now asks which changes you want to approve before applying them.
+- **Comments stay between teammates unless Figr is tagged.** The agent now sees a comment only when you mention `@Figr` or explicitly add the comment to your message.
+- **Lighter wireframes on large canvases.** Wireframe cards now load as still images until you open or interact with them.
+- **Faster canvas opening.** Project files, history, chat, and canvas data now start loading together, while unchanged files are reused from the browser cache.
+- **Better Figma export feedback.** The plugin now shows the same export progress and per-screen status as the web app.
+
+**Fixes**
+
+- Fixed prototype route menus showing only the first few routes.
+- Fixed prototype themes showing a Dark option when no dark mode exists.
+- Fixed flow diagrams limiting Select & Edit to boxes instead of arrows and subgraphs.
+- Fixed new prototypes stealing keyboard focus while loading.
+- Fixed several agent runs hanging, ending silently, or continuing after Stop.
+- Fixed canvas duplication and chat forking failures in large or incomplete projects.
+
 ## October 2026
+
+### Version 3.12.0 - Oct 26, 2026
+
+**Features**
+
+- **@Figr in prototype comments.** Mention Figr inside a comment and the agent can use the thread and the pinned element as context for your next change.
+- **Comments that stay attached.** Prototype pins now follow the same element across edits, Screens view, and published links.
+- **Open prototypes in a new tab.** Open supported prototypes without the canvas, chat, or sidebar while keeping the same route, version, viewport, and theme.
+- **Plain CSS Design Systems and Vue prototypes.** Figr can now build Design Systems from CSS Modules and SCSS codebases, and create Vue 3 prototypes when working from Vue code or when requested.
+
+**Improvements**
+
+- **Smarter wireframes.** Figr now uses wireframes when a design decision is still open, can compare multiple directions, and supports simple interactions such as menus, drawers, and expanded states.
+- **Better UX and product copy.** The design agent now follows a stronger set of UX and design principles, and writes clearer interface copy with more consistent labels, actions, and status messages.
+- **Choose your Figma export file.** When the plugin is open in multiple Figma files, choose exactly where the export should land.
+- **More flexible Direct Editing.** Attach files directly to an element instruction, with message attachments now supporting up to 100 MB.
+- **Faster navigation.** Search canvases, Design Systems, and Skills, queue prompts in Design System chats, and use new keyboard shortcuts across the canvas.
+- **Better onboarding.** New users can start from a product walkthrough, Figma file, webpage, reference files, or an idea instead of an empty canvas.
+
+**Fixes**
+
+- Fixed published prototypes showing blank or incorrectly framed pages on mobile.
+- Fixed long agent runs causing browser out-of-memory crashes.
+- Fixed Mermaid diagrams waiting on external styles before rendering.
+- Fixed file-tool cards crashing Design System chats 
+- Fixed several Context Pod menu and modal positioning issues.
 
 ### Version 3.11.0 - Oct 14, 2026
 
