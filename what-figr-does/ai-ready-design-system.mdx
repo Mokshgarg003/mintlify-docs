@@ -1,90 +1,73 @@
 ---
 title: "Make your design system AI-ready"
 sidebarTitle: "AI-ready design system"
+description: "Connect your Figma library and code. Figr's Design System Agent turns them into one system with usage guidelines that Figr, your designers and your coding agents all follow."
 ---
 
-Most teams have two design systems that are supposed to be one: the library in Figma and the components in code. They drift. The same grey in Figma turns out to be black in Storybook, and teams patch every AI prompt with a line telling it not to invent local components.
-
-AI tools make the drift worse, because they copy whatever they see. Figr gets both sides to agree, then makes the system usable by every AI tool your team works with.
-
 <Frame>
-  <img
-    alt="Figma library and coded components lined up into one AI-ready design system in Figr"
-    title="Make your design system AI-ready with Figr"
-    src="/images/image-24.png"
-  />
+  ![Image](/images/image-43.png "Image")
 </Frame>
 
-<Tip>
-  **The short version:** Figr compares your Figma library with your coded components, lists every mismatch, and writes usage guidelines for each component. The result is one system that Figr, your designers and your engineers’ coding agents all follow.
-</Tip>
-
-**Example on this page:** FreshFold, a laundry pickup and delivery app. Customers book a pickup in the app, a rider collects the bag, and clean clothes come back within 24 hours.
-
-## How it works
+## Set it up
 
 <Steps>
-  <Step title="Connect both sides">
-    Figr connects to your Figma library and your component code. In the FreshFold example: the FreshFold UI kit in Figma and its component library in code.
+  <Step title="Start a new design system">
+    In the sidebar, click **Design System**, then **New Design System**.
+  </Step>
+  <Step title="Add your sources">
+    Add every place your system lives. Figma and code together give the most accurate result.
 
     <Frame>
-      <img
-        alt="Design system setup in Figr with a Figma library and a code repo both connected"
-        title="Connect Figma and code to Figr"
-        src="/images/Screenshot-2026-10-21-at-1.06.17-AM.png"
-      />
+      ![Screenshot 2026 11 24 At 6 56 35 PM](/images/Screenshot-2026-11-24-at-6.56.35-PM.png "Screenshot 2026 11 24 At 6 56 35 PM")
     </Frame>
   </Step>
-  <Step title="Figr finds the mismatches">
-    You get a list of places where Figma and code disagree, such as colors, spacing, variants, and components that exist on only one side. 
-
-    <Info>
-      Available only for Enterprise.
-    </Info>
-  </Step>
-  <Step title="Figr writes the guidelines">
-    For each component, Figr writes when to use it, which variants exist and what not to do, in a form AI tools can follow.
+  <Step title="Explain it (optional)">
+    Record a quick walkthrough or add notes: which component to use when, and what's outdated.
 
     <Frame>
-      <img
-        alt="Component usage guidelines written by Figr, with variants and do and don't rules"
-        title="Usage guidelines Figr writes for each component"
-        src="/images/Screenshot-2026-10-21-at-1.31.02-AM.png"
-      />
+      ![Screenshot 2026 11 24 At 6 58 18 PM](/images/Screenshot-2026-11-24-at-6.58.18-PM.png "Screenshot 2026 11 24 At 6 58 18 PM")
     </Frame>
   </Step>
-  <Step title="We set it up with you">
-    A Figr engineer works through the setup with your team, so the system is right from day one.
+  <Step title="Answer the agent's questions">
+    The Design System Agent builds your tokens, components and guidelines.  Pick the **Recommended** answer, choose **Something else**, or **Skip**. Nothing changes until you review it.
+
+    <Frame>
+      ![Screenshot 2026 11 24 At 7 00 16 PM](/images/Screenshot-2026-11-24-at-7.00.16-PM.png "Screenshot 2026 11 24 At 7 00 16 PM")
+    </Frame>
   </Step>
 </Steps>
 
-## What changes for your team
+## What you get
 
-- **Design system teams** see drift in one report instead of finding it in production.
-- **AI tools** stop inventing components, without prompt patches.
-- **Every screen Figr makes** uses the system your engineers actually ship.
+Tokens, components, documents and assets, each with when to use it. Every component has **Controls**, **Inspect**, **Usage** and **Code** tabs.
 
-## Go further
+<Frame>
+  ![Screenshot 2026 11 24 At 7 03 34 PM](/images/Screenshot-2026-11-24-at-7.03.34-PM.png "Screenshot 2026 11 24 At 7 03 34 PM")
+</Frame>
 
-Put the AI-ready system to work in engineering. See how coding agents read it through Figr MCP.
+<Frame>
+  ![Screenshot 2026 11 24 At 7 01 28 PM](/images/Screenshot-2026-11-24-at-7.01.28-PM.png "Screenshot 2026 11 24 At 7 01 28 PM")
+</Frame>
 
-<Card title="Figr MCP" color="#695BE8" icon="server" horizontal href="/export/mcp" arrow>
-  Let coding agents read your design system and designs.
-</Card>
+<Frame>
+  ![Screenshot 2026 11 24 At 7 05 24 PM](/images/Screenshot-2026-11-24-at-7.05.24-PM.png "Screenshot 2026 11 24 At 7 05 24 PM")
+</Frame>
 
-## Get started
+To change anything, ask the Design System Agent.
 
-A Figr engineer guides the setup. Book a call and we’ll walk through your library and code with you.
-
-<Card title="Book a setup call" color="#695BE8" icon="calendar" horizontal href="https://figr.design/contact" arrow>
-  Plan your design system setup with a Figr engineer.
-</Card>
-
-## Related
+## Next
 
 <CardGroup cols={2}>
+  <Card title="Figr MCP" color="#695BE8" icon="server" href="/export/mcp">
+    Let coding agents read your design system.
+  </Card>
+
+  <Card title="Book a setup call" color="#695BE8" icon="calendar" href="https://figr.design/contact">
+    Set up a large or split system with a Figr engineer.
+  </Card>
+
   <Card title="Design system" color="#695BE8" icon="palette" href="/product-intelligence/design-system">
-    How Figr learns and applies your tokens and components.
+    How Figr applies your tokens and components.
   </Card>
 
   <Card title="Add brand assets" color="#695BE8" icon="image" href="/design-system/brand-assets">
