@@ -1,15 +1,13 @@
 ---
 title: "Make your design system AI-ready"
 sidebarTitle: "AI-ready design system"
-description: "Connect your Figma library and code. Figr's design system agent turns them into one system with usage guidelines that Figr, your designers and your coding agents all follow."
+description: "Connect your Figma library and code. Figr's Design System Agent turns them into one system with usage guidelines that Figr, your designers and your coding agents all follow."
 ---
-
-Your Figma library and your coded components drift apart, and AI tools copy whatever they see. Figr reads both, builds one system with a usage guideline for every token and component, and keeps every AI tool on it.
 
 <Frame>
   <img
-    alt="Design system page in Figr showing brand color tokens, with the Design System Agent panel open and asking whether the Accordion arrow should be its own component"
-    title="The Design System Agent builds your system with you"
+    alt="Design system page in Figr: brand color tokens with usage guidelines, and the Design System Agent panel asking whether the Accordion arrow should be its own component"
+    title="The Design System Agent asks when your sources disagree"
     src="/images/ds-hero-agent.png"
   />
 </Frame>
@@ -35,41 +33,26 @@ Your Figma library and your coded components drift apart, and AI tools copy what
     Record a quick walkthrough or add notes: which component to use when, and what's outdated.
   </Step>
   <Step title="Answer the agent's questions">
-    The Design System Agent builds your tokens, components and guidelines. Where your sources disagree, it asks instead of guessing, and shows you the exact part from your Figma file.
-
-    <Frame>
-      <img
-        alt="Question 2 of 5: the Accordion from Figma with its arrow highlighted, asking whether the arrow belongs to Accordion or is its own component. Answers: Keep it in Accordion (Recommended), Make it its own component, Something else. Skip and Send buttons."
-        title="Pick an answer, write your own, or skip"
-        src="/images/ds-agent-question.png"
-      />
-    </Frame>
-
-    Nothing changes until you review it.
+    The Design System Agent builds your tokens, components and guidelines. Where your sources disagree, it asks in the side panel and shows the exact part from your Figma file, as in the image above. Pick the **Recommended** answer, choose **Something else**, or **Skip**. Nothing changes until you review it.
   </Step>
 </Steps>
 
 ## What you get
 
-A design system page with tokens, components, documents and assets, each with when to use it. Ask the Design System Agent in the side panel for any change.
-
-Every component has **Controls**, **Inspect**, **Usage** and **Code** tabs.
+Tokens, components, documents and assets, each with when to use it. Every component has **Controls**, **Inspect**, **Usage** and **Code** tabs.
 
 <Frame>
   <img
-    alt="Button Usage tab: anatomy with three numbered parts, then when to use and when not to use"
+    alt="Button Usage tab: anatomy with three numbered parts: container, icon slot and label"
     title="Usage guidelines for every component"
     src="/images/ds-component-usage.png"
   />
 </Frame>
 
-<Info>
-  **Enterprise:** each component shows whether it is in Figma and code, or only in one.
+To change anything, ask the Design System Agent.
 
-  <img
-    alt="Button component header with an Only in code badge"
-    src="/images/ds-figma-code-status.png"
-  />
+<Info>
+  **Enterprise:** each component is marked **In Figma and code** or **Only in code**, so you see where the two disagree.
 </Info>
 
 ## Next
